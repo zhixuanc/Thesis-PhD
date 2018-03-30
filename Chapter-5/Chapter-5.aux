@@ -1,0 +1,83 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\citation{bursik2003smoothed}
+\citation{haddad2016smoothed}
+\citation{ferrari2009new,crespo2015dualsphysics}
+\citation{laszloffy2000simple}
+\citation{patra2005parallel}
+\citation{monaghan1985refined}
+\citation{crespo2015dualsphysics}
+\citation{ferrari2009new}
+\citation{patra1999efficient}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Code Architecture and Parallelism}{77}{chapter..5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{77}{section..5.1}}
+\newlabel{sect:introduction}{{5.1}{77}{Introduction}{section..5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Workflow for SPH code. Figure to the left is the basic workflow. The right figure is the workflow that enables dynamic halo domain.}}{79}{figure..5.1}}
+\newlabel{fig:Work_flow}{{5.1}{79}{Workflow for SPH code. Figure to the left is the basic workflow. The right figure is the workflow that enables dynamic halo domain}{figure..5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Data Structure and Load Balance}{79}{section..5.2}}
+\citation{sagan2012space}
+\citation{patra1995problem}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The left figure shows SFCs passing all particles and buckets. The right figure shows an example of a domain decomposition based on the SFC of buckets.}}{80}{figure..5.2}}
+\newlabel{fig:SFC_domain_decomposition}{{5.2}{80}{The left figure shows SFCs passing all particles and buckets. The right figure shows an example of a domain decomposition based on the SFC of buckets}{figure..5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}SFC based indexing}{80}{subsection..5.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Data management strategies}{82}{subsection..5.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Non-uniform distribution of particles in the $[0,1]^n \times \textbf  {T}$ space due to adding of new particles at a small area of the whole domain.}}{83}{figure..5.3}}
+\newlabel{fig:Particle_adding_with_link}{{5.3}{83}{Non-uniform distribution of particles in the $[0,1]^n \times \textbf {T}$ space due to adding of new particles at a small area of the whole domain}{figure..5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces The influence of different load balance check intervals on simulation time. The bar values are the extra simulation time in log scale. The optimized interval is 3s.}}{83}{figure..5.4}}
+\newlabel{fig:check_int}{{5.4}{83}{The influence of different load balance check intervals on simulation time. The bar values are the extra simulation time in log scale. The optimized interval is 3s}{figure..5.4}{}}
+\newlabel{eq:hash_function}{{5.3}{83}{Data management strategies}{equation..5.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Computational cost per particle for different steps}}{84}{figure..5.5}}
+\newlabel{tab:Computational_cost_steps}{{5.2.3}{84}{Domain decomposition and load balancing strategy}{figure..5.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Domain decomposition and load balancing strategy}{84}{subsection..5.2.3}}
+\newlabel{sect:load_balance}{{5.2.3}{84}{Domain decomposition and load balancing strategy}{subsection..5.2.3}{}}
+\citation{suzuki2005numerical}
+\citation{suzuki2005numerical}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Dynamic Halo Domain}{85}{section..5.3}}
+\citation{suzuki2005numerical}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces The left figure shows a plume photo of Sakurajima Volcano eruption, the middle figure shows a typical simulation results with the same input parameters as "Run P1" in reference \cite {suzuki2005numerical}. The right figure is a cross-section view of the computational domain, it illustrates how particles are deployed on different boundaries: red are real particles, dark blue are eruption ghost particles, grey are wall ghost particles, the light blue are pressure ghost particles.}}{86}{figure..5.6}}
+\newlabel{fig:Plume}{{5.6}{86}{The left figure shows a plume photo of Sakurajima Volcano eruption, the middle figure shows a typical simulation results with the same input parameters as "Run P1" in reference \cite {suzuki2005numerical}. The right figure is a cross-section view of the computational domain, it illustrates how particles are deployed on different boundaries: red are real particles, dark blue are eruption ghost particles, grey are wall ghost particles, the light blue are pressure ghost particles}{figure..5.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Numerical Test}{86}{section..5.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Scalability test}{86}{subsection..5.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces The left figure shows strong scalability tests result. middle figure is the zoomed view of first one. It is obviously shown that strong scalability is better when the problem size is larger. The right figure is weak scalability test results}}{87}{figure..5.7}}
+\newlabel{fig:2cases_efficiency}{{5.7}{87}{The left figure shows strong scalability tests result. middle figure is the zoomed view of first one. It is obviously shown that strong scalability is better when the problem size is larger. The right figure is weak scalability test results}{figure..5.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Effect of workload check interval and calibrated particle weight}{87}{subsection..5.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Simulation time for the same particle weight and different particle weights at different physical times.}}{88}{figure..5.8}}
+\newlabel{tab:same_diff_particle_weight}{{5.4.2}{88}{Effect of workload check interval and calibrated particle weight}{figure..5.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.3}Effect of dynamic halo domains}{88}{subsection..5.4.3}}
+\citation{vacondio2012accurate,feldman2007dynamic}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Computational work load of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison.}}{89}{figure..5.9}}
+\newlabel{tab:Computational_cost_doamin_adj}{{5.9}{89}{Computational work load of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison}{figure..5.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces The figure on the top shows execution time without domain adjusting, the figure on the bottom shows execution time with domain adjusting. Different bins represent execution time up to specific physical time indicated by horizontal axis.}}{89}{figure..5.10}}
+\newlabel{fig:adj_vs_no}{{5.10}{89}{The figure on the top shows execution time without domain adjusting, the figure on the bottom shows execution time with domain adjusting. Different bins represent execution time up to specific physical time indicated by horizontal axis}{figure..5.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Conclusion}{90}{section..5.5}}
+\@setckpt{Chapter-5/Chapter-5}{
+\setcounter{page}{91}
+\setcounter{equation}{3}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{5}
+\setcounter{section}{5}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{10}
+\setcounter{table}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{parentequation}{0}
+\setcounter{NAT@ctr}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{0}
+\setcounter{section@level}{1}
+}
