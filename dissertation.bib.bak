@@ -769,6 +769,28 @@
   year={2015},
   publisher={MD}
 }
+
+@article{vacondio2016variable,
+  title={Variable resolution for SPH in three dimensions: Towards optimal splitting and coalescing for dynamic adaptivity},
+  author={Vacondio, R and Rogers, BD and Stansby, PK and Mignosa, P},
+  journal={Computer Methods in Applied Mechanics and Engineering},
+  volume={300},
+  pages={442--460},
+  year={2016},
+  publisher={Elsevier}
+}
+
+@article{lopez2013dynamic,
+  title={Dynamic particle refinement in SPH: application to free surface flow and non-cohesive soil simulations},
+  author={L{\'o}pez, Yaidel Reyes and Roose, Dirk and Morfa, Carlos Recarey},
+  journal={Computational Mechanics},
+  volume={51},
+  number={5},
+  pages={731--741},
+  year={2013},
+  publisher={Springer}
+}
+
 @misc{rolph2015ready,
   title={Real-time Environmental Applications and Display sYstem (READY) Website (http://ready.arl.noaa.gov). NOAA Air Resources Laboratory, Silver Spring,},
   author={Rolph, G.D.},

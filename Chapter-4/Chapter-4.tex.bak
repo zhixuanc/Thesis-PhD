@@ -23,105 +23,36 @@ To summarize, RSPH has the following advantages over standard SPH:
 \end{itemize}
 Compared with GSPH, which is also based on solution of local Riemann problems, RSPH introduces less but sufficient dissipation than GSPH, especially in the region away from shocks. Such feature of RSPH is especially beneficial for simulating of scenarios involving turbulence mixing, for which excessive dissipation would suppress mixing. In addition, RSPH also shows faster convergence rate than GSPH.
 
-The scheme of this paper is follows. We start with a brief review of standard SPH and GSPH in the second section. The RSPH is then explained in details in the third section followed by the numerical tests section, where both one 1D and 3D inviscid Euler equations (see Eq. (\ref{eq:gov-cs-rho}) - (\ref{eq:gov-cs-e}) are solved by standard SPH, GSPH and RSPH. Limitations and potential applications of RSPH are discussed in last section. 
+The scheme of this chapter is follows. We start with a brief review of standard GSPH in the second section. The RSPH is then explained in details in the third section followed by the numerical tests section, where both one 1D and 3D inviscid Euler equations (see Eq. (\ref{eq:gov-cs-rho-er}) - (\ref{eq:gov-cs-e-er}) are solved by standard SPH, GSPH and RSPH. Limitations and potential applications of RSPH are discussed in last section. 
 
-Our investigation implements RSPH scheme in solving inviscid compressile Euler equations as the application case.  
+Investigation in this chapter implements RSPH scheme in solving inviscid compressile Euler equations as the application case.  
 \begin{align}
-\dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \textbf{v} \right) = 0 \label{eq:gov-cs-rho} \\
-\dfrac{\partial \rho \textbf{v}}{\partial t} + \nabla \cdot \left(\rho \textbf{v} \textbf{v} + p\textbf{I}\right) = 0 \label{eq:gov-cs-v} \\
-\dfrac{\partial \rho E}{\partial t} + \nabla \cdot \left[\left(\rho E + p \right)\textbf{v}\right] = 0 \label{eq:gov-cs-e}
+\dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \textbf{v} \right) = 0 \label{eq:gov-cs-rho-er} \\
+\dfrac{\partial \rho \textbf{v}}{\partial t} + \nabla \cdot \left(\rho \textbf{v} \textbf{v} + p\textbf{I}\right) = 0 \label{eq:gov-cs-v-er} \\
+\dfrac{\partial \rho E}{\partial t} + \nabla \cdot \left[\left(\rho E + p \right)\textbf{v}\right] = 0 \label{eq:gov-cs-e-er}
 \end{align}
 where $\rho$ is the density, $\textbf{v}$ is the velocity, $\textbf{I}$ is a unit tensor.
 $E = e + K $ is the total energy which is a summation of kinetic energy $K$ and internal energy $e$.
 The system of equations is closed by equation of state (EOS) for idea gas.
 \begin{equation}
-p = \left(\gamma - 1\right)\rho e \label{eq:EOS}
+p = \left(\gamma - 1\right)\rho e \label{eq:EOS-er}
 \end{equation}
 with $\gamma=1.4$.
 
-For any SPH scheme, governing equations in Lagrange form are needed. By deducting kinetic energy from energy equation, subtracting mass conservation from momentum equation, combining transient term and advection term into material derivative (for any function $A$, material derivative is defined as $\frac{D A}{Dt} = \frac{\partial A}{\partial t} + \textbf{v} \cdot \nabla A$) term, the governing equations are converted into the Lagrange form. 
+For any SPH scheme, governing equations in Lagrangian form are needed. By deducting kinetic energy from energy equation, subtracting mass conservation from momentum equation, combining transient term and advection term into material derivative term, the governing equations are converted into the Lagrange form. 
 \begin{align}
-\dfrac{D \rho}{D t} + \rho \nabla \cdot \textbf{v} = 0 \label{eq:gov-nc-rho}\\
-\dfrac{D \textbf{v}}{D t} + \dfrac{\nabla P}{\rho} =0 \label{eq:gov-nc-v}\\
-\dfrac{D e}{D t} + \dfrac{P \nabla \cdot \textbf{v}}{\rho} = 0 \label{eq:gov-nc-e}
+\dfrac{D \rho}{D t} + \rho \nabla \cdot \textbf{v} = 0 \label{eq:gov-nc-rho-er}\\
+\dfrac{D \textbf{v}}{D t} + \dfrac{\nabla P}{\rho} =0 \label{eq:gov-nc-v-er}\\
+\dfrac{D e}{D t} + \dfrac{P \nabla \cdot \textbf{v}}{\rho} = 0 \label{eq:gov-nc-e-er}
 \end{align}
 %\cutet{puri2014comparison} propose an addition of an artificial heating term to the GSPH scheme to eliminate unphysical spikes in the thermal energy at the contact discontinuity.  --> It is worthwhile to check whether RSPH is able to avoid this phenomena without using his techniques.
 %Another issue of RCM: the very desirable properties of RCM: no diffusive errors from spatial averaging do not seem to persist for flows in two space dimensions. For two dimensional steady supersonic flow, one of the space variables can be treated as a time-like one and RCM can be applied in a way similar to that for one-dimensional unsteady flow.
 %--Then what about RSPH?
 
-\section{Standard SPH and GSPH method}
-The RSPH method is based on standard SPH and GSPH. In addition, these three methods will be compared in the numerical tests section. So it is necessary to review discretization of the compressible Euler equations by SPH and GSPH. We present here a brief review on standard SPH and GSPH providing corresponding discretized governing equations.
-
-\subsection{Standard SPH method}
-In SPH, the domain is discretized by a set of particles or discretization points and the position of each particle is updated at every time step based on the motion computed. Approximation of all field variables (velocity, density and pressure, ect.) is obtained by interpolation based on discretization points. The physical laws (such as conservation laws of mass, momentum and energy) written in the form of partial differential equations (PDEs) or ordinary differential equations (ODEs) need to be transformed into the Lagrangian particle formalism of SPH. Using a kernel function that provides the weighted estimation of the field variables at any point, the integral equations are estimated as sums over particles in a compact subdomain defined by the support of the kernel function associated with the discretization points. Thus, field variables associated to the particle are updated based on its neighbors. Each kernel function has a compact support determined by smoothing length of the particle. Various tricks can be used to conserve linear and angular momentum and thermal energy \citep{monaghan1992smoothed}. Special treatments are also needed for second order derivative terms \citep{monaghan2005smoothed}. We only refer here to one of these possible discretization of compressible Euler equations, while we refer to \citet{ monaghan2005smoothed, liu2010smoothed, price2012smoothed} for complete formal derivation and other discretization formulations.
-\begin{align}
-<\rho_a> = \sum_b m_b w_{ab} \left(h\right) \label{eq:ns-sph-d} \\
-\left\langle\dfrac{d \textbf{v}_a}{d t}\right\rangle = -\sum_b m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \nabla_a w_{a b}\left(h\right) \label{eq:ns-sph-v} \\
-\left\langle\dfrac{d e_a}{d t}\right\rangle=
- 0.5\sum_b m_b \textbf{v}_{a b}\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \cdot \nabla_a w_{a b}\left(h\right) \label{eq:ns-sph-e}
-\end{align}
-where, $a$ is the SPH particle index, $\textbf{v}_{a b} = \textbf{v}_a - \textbf{v}_b$. The smoothing length $h$ is taken as $h=\frac{h_a + h_b}{2}$. $\Pi$ is an artificial viscosity term.
-One of commonly used models of artificial viscosity \citep{monaghan1983shock} is:
-\begin{equation}
-\Pi_{ab}=- \frac{\nu}{\bar{\rho}_{ab}} \dfrac{ \textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\textbf{x}_{ab}^2 + \left(\eta h\right)^2}
-\label{eq:art-vis-original}
-\end{equation}
-The coefficient $\nu$ is defined as:
-\begin{equation}
-\nu = \alpha \bar{h}_{ab} \bar{c}_{ab}
-\end{equation}
-where 
-\begin{align}
-\bar{c}_{ab} = \dfrac{c_a + c_b}{2} \\
-\bar{\rho}_{ab} = \dfrac{\rho_a + \rho_b}{2} \\
-\textbf{x}_{ab}=\textbf{x}_a-\textbf{x}_b
-\end{align}
-The artificial viscosity term $\Pi_{ab}$ is a Galilean invariant and vanishes for rigid rotation. It produces a repulsive force between two particles when they are approaching each other and an attractive force when they are receding from each other.
-An extra term was added to $\nu$ considering aspects of the dissipative term in shock solutions based on Riemann solvers and lead to a new formulation of artificial viscosity \citep{monaghan1992smoothed}. We adopt this new formulation in our simulation:
-\begin{equation}
-\Pi_{ab}^{\beta} = 
-\begin{cases} 
-      \dfrac{- \alpha \mu_{ab} \bar{c}_{ab} + \beta \mu_{ab}^2} {\bar{\rho}_{ab}} & \textbf{v}_{ab} \cdot \textbf{x}_{ab} < 0\\
-      0 & \textbf{v}_{ab} \cdot \textbf{x}_{ab} > 0
-\end{cases}
-\label{eq:art-vis-shock}
-\end{equation}
-where
-\begin{equation}
-\mu_{ab} = \dfrac{h \textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\textbf{x}_{ab}^2 + \left(\eta h\right)^2} 
-\end{equation}
-%$\alpha$ and $\beta$ are two parameters that are free to be adjusted for each case. 
-$\alpha$ and $\beta$ are two parameters that can be adjusted for different cases.
-$\alpha = 1$ and $\beta = 2$ are recommended \citep{monaghan2005smoothed} for best results and mostly adopted. In the numerical test section, these two parameters are varied to show the effect different amount of numerical dissipation on simulation results. $\eta$ is usually taken as 0.1 to prevent singularities.
-
-In Eq. (\ref{eq:ns-sph-d}) - Eq. (\ref{eq:ns-sph-e}), $w_{a b}\left(h\right)$ is weighting function and is a concise form of $w\left(\textbf{x}_a - \textbf{x}_b, h\right)$. We will use this concise form throughout this paper.
-There is a wide variety of possible weighting functions, such as spline functions (with different orders) and Gaussian functions. We adopt a truncated Gaussian function as the weighting function for standard SPH, GSPH and RSPH.
-\begin{equation}
-w\left(\textbf{x} - \textbf{x} \prime, h \right) = 
-\begin{cases} 
-      \dfrac{1}{\left(h \sqrt{\pi}\right)^d} exp \left[- \left(\dfrac{\textbf{x} - \textbf{x} \prime}{h} \right)^2 \right] &  \vert \textbf{x} - \textbf{x} \prime \vert \leq 3h\\
-      0 & \text{Otherwise}
-\end{cases}
-\label{eq:SPH-kernel}
-\end{equation}
-where $d$ is number of dimensions.
-The derivative of the weighting function is:
-\begin{equation}
-\nabla w\left(\textbf{x} - \textbf{x} \prime, h \right) = 
-\begin{cases} 
-      -2\left(\dfrac{\textbf{x} - \textbf{x} \prime}{h}\right) \dfrac{1}{\left(h \sqrt{\pi}\right)^d} exp \left[- \left(\dfrac{\textbf{x} - \textbf{x} \prime}{h}\right)^2 \right] &  \vert \textbf{x} - \textbf{x} \prime \vert \leq 3h\\
-      0 & \text{Otherwise}
-\end{cases}
-\label{eq:SPH-kernel-gradient}
-\end{equation}
-
-As a Lagrangian method, particle position is also updated at every time step according to:
-\begin{equation}
-\left\langle\dfrac{d \textbf{x}_a}{dt}\right\rangle = \textbf{v}_a \label{eq:SPH-update-pos}
-\end{equation}
-
-\subsection{GSPH method} \label{sec:GSPH-method}
-Here we present essential formulations for solving Euler equations with GSPH. The density field is updated in the same way as updating of density in SPH, according to Eq. (\ref{eq:ns-sph-d}). Updating of velocity and internal energy in GSPH is different from these in SPH. 
+\section{GSPH method}
+The RSPH method is based on standard SPH and GSPH. In addition, these three methods will be compared in the numerical tests section. Standard SPH has been discussed in detail in previous chaper. We present here a brief review on standard GSPH providing corresponding discretization of the compressible Euler equations.
+ 
+In GSPH, the density field is updated in the same way as updating of density in SPH, according to Eq. (\ref{eq:ns-sph-d}). Updating of velocity and internal energy in GSPH is different from these in SPH. 
 Derivation of discretized momentum and energy equation in first GSPH paper \citep{inutsuka2002reformulation} is based on the following discrete consistency identities: 
 \begin{equation}
 1=\sum_{b} \frac{m_{b}}{\rho(\textbf{x})}w(\textbf{x} - \textbf{x}_{b}, h)

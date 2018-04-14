@@ -6,183 +6,73 @@ A level-1 auxiliary file: Chapter-2/Chapter-2.aux
 A level-1 auxiliary file: Chapter-3/Chapter-3.aux
 A level-1 auxiliary file: Chapter-4/Chapter-4.aux
 A level-1 auxiliary file: Chapter-5/Chapter-5.aux
-I couldn't open auxiliary file Chapter-6/Chapter-6.aux
----line 37 of file Dissertation_Index.aux
- : \@input{Chapter-6/Chapter-6.aux
- :                                }
-I'm skipping whatever remains of this command
-I couldn't open auxiliary file Chapter-7/Chapter-7.aux
----line 38 of file Dissertation_Index.aux
- : \@input{Chapter-7/Chapter-7.aux
- :                                }
-I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter-6/Chapter-6.aux
+A level-1 auxiliary file: Chapter-7/Chapter-7.aux
 A level-1 auxiliary file: Appendix-A/Appendix-A.aux
 A level-1 auxiliary file: Appendix-B/Appendix-B.aux
 The style file: apsr.bst
 Database file #1: dissertation.bib
-Warning--I didn't find a database entry for "suzuki2005numerical"
-Warning--I didn't find a database entry for "peterson2008forecasting"
-Warning--I didn't find a database entry for "morton1956turbulent"
-Warning--I didn't find a database entry for "settle1978volcanic"
-Warning--I didn't find a database entry for "wilson1978control"
-Warning--I didn't find a database entry for "woods1988fluid"
-Warning--I didn't find a database entry for "woods1995decompression"
-Warning--I didn't find a database entry for "woods1993moist"
-Warning--I didn't find a database entry for "sparks1997volcanic"
-Warning--I didn't find a database entry for "bursik2001effect"
-Warning--I didn't find a database entry for "koyaguchi1996formation"
-Warning--I didn't find a database entry for "woods1991particle"
-Warning--I didn't find a database entry for "mastin2007user"
-Warning--I didn't find a database entry for "degruyter2012improving"
-Warning--I didn't find a database entry for "woodhouse2013interaction"
-Warning--I didn't find a database entry for "devenish2013using"
-Warning--I didn't find a database entry for "girault2014effect"
-Warning--I didn't find a database entry for "de2015plume"
-Warning--I didn't find a database entry for "vitturi2015plume"
-Warning--I didn't find a database entry for "folch2016fplume"
-Warning--I didn't find a database entry for "pouget2016sensitivity"
-Warning--I didn't find a database entry for "267"
-Warning--I didn't find a database entry for "1194"
-Warning--I didn't find a database entry for "3541"
-Warning--I didn't find a database entry for "114"
-Warning--I didn't find a database entry for "draxler2015hysplit"
-Warning--I didn't find a database entry for "costa2016results"
-Warning--I didn't find a database entry for "neri2003multiparticle"
-Warning--I didn't find a database entry for "ongaro2007parallel"
-Warning--I didn't find a database entry for "carcano2013semi"
-Warning--I didn't find a database entry for "suzuki2009three"
-Warning--I didn't find a database entry for "koyaguchi2009effect"
-Warning--I didn't find a database entry for "suzuki2010numerical"
-Warning--I didn't find a database entry for "suzuki20133d"
-Warning--I didn't find a database entry for "oberhuber1998volcanic"
-Warning--I didn't find a database entry for "herzog2003prognostic"
-Warning--I didn't find a database entry for "herzog1998effect"
-Warning--I didn't find a database entry for "trentmann2002simulation"
-Warning--I didn't find a database entry for "textor2003injection"
-Warning--I didn't find a database entry for "textor2006volcanic1"
-Warning--I didn't find a database entry for "textor2006volcanic2"
-Warning--I didn't find a database entry for "cerminara2016ashee"
-Warning--I didn't find a database entry for "weller1998tensorial"
-Warning--I didn't find a database entry for "gingold1977smoothed"
-Warning--I didn't find a database entry for "lucy1977numerical"
-Warning--I didn't find a database entry for "monaghan1995sph"
-Warning--I didn't find a database entry for "colagrossi2003numerical"
-Warning--I didn't find a database entry for "hu2007incompressible"
-Warning--I didn't find a database entry for "adami2010new"
-Warning--I didn't find a database entry for "monaghan2013simple"
-Warning--I didn't find a database entry for "chen2015sph"
-Warning--I didn't find a database entry for "issa2005numerical"
-Warning--I didn't find a database entry for "violeau2007numerical"
-Warning--I didn't find a database entry for "monaghan2011turbulence"
-Warning--I didn't find a database entry for "chen1999improvement"
-Warning--I didn't find a database entry for "ernst1996sedimentation"
-Warning--I didn't find a database entry for "carey1982influence"
-Warning--I didn't find a database entry for "taddeucci2011aggregation"
-Warning--I didn't find a database entry for "sigurdsson19841982"
-Warning--I didn't find a database entry for "inutsuka2002reformulation"
-Warning--I didn't find a database entry for "monaghan1992smoothed"
-Warning--I didn't find a database entry for "monaghan2005smoothed"
-Warning--I didn't find a database entry for "rosswog2009astrophysical"
-Warning--I didn't find a database entry for "price2012smoothed"
-Warning--I didn't find a database entry for "monaghan2012smoothed"
-Warning--I didn't find a database entry for "monaghan1983shock"
-Warning--I didn't find a database entry for "swegle1995smoothed"
-Warning--I didn't find a database entry for "harlow1965numerical"
-Warning--I didn't find a database entry for "wrobel1991computational"
-Warning--I didn't find a database entry for "cheng1995simplified"
-Warning--I didn't find a database entry for "hirt1981volume"
-Warning--I didn't find a database entry for "youngs1982time"
-Warning--I didn't find a database entry for "gerlach2006comparison"
-Warning--I didn't find a database entry for "gopala2008volume"
-Warning--I didn't find a database entry for "unverdi1992front"
-Warning--I didn't find a database entry for "anderson1998diffuse"
-Warning--I didn't find a database entry for "holm1999fluctuation"
-Warning--I didn't find a database entry for "monaghan2002sph"
-Warning--I didn't find a database entry for "monaghan1989problem"
-Warning--I didn't find a database entry for "NASACompressibleTurbulence"
-Warning--I didn't find a database entry for "cebeci2013analysis"
-Warning--I didn't find a database entry for "kays1994turbulent"
-Warning--I didn't find a database entry for "cleary1999conduction"
-Warning--I didn't find a database entry for "ferrari2009new"
-Warning--I didn't find a database entry for "monaghan2009sph"
-Warning--I didn't find a database entry for "kumar2013parallel"
-Warning--I didn't find a database entry for "monaghan1997sph"
-Warning--I didn't find a database entry for "klapp2012strong"
-Warning--I didn't find a database entry for "borgani2012hydrodynamic"
-Warning--I didn't find a database entry for "flebbe1994smoothed"
-Warning--I didn't find a database entry for "morris1997switch"
-Warning--I didn't find a database entry for "dolag2005turbulent"
-Warning--I didn't find a database entry for "cullen2010inviscid"
-Warning--I didn't find a database entry for "sigalotti2008adaptive"
-Warning--I didn't find a database entry for "cha2003implementations"
-Warning--I didn't find a database entry for "iwasaki2011smoothed"
-Warning--I didn't find a database entry for "puri2014approximate"
-Warning--I didn't find a database entry for "cha2010kelvin"
-Warning--I didn't find a database entry for "glimm1965solutions"
-Warning--I didn't find a database entry for "chorin1976random"
-Warning--I didn't find a database entry for "sod1977numerical"
-Warning--I didn't find a database entry for "concus1979numerical"
-Warning--I didn't find a database entry for "colella1982glimm"
-Warning--I didn't find a database entry for "freistuhler1992numerical"
-Warning--I didn't find a database entry for "liu2010smoothed"
-Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "toro1994restoration"
-Warning--I didn't find a database entry for "rider1994review"
-Warning--I didn't find a database entry for "luo2004computation"
-Warning--I didn't find a database entry for "hammersley2013monte"
-Warning--I didn't find a database entry for "toro2013riemann"
-Warning--I didn't find a database entry for "sigalotti2006shock"
-Warning--I didn't find a database entry for "price2008modelling"
-Warning--I didn't find a database entry for "bursik2003smoothed"
-Warning--I didn't find a database entry for "haddad2016smoothed"
-Warning--I didn't find a database entry for "crespo2015dualsphysics"
-Warning--I didn't find a database entry for "laszloffy2000simple"
-Warning--I didn't find a database entry for "patra2005parallel"
-Warning--I didn't find a database entry for "monaghan1985refined"
-Warning--I didn't find a database entry for "patra1999efficient"
-Warning--I didn't find a database entry for "sagan2012space"
-Warning--I didn't find a database entry for "patra1995problem"
-Warning--I didn't find a database entry for "vacondio2012accurate"
-Warning--I didn't find a database entry for "feldman2007dynamic"
-You've used 0 entries,
+Repeated entry---line 1092 of file dissertation.bib
+ : @article{sigalotti2006shock
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1509 of file dissertation.bib
+ : @inproceedings{borgani2012hydrodynamic
+ :                                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2212 of file dissertation.bib
+ : @article{glimm1965solutions
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2289 of file dissertation.bib
+ : @book{hammersley2013monte
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2296 of file dissertation.bib
+ : @article{colella1982glimm
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "lynch1996mount"
+Warning--can't use both volume and number fields in morton1956turbulent
+You've used 173 entries,
             2874 wiz_defined-function locations,
-            772 strings with 7157 characters,
-and the built_in function-call counts, 32 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 18
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
-int.to.chr$ -- 5
+            1574 strings with 34818 characters,
+and the built_in function-call counts, 941159 in all, are:
+= -- 155221
+> -- 12282
+< -- 4
++ -- 75023
+- -- 4239
+* -- 82786
+:= -- 185222
+add.period$ -- 699
+call.type$ -- 173
+change.case$ -- 2249
+chr.to.int$ -- 171
+cite$ -- 174
+duplicate$ -- 2619
+empty$ -- 5982
+format.name$ -- 4467
+if$ -- 169275
+int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 175
+newline$ -- 715
+num.names$ -- 2016
+pop$ -- 541
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 2595
 quote$ -- 0
-skip$ -- 1
+skip$ -- 2349
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 222129
+swap$ -- 372
+text.length$ -- 2426
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 678
+warning$ -- 1
+while$ -- 4120
 width$ -- 0
-write$ -- 2
-(There were 2 error messages)
+write$ -- 2448
+(There were 5 error messages)

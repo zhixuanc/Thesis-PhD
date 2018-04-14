@@ -65,9 +65,7 @@ Index = hash(key)
 \end{equation}
 Data in a hash table can be accessed with time complexity of O(1) when there is no hash collision. One way to handle hash collisions is to use an additional sorted vector attached to the hash table. When several keys hash to the same index, a vector will be created. The vector is sorted based on keys so that a binary search (with an average time complexity of O(log n)) can be used to find the correct position for adding, deleting or retrieving of data. Another option is using an additional linked list which is more flexible in memory allocation but slower in searching (O(n)). In addition, pointer based memory accessing of linked lists will greatly slow down the efficiency of data access for long linked lists. Choosing the proper way to handle hash conflicts greatly depends on the problem itself. For volcano plume simulation, new particles are added at the bottom of the eruption vent (see Fig. \ref{fig:Particle_adding_with_link}), making the linked list a better choice. Pointers to these new particles will be stored in external linked lists as shown in Fig. \ref{fig:Particle_adding_with_link}.
 \begin{figure}
-%\CenterFloatBoxes
-%\begin{floatrow}
-%\ffigbox
+\center
 {\includegraphics[scale=0.28]{Chapter-5/Figures/Particle_adding_with_link}}
 {\caption{Non-uniform distribution of particles in the $[0,1]^n \times \textbf{T}$ space due to adding of new particles at a small area of the whole domain.}
 \label{fig:Particle_adding_with_link}}
@@ -91,6 +89,7 @@ One natural way to hash time-dependent keys $[k,t]$ is to convert the two elemen
 %\subsubsection{Weighted work load} \label{sec:Weighted_work_load}
 Particles in our problem can be categorized into four types: real particles, wall ghost particles, pressure ghost particles and eruption ghost particles. Ghost particles are for imposition of corresponding boundary conditions (See Fig. \ref{fig:Plume}). As different types of particles involve different amount of computational work, shown by table \ref{tab:Computational_cost_steps}, we assign different work load weights for different types of particles based on profiling data. Instead of simply using number of contained particles as work load for buckets, work load of each bucket is determined by summing up work load weights of all particles within the bucket. The SFC of buckets now becomes a weighted sequence. Domain decomposition  is conducted by cutting the weighted SFC of buckets into pieces. Each piece of the SFC should then have a balanced total work load.
 \begin{figure}
+\center
 %\CenterFloatBoxes
 %\ttabbox
 %{	  

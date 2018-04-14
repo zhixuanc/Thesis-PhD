@@ -241,8 +241,9 @@ Chapter-4/Chapter-4,%
 Chapter-5/Chapter-5,%
 Chapter-6/Chapter-6,%
 Chapter-7/Chapter-7,%
+Chapter-8/Chapter-8,%
 Appendix-A/Appendix-A,%
-Appendix-B/Appendix-B%
+%Appendix-B/Appendix-B%
 }
 
 %%%%%%%%%%%%%%%%%
@@ -305,7 +306,7 @@ Appendix-B/Appendix-B%
 
 % Generates the List of Symbols. The argument should point to
 % the file containing your List of Symbols.
-\thesislistofsymbols{SupplementaryMaterial/ListOfSymbols}
+%\thesislistofsymbols{SupplementaryMaterial/ListOfSymbols}
 
 % Generates the abstract. The argument should point to the
 % file containing your abstract.
@@ -336,6 +337,7 @@ Appendix-B/Appendix-B%
 \include{Chapter-5/Chapter-5}
 \include{Chapter-6/Chapter-6}
 \include{Chapter-7/Chapter-7}
+\include{Chapter-8/Chapter-8}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Appendices
 %
@@ -346,7 +348,7 @@ Appendix-B/Appendix-B%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
 \include{Appendix-A/Appendix-A}
-\include{Appendix-B/Appendix-B}
+%\include{Appendix-B/Appendix-B}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ESM students need to include a Nontechnical Abstract as the %
 % last appendix.                                              %

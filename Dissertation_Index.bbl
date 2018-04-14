@@ -1,3 +1,1083 @@
 \begin{thebibliography}{xx}
 
+\harvarditem[Adami, Hu \harvardand\ Adams]{Adami, Hu \harvardand\
+  Adams}{2010}{adami2010new}
+Adami, S, XY Hu \harvardand\ NA Adams. 2010.
+\newblock ``A new surface-tension formulation for multi-phase SPH using a
+  reproducing divergence approximation.'' {\em Journal of Computational
+  Physics} 229(13):5011--5021.
+
+\harvarditem[Agertz et~al.]{Agertz, Moore, Stadel, Potter, Miniati, Read,
+  Mayer, Gawryszczak, Kravtsov, Nordlund et~al.}{2007}{agertz2007fundamental}
+Agertz, Oscar, Ben Moore, Joachim Stadel, Doug Potter, Francesco Miniati,
+  Justin Read, Lucio Mayer, Artur Gawryszczak, Andrey Kravtsov, {\AA}ke
+  Nordlund et~al. 2007.
+\newblock ``Fundamental differences between SPH and grid methods.'' {\em
+  Monthly Notices of the Royal Astronomical Society} 380(3):963--978.
+
+\harvarditem[Anderson, McFadden \harvardand\ Wheeler]{Anderson, McFadden
+  \harvardand\ Wheeler}{1998}{anderson1998diffuse}
+Anderson, DM, Geoffrey~B McFadden \harvardand\ AA Wheeler. 1998.
+\newblock ``Diffuse-interface methods in fluid mechanics.'' {\em Annual review
+  of fluid mechanics} 30(1):139--165.
+
+\harvarditem[Avdyushin et~al.]{Avdyushin, Tulinov, Ivanov, Kuzmenko, Mezhuev,
+  Nardi, Hauchecorne \harvardand\ Chanin}{1993}{avdyushin19931}
+Avdyushin, SI, GF Tulinov, MS Ivanov, BN Kuzmenko, IR Mezhuev, B Nardi, A
+  Hauchecorne \harvardand\ M-L Chanin. 1993.
+\newblock ``1. Spatial and temporal evolution of the optical thickness of the
+  Pinatubo aerosol cloud in the northern hemisphere from a network of
+  ship-borne and stationary lidars.'' {\em Geophysical research letters}
+  20(18):1963--1966.
+
+\harvarditem{Becker \harvardand\ Teschner}{2007}{becker2007weakly}
+Becker, Markus \harvardand\ Matthias Teschner. 2007.
+\newblock Weakly compressible SPH for free surface flows.  In {\em Proceedings
+  of the 2007 ACM SIGGRAPH/Eurographics symposium on Computer animation}.
+\newblock Eurographics Association pp.~209--217.
+
+\harvarditem[Borgani et~al.]{Borgani, Murante, Brunino \harvardand\
+  Cha}{2012}{borgani2012hydrodynamic}
+Borgani, S, G Murante, R Brunino \harvardand\ S-H Cha. 2012.
+\newblock Hydrodynamic simulations with the Godunov SPH.  In {\em Advances in
+  Computational Astrophysics: Methods, Tools, and Outcome}.
+\newblock Vol. 453 p.~259.
+
+\harvarditem{Bursik}{2001}{bursik2001effect}
+Bursik, M. 2001.
+\newblock ``Effect of wind on the rise height of volcanic plumes.'' {\em
+  Geophys. Res. Lett} 28(18):3621--3624.
+
+\harvarditem[Bursik et~al.]{Bursik, Mart{\i}nez-Hackert, Delgado \harvardand\
+  Gonzalez-Huesca}{2003}{bursik2003smoothed}
+Bursik, M, B Mart{\i}nez-Hackert, H Delgado \harvardand\ A Gonzalez-Huesca.
+  2003.
+\newblock ``A smoothed-particle hydrodynamic automaton of landform degradation
+  by overland flow.'' {\em Geomorphology} 53(1):25--44.
+
+\harvarditem{Bursik}{2010}{267}
+Bursik, Marcus~I. 2010.
+\newblock ``bent: A model of plumes in crossflow.''.
+\newline\harvardurl{https://vhub.org/resources/267}
+
+\harvarditem[Bursik, Carbonara \harvardand\ Zawicki]{Bursik, Carbonara
+  \harvardand\ Zawicki}{2013}{114}
+Bursik, Marcus~I, Alejandro~Uriel Carbonara \harvardand\ Sean~Michael Zawicki.
+  2013.
+\newblock ``puffin.''.
+\newline\harvardurl{https://vhub.org/resources/114}
+
+\harvarditem[Bursik et~al.]{Bursik, Jones, Carn, Dean, Patra, Pavolonis,
+  Pitman, Singh, Singla, Webley et~al.}{2012}{bursik2012estimation}
+Bursik, Marcus, Matthew Jones, Simon Carn, Ken Dean, Abani Patra, Michael
+  Pavolonis, E~Bruce Pitman, Tarunraj Singh, Puneet Singla, Peter Webley et~al.
+  2012.
+\newblock ``Estimation and propagation of volcanic source parameter uncertainty
+  in an ash transport and dispersal model: application to the Eyjafjallajokull
+  plume of 14--16 April 2010.'' {\em Bulletin of volcanology}
+  74(10):2321--2338.
+
+\harvarditem[Cao et~al.]{Cao, Patra, Bursik, Pitman \harvardand\
+  Jones}{2017}{gmd-2017-119}
+Cao, Z., A. Patra, M. Bursik, E.~B. Pitman \harvardand\ M. Jones. 2017.
+\newblock ``Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume model
+  based on smoothed particle hydrodynamics.'' {\em Geoscientific Model
+  Development Discussions} 2017:1--37.
+\newline\harvardurl{https://www.geosci-model-dev-discuss.net/gmd-2017-119/}
+
+\harvarditem[Carcano et~al.]{Carcano, Bonaventura, Esposti~Ongaro \harvardand\
+  Neri}{2013}{carcano2013semi}
+Carcano, S, L Bonaventura, Thmaso Esposti~Ongaro \harvardand\ A Neri. 2013.
+\newblock ``A semi-implicit, second-order-accurate numerical model for
+  multiphase underexpanded volcanic jets.'' {\em Geoscientific Model
+  Development} 6(6):1905--1924.
+
+\harvarditem{Carey \harvardand\ Sigurdsson}{1982}{carey1982influence}
+Carey, Steven~N \harvardand\ Haraldur Sigurdsson. 1982.
+\newblock ``Influence of particle aggregation on deposition of distal tephra
+  from the May 18, 1980, eruption of Mount St. Helens volcano.'' {\em Journal
+  of Geophysical Research: Solid Earth} 87(B8):7061--7072.
+
+\harvarditem{Cebeci}{2013}{cebeci2013analysis}
+Cebeci, Tuncer. 2013.
+\newblock {\em Analysis of turbulent flows with computer programs}.
+\newblock Butterworth-Heinemann.
+
+\harvarditem[Cerminara, Esposti~Ongaro \harvardand\ Berselli]{Cerminara,
+  Esposti~Ongaro \harvardand\ Berselli}{2016}{cerminara2016ashee}
+Cerminara, M, Thmaso Esposti~Ongaro \harvardand\ LC Berselli. 2016.
+\newblock ``ASHEE-1.0: a compressible, equilibrium-Eulerian model for volcanic
+  ash plumes.'' {\em Geoscientific Model Development} 9(2):697--730.
+
+\harvarditem[Cerminara, Esposti~Ongaro \harvardand\ Neri]{Cerminara,
+  Esposti~Ongaro \harvardand\ Neri}{2016}{cerminara2016large}
+Cerminara, Matteo, Thmaso Esposti~Ongaro \harvardand\ Augusto Neri. 2016.
+\newblock ``Large Eddy Simulation of gas--particle kinematic decoupling and
+  turbulent entrainment in volcanic plumes.'' {\em Journal of Volcanology and
+  Geothermal Research} .
+
+\harvarditem{Cha \harvardand\ Whitworth}{2003}{cha2003implementations}
+Cha, S-H \harvardand\ Anthony~Peter Whitworth. 2003.
+\newblock ``Implementations and tests of Godunov-type particle hydrodynamics.''
+  {\em Monthly Notices of the Royal Astronomical Society} 340(1):73--90.
+
+\harvarditem[Cha, Inutsuka \harvardand\ Nayakshin]{Cha, Inutsuka \harvardand\
+  Nayakshin}{2010}{cha2010kelvin}
+Cha, Seung-Hoon, Shu-Ichiro Inutsuka \harvardand\ Sergei Nayakshin. 2010.
+\newblock ``Kelvin--Helmholtz instabilities with Godunov smoothed particle
+  hydrodynamics.'' {\em Monthly Notices of the Royal Astronomical Society}
+  403(3):1165--1174.
+
+\harvarditem[Chen, Beraun \harvardand\ Jih]{Chen, Beraun \harvardand\
+  Jih}{1999}{chen1999improvement}
+Chen, JK, JE Beraun \harvardand\ CJ Jih. 1999.
+\newblock ``An improvement for tensile instability in smoothed particle
+  hydrodynamics.'' {\em Computational Mechanics} 23(4):279--287.
+
+\harvarditem[Chen et~al.]{Chen, Zong, Liu, Zou, Li \harvardand\
+  Shu}{2015}{chen2015sph}
+Chen, Z, Z Zong, MB Liu, L Zou, HT Li \harvardand\ C Shu. 2015.
+\newblock ``An SPH model for multiphase flows with complex interfaces and large
+  density differences.'' {\em Journal of Computational Physics} 283:169--188.
+
+\harvarditem{Cheng \harvardand\ Shu}{2007}{cheng2007high}
+Cheng, Juan \harvardand\ Chi-Wang Shu. 2007.
+\newblock ``A high order ENO conservative Lagrangian type scheme for the
+  compressible Euler equations.'' {\em Journal of Computational Physics}
+  227(2):1567--1596.
+
+\harvarditem{Cheng \harvardand\ Armfield}{1995}{cheng1995simplified}
+Cheng, Liang \harvardand\ Steven Armfield. 1995.
+\newblock ``A simplified marker and cell method for unsteady flows on
+  non-staggered grids.'' {\em International journal for numerical methods in
+  fluids} 21(1):15--34.
+
+\harvarditem{Chorin}{1976}{chorin1976random}
+Chorin, Alexandre~Joel. 1976.
+\newblock ``Random choice solution of hyperbolic systems.'' {\em Journal of
+  Computational Physics} 22(4):517--533.
+
+\harvarditem{Cleary \harvardand\ Monaghan}{1999}{cleary1999conduction}
+Cleary, Paul~W \harvardand\ Joseph~J Monaghan. 1999.
+\newblock ``Conduction modelling using smoothed particle hydrodynamics.'' {\em
+  Journal of Computational Physics} 148(1):227--264.
+
+\harvarditem{Colagrossi \harvardand\ Landrini}{2003}{colagrossi2003numerical}
+Colagrossi, Andrea \harvardand\ Maurizio Landrini. 2003.
+\newblock ``Numerical simulation of interfacial flows by smoothed particle
+  hydrodynamics.'' {\em Journal of computational physics} 191(2):448--475.
+
+\harvarditem{Colella}{1982}{colella1982glimm}
+Colella, Phillip. 1982.
+\newblock ``Glimm’s method for gas dynamics.'' {\em SIAM Journal on
+  Scientific and Statistical Computing} 3(1):76--110.
+
+\harvarditem[Compo, Whitaker \harvardand\ Sardeshmukh]{Compo, Whitaker
+  \harvardand\ Sardeshmukh}{2006}{compo2006feasibility}
+Compo, Gilbert~P, Jeffrey~S Whitaker \harvardand\ Prashant~D Sardeshmukh. 2006.
+\newblock ``Feasibility of a 100-year reanalysis using only surface pressure
+  data.'' {\em Bulletin of the American Meteorological Society} 87(2):175--190.
+
+\harvarditem[Compo et~al.]{Compo, Whitaker, Sardeshmukh, Matsui, Allan, Yin,
+  Gleason, Vose, Rutledge, Bessemoulin et~al.}{2011}{compo2011twentieth}
+Compo, Gilbert~P, Jeffrey~S Whitaker, Prashant~D Sardeshmukh, Nobuki Matsui,
+  Robert~J Allan, Xungang Yin, Byron~E Gleason, Russell~S Vose, Glenn Rutledge,
+  Pierre Bessemoulin et~al. 2011.
+\newblock ``The twentieth century reanalysis project.'' {\em Quarterly Journal
+  of the Royal Meteorological Society} 137(654):1--28.
+
+\harvarditem{Concus \harvardand\ Proskurowski}{1979}{concus1979numerical}
+Concus, Paul \harvardand\ Wlodzimierz Proskurowski. 1979.
+\newblock ``Numerical solution of a nonlinear hyperbolic equation by the random
+  choice method.'' {\em Journal of Computational Physics} 30(2):153--166.
+
+\harvarditem[Costa et~al.]{Costa, Suzuki, Cerminara, Devenish, Esposti~Ongaro,
+  Herzog, Van~Eaton, Denby, Bursik, de' Michieli~Vitturi
+  et~al.}{2016}{costa2016results}
+Costa, A, YJ Suzuki, M Cerminara, BJ Devenish, Thmaso Esposti~Ongaro, M Herzog,
+  AR Van~Eaton, LC Denby, M Bursik, Mattia de' Michieli~Vitturi et~al. 2016.
+\newblock ``Results of the eruptive column model inter-comparison study.'' {\em
+  Journal of Volcanology and Geothermal Research} .
+
+\harvarditem[Crespo et~al.]{Crespo, Dom{\'\i}nguez, Rogers, G{\'o}mez-Gesteira,
+  Longshaw, Canelas, Vacondio, Barreiro \harvardand\
+  Garc{\'\i}a-Feal}{2015}{crespo2015dualsphysics}
+Crespo, AJC, JM Dom{\'\i}nguez, BD Rogers, M G{\'o}mez-Gesteira, S Longshaw, R
+  Canelas, R Vacondio, A Barreiro \harvardand\ O Garc{\'\i}a-Feal. 2015.
+\newblock ``DualSPHysics: Open-source parallel CFD solver based on Smoothed
+  Particle Hydrodynamics (SPH).'' {\em Computer Physics Communications}
+  187:204--216.
+
+\harvarditem{Crimaldi \harvardand\ Koseff}{2001}{crimaldi2001high}
+Crimaldi, JP \harvardand\ JR Koseff. 2001.
+\newblock ``High-resolution measurements of the spatial and temporal scalar
+  structure of a turbulent plume.'' {\em Experiments in Fluids} 31(1):90--102.
+
+\harvarditem{Cullen \harvardand\ Dehnen}{2010}{cullen2010inviscid}
+Cullen, Lee \harvardand\ Walter Dehnen. 2010.
+\newblock ``Inviscid smoothed particle hydrodynamics.'' {\em Monthly Notices of
+  the Royal Astronomical Society} 408(2):669--683.
+
+\harvarditem{de' Michieli~Vitturi}{2015}{3541}
+de' Michieli~Vitturi, Mattia. 2015.
+\newblock ``PlumeMoM.''.
+\newline\harvardurl{https://vhub.org/resources/3541}
+
+\harvarditem[DeFoor, Robinson \harvardand\ Ryan]{DeFoor, Robinson \harvardand\
+  Ryan}{1992}{defoor1992early}
+DeFoor, Thomas~E, Elmer Robinson \harvardand\ Steven Ryan. 1992.
+\newblock ``Early lidar observations of the June 1991 Pinatubo eruption plume
+  at Mauna Loa Observatory, Hawaii.'' {\em Geophysical research letters}
+  19(2):187--190.
+
+\harvarditem{Degruyter \harvardand\ Bonadonna}{2012}{degruyter2012improving}
+Degruyter, Wim \harvardand\ Costanza Bonadonna. 2012.
+\newblock ``Improving on mass flow rate estimates of volcanic eruptions.'' {\em
+  Geophysical Research Letters} 39(16).
+
+\harvarditem[de'Michieli Vitturi, Neri \harvardand\ Barsotti]{de'Michieli
+  Vitturi, Neri \harvardand\ Barsotti}{2015}{de2015plume}
+de'Michieli Vitturi, M, Augusto Neri \harvardand\ Sara Barsotti. 2015.
+\newblock ``PLUME-MoM 1.0: A new integral model of volcanic plumes based on the
+  method of moments.'' {\em Geoscientific Model Development} 8(8):2447--2463.
+
+\harvarditem[Deshler et~al.]{Deshler, Hofmann, Johnson \harvardand\
+  Rozier}{1992}{deshler1992balloonborne}
+Deshler, T, DJ Hofmann, BJ Johnson \harvardand\ WR Rozier. 1992.
+\newblock ``Balloonborne measurements of the Pinatubo aerosol size distribution
+  and volatility at Laramie, Wyoming during the summer of 1991.'' {\em
+  Geophysical research letters} 19(2):199--202.
+
+\harvarditem{Devenish}{2013}{devenish2013using}
+Devenish, BJ. 2013.
+\newblock ``Using simple plume models to refine the source mass flux of
+  volcanic eruptions according to atmospheric conditions.'' {\em Journal of
+  Volcanology and Geothermal Research} 256:118--127.
+
+\harvarditem[Dimotakis, Miake-Lye \harvardand\ Papantoniou]{Dimotakis,
+  Miake-Lye \harvardand\ Papantoniou}{1983}{dimotakis1983structure}
+Dimotakis, Paul~E, Richard~C Miake-Lye \harvardand\ Dimitris~A Papantoniou.
+  1983.
+\newblock ``Structure and dynamics of round turbulent jets.'' {\em Physics of
+  Fluids} 26(11):3185--3192.
+
+\harvarditem[Dolag et~al.]{Dolag, Vazza, Brunetti \harvardand\
+  Tormen}{2005}{dolag2005turbulent}
+Dolag, K, F Vazza, Gf Brunetti \harvardand\ G Tormen. 2005.
+\newblock ``Turbulent gas motions in galaxy cluster simulations: the role of
+  smoothed particle hydrodynamics viscosity.'' {\em Monthly Notices of the
+  Royal Astronomical Society} 364(3):753--772.
+
+\harvarditem[Dom{\'\i}nguez et~al.]{Dom{\'\i}nguez, Crespo, Valdez-Balderas,
+  Rogers \harvardand\ G{\'o}mez-Gesteira}{2013}{dominguez2013new}
+Dom{\'\i}nguez, Jos{\'e}~M, Alejandro~JC Crespo, Daniel Valdez-Balderas,
+  Benedict~D Rogers \harvardand\ Moncho G{\'o}mez-Gesteira. 2013.
+\newblock ``New multi-GPU implementation for smoothed particle hydrodynamics on
+  heterogeneous clusters.'' {\em Computer Physics Communications}
+  184(8):1848--1860.
+
+\harvarditem[Dom{\'\i}nguez, Crespo \harvardand\
+  G{\'o}mez-Gesteira]{Dom{\'\i}nguez, Crespo \harvardand\
+  G{\'o}mez-Gesteira}{2011}{dominguez2011optimization}
+Dom{\'\i}nguez, Jose~M, Alejandro~JC Crespo \harvardand\ Moncho
+  G{\'o}mez-Gesteira. 2011.
+\newblock ``Optimization strategies for parallel CPU and GPU implementations of
+  a meshfree particle method.'' {\em arXiv preprint arXiv:1110.3711} .
+
+\harvarditem[Ernst et~al.]{Ernst, Sparks, Carey \harvardand\
+  Bursik}{1996}{ernst1996sedimentation}
+Ernst, Gerald~GJ, R~Stephen~J Sparks, Steven~N Carey \harvardand\ Marcus~I
+  Bursik. 1996.
+\newblock ``Sedimentation from turbulent jets and plumes.'' {\em Journal of
+  Geophysical Research: Solid Earth} 101(B3):5575--5589.
+
+\harvarditem[Esposti~Ongaro et~al.]{Esposti~Ongaro, Cavazzoni, Erbacci, Neri
+  \harvardand\ Salvetti}{2007}{ongaro2007parallel}
+Esposti~Ongaro, Thmaso, Carlo Cavazzoni, Giovanni Erbacci, Augusto Neri
+  \harvardand\ Maria-Vittoria Salvetti. 2007.
+\newblock ``A parallel multiphase flow code for the 3D simulation of explosive
+  volcanic eruptions.'' {\em Parallel Computing} 33(7):541--560.
+
+\harvarditem[Ezzamel, Salizzoni \harvardand\ Hunt]{Ezzamel, Salizzoni
+  \harvardand\ Hunt}{2015}{ezzamel2015dynamical}
+Ezzamel, Adam, Pietro Salizzoni \harvardand\ Gary~R Hunt. 2015.
+\newblock ``Dynamical variability of axisymmetric buoyant plumes.'' {\em
+  Journal of Fluid Mechanics} 765:576--611.
+
+\harvarditem{Feldman \harvardand\ Bonet}{2007}{feldman2007dynamic}
+Feldman, J \harvardand\ J Bonet. 2007.
+\newblock ``Dynamic refinement and boundary contact forces in SPH with
+  applications in fluid flow problems.'' {\em International Journal for
+  Numerical Methods in Engineering} 72(3):295--324.
+
+\harvarditem[Fero, Carey \harvardand\ Merrill]{Fero, Carey \harvardand\
+  Merrill}{2008}{fero2008simulation}
+Fero, Julie, Steven~N Carey \harvardand\ John~T Merrill. 2008.
+\newblock ``Simulation of the 1980 eruption of Mount St. Helens using the
+  ash-tracking model PUFF.'' {\em Journal of Volcanology and Geothermal
+  Research} 175(3):355--366.
+
+\harvarditem[Fero, Carey \harvardand\ Merrill]{Fero, Carey \harvardand\
+  Merrill}{2009}{fero2009simulating}
+Fero, Julie, Steven~N Carey \harvardand\ John~T Merrill. 2009.
+\newblock ``Simulating the dispersal of tephra from the 1991 Pinatubo eruption:
+  implications for the formation of widespread ash layers.'' {\em Journal of
+  Volcanology and Geothermal Research} 186(1):120--131.
+
+\harvarditem[Ferrari et~al.]{Ferrari, Dumbser, Toro \harvardand\
+  Armanini}{2009}{ferrari2009new}
+Ferrari, Angela, Michael Dumbser, Eleuterio~F Toro \harvardand\ Aronne
+  Armanini. 2009.
+\newblock ``A new 3D parallel SPH scheme for free surface flows.'' {\em
+  Computers \& Fluids} 38(6):1203--1217.
+
+\harvarditem[Flebbe et~al.]{Flebbe, Muenzel, Herold, Riffert \harvardand\
+  Ruder}{1994}{flebbe1994smoothed}
+Flebbe, Olaf, S Muenzel, H Herold, H Riffert \harvardand\ H Ruder. 1994.
+\newblock ``Smoothed particle hydrodynamics: physical viscosity and the
+  simulation of accretion disks.'' {\em The Astrophysical Journal}
+  431:754--760.
+
+\harvarditem[Folch, Costa \harvardand\ Macedonio]{Folch, Costa \harvardand\
+  Macedonio}{2016}{folch2016fplume}
+Folch, Arnau, Antonio Costa \harvardand\ Giovannin Macedonio. 2016.
+\newblock ``FPLUME-1.0: An integral volcanic plume model accounting for ash
+  aggregation.'' {\em Geoscientific Model Development} 9(1):431.
+
+\harvarditem{Freist{\"u}hler \harvardand\
+  Pitman}{1992}{freistuhler1992numerical}
+Freist{\"u}hler, Heinrich \harvardand\ E~Bruce Pitman. 1992.
+\newblock ``A numerical study of a rotationally degenerate hyperbolic system.
+  Part I. The Riemann problem.'' {\em Journal of Computational Physics}
+  100(2):306--321.
+
+\harvarditem[George, Alpert \harvardand\ Tamanini]{George, Alpert \harvardand\
+  Tamanini}{1977}{george1977turbulence}
+George, William~K, Ronald~L Alpert \harvardand\ Francesco Tamanini. 1977.
+\newblock ``Turbulence measurements in an axisymmetric buoyant plume.'' {\em
+  International Journal of Heat and Mass Transfer} 20(11):1145--1154.
+
+\harvarditem[Gerlach et~al.]{Gerlach, Tomar, Biswas \harvardand\
+  Durst}{2006}{gerlach2006comparison}
+Gerlach, D, G Tomar, G Biswas \harvardand\ F Durst. 2006.
+\newblock ``Comparison of volume-of-fluid methods for surface tension-dominant
+  two-phase flows.'' {\em International Journal of Heat and Mass Transfer}
+  49(3):740--754.
+
+\harvarditem{Gingold \harvardand\ Monaghan}{1977}{gingold1977smoothed}
+Gingold, Robert~A \harvardand\ Joseph~J Monaghan. 1977.
+\newblock ``Smoothed particle hydrodynamics: theory and application to
+  non-spherical stars.'' {\em Monthly notices of the royal astronomical
+  society} 181(3):375--389.
+
+\harvarditem[Girault et~al.]{Girault, Carazzo, Tait, Ferrucci \harvardand\
+  Kaminski}{2014}{girault2014effect}
+Girault, Fr{\'e}d{\'e}ric, Guillaume Carazzo, Steve Tait, Fabrizio Ferrucci
+  \harvardand\ {\'E}douard Kaminski. 2014.
+\newblock ``The effect of total grain-size distribution on the dynamics of
+  turbulent volcanic plumes.'' {\em Earth and Planetary Science Letters}
+  394:124--134.
+
+\harvarditem{Glimm}{1965}{glimm1965solutions}
+Glimm, James. 1965.
+\newblock ``Solutions in the large for nonlinear hyperbolic systems of
+  equations.'' {\em Communications on pure and applied mathematics}
+  18(4):697--715.
+
+\harvarditem{Gooz{\'e}e \harvardand\ Jacobs}{2003}{goozee2003distributed}
+Gooz{\'e}e, Richard~J \harvardand\ Peter~A Jacobs. 2003.
+\newblock ``Distributed and shared memory parallelism with a smoothed particle
+  hydrodynamics code.'' {\em ANZIAM Journal} 44:202--228.
+
+\harvarditem{Gopala \harvardand\ van Wachem}{2008}{gopala2008volume}
+Gopala, Vinay~R \harvardand\ Berend~GM van Wachem. 2008.
+\newblock ``Volume of fluid methods for immiscible-fluid and free-surface
+  flows.'' {\em Chemical Engineering Journal} 141(1):204--221.
+
+\harvarditem{Guo, Bluth, Rose, Watson \harvardand\ Prata}{2004}{guo2004re}
+Guo, Song, Gregg~JS Bluth, William~I Rose, I~Matthew Watson \harvardand\ AJ
+  Prata. 2004.
+\newblock ``Re-evaluation of SO2 release of the 15 June 1991 Pinatubo eruption
+  using ultraviolet and infrared satellite sensors.'' {\em Geochemistry,
+  Geophysics, Geosystems} 5(4).
+
+\harvarditem{Guo, Rose, Bluth \harvardand\ Watson}{2004}{guo2004particles}
+Guo, Song, William~I Rose, Gregg~JS Bluth \harvardand\ I~Matthew Watson. 2004.
+\newblock ``Particles in the great Pinatubo volcanic cloud of June 1991: The
+  role of ice.'' {\em Geochemistry, Geophysics, Geosystems} 5(5).
+
+\harvarditem[Haddad et~al.]{Haddad, Palacios, Pastor \harvardand\
+  Zamorano}{2016}{haddad2016smoothed}
+Haddad, Bouchra, David Palacios, Manuel Pastor \harvardand\ Jos{\'e}~Juan
+  Zamorano. 2016.
+\newblock ``Smoothed particle hydrodynamic modeling of volcanic debris flows:
+  Application to Huiloac Gorge lahars (Popocat{\'e}petl volcano, Mexico).''
+  {\em Journal of Volcanology and Geothermal Research} 324:73--87.
+
+\harvarditem{Hammersley}{2013}{hammersley2013monte}
+Hammersley, John. 2013.
+\newblock {\em Monte carlo methods}.
+\newblock Springer Science \& Business Media.
+
+\harvarditem[Harlow, Welch et~al.]{Harlow, Welch
+  et~al.}{1965}{harlow1965numerical}
+Harlow, Francis~H, J~Eddie Welch et~al. 1965.
+\newblock ``Numerical calculation of time-dependent viscous incompressible flow
+  of fluid with free surface.'' {\em Physics of fluids} 8(12):2182.
+
+\harvarditem[Herzog et~al.]{Herzog, Graf, Textor \harvardand\
+  Oberhuber}{1998}{herzog1998effect}
+Herzog, Michael, Hans-F Graf, Christiane Textor \harvardand\ Josef~M Oberhuber.
+  1998.
+\newblock ``The effect of phase changes of water on the development of volcanic
+  plumes.'' {\em Journal of Volcanology and Geothermal Research} 87(1):55--74.
+
+\harvarditem[Herzog, Oberhuber \harvardand\ Graf]{Herzog, Oberhuber
+  \harvardand\ Graf}{2003}{herzog2003prognostic}
+Herzog, Michael, Josef~M Oberhuber \harvardand\ Hans-F Graf. 2003.
+\newblock ``A prognostic turbulence scheme for the nonhydrostatic plume model
+  ATHAM.'' {\em Journal of the Atmospheric Sciences} 60(22):2783--2796.
+
+\harvarditem{Hirt \harvardand\ Nichols}{1981}{hirt1981volume}
+Hirt, Cyril~W \harvardand\ Billy~D Nichols. 1981.
+\newblock ``Volume of fluid (VOF) method for the dynamics of free boundaries.''
+  {\em Journal of computational physics} 39(1):201--225.
+
+\harvarditem[Holasek, Self \harvardand\ Woods]{Holasek, Self \harvardand\
+  Woods}{1996}{holasek1996satellite}
+Holasek, RE, S Self \harvardand\ AW Woods. 1996.
+\newblock ``Satellite observations and interpretation of the 1991 Mount
+  Pinatubo eruption plumes.'' {\em Journal of Geophysical Research: Solid
+  Earth} 101(B12):27635--27655.
+
+\harvarditem[Holasek, Woods \harvardand\ Self]{Holasek, Woods \harvardand\
+  Self}{1996}{holasek1996experiments}
+Holasek, Rick~E, Andrew~W Woods \harvardand\ Stephen Self. 1996.
+\newblock ``Experiments on gas-ash separation processes in volcanic umbrella
+  plumes.'' {\em Journal of volcanology and geothermal research}
+  70(3-4):169--181.
+
+\harvarditem{Holm}{1999}{holm1999fluctuation}
+Holm, Darryl~D. 1999.
+\newblock ``Fluctuation effects on 3D Lagrangian mean and Eulerian mean fluid
+  motion.'' {\em Physica D: Nonlinear Phenomena} 133(1):215--269.
+
+\harvarditem[Holmes, Williams \harvardand\ Tilke]{Holmes, Williams \harvardand\
+  Tilke}{2011}{holmes2011framework}
+Holmes, David~W, John~R Williams \harvardand\ Peter Tilke. 2011.
+\newblock ``A framework for parallel computational physics algorithms on
+  multi-core: SPH in parallel.'' {\em Advances in Engineering Software}
+  42(11):999--1008.
+
+\harvarditem{Hu \harvardand\ Adams}{2007}{hu2007incompressible}
+Hu, XY \harvardand\ Nikolaus~A Adams. 2007.
+\newblock ``An incompressible multi-phase SPH method.'' {\em Journal of
+  computational physics} 227(1):264--278.
+
+\harvarditem{Inutsuka}{2002}{inutsuka2002reformulation}
+Inutsuka, Shu-ichiro. 2002.
+\newblock ``Reformulation of smoothed particle hydrodynamics with Riemann
+  solver.'' {\em Journal of Computational Physics} 179(1):238--267.
+
+\harvarditem{Issa}{2005}{issa2005numerical}
+Issa, Reza. 2005.
+\newblock ``Numerical assessment of the Smoothed Particle Hydrodynamics
+  gridless method for incompressible flows and its extension to turbulent
+  flows.''.
+
+\harvarditem{Iwasaki \harvardand\ Inutsuka}{2011}{iwasaki2011smoothed}
+Iwasaki, Kazunari \harvardand\ Shu-ichiro Inutsuka. 2011.
+\newblock ``Smoothed particle magnetohydrodynamics with a Riemann solver and
+  the method of characteristics.'' {\em Monthly Notices of the Royal
+  Astronomical Society} 418(3):1668--1688.
+
+\harvarditem[Jacobson, Milewski \harvardand\ Tabak]{Jacobson, Milewski
+  \harvardand\ Tabak}{2008}{jacobson2008mixing}
+Jacobson, Tivon, Paul~A Milewski \harvardand\ Esteban~G Tabak. 2008.
+\newblock ``Mixing closures for conservation laws in stratified flows.'' {\em
+  Studies in Applied Mathematics} 121(1):89--116.
+
+\harvarditem{J{\"a}ger}{1992}{jager1992pinatubo}
+J{\"a}ger, H. 1992.
+\newblock ``The Pinatubo eruption cloud observed by lidar at
+  Garmisch-Partenkirchen.'' {\em Geophysical research letters} 19(2):191--194.
+
+\harvarditem[Ji et~al.]{Ji, Xu, Takahashi \harvardand\ Sun}{2016}{ji2016large}
+Ji, Zhe, Fei Xu, Akiyuki Takahashi \harvardand\ Yu Sun. 2016.
+\newblock ``Large scale water entry simulation with smoothed particle
+  hydrodynamics on single-and multi-GPU systems.'' {\em Computer Physics
+  Communications} 209:1--12.
+
+\harvarditem{Kays}{1994}{kays1994turbulent}
+Kays, William~M. 1994.
+\newblock ``Turbulent Prandtl number—where are we?'' {\em Journal of Heat
+  Transfer} 116(2):284--295.
+
+\harvarditem[Klapp et~al.]{Klapp, Sigalotti, Pe{\~n}a-Polo \harvardand\
+  Trujillo}{2012}{klapp2012strong}
+Klapp, Jaime, Leonardo Di~G Sigalotti, Franklin Pe{\~n}a-Polo \harvardand\
+  Leonardo Trujillo. 2012.
+\newblock Strong Shocks with Smoothed Particle Hydrodynamics.  In {\em
+  Experimental and Theoretical Advances in Fluid Dynamics}.
+\newblock Springer pp.~69--79.
+
+\harvarditem{Kobs}{2009}{kobs2009modeling}
+Kobs, Shannon. 2009.
+\newblock {\em Modeling particle motion and near-vent deposition in explosive
+  volcanic eruptions}.
+\newblock State University of New York at Buffalo.
+
+\harvarditem{Koyaguchi \harvardand\ Woods}{1996}{koyaguchi1996formation}
+Koyaguchi, Takehiro \harvardand\ Andrew~W Woods. 1996.
+\newblock ``On the formation of eruption columns following explosive mixing of
+  magma and surface-water.'' {\em Journal of Geophysical Research: Solid Earth
+  (1978--2012)} 101(B3):5561--5574.
+
+\harvarditem[Koyaguchi, Ochiai \harvardand\ Suzuki]{Koyaguchi, Ochiai
+  \harvardand\ Suzuki}{2009}{koyaguchi2009effect}
+Koyaguchi, Takehiro, Kiyokatsu Ochiai \harvardand\ Yujiro~J Suzuki. 2009.
+\newblock ``The effect of intensity of turbulence in umbrella cloud on tephra
+  dispersion during explosive volcanic eruptions: Experimental and numerical
+  approaches.'' {\em Journal of Volcanology and Geothermal Research}
+  186(1):68--78.
+
+\harvarditem[Kumar et~al.]{Kumar, Patra, Pitman \harvardand\
+  Chi}{2013}{kumar2013parallel}
+Kumar, Dinesh, Abani~K Patra, E~Bruce Pitman \harvardand\ H Chi. 2013.
+\newblock ``Parallel Godunov smoothed particle hydrodynamics (SPH) with
+  improved treatment of Boundary Conditions and an application to granular
+  flows.'' {\em Computer Physics Communications} 184(10):2277--2286.
+
+\harvarditem[Laszloffy, Long \harvardand\ Patra]{Laszloffy, Long \harvardand\
+  Patra}{2000}{laszloffy2000simple}
+Laszloffy, Andras, Jingping Long \harvardand\ Abani~K Patra. 2000.
+\newblock ``Simple data management, scheduling and solution strategies for
+  managing the irregularities in parallel adaptive hp finite element
+  simulations.'' {\em Parallel Computing} 26(13):1765--1788.
+
+\harvarditem{List}{1982}{list1982turbulent}
+List, EJ. 1982.
+\newblock ``Turbulent jets and plumes.'' {\em Annual review of fluid mechanics}
+  14(1):189--212.
+
+\harvarditem{Liu \harvardand\ Liu}{2010}{liu2010smoothed}
+Liu, MB \harvardand\ GR Liu. 2010.
+\newblock ``Smoothed particle hydrodynamics (SPH): an overview and recent
+  developments.'' {\em Archives of computational methods in engineering}
+  17(1):25--76.
+
+\harvarditem{Lucy}{1977}{lucy1977numerical}
+Lucy, Leon~B. 1977.
+\newblock ``A numerical approach to the testing of the fission hypothesis.''
+  {\em The astronomical journal} 82:1013--1024.
+
+\harvarditem[Luo, Baum \harvardand\ L{\"o}hner]{Luo, Baum \harvardand\
+  L{\"o}hner}{2004}{luo2004computation}
+Luo, Hong, Joseph~D Baum \harvardand\ Rainald L{\"o}hner. 2004.
+\newblock ``On the computation of multi-material flows using ALE formulation.''
+  {\em Journal of Computational Physics} 194(1):304--328.
+
+\harvarditem{Mastin}{2007}{mastin2007user}
+Mastin, Larry~G. 2007.
+\newblock ``A user-friendly one-dimensional model for wet volcanic plumes.''
+  {\em Geochemistry, Geophysics, Geosystems} 8(3).
+
+\harvarditem{Mastin}{2011}{1194}
+Mastin, Larry~G. 2011.
+\newblock ``Plumeria 2.3.1.''.
+\newline\harvardurl{https://vhub.org/resources/1194}
+
+\harvarditem{Monaghan}{1989}{monaghan1989problem}
+Monaghan, JJ. 1989.
+\newblock ``On the problem of penetration in particle methods.'' {\em Journal
+  of Computational Physics} 82(1):1--15.
+
+\harvarditem{Monaghan}{1997}{monaghan1997sph}
+Monaghan, JJ. 1997.
+\newblock ``SPH and Riemann solvers.'' {\em Journal of Computational Physics}
+  136(2):298--307.
+
+\harvarditem{Monaghan}{2002}{monaghan2002sph}
+Monaghan, JJ. 2002.
+\newblock ``SPH compressible turbulence.'' {\em Monthly Notices of the Royal
+  Astronomical Society} 335(3):843--852.
+
+\harvarditem{Monaghan}{2005}{monaghan2005smoothed}
+Monaghan, JJ. 2005.
+\newblock ``Smoothed particle hydrodynamics.'' {\em Reports on progress in
+  physics} 68(8):1703.
+
+\harvarditem{Monaghan}{2012}{monaghan2012smoothed}
+Monaghan, JJ. 2012.
+\newblock ``Smoothed particle hydrodynamics and its diverse applications.''
+  {\em Annual Review of Fluid Mechanics} 44:323--346.
+
+\harvarditem{Monaghan \harvardand\ Kocharyan}{1995}{monaghan1995sph}
+Monaghan, JJ \harvardand\ A Kocharyan. 1995.
+\newblock ``SPH simulation of multi-phase flow.'' {\em Computer Physics
+  Communications} 87(1):225--235.
+
+\harvarditem{Monaghan \harvardand\ Rafiee}{2013}{monaghan2013simple}
+Monaghan, JJ \harvardand\ Ashkan Rafiee. 2013.
+\newblock ``A simple SPH algorithm for multi-fluid flow with high density
+  ratios.'' {\em International Journal for Numerical Methods in Fluids}
+  71(5):537--561.
+
+\harvarditem{Monaghan \harvardand\ Gingold}{1983}{monaghan1983shock}
+Monaghan, JJ \harvardand\ RA Gingold. 1983.
+\newblock ``Shock simulation by the particle method SPH.'' {\em Journal of
+  computational physics} 52(2):374--389.
+
+\harvarditem{Monaghan}{1992}{monaghan1992smoothed}
+Monaghan, Joe~J. 1992.
+\newblock ``Smoothed particle hydrodynamics.'' {\em Annual review of astronomy
+  and astrophysics} 30:543--574.
+
+\harvarditem{Monaghan}{2011}{monaghan2011turbulence}
+Monaghan, Joe~J. 2011.
+\newblock ``A turbulence model for Smoothed Particle Hydrodynamics.'' {\em
+  European Journal of Mechanics-B/Fluids} 30(4):360--370.
+
+\harvarditem{Monaghan \harvardand\ Kajtar}{2009}{monaghan2009sph}
+Monaghan, Joe~J \harvardand\ Jules~B Kajtar. 2009.
+\newblock ``SPH particle boundary forces for arbitrary boundaries.'' {\em
+  Computer Physics Communications} 180(10):1811--1820.
+
+\harvarditem{Monaghan \harvardand\ Lattanzio}{1985}{monaghan1985refined}
+Monaghan, Joseph~J \harvardand\ John~C Lattanzio. 1985.
+\newblock ``A refined particle method for astrophysical problems.'' {\em
+  Astronomy and astrophysics} 149:135--143.
+
+\harvarditem{Morris \harvardand\ Monaghan}{1997}{morris1997switch}
+Morris, JP \harvardand\ JJ Monaghan. 1997.
+\newblock ``A switch to reduce SPH viscosity.'' {\em Journal of Computational
+  Physics} 136(1):41--50.
+
+\harvarditem[Morton, Taylor \harvardand\ Turner]{Morton, Taylor \harvardand\
+  Turner}{1956}{morton1956turbulent}
+Morton, BR, Geoffrey Taylor \harvardand\ JS Turner. 1956.
+\newblock Turbulent gravitational convection from maintained and instantaneous
+  sources.  In {\em Proceedings of the Royal Society of London A: Mathematical,
+  Physical and Engineering Sciences}.
+\newblock Vol. 234 The Royal Society pp.~1--23.
+
+\harvarditem[Neri et~al.]{Neri, Esposti~Ongaro, Macedonio \harvardand\
+  Gidaspow}{2003}{neri2003multiparticle}
+Neri, Augusto, Thmaso Esposti~Ongaro, Giovanni Macedonio \harvardand\ Dimitri
+  Gidaspow. 2003.
+\newblock ``Multiparticle simulation of collapsing volcanic columns and
+  pyroclastic flow.'' {\em Journal of Geophysical Research: Solid Earth
+  (1978--2012)} 108(B4).
+
+\harvarditem{Noh}{1987}{noh1987errors}
+Noh, William~F. 1987.
+\newblock ``Errors for calculations of strong shocks using an artificial
+  viscosity and an artificial heat flux.'' {\em Journal of Computational
+  Physics} 72(1):78--120.
+
+\harvarditem[Oberhuber et~al.]{Oberhuber, Herzog, Graf \harvardand\
+  Schwanke}{1998}{oberhuber1998volcanic}
+Oberhuber, Josef~M, Michael Herzog, Hans-F Graf \harvardand\ Karsten Schwanke.
+  1998.
+\newblock ``Volcanic plume simulation on large scales.'' {\em Journal of
+  Volcanology and Geothermal Research} 87(1):29--53.
+
+\harvarditem[Oger et~al.]{Oger, Le~Touz{\'e}, Guibert, De~Leffe, Biddiscombe,
+  Soumagne \harvardand\ Piccinali}{2016}{oger2016distributed}
+Oger, Guillaume, David Le~Touz{\'e}, David Guibert, Matthieu De~Leffe, John
+  Biddiscombe, J{\'e}rome Soumagne \harvardand\ J-G Piccinali. 2016.
+\newblock ``On distributed memory MPI-based parallelization of SPH codes in
+  massive HPC context.'' {\em Computer Physics Communications} 200:1--14.
+
+\harvarditem[Paladio-Melosantos et~al.]{Paladio-Melosantos, Solidum, Scott,
+  Quiambao, Umbal, Rodolfo, Tubianosa, Delos~Reyes, Alonso \harvardand\
+  Ruelo}{1996}{paladio1996tephra}
+Paladio-Melosantos, Ma Lynn~O, Renato~U Solidum, William~E Scott, Rowena~B
+  Quiambao, Jesse~V Umbal, Kelvin~S Rodolfo, Bella~S Tubianosa, PJ Delos~Reyes,
+  Rosalito~A Alonso \harvardand\ Hernulfo~B Ruelo. 1996.
+\newblock ``Tephra falls of the 1991 eruptions of Mount Pinatubo.'' {\em Fire
+  and mud} 12000:12030.
+
+\harvarditem{Papanicolaou \harvardand\
+  List}{1988}{papanicolaou1988investigations}
+Papanicolaou, Panos~N \harvardand\ E~John List. 1988.
+\newblock ``Investigations of round vertical turbulent buoyant jets.'' {\em
+  Journal of Fluid Mechanics} 195:341--391.
+
+\harvarditem{Papantoniou \harvardand\ List}{1989}{papantoniou1989large}
+Papantoniou, Dimitris \harvardand\ E~John List. 1989.
+\newblock ``Large-scale structure in the far field of byoyant jets.'' {\em
+  Journal of Fluid Mechanics} 209:151--190.
+
+\harvarditem{Patra \harvardand\ Oden}{1995}{patra1995problem}
+Patra, Abani \harvardand\ J~Tinsley Oden. 1995.
+\newblock ``Problem decomposition for adaptive hp finite element methods.''
+  {\em Computing Systems in Engineering} 6(2):97--109.
+
+\harvarditem[Patra et~al.]{Patra, Bauer, Nichita, Pitman, Sheridan, Bursik,
+  Rupp, Webber, Stinton, Namikawa et~al.}{2005}{patra2005parallel}
+Patra, Abani~K, AC Bauer, CC Nichita, E~Bruce Pitman, MF Sheridan, M Bursik, B
+  Rupp, A Webber, AJ Stinton, LM Namikawa et~al. 2005.
+\newblock ``Parallel adaptive numerical simulation of dry avalanches over
+  natural terrain.'' {\em Journal of Volcanology and Geothermal Research}
+  139(1):1--21.
+
+\harvarditem{Patra \harvardand\ Kim}{1999}{patra1999efficient}
+Patra, AK \harvardand\ DW Kim. 1999.
+\newblock Efficient mesh partitioning for adaptive hp finite element meshes.
+  In {\em In International Conference on Domain Decomposition Methods}.
+\newblock Citeseer.
+
+\harvarditem{Peterson \harvardand\ Dean}{2008}{peterson2008forecasting}
+Peterson, Rorik~A \harvardand\ Ken~G Dean. 2008.
+\newblock ``Forecasting exposure to volcanic ash based on ash dispersion
+  modeling.'' {\em Journal of Volcanology and Geothermal Research}
+  170(3):230--246.
+
+\harvarditem[Pouget et~al.]{Pouget, Bursik, Singla \harvardand\
+  Singh}{2016}{pouget2016sensitivity}
+Pouget, S, M Bursik, P Singla \harvardand\ T Singh. 2016.
+\newblock ``Sensitivity analysis of a one-dimensional model of a volcanic plume
+  with particle fallout and collapse behavior.'' {\em Journal of Volcanology
+  and Geothermal Research} .
+
+\harvarditem{Price}{2008}{price2008modelling}
+Price, Daniel~J. 2008.
+\newblock ``Modelling discontinuities and Kelvin--Helmholtz instabilities in
+  SPH.'' {\em Journal of Computational Physics} 227(24):10040--10057.
+
+\harvarditem{Price}{2012}{price2012smoothed}
+Price, Daniel~J. 2012.
+\newblock ``Smoothed particle hydrodynamics and magnetohydrodynamics.'' {\em
+  Journal of Computational Physics} 231(3):759--794.
+
+\harvarditem{Puri \harvardand\ Ramachandran}{2014{\em a}}{puri2014approximate}
+Puri, Kunal \harvardand\ Prabhu Ramachandran. 2014{\em a}.
+\newblock ``Approximate Riemann solvers for the Godunov SPH (GSPH).'' {\em
+  Journal of Computational Physics} 270:432--458.
+
+\harvarditem{Puri \harvardand\ Ramachandran}{2014{\em b}}{puri2014comparison}
+Puri, Kunal \harvardand\ Prabhu Ramachandran. 2014{\em b}.
+\newblock ``A comparison of SPH schemes for the compressible Euler equations.''
+  {\em Journal of Computational Physics} 256:308--333.
+
+\harvarditem[Read, Hayfield \harvardand\ Agertz]{Read, Hayfield \harvardand\
+  Agertz}{2010}{read2010resolving}
+Read, JI, T Hayfield \harvardand\ O Agertz. 2010.
+\newblock ``Resolving mixing in smoothed particle hydrodynamics.'' {\em Monthly
+  Notices of the Royal Astronomical Society} 405(3):1513--1530.
+
+\harvarditem{Rider}{1994}{rider1994review}
+Rider, William~J. 1994.
+\newblock ``A review of approximate Riemann solvers with Godunov's method in
+  Lagrangian coordinates.'' {\em Computers \& fluids} 23(2):397--413.
+
+\harvarditem{Ritchie \harvardand\ Thomas}{2001}{ritchie2001multiphase}
+Ritchie, Benedict~W \harvardand\ Peter~A Thomas. 2001.
+\newblock ``Multiphase smoothed-particle hydrodynamics.'' {\em Monthly Notices
+  of the Royal Astronomical Society} 323(3):743--756.
+
+\harvarditem{Roe}{1981}{roe1981approximate}
+Roe, Philip~L. 1981.
+\newblock ``Approximate Riemann solvers, parameter vectors, and difference
+  schemes.'' {\em Journal of computational physics} 43(2):357--372.
+
+\harvarditem{Rosswog}{2009}{rosswog2009astrophysical}
+Rosswog, Stephan. 2009.
+\newblock ``Astrophysical smooth particle hydrodynamics.'' {\em New Astronomy
+  Reviews} 53(4):78--104.
+
+\harvarditem{Rumsey}{2014}{NASACompressibleTurbulence}
+Rumsey, Christopher. 2014.
+\newblock ``Implementing Turbulence Models into the Compressible RANS
+  Equations.''.
+\newline\harvardurl{http://turbmodels.larc.nasa.gov/implementrans.html}
+
+\harvarditem[Rustico et~al.]{Rustico, Bilotta, Herault, Del~Negro \harvardand\
+  Gallo}{2014}{rustico2014advances}
+Rustico, Eugenio, Giuseppe Bilotta, Alexis Herault, Ciro Del~Negro \harvardand\
+  Giovanni Gallo. 2014.
+\newblock ``Advances in multi-GPU smoothed particle hydrodynamics
+  simulations.'' {\em IEEE Transactions on Parallel and Distributed Systems}
+  25(1):43--52.
+
+\harvarditem{Sagan}{2012}{sagan2012space}
+Sagan, Hans. 2012.
+\newblock {\em Space-filling curves}.
+\newblock Springer Science \& Business Media.
+
+\harvarditem[Schwaiger, Denlinger \harvardand\ Mastin]{Schwaiger, Denlinger
+  \harvardand\ Mastin}{2012}{schwaiger2012ash3d}
+Schwaiger, Hans~F, Roger~P Denlinger \harvardand\ Larry~G Mastin. 2012.
+\newblock ``Ash3d: A finite-volume, conservative numerical model for ash
+  transport and tephra deposition.'' {\em Journal of Geophysical Research:
+  Solid Earth} 117(B4).
+
+\harvarditem[Scott et~al.]{Scott, Hoblitt, Torres, Self, Martinez \harvardand\
+  Nillos}{1996}{scott1996pyroclastic}
+Scott, William~E, Richard~P Hoblitt, Ronnie~C Torres, Stephen Self, Ma~Mylene~L
+  Martinez \harvardand\ T Nillos. 1996.
+\newblock ``Pyroclastic flows of the June 15, 1991, climactic eruption of Mount
+  Pinatubo.'' {\em Fire and Mud: eruptions and lahars of Mount Pinatubo,
+  Philippines} pp.~545--570.
+
+\harvarditem[Searcy, Dean \harvardand\ Stringer]{Searcy, Dean \harvardand\
+  Stringer}{1998}{searcy1998puff}
+Searcy, C, KG Dean \harvardand\ W Stringer. 1998.
+\newblock ``PUFF: A volcanic ash tracking and prediction model.'' {\em Journal
+  of Volcanology and Geothermal Research} 80:1--16.
+
+\harvarditem[Self et~al.]{Self, Zhao, Holasek, Torres \harvardand\
+  King}{1996}{self1993atmospheric}
+Self, Stephen, Jing-Xia Zhao, Rick~E Holasek, Ronnie~C Torres \harvardand\
+  Alan~J King. 1996.
+\newblock ``The atmospheric impact of the 1991 Mount Pinatubo eruption.''.
+
+\harvarditem{Settle}{1978}{settle1978volcanic}
+Settle, Mark. 1978.
+\newblock ``Volcanic eruption clouds and the thermal power output of explosive
+  eruptions.'' {\em Journal of Volcanology and Geothermal Research}
+  3(3):309--324.
+
+\harvarditem{Sigalotti \harvardand\ L{\'o}pez}{2008}{sigalotti2008adaptive}
+Sigalotti, Leonardo Di~G \harvardand\ Hender L{\'o}pez. 2008.
+\newblock ``Adaptive kernel estimation and SPH tensile instability.'' {\em
+  Computers \& Mathematics with Applications} 55(1):23--50.
+
+\harvarditem[Sigalotti et~al.]{Sigalotti, L{\'o}pez, Donoso, Sira \harvardand\
+  Klapp}{2006}{sigalotti2006shock}
+Sigalotti, Leonardo Di~G, Hender L{\'o}pez, Arnaldo Donoso, Eloy Sira
+  \harvardand\ Jaime Klapp. 2006.
+\newblock ``A shock-capturing SPH scheme based on adaptive kernel estimation.''
+  {\em Journal of Computational Physics} 212(1):124--149.
+
+\harvarditem[Sigurdsson, Carey \harvardand\ Espindola]{Sigurdsson, Carey
+  \harvardand\ Espindola}{1984}{sigurdsson19841982}
+Sigurdsson, H, SN Carey \harvardand\ JM Espindola. 1984.
+\newblock ``The 1982 eruptions of El Chich{\'o}n volcano, Mexico: stratigraphy
+  of pyroclastic deposits.'' {\em Journal of Volcanology and Geothermal
+  Research} 23(1):11--37.
+
+\harvarditem{Sod}{1977}{sod1977numerical}
+Sod, Gary~A. 1977.
+\newblock ``A numerical study of a converging cylindrical shock.'' {\em Journal
+  of Fluid Mechanics} 83(4):785--794.
+
+\harvarditem[Sparks et~al.]{Sparks, Bursik, Carey, Gilbert, Glaze, Sigurdsson
+  \harvardand\ Woods}{1997}{sparks1997volcanic}
+Sparks, Robert Stephen~John, MI Bursik, SN Carey, Jennifer Gilbert, LS Glaze, H
+  Sigurdsson \harvardand\ AW Woods. 1997.
+\newblock {\em Volcanic plumes}.
+\newblock Wiley.
+
+\harvarditem[Stefanescu et~al.]{Stefanescu, Patra, Bursik, Madankan, Pouget,
+  Jones, Singla, Singh, Pitman, Pavolonis et~al.}{2014}{stefanescu2014temporal}
+Stefanescu, ER, AK Patra, MI Bursik, R Madankan, S Pouget, M Jones, P Singla, T
+  Singh, EB Pitman, M Pavolonis et~al. 2014.
+\newblock ``Temporal, probabilistic mapping of ash clouds using wind field
+  stochastic variability and uncertain eruption source parameters: Example of
+  the 14 April 2010 Eyjafjallaj{\"o}kull eruption.'' {\em Journal of Advances
+  in Modeling Earth Systems} 6(4):1173--1184.
+
+\harvarditem{Suzuki et~al.}{1983}{suzuki1983theoretical}
+Suzuki, Takeo et~al. 1983.
+\newblock ``A theoretical model for dispersion of tephra.'' {\em Arc volcanism:
+  physics and tectonics} 95:113.
+
+\harvarditem{Suzuki \harvardand\ Koyaguchi}{2009}{suzuki2009three}
+Suzuki, YJ \harvardand\ T Koyaguchi. 2009.
+\newblock ``A three-dimensional numerical simulation of spreading umbrella
+  clouds.'' {\em Journal of Geophysical Research: Solid Earth (1978--2012)}
+  114(B3).
+
+\harvarditem{Suzuki \harvardand\ Koyaguchi}{2010}{suzuki2010numerical}
+Suzuki, YJ \harvardand\ T Koyaguchi. 2010.
+\newblock ``Numerical determination of the efficiency of entrainment in
+  volcanic eruption columns.'' {\em Geophysical Research Letters} 37(5).
+
+\harvarditem{Suzuki \harvardand\ Koyaguchi}{2013}{suzuki20133d}
+Suzuki, Yujiro~J \harvardand\ Takehiro Koyaguchi. 2013.
+\newblock ``3D numerical simulation of volcanic eruption clouds during the 2011
+  Shinmoe-dake eruptions.'' {\em Earth, Planets and Space} 65(6):581--589.
+
+\harvarditem[Suzuki et~al.]{Suzuki, Koyaguchi, Ogawa \harvardand\
+  Hachisu}{2005}{suzuki2005numerical}
+Suzuki, Yujiro~J, Takehiro Koyaguchi, Masaki Ogawa \harvardand\ Izumi Hachisu.
+  2005.
+\newblock ``A numerical study of turbulent mixing in eruption clouds using a
+  three-dimensional fluid dynamics model.'' {\em Journal of Geophysical
+  Research: Solid Earth} 110(B8).
+
+\harvarditem[Swegle, Hicks \harvardand\ Attaway]{Swegle, Hicks \harvardand\
+  Attaway}{1995}{swegle1995smoothed}
+Swegle, JW, DL Hicks \harvardand\ SW Attaway. 1995.
+\newblock ``Smoothed particle hydrodynamics stability analysis.'' {\em Journal
+  of computational physics} 116(1):123--134.
+
+\harvarditem[Taddeucci et~al.]{Taddeucci, Scarlato, Montanaro, Cimarelli,
+  Del~Bello, Freda, Andronico, Gudmundsson \harvardand\
+  Dingwell}{2011}{taddeucci2011aggregation}
+Taddeucci, J, P Scarlato, C Montanaro, C Cimarelli, E Del~Bello, C Freda, D
+  Andronico, MT Gudmundsson \harvardand\ DB Dingwell. 2011.
+\newblock ``Aggregation-dominated ash settling from the Eyjafjallaj{\"o}kull
+  volcanic cloud illuminated by field and laboratory high-speed imaging.'' {\em
+  Geology} 39(9):891--894.
+
+\harvarditem{Tanaka}{1991}{tanaka1991development}
+Tanaka, HL. 1991.
+\newblock Development of a prediction scheme for the volcanic ash fall from
+  redoubt volcano.  In {\em First Int'l. Symp. on Volcanic Ash and Aviation
+  Safety}.
+\newblock Vol.~58.
+
+\harvarditem[Textor et~al.]{Textor, Graf, Herzog, Oberhuber, Rose \harvardand\
+  Ernst}{2006{\em a}}{textor2006volcanic2}
+Textor, C, Hans-F Graf, Michael Herzog, Josef~M Oberhuber, William~I Rose
+  \harvardand\ GGJ Ernst. 2006{\em a}.
+\newblock ``Volcanic particle aggregation in explosive eruption columns. Part
+  II: Numerical experiments.'' {\em Journal of Volcanology and Geothermal
+  Research} 150(4):378--394.
+
+\harvarditem[Textor et~al.]{Textor, Graf, Herzog \harvardand\
+  Oberhuber}{2003}{textor2003injection}
+Textor, Christiane, Hans-F Graf, Michael Herzog \harvardand\ JM Oberhuber.
+  2003.
+\newblock ``Injection of gases into the stratosphere by explosive volcanic
+  eruptions.'' {\em Journal of Geophysical Research: Atmospheres (1984--2012)}
+  108(D19).
+
+\harvarditem[Textor et~al.]{Textor, Graf, Herzog, Oberhuber, Rose \harvardand\
+  Ernst}{2006{\em b}}{textor2006volcanic1}
+Textor, Christiane, Hans-F Graf, Michael Herzog, Josef~M Oberhuber, William~I
+  Rose \harvardand\ Gerald~GJ Ernst. 2006{\em b}.
+\newblock ``Volcanic particle aggregation in explosive eruption columns. Part
+  I: Parameterization of the microphysics of hydrometeors and ash.'' {\em
+  Journal of Volcanology and Geothermal Research} 150(4):359--377.
+
+\harvarditem{Toro}{2013}{toro2013riemann}
+Toro, Eleuterio~F. 2013.
+\newblock {\em Riemann solvers and numerical methods for fluid dynamics: a
+  practical introduction}.
+\newblock Springer Science \& Business Media.
+
+\harvarditem[Toro, Spruce \harvardand\ Speares]{Toro, Spruce \harvardand\
+  Speares}{1994}{toro1994restoration}
+Toro, Eleuterio~F, Michael Spruce \harvardand\ William Speares. 1994.
+\newblock ``Restoration of the contact surface in the HLL-Riemann solver.''
+  {\em Shock waves} 4(1):25--34.
+
+\harvarditem[Trentmann et~al.]{Trentmann, Andreae, Graf, Hobbs, Ottmar
+  \harvardand\ Trautmann}{2002}{trentmann2002simulation}
+Trentmann, J, MO Andreae, H-F Graf, PV Hobbs, RD Ottmar \harvardand\ T
+  Trautmann. 2002.
+\newblock ``Simulation of a biomass-burning plume: Comparison of model results
+  with observations.'' {\em Journal of Geophysical Research: Atmospheres
+  (1984--2012)} 107(D2):AAC--5.
+
+\harvarditem{Unverdi \harvardand\ Tryggvason}{1992}{unverdi1992front}
+Unverdi, Salih~Ozen \harvardand\ Gr{\'e}tar Tryggvason. 1992.
+\newblock ``A front-tracking method for viscous, incompressible, multi-fluid
+  flows.'' {\em Journal of computational physics} 100(1):25--37.
+
+\harvarditem[Vacondio, Rogers \harvardand\ Stansby]{Vacondio, Rogers
+  \harvardand\ Stansby}{2012}{vacondio2012accurate}
+Vacondio, R, BD Rogers \harvardand\ PK Stansby. 2012.
+\newblock ``Accurate particle splitting for smoothed particle hydrodynamics in
+  shallow water with shock capturing.'' {\em International Journal for
+  Numerical Methods in Fluids} 69(8):1377--1410.
+
+\harvarditem{Violeau \harvardand\ Issa}{2007}{violeau2007numerical}
+Violeau, Damien \harvardand\ Reza Issa. 2007.
+\newblock ``Numerical modelling of complex turbulent free-surface flows with
+  the SPH method: an overview.'' {\em International Journal for Numerical
+  Methods in Fluids} 53:277--304.
+
+\harvarditem[Vitturi, Neri \harvardand\ Barsotti]{Vitturi, Neri \harvardand\
+  Barsotti}{2015}{vitturi2015plume}
+Vitturi, M~de'Michieli, Augusto Neri \harvardand\ Sara Barsotti. 2015.
+\newblock ``PLUME-MoM 1.0: A new integral model of volcanic plumes based on the
+  method of moments.'' {\em Geoscientific Model Development} 8(8):2447.
+
+\harvarditem[Wadsley, Veeravalli \harvardand\ Couchman]{Wadsley, Veeravalli
+  \harvardand\ Couchman}{2008}{wadsley2008treatment}
+Wadsley, JW, G Veeravalli \harvardand\ HMP Couchman. 2008.
+\newblock ``On the treatment of entropy mixing in numerical cosmology.'' {\em
+  Monthly Notices of the Royal Astronomical Society} 387(1):427--438.
+
+\harvarditem[Weller et~al.]{Weller, Tabor, Jasak \harvardand\
+  Fureby}{1998}{weller1998tensorial}
+Weller, Henry~G, G Tabor, Hrvoje Jasak \harvardand\ C Fureby. 1998.
+\newblock ``A tensorial approach to computational continuum mechanics using
+  object-oriented techniques.'' {\em Computers in physics} 12(6):620--631.
+
+\harvarditem[Wenbo, Yao \harvardand\ Zhang]{Wenbo, Yao \harvardand\
+  Zhang}{2014}{wenbo2014performance}
+Wenbo, Chen, Yucheng Yao \harvardand\ Yang Zhang. 2014.
+\newblock Performance analysis of parallel smoothed particle hydrodynamics on
+  multi-core CPUs.  In {\em Cloud Computing and Internet of Things (CCIOT),
+  2014 International Conference on}.
+\newblock IEEE pp.~85--90.
+
+\harvarditem[Whitaker et~al.]{Whitaker, Compo, Wei \harvardand\
+  Hamill}{2004}{whitaker2004reanalysis}
+Whitaker, Jeffrey~S, Gilbert~P Compo, Xue Wei \harvardand\ Thomas~M Hamill.
+  2004.
+\newblock ``Reanalysis without radiosondes using ensemble data assimilation.''
+  {\em Monthly Weather Review} 132(5):1190--1200.
+
+\harvarditem[Wilson et~al.]{Wilson, Sparks, Huang \harvardand\
+  Watkins}{1978}{wilson1978control}
+Wilson, L, RSJ Sparks, TC Huang \harvardand\ ND Watkins. 1978.
+\newblock ``The control of volcanic column heights by eruption energetics and
+  dynamics.'' {\em Journal of Geophysical Research: Solid Earth (1978--2012)}
+  83(B4):1829--1836.
+
+\harvarditem[Witham et~al.]{Witham, Hort, Potts, Servranckx, Husson
+  \harvardand\ Bonnardot}{2007}{witham2007comparison}
+Witham, CS, MC Hort, R Potts, R Servranckx, P Husson \harvardand\ F Bonnardot.
+  2007.
+\newblock ``Comparison of VAAC atmospheric dispersion models using the 1
+  November 2004 Grimsv{\"o}tn eruption.'' {\em Meteorological Applications}
+  14(1):27--38.
+
+\harvarditem[Woodhouse et~al.]{Woodhouse, Hogg, Phillips \harvardand\
+  Sparks}{2013}{woodhouse2013interaction}
+Woodhouse, MJ, AJ Hogg, JC Phillips \harvardand\ RSJ Sparks. 2013.
+\newblock ``Interaction between volcanic plumes and wind during the 2010
+  Eyjafjallaj{\"o}kull eruption, Iceland.'' {\em Journal of Geophysical
+  Research: Solid Earth} 118(1):92--109.
+
+\harvarditem{Woods}{1993}{woods1993moist}
+Woods, Andrew~W. 1993.
+\newblock ``Moist convection and the injection of volcanic ash into the
+  atmosphere.'' {\em Journal of Geophysical Research: Solid Earth (1978--2012)}
+  98(B10):17627--17636.
+
+\harvarditem{Woods \harvardand\ Bursik}{1991}{woods1991particle}
+Woods, Andrew~W \harvardand\ Marcus~I Bursik. 1991.
+\newblock ``Particle fallout, thermal disequilibrium and volcanic plumes.''
+  {\em Bulletin of Volcanology} 53(7):559--570.
+
+\harvarditem{Woods \harvardand\ Bower}{1995}{woods1995decompression}
+Woods, Andrew~W \harvardand\ Sally~M Bower. 1995.
+\newblock ``The decompression of volcanic jets in a crater during explosive
+  volcanic eruptions.'' {\em Earth and Planetary Science Letters}
+  131(3):189--205.
+
+\harvarditem{Woods}{1988}{woods1988fluid}
+Woods, AW. 1988.
+\newblock ``The fluid dynamics and thermodynamics of eruption columns.'' {\em
+  Bulletin of Volcanology} 50(3):169--193.
+
+\harvarditem{Wrobel \harvardand\ Brebbia}{1991}{wrobel1991computational}
+Wrobel, Luiz~C \harvardand\ CA Brebbia. 1991.
+\newblock {\em Computational Modelling of Free and Moving Boundary Problems:
+  Fluid flow}.
+\newblock Vol.~1 Walter de Gruyter.
+
+\harvarditem{Youngs}{1982}{youngs1982time}
+Youngs, David~L. 1982.
+\newblock ``Time-dependent multi-material flow with large fluid distortion.''
+  {\em Numerical methods for fluid dynamics} 24(2):273--285.
+
 \end{thebibliography}

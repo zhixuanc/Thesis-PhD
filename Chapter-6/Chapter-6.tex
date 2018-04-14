@@ -1,50 +1,7 @@
 \chapter{Verification and Case Studies}
 
 \section{Introduction}
-SPH is a mesh-free Lagragian method. In SPH, the domain is discretized by a set of particles or discretization points and the position of each particle is updated at every time step based on the motion computed. Approximation of all field variables (velocity, density and pressure, ect.) is obtained by interpolation based on discretization points. The physical laws (such as conservation laws of mass, momentum and energy) written in the form of PDEs (partial differential equations)  or ODEs (ordinary differential equations) need to be transformed into the Lagrangian particle formalism of SPH. Using a kernel function that provides the weighted estimation of the field variables at any point, the integral equations are estimated as sums over particles in a compact subdomain defined by the support of the kernel function associated with the discretization points. Thus, field variables associated to the particle are updated based on its neighbors. Each kernel function has a compact support determined by smoothing length of each particle. There are several review papers by \citet{monaghan1992smoothed, monaghan2005smoothed, rosswog2009astrophysical, price2012smoothed, monaghan2012smoothed}, giving a pretty comprehensive view over SPH. We only refer here to the representation of the constitutive equations in SPH and put more focus on specific numerical techniques for plume modeling.
-
-We present a series of numerical simulations to verify and validate our model in this section. Plume-SPH is first verified by 1D shock tube tests then by a JPUE (jet or plume that is ejected from a nozzle into a uniform environment) simulation. Velocity and mass fraction distribution both along the central axis and cross transverse are compared with experimental results. The pattern of ambient particles entrainment is also clearly shown. Then a simulation of representative strong volcanic plume is conducted. Integrated local variable are comparable with simulation results from existing 3D plume models.
-
-\section{1D Shock Tube Tests}
-1D shock tube tests are first conducted to verify our code. Input parameter of each tests can be found in Table \ref{tab:1D-shock-input_parameters}. These tests can represent typical cases in 1D.
-Test 1 consists of a left rarefaction, a right travelling contact and a right shock. Density decreases at down wind of contact wave.
-Test 2 also consists of a left rarefaction, a right travelling contact and a right shock. Density increases at down wind of contact wave.
-Test 3 is a double expansion test with different initial dnesity.
-
-\begin{table}[htp]
-\centering
-      \caption{Input parameters of 1D shock tube tests}		
-	  \begin{tabular}{lrrrrrrr}
-	    \hline
-	          & $\rho_L$ & $p_L$ &$v_L$ & $\rho_R$ & $p_R$ &$v_R$ & $t_f$\\
-	    \hline
-	    Test 1 & $1.0$ & $1.0$ &$0$ & $0.5$ & $0.2$ &$0$ & $0.2$\\
-	    Test 2 & $1.0$ & $1.0$ &$0$ & $0.25$ & $0.1795$ &$0$ & $0.17$\\
-	    	Test 3 & $2.0$ & $1.95$ &$1.0$ & $1.0$ & $1.95$ &$-1.0$ & $0.13$\\
-	    \hline
-	  \end{tabular}
-	  \label{tab:1D-shock-input_parameters}
-\end{table}
-
-In  table \ref{tab:1D-shock-input_parameters},  subscript $L$ refers left side and $R$ for right side, $t_f$ is the total simulation time. The initial interval between two adjcent particles is 0.03. The computational domain is $[-0.4, 0.4]$. The specific internal energy is is compared against exact solutions. As shown in Fig. \ref{fig:1D-shock-tests-verification}, the position and magnitude of the waves are correctly predicted. The fluctuations near the contact discontinuity are caused by sharp change of smoothing length.
-
-\begin{figure}[!htb]
-    \centering
-    \begin{minipage}{.325\textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/GSPH-Sod-verification-e}
-    \end{minipage}%
-    \begin{minipage}{.325 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/Sod-verification-e}
-    \end{minipage}%
-    \begin{minipage}{.325 \textwidth}
-        \centering
-        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/d-exp-verification-e}
-    \end{minipage}%   
-    \caption{Comparison of specific internal energy of simulation results agaist analytical results for shock tube tests. The plots from left to right are corresponding to test 1, test 2 and test 3 respectively.}
-    \label{fig:1D-shock-tests-verification}
-\end{figure}
+We present a series of numerical simulations to verify and validate our model in this section. Plume-SPH has been verified by comprehensive 1D shock tube tests in previous chapter. In this chapter, it will be further verified by a JPUE (jet or plume that is ejected from a nozzle into a uniform environment) simulation. Velocity and mass fraction distribution both along the central axis and cross transverse are compared with experimental results. The pattern of ambient particles entrainment is also clearly shown. Then a simulation of representative strong volcanic plume, the Pinatubo eruption at June 15th 1991, is conducted. Integrated local variable are comparable with simulation results from existing 3D plume models.
 
 \section{Simulation of JPUE}
 JPUE can be considered as a simplified volcanic plume. While the effect of stratified atmosphere and the effect of expansion due to high temperature in volcanic plume are not represented, JPUE reproduces the entrainment due to turbulent mixing which is one of the key elements in volcanic plume development. There exist consistently good experimental data \citep { list1982turbulent,dimotakis1983structure, papanicolaou1988investigations, ezzamel2015dynamical} that describe the JPUE flow field giving an insight into details of JPUE, such as transverse velocity and concentration profile. In this section, we verify that our code and the $SPH-\varepsilon$ turbulence model is able to reproduce feature of turbulent entrainment by a JPUE simulation.
@@ -63,6 +20,7 @@ where $c$ is the speed of sound in the liquid. The energy equation is actually d
 One overall feature of JPUE is "self-similarity" which means that the evolution of the JPUE is determined solely by the local scale of length and velocity which theoretically account for the fact that the rate of entrainment at the edge of JPUE is proportional to a characteristic velocity at each height. As a results, physical and numerical experiments do not necessary to have exactly the same setups and are compared on a non-dimensional basis.
 
 \begin{table}[htp]
+\centering
 	\begin{centering}
       \caption{List of eruption condition for the test cases}		
 	  \begin{tabular}{lrrr}
@@ -107,29 +65,6 @@ One overall feature of JPUE is "self-similarity" which means that the evolution 
     \caption{The left plot is normalized jet width (which determined based on velocity) along the centerline. The right plot shows normalized concentration along the centerline.}
     \label{fig:JPUE_along-axis}
 \end{figure}
-%
-%\begin{figure}
-%\includegraphics[width=8cm]{vel_cross}
-%\caption{Dimensionless velocity distribution across the cross-section.}
-%\label{fig:JPUE_cross-section_vel}
-%\end{figure}
-%
-%\begin{figure}
-%\includegraphics[width=8cm]{conc_cross}
-%\caption{Dimensionless concentration distribution across the cross-section.}
-%\label{fig:JPUE_cross-section_conc}
-%\end{figure}
-
-%\begin{figure}
-%\includegraphics[width=8cm]{velo_along_axis}
-%\caption{Dimensionless velocity and concentration distribution along centraline.}
-%\label{fig:JPUE_along-axis_vel}
-%\end{figure}
-%\begin{figure}
-%\includegraphics[width=8cm]{conc_along_axis}
-%\caption{Dimensionless concetration distribution along centraline.}
-%\label{fig:JPUE_along-axis_conc}
-%\end{figure}
 
 A three dimensional axisymmetric JPUE which ejects from a round vent is simulated with eruption parameters listed in Table \ref{tab:input_parameters}. Material properties of water are used as material properties for both phases. The results are compared with experiments \citep {george1977turbulence, papanicolaou1988investigations} for verification purposes. Experimental data of concentration and velocity distribution across the cross-section were fit into a Gaussian profile (See Eq. (\ref{eq:JPUE-experiment-fit-corss})) by \citet{papanicolaou1988investigations} and  \citet{ george1977turbulence} even though the actual profile are slightly different from the Gaussian profile.
 
@@ -156,12 +91,11 @@ $intercept$ for jet width based on velocity is 2.58 while that for the concentra
 Although both velocity and concentration are found to be well matched with experimental results, a small disparity in both velocity and concentration are observed near the boundary of the jet. Which is possibly caused by overestimating of the drag effect by standard SPH \citep {ritchie2001multiphase}. \citet {ritchie2001multiphase} also proposed an alternative way for density update which releived the overestimating of the drag effect. However, how well does his method conserve mass is not clear. There are several other factors that might also attribute to such disparity. Reynolds number is not reported in many experiments assuming a high enough Reynolds number. In addition, some details of the experiments, such as exit velocity profile and viscosity of the experimental liquid, are not reported. These factors prevent us from numerically reproducing these experiments in an exact way as they were conducted. However, the features of JPUE are correctly reproduced with our code.
 
 We also investigated the mixing due to turbulence in JPUE simulation by checking the mixture of the two phases. It is shown in Fig. \ref{fig:Turb_mixing} that the ejected material and ambient fluids are mixed through eddies at the outer shear region. And the inner dense core dispersed gradually due to erosion of the outer shear region. Hence, our confidence in the numerical correctness of our code is greatly reinforced.
-%What need to be noticed is that the mass of particle of phase 1 (blue) is 8 time of that of phase 2 (red). It is a trade off between resolution and computational expense to give particle of two phases different particles mass. Both advanced SPH techniques like adaptive particles size and better data management and access strategies need to be exploited to address this issue.
 
 \begin{figure}
+\centering
 \includegraphics[width=8cm]{Chapter-6/Figures/JPUE_entrainment.png}
 \caption{The left figure shows particle distribution. Particles of phase 1 (blue) are gradually entrained and mixed with erupted particles (red) as jet flows down stream. The right figure shows the mass fraction of erupted material at the moment corresponding to the left figure.}
-%What need to be noticed is that the mass of particle of phase 1 (blue) is 8 time of that of phase 2 (red). It is a trade off between resolution and computational expense to give particle of two phases different particles mass.
 \label{fig:Turb_mixing}
 \end{figure}
 
@@ -175,6 +109,7 @@ Eruption parameters, material properties and atmosphere are chosen to be the sam
 Vertical distribution of temperature, pressure and density is used to establish stratified atmosphere. Wind velocity and specific humidity are not used in our simulation even though they were also provided in Fig. 1B \citep{costa2016results}. Material properties, shown in Table \ref{tab:material_properties}, are selected based on properties of Pinatubo and Shinmoe-dake eruption. Other material properties not given in the table can be inferred from these given parameters based on their relationships.
 
 \begin{table}[htp]
+\centering
 	\begin{centering}
       \caption{List of material properties}		
 	  \begin{tabular}{lrrr}
