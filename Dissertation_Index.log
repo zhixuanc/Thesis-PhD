@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  13 APR 2018 23:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  15 APR 2018 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2406,68 +2406,67 @@ Package pdftex.def Info: Chapter-6/Figures/JPUE_entrainment.png used on input l
 ine 97.
 (pdftex.def)             Requested size: 227.62204pt x 182.95639pt.
  [102 <./Chapter-6/Figures/JPUE_entrainment.png (PNG copy)>]
-<Chapter-6/Figures/mssfrc-Diverging.png, id=865, 915.42pt x 796.9775pt>
-File: Chapter-6/Figures/mssfrc-Diverging.png Graphic file (type png)
+<Chapter-6/Figures/mssfrc-Diverging.jpg, id=865, 1168.365pt x 796.9775pt>
+File: Chapter-6/Figures/mssfrc-Diverging.jpg Graphic file (type jpg)
 
-<use Chapter-6/Figures/mssfrc-Diverging.png>
-Package pdftex.def Info: Chapter-6/Figures/mssfrc-Diverging.png used on input l
+<use Chapter-6/Figures/mssfrc-Diverging.jpg>
+Package pdftex.def Info: Chapter-6/Figures/mssfrc-Diverging.jpg used on input l
 ine 138.
-(pdftex.def)             Requested size: 186.7383pt x 162.57881pt.
+(pdftex.def)             Requested size: 186.7383pt x 127.37306pt.
 
-<Chapter-6/Figures/mssfrc-Diverging-cut.png, id=866, 915.42pt x 796.9775pt>
-File: Chapter-6/Figures/mssfrc-Diverging-cut.png Graphic file (type png)
+<Chapter-6/Figures/mssfrc-Diverging-cut.jpg, id=866, 1168.365pt x 796.9775pt>
+File: Chapter-6/Figures/mssfrc-Diverging-cut.jpg Graphic file (type jpg)
 
-<use Chapter-6/Figures/mssfrc-Diverging-cut.png>
-Package pdftex.def Info: Chapter-6/Figures/mssfrc-Diverging-cut.png used on inp
+<use Chapter-6/Figures/mssfrc-Diverging-cut.jpg>
+Package pdftex.def Info: Chapter-6/Figures/mssfrc-Diverging-cut.jpg used on inp
 ut line 142.
-(pdftex.def)             Requested size: 186.7383pt x 162.57881pt.
-Package epstopdf Info: Source file: <Chapter-6/Figures/gmd-mssfrc-yz.eps>
-(epstopdf)                    date: 2017-09-06 13:37:01
-(epstopdf)                    size: 1207711 bytes
-(epstopdf)             Output file: <Chapter-6/Figures/gmd-mssfrc-yz-eps-conver
+(pdftex.def)             Requested size: 186.7383pt x 127.37306pt.
+Package epstopdf Info: Source file: <Chapter-6/Figures/gmd-mssfrc-xz.eps>
+(epstopdf)                    date: 2018-01-28 21:27:45
+(epstopdf)                    size: 1207535 bytes
+(epstopdf)             Output file: <Chapter-6/Figures/gmd-mssfrc-xz-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2018-02-21 21:59:18
-(epstopdf)                    size: 1205539 bytes
+(epstopdf)                    date: 2018-04-15 17:36:41
+(epstopdf)                    size: 1190704 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-6/Figures/gmd-mssf
-rc-yz-eps-converted-to.pdf Chapter-6/Figures/gmd-mssfrc-yz.eps>
+rc-xz-eps-converted-to.pdf Chapter-6/Figures/gmd-mssfrc-xz.eps>
 (epstopdf)             \includegraphics on input line 147.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/gmd-mssfrc-yz-eps-converted-to.pdf, id=867, 926.46124pt x 74
-6.79pt>
-File: Chapter-6/Figures/gmd-mssfrc-yz-eps-converted-to.pdf Graphic file (type p
+<Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf, id=867, 1027.84pt x 747.
+79375pt>
+File: Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf Graphic file (type p
 df)
- <use Chapter-6/Figures/gmd-mssfrc-yz-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-6/Figures/gmd-mssfrc-yz-eps-converted-to.pdf u
+ <use Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf u
 sed on input line 147.
-(pdftex.def)             Requested size: 186.7383pt x 150.51764pt.
-Package epstopdf Info: Source file: <Chapter-6/Figures/gmd-mssfrc-yz-zoomed.eps
+(pdftex.def)             Requested size: 186.7383pt x 135.8522pt.
+Package epstopdf Info: Source file: <Chapter-6/Figures/gmd-mssfrc-xz-zoomed.eps
 >
-(epstopdf)                    date: 2017-09-06 13:36:52
-(epstopdf)                    size: 129495 bytes
-(epstopdf)             Output file: <Chapter-6/Figures/gmd-mssfrc-yz-zoomed-eps
+(epstopdf)                    date: 2018-01-28 21:25:21
+(epstopdf)                    size: 225938 bytes
+(epstopdf)             Output file: <Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2018-02-21 21:59:20
-(epstopdf)                    size: 135807 bytes
+(epstopdf)                    date: 2018-04-15 17:36:42
+(epstopdf)                    size: 223611 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-6/Figures/gmd-mssf
-rc-yz-zoomed-eps-converted-to.pdf Chapter-6/Figures/gmd-mssfrc-yz-zoomed.eps>
+rc-xz-zoomed-eps-converted-to.pdf Chapter-6/Figures/gmd-mssfrc-xz-zoomed.eps>
 (epstopdf)             \includegraphics on input line 151.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/gmd-mssfrc-yz-zoomed-eps-converted-to.pdf, id=868, 926.46124
-pt x 746.79pt>
-File: Chapter-6/Figures/gmd-mssfrc-yz-zoomed-eps-converted-to.pdf Graphic file 
+<Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf, id=868, 1027.84pt
+ x 747.79375pt>
+File: Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf Graphic file 
 (type pdf)
 
-<use Chapter-6/Figures/gmd-mssfrc-yz-zoomed-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-6/Figures/gmd-mssfrc-yz-zoomed-eps-converted-t
+<use Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-t
 o.pdf used on input line 151.
-(pdftex.def)             Requested size: 186.7383pt x 150.51764pt.
+(pdftex.def)             Requested size: 186.7383pt x 135.8522pt.
  [103]
-[104 <./Chapter-6/Figures/mssfrc-Diverging.png (PNG copy)> <./Chapter-6/Figures
-/mssfrc-Diverging-cut.png (PNG copy)> <./Chapter-6/Figures/gmd-mssfrc-yz-eps-co
-nverted-to.pdf> <./Chapter-6/Figures/gmd-mssfrc-yz-zoomed-eps-converted-to.pdf>
-]
+[104 <./Chapter-6/Figures/mssfrc-Diverging.jpg> <./Chapter-6/Figures/mssfrc-Div
+erging-cut.jpg> <./Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf> <./Cha
+pter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter-6/Figures/Temp.eps>
 (epstopdf)                    date: 2017-02-24 12:37:34
 (epstopdf)                    size: 94549 bytes
@@ -2553,19 +2552,17 @@ df)
 Package pdftex.def Info: Chapter-6/Figures/radius_strong-eps-converted-to.pdf u
 sed on input line 204.
 (pdftex.def)             Requested size: 199.16928pt x 147.45558pt.
- [106]
-[107 <./Chapter-6/Figures/density_strong-eps-converted-to.pdf> <./Chapter-6/Fig
-ures/radius_strong-eps-converted-to.pdf>]) [108] [109]
+ [106 <./Chapter-6/Figures/density_strong-eps-converted-to.pdf>] [107 <./Chapte
+r-6/Figures/radius_strong-eps-converted-to.pdf>]) [108]
 \openout2 = `Chapter-7/Chapter-7.aux'.
 
-
-(./Chapter-7/Chapter-7.tex
+ (./Chapter-7/Chapter-7.tex
 Chapter 7.
-[110
+[109
 
 
 
-] [111]
+] [110]
 Overfull \hbox (1.61829pt too wide) in paragraph at lines 19--20
 []\OT1/ppl/m/n/12 We choose PUFF (Searcy, Dean and Stringer, 1998) as the VATD 
 model among|
@@ -2577,11 +2574,11 @@ Overfull \hbox (24.3266pt too wide) in paragraph at lines 23--24
 ish, 2013; de'Michieli|
  []
 
-[112]
+[111]
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ° in font pplr7t!
- [113] [114]
-<Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg, id=972, 1007.765pt x 796.9
+ [112] [113]
+<Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg, id=969, 1007.765pt x 796.9
 775pt>
 File: Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg Graphic file (type jpg
 )
@@ -2590,7 +2587,7 @@ Package pdftex.def Info: Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg use
 d on input line 48.
 (pdftex.def)             Requested size: 134.8662pt x 106.65092pt.
 
-<Chapter-7/Figures/mssfrc_top-with-axis.jpg, id=973, 1007.765pt x 796.9775pt>
+<Chapter-7/Figures/mssfrc_top-with-axis.jpg, id=970, 1007.765pt x 796.9775pt>
 File: Chapter-7/Figures/mssfrc_top-with-axis.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/mssfrc_top-with-axis.jpg>
@@ -2598,14 +2595,14 @@ Package pdftex.def Info: Chapter-7/Figures/mssfrc_top-with-axis.jpg used on inp
 ut line 52.
 (pdftex.def)             Requested size: 134.8662pt x 106.65092pt.
 
-<Chapter-7/Figures/mssfrc_front-z15000.jpg, id=974, 1007.765pt x 796.9775pt>
+<Chapter-7/Figures/mssfrc_front-z15000.jpg, id=971, 1007.765pt x 796.9775pt>
 File: Chapter-7/Figures/mssfrc_front-z15000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/mssfrc_front-z15000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/mssfrc_front-z15000.jpg used on inpu
 t line 56.
 (pdftex.def)             Requested size: 134.8662pt x 106.65092pt.
- [115]
+ [114]
 Underfull \hbox (badness 10000) in paragraph at lines 69--70
 \OT1/ppl/m/n/12 of par-ti-
  []
@@ -2685,19 +2682,19 @@ Overfull \hbox (63.1723pt too wide) in paragraph at lines 67--77
  [][] |
  []
 
-[116 <./Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg> <./Chapter-7/Figure
+[115 <./Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg> <./Chapter-7/Figure
 s/mssfrc_top-with-axis.jpg> <./Chapter-7/Figures/mssfrc_front-z15000.jpg>]
 
-LaTeX Warning: Reference `tab:sensitivity-start-end-time' on page 117 undefined
+LaTeX Warning: Reference `tab:sensitivity-start-end-time' on page 116 undefined
  on input line 88.
 
-[117]
+[116]
 Overfull \hbox (30.6365pt too wide) in paragraph at lines 96--108
  [][] |
  []
 
 
-<Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg, id=984, 1766.6pt x 995.72
+<Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg, id=981, 1766.6pt x 995.72
 pt>
 File: Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg Graphic file (type jp
 g)
@@ -2706,7 +2703,7 @@ Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg us
 ed on input line 114.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg, id=985, 1766.6pt x 995.72
+<Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg, id=982, 1766.6pt x 995.72
 pt>
 File: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg Graphic file (type jp
 g)
@@ -2715,7 +2712,7 @@ Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg us
 ed on input line 118.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg, id=986, 1766.6pt x 995.7
+<Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg, id=983, 1766.6pt x 995.7
 2pt>
 File: Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg Graphic file (type j
 pg)
@@ -2723,8 +2720,8 @@ pg)
 Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg u
 sed on input line 122.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
- [118]
-<Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg, id=990, 1766.6pt x 995.72p
+ [117]
+<Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg, id=987, 1766.6pt x 995.72p
 t>
 File: Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg Graphic file (type jpg
 )
@@ -2739,10 +2736,10 @@ g)
 Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg us
 ed on input line 138.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
- [119 <./Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg> <./Chapter-7/Figu
+ [118 <./Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg> <./Chapter-7/Figu
 res/199106180441-ash-9hr-cut15000.jpg> <./Chapter-7/Figures/199106180441-ash-11
 hr-cut15000.jpg> <./Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg>]
-<Chapter-7/Figures/bent-23hr-ash.jpg, id=995, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-23hr-ash.jpg, id=991, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-23hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-23hr-ash.jpg>
@@ -2750,7 +2747,7 @@ Package pdftex.def Info: Chapter-7/Figures/bent-23hr-ash.jpg used on input line
  214.
 (pdftex.def)             Requested size: 134.8662pt x 68.77557pt.
 
-<Chapter-7/Figures/SPH-Plume-23hr-ash.jpg, id=996, 1766.6pt x 995.72pt>
+<Chapter-7/Figures/SPH-Plume-23hr-ash.jpg, id=992, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-23hr-ash.jpg>
@@ -2758,7 +2755,7 @@ Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg used on input
  line 218.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-ash-23hr-ash.png, id=997, 571.13374pt x 375.4025pt>
+<Chapter-7/Figures/OB-ash-23hr-ash.png, id=993, 571.13374pt x 375.4025pt>
 File: Chapter-7/Figures/OB-ash-23hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-ash-23hr-ash.png>
@@ -2766,7 +2763,7 @@ Package pdftex.def Info: Chapter-7/Figures/OB-ash-23hr-ash.png used on input li
 ne 222.
 (pdftex.def)             Requested size: 134.8662pt x 88.64348pt.
 
-<Chapter-7/Figures/bent-31hr-ash.jpg, id=999, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-31hr-ash.jpg, id=995, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-31hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-31hr-ash.jpg>
@@ -2774,7 +2771,7 @@ Package pdftex.def Info: Chapter-7/Figures/bent-31hr-ash.jpg used on input line
  227.
 (pdftex.def)             Requested size: 134.8662pt x 68.77557pt.
 
-<Chapter-7/Figures/SPH-Plume-31hr-ash.jpg, id=1000, 1766.6pt x 995.72pt>
+<Chapter-7/Figures/SPH-Plume-31hr-ash.jpg, id=996, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-31hr-ash.jpg>
@@ -2782,7 +2779,7 @@ Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg used on input
  line 231.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-ash-31hr-ash.png, id=1001, 570.13pt x 372.39125pt>
+<Chapter-7/Figures/OB-ash-31hr-ash.png, id=997, 570.13pt x 372.39125pt>
 File: Chapter-7/Figures/OB-ash-31hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-ash-31hr-ash.png>
@@ -2790,7 +2787,7 @@ Package pdftex.def Info: Chapter-7/Figures/OB-ash-31hr-ash.png used on input li
 ne 235.
 (pdftex.def)             Requested size: 134.8662pt x 88.08585pt.
 
-<Chapter-7/Figures/bent-55hr-ash.jpg, id=1002, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash.jpg, id=998, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash.jpg>
@@ -2798,7 +2795,7 @@ Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash.jpg used on input line
  240.
 (pdftex.def)             Requested size: 134.8662pt x 68.77557pt.
 
-<Chapter-7/Figures/SPH-Plume-55hr-ash.jpg, id=1003, 1766.6pt x 995.72pt>
+<Chapter-7/Figures/SPH-Plume-55hr-ash.jpg, id=999, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-55hr-ash.jpg>
@@ -2806,7 +2803,7 @@ Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg used on input
  line 244.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-ash-55hr-ash.png, id=1004, 569.12625pt x 374.39874pt>
+<Chapter-7/Figures/OB-ash-55hr-ash.png, id=1000, 569.12625pt x 374.39874pt>
 File: Chapter-7/Figures/OB-ash-55hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-ash-55hr-ash.png>
@@ -2825,17 +2822,17 @@ Overfull \hbox (27.79332pt too wide) in paragraph at lines 254--256
  phase, ``Plume-SPH+PUFF"|
  []
 
-[120] [121]
+[119] [120]
 
-Package natbib Warning: Citation `lynch1996mount' on page 122 undefined on inpu
+Package natbib Warning: Citation `lynch1996mount' on page 121 undefined on inpu
 t line 259.
 
-[122 <./Chapter-7/Figures/bent-23hr-ash.jpg> <./Chapter-7/Figures/SPH-Plume-23h
+[121 <./Chapter-7/Figures/bent-23hr-ash.jpg> <./Chapter-7/Figures/SPH-Plume-23h
 r-ash.jpg> <./Chapter-7/Figures/OB-ash-23hr-ash.png> <./Chapter-7/Figures/bent-
 31hr-ash.jpg> <./Chapter-7/Figures/SPH-Plume-31hr-ash.jpg> <./Chapter-7/Figures
 /OB-ash-31hr-ash.png> <./Chapter-7/Figures/bent-55hr-ash.jpg> <./Chapter-7/Figu
-res/SPH-Plume-55hr-ash.jpg> <./Chapter-7/Figures/OB-ash-55hr-ash.png>] [123]
-<Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png, id=1020, 562.1pt x 
+res/SPH-Plume-55hr-ash.jpg> <./Chapter-7/Figures/OB-ash-55hr-ash.png>] [122]
+<Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png, id=1017, 562.1pt x 
 702.625pt>
 File: Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png Graphic file (t
 ype png)
@@ -2844,7 +2841,7 @@ Package pdftex.def Info: Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.
 png used on input line 288.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Plume-SPH-ParticleDis-z.png, id=1021, 562.1pt x 702.625pt>
+<Chapter-7/Figures/Plume-SPH-ParticleDis-z.png, id=1018, 562.1pt x 702.625pt>
 File: Chapter-7/Figures/Plume-SPH-ParticleDis-z.png Graphic file (type png)
 
 <use Chapter-7/Figures/Plume-SPH-ParticleDis-z.png>
@@ -2852,7 +2849,7 @@ Package pdftex.def Info: Chapter-7/Figures/Plume-SPH-ParticleDis-z.png used on
 input line 292.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png, id=1022, 562.1pt x 696.60
+<Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png, id=1019, 562.1pt x 696.60
 25pt>
 File: Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png Graphic file (type pn
 g)
@@ -2861,7 +2858,7 @@ Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png us
 ed on input line 296.
 (pdftex.def)             Requested size: 102.49678pt x 127.01994pt.
 
-<Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png, id=1023, 562.1pt x 702.625
+<Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png, id=1020, 562.1pt x 702.625
 pt>
 File: Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png Graphic file (type png
 )
@@ -2869,8 +2866,8 @@ File: Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png Graphic file (type png
 Package pdftex.def Info: Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png use
 d on input line 300.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
- [124]
-<Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png, id=1027, 562.1pt x 702.62
+ [123]
+<Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png, id=1024, 562.1pt x 702.62
 5pt>
 File: Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png Graphic file (type pn
 g)
@@ -2879,7 +2876,7 @@ Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png us
 ed on input line 312.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png, id=1028, 562.1pt x 702.62
+<Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png, id=1025, 562.1pt x 702.62
 5pt>
 File: Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png Graphic file (type pn
 g)
@@ -2888,7 +2885,7 @@ Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png us
 ed on input line 316.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png, id=1029, 562.1pt x 702.62
+<Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png, id=1026, 562.1pt x 702.62
 5pt>
 File: Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png Graphic file (type pn
 g)
@@ -2897,7 +2894,7 @@ Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png us
 ed on input line 320.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png, id=1030, 562.1pt x 702.62
+<Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png, id=1027, 562.1pt x 702.62
 5pt>
 File: Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png Graphic file (type pn
 g)
@@ -2906,7 +2903,7 @@ Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png us
 ed on input line 324.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg, id=1031, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg, id=1028, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg>
@@ -2914,7 +2911,7 @@ Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg used on
 input line 334.
 (pdftex.def)             Requested size: 101.66728pt x 51.841pt.
 
-<Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg, id=1032, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg, id=1029, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg>
@@ -2922,7 +2919,7 @@ Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg used on
 input line 338.
 (pdftex.def)             Requested size: 101.66728pt x 51.841pt.
 
-<Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg, id=1033, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg, id=1030, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg>
@@ -2930,24 +2927,24 @@ Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg used on
 input line 342.
 (pdftex.def)             Requested size: 101.66728pt x 51.841pt.
 
-<Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg, id=1034, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg, id=1031, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg used on 
 input line 346.
 (pdftex.def)             Requested size: 101.66728pt x 51.841pt.
- [125 <./Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png (PNG copy)> 
+ [124 <./Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png (PNG copy)> 
 <./Chapter-7/Figures/Plume-SPH-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figur
 es/Possion-Hmax40k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/Suzuki-Hm
-ax40k-ParticleDis-z.png (PNG copy)>] [126 <./Chapter-7/Figures/Possion-Hmax10k-
+ax40k-ParticleDis-z.png (PNG copy)>] [125 <./Chapter-7/Figures/Possion-Hmax10k-
 ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/Possion-Hmax20k-ParticleDis-
 z.png (PNG copy)> <./Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png (PNG c
 opy)> <./Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png (PNG copy)> <./Cha
 pter-7/Figures/bent-55hr-ash-MaxH10000.jpg> <./Chapter-7/Figures/bent-55hr-ash-
 MaxH20000.jpg> <./Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg> <./Chapter-7/F
-igures/bent-55hr-ash-MaxH35000.jpg>] [127]
-<Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg, id=1045, 1766.6pt x 995.72pt>
+igures/bent-55hr-ash-MaxH35000.jpg>] [126]
+<Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg, id=1042, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg>
@@ -2955,7 +2952,7 @@ Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg used on inpu
 t line 365.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-7p3hr-ash.png, id=1046, 568.1225pt x 369.38pt>
+<Chapter-7/Figures/OB-SO2-7p3hr-ash.png, id=1043, 568.1225pt x 369.38pt>
 File: Chapter-7/Figures/OB-SO2-7p3hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-7p3hr-ash.png>
@@ -2969,7 +2966,7 @@ Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg used on input
  line 374.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-23hr-ash.png, id=1047, 570.13pt x 372.39125pt>
+<Chapter-7/Figures/OB-SO2-23hr-ash.png, id=1044, 570.13pt x 372.39125pt>
 File: Chapter-7/Figures/OB-SO2-23hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-23hr-ash.png>
@@ -2983,7 +2980,7 @@ Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg used on input
  line 383.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-31hr-ash.png, id=1048, 571.13374pt x 373.395pt>
+<Chapter-7/Figures/OB-SO2-31hr-ash.png, id=1045, 571.13374pt x 373.395pt>
 File: Chapter-7/Figures/OB-SO2-31hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-31hr-ash.png>
@@ -2997,7 +2994,7 @@ Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg used on input
  line 392.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-55hr-ash.png, id=1049, 568.1225pt x 374.39874pt>
+<Chapter-7/Figures/OB-SO2-55hr-ash.png, id=1046, 568.1225pt x 374.39874pt>
 File: Chapter-7/Figures/OB-SO2-55hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-55hr-ash.png>
@@ -3005,7 +3002,7 @@ Package pdftex.def Info: Chapter-7/Figures/OB-SO2-55hr-ash.png used on input li
 ne 396.
 (pdftex.def)             Requested size: 134.8662pt x 88.87491pt.
 
-<Chapter-7/Figures/SPH-Plume-73hr-ash.jpg, id=1050, 1766.6pt x 995.72pt>
+<Chapter-7/Figures/SPH-Plume-73hr-ash.jpg, id=1047, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-73hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-73hr-ash.jpg>
@@ -3013,41 +3010,41 @@ Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-73hr-ash.jpg used on input
  line 401.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-73hr-ash.png, id=1051, 568.1225pt x 371.3875pt>
+<Chapter-7/Figures/OB-SO2-73hr-ash.png, id=1048, 568.1225pt x 371.3875pt>
 File: Chapter-7/Figures/OB-SO2-73hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-73hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-SO2-73hr-ash.png used on input li
 ne 405.
 (pdftex.def)             Requested size: 134.8662pt x 88.16011pt.
- [128] [129 <./Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg> <./Chapter-7/Figures/
+ [127] [128 <./Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg> <./Chapter-7/Figures/
 OB-SO2-7p3hr-ash.png> <./Chapter-7/Figures/OB-SO2-23hr-ash.png> <./Chapter-7/Fi
 gures/OB-SO2-31hr-ash.png> <./Chapter-7/Figures/OB-SO2-55hr-ash.png> <./Chapter
 -7/Figures/SPH-Plume-73hr-ash.jpg> <./Chapter-7/Figures/OB-SO2-73hr-ash.png>]) 
-[130] [131]
+[129] [130]
 \openout2 = `Chapter-8/Chapter-8.aux'.
 
 
 (./Chapter-8/Chapter-8.tex
 Chapter 8.
-[132
+[131
 
 
 
-] [133]
+] [132]
 
-Package natbib Warning: Citation `lopez2013dynamic' on page 134 undefined on in
+Package natbib Warning: Citation `lopez2013dynamic' on page 133 undefined on in
 put line 16.
 
 
-Package natbib Warning: Citation `draxler2015hysplit' on page 134 undefined on 
+Package natbib Warning: Citation `draxler2015hysplit' on page 133 undefined on 
 input line 16.
 
 
-Package natbib Warning: Citation `vacondio2016variable' on page 134 undefined o
+Package natbib Warning: Citation `vacondio2016variable' on page 133 undefined o
 n input line 16.
 
-[134] [135]
+[133] [134]
 Overfull \hbox (22.12932pt too wide) in paragraph at lines 33--35
 \OT1/ppl/m/n/12 the-sis were car-ried out based on some low ef-fi-cience par-av
 iew based python/matlab|
@@ -3057,18 +3054,18 @@ Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¶ in font pplr7t!
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¶ in font pplr7t!
-[136]
+[135]
 Overfull \hbox (4.67921pt too wide) in paragraph at lines 41--42
 \OT1/ppl/m/n/12 erup-tion pa-ram-e-ters have been con-ducted based on other 1D 
 and 3D plume|
  []
 
-[137]) [138]
+[136]) [137]
 \openout2 = `Appendix-A/Appendix-A.aux'.
 
  (./Appendix-A/Appendix-A.tex
 Appendix A.
-<Appendix-A/Figures/FigA1.png, id=1092, 1447.65843pt x 455.45157pt>
+<Appendix-A/Figures/FigA1.png, id=1089, 1447.65843pt x 455.45157pt>
 File: Appendix-A/Figures/FigA1.png Graphic file (type png)
 
 <use Appendix-A/Figures/FigA1.png>
@@ -3080,12 +3077,12 @@ Overfull \hbox (1.88326pt too wide) in paragraph at lines 14--15
 t ir-reg-u-larly dis-tribute|
  []
 
-[139
+[138
 
 
 
- <./Appendix-A/Figures/FigA1.png>]) [140] (./Dissertation_Index.bbl
-[141
+ <./Appendix-A/Figures/FigA1.png>]) [139] (./Dissertation_Index.bbl
+[140
 
 
 ]
@@ -3094,7 +3091,7 @@ Underfull \hbox (badness 1248) in paragraph at lines 102--105
 lent flows with com-puter pro-grams\OT1/ppl/m/n/12 .
  []
 
-[142]
+[141]
 Underfull \hbox (badness 1210) in paragraph at lines 161--164
 []\OT1/ppl/m/n/12 Cleary, Paul W and Joseph J Mon-aghan. 1999.  ``Con-duc-tion 
 mod-elling
@@ -3103,28 +3100,28 @@ mod-elling
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
-[143]
+[142]
 Underfull \hbox (badness 2435) in paragraph at lines 259--263
 []\OT1/ppl/m/n/12 Dimotakis, Paul E, Richard C Miake-Lye and Dim-itris A Pa-pan
 -to-niou.
  []
 
-[144] [145] [146]
+[143] [144] [145]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ” in font pplr7t!
- [147] [148] [149] [150]
+ [146] [147] [148] [149]
 Underfull \hbox (badness 1043) in paragraph at lines 760--763
 []\OT1/ppl/m/n/12 Puri, Ku-nal and Prabhu Ra-machan-dran. 2014\OT1/ppl/m/it/12 
 b\OT1/ppl/m/n/12 .  ``A com-par-i-son of SPH
  []
 
-[151] [152] [153] [154]) [155] (./SupplementaryMaterial/Vita.tex)
+[150] [151] [152] [153]) [154] (./SupplementaryMaterial/Vita.tex)
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 392.
-[156
+[155
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 392.
@@ -3165,10 +3162,10 @@ st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb>
-Output written on Dissertation_Index.pdf (176 pages, 17586453 bytes).
+Output written on Dissertation_Index.pdf (175 pages, 18461809 bytes).
 PDF statistics:
- 1197 PDF objects out of 1200 (max. 8388607)
- 764 compressed objects within 8 object streams
+ 1194 PDF objects out of 1200 (max. 8388607)
+ 762 compressed objects within 8 object streams
  0 named destinations out of 1000 (max. 500000)
  571 words of extra memory for PDF output out of 10000 (max. 10000000)
 
