@@ -1,8 +1,8 @@
-\chapter{Code Architecture and Parallelism}
+\chapter{Code Architecture and Parallelism} \label{chapter:architecture-parallelism}
 
 \section{Introduction}
 \label{sect:introduction}
-Smoothed particle hydrodynamics (SPH) is a mesh-free scheme, initially developed for astrophysical applications and later extended to computational fluid mechanics. SPH has several features that match well with demands in geophysical flow simulation. It is easier in SPH to include multiple phases and handle complicated geometry and free boundaries. The first implementation of SPH in volcanology was presented by Bursik \cite{bursik2003smoothed} with more developed recently (eg.\cite{ haddad2016smoothed}). The development  of a volcano plume (see Fig. \ref{fig:Plume}) is essentially a multiphase turbulent ejection mixing process accompanied by microphysics phenomena like phase change of water, aggregation, reaction, etc. Accurate prediction of such complicated phenomena in a given time window requires resolution (very high particle counts) that can not be accomplished without parallel computing. Imposing  some types of boundary conditions (such as wind field, eruption boundary condition at the vent) requires dynamically adding and removing particles during simulation. This requires an efficient and flexible data management scheme.\\
+SPH has several features that match well with demands in geophysical flow simulation. It is easier in SPH to include multiple phases and handle complicated geometry and free boundaries. The first implementation of SPH in volcanology was presented by Bursik \cite{bursik2003smoothed} with more developed recently (eg.\cite{ haddad2016smoothed}). The development  of a volcano plume (see Fig. \ref{fig:Plume}) is essentially a multiphase turbulent ejection mixing process accompanied by microphysics phenomena like phase change of water, aggregation, reaction, etc. Accurate prediction of such complicated phenomena in a given time window requires resolution (very high particle counts) that can not be accomplished without parallel computing. Imposing  some types of boundary conditions (such as wind field, eruption boundary condition at the vent) requires dynamically adding and removing particles during simulation. This requires an efficient and flexible data management scheme.\\
 Most implementations of the parallel SPH method presented to date are limited to standard SPH and benchmark problems like dam breaks, or relatively
 simple scenarios like breaking-waves, flooding, etc. Work on more complicated implementations is relatively rare. Among existing CPU parallel SPH schemes, most of them focus on neighbor searching algorithms and dynamic load balancing. (eg. \cite{ferrari2009new, crespo2015dualsphysics}). Less attention has been paid to developing more flexible data management schemes. 
 Fortunately, efficient and flexible data management strategies for parallel computing have been successfully implemented in mesh based methods (eg. \cite{laszloffy2000simple} for adaptive hp finite element method (FEM), and \cite{patra2005parallel} for finite volume method (FVM)). Motivated by these techniques developed for mesh based methods, we present a complete framework for parallelizing SPH program with the MPI standard allowing flexible and efficient data access.\\
@@ -11,7 +11,7 @@ As for the actual storage of data representing the physical quantities associate
 In DualSPHysics\cite{crespo2015dualsphysics}, the physical quantities of each particle (position, velocity, density...) are stored in arrays, and the particles (and the arrays with particle data) are reordered following the order of the cells. It is not flexible enough to add, delete and especially access particles for such fixed-size arrays. Ferrari\cite{ferrari2009new} adopted linked lists using pointers so that particles can be deleted or added during the simulation. Storage problems caused by fixed-size arrays are thereby also eliminated. We adopt hash tables to store pointers to objects of particles and buckets, which give us not only flexibility of deleting and adding of elements, but also quicker access compared with linked lists. A SFC-based index is adopted to give each particle and background bucket an unique identifier -- a strategy known to preserve some locality at minimal cost. The SFC based numbering strategy is further extended to include time step information so that particles added at the same position but different time will have different identifiers. 
 We adopt an easy-programming scheme based on SFC \cite{patra1999efficient} to decompose the domain.\\
 To the best of the author's knowledge, no current implementation of SPH has the feature of adjusting the computational domain based on simulation needs. For volcano plume simulation, this feature will greatly reduce computational cost by avoiding computing of uninfluenced fluids. This feature is accomplished by adding a scan function to monitor the outermost layer of the domain and turn ghost particles to real particles at the proper time thus effectively defining a halo domain with an almost optimally defined size.\\
-\section{Data Structure and Load Balance}
+\section{Data structure and load balance}
 \begin{figure*}[!t]
 \centering
 \includegraphics[scale=0.32]{Chapter-5/Figures/Work_flow}
@@ -65,7 +65,7 @@ Index = hash(key)
 \end{equation}
 Data in a hash table can be accessed with time complexity of O(1) when there is no hash collision. One way to handle hash collisions is to use an additional sorted vector attached to the hash table. When several keys hash to the same index, a vector will be created. The vector is sorted based on keys so that a binary search (with an average time complexity of O(log n)) can be used to find the correct position for adding, deleting or retrieving of data. Another option is using an additional linked list which is more flexible in memory allocation but slower in searching (O(n)). In addition, pointer based memory accessing of linked lists will greatly slow down the efficiency of data access for long linked lists. Choosing the proper way to handle hash conflicts greatly depends on the problem itself. For volcano plume simulation, new particles are added at the bottom of the eruption vent (see Fig. \ref{fig:Particle_adding_with_link}), making the linked list a better choice. Pointers to these new particles will be stored in external linked lists as shown in Fig. \ref{fig:Particle_adding_with_link}.
 \begin{figure}
-\center
+\centering
 {\includegraphics[scale=0.28]{Chapter-5/Figures/Particle_adding_with_link}}
 {\caption{Non-uniform distribution of particles in the $[0,1]^n \times \textbf{T}$ space due to adding of new particles at a small area of the whole domain.}
 \label{fig:Particle_adding_with_link}}
@@ -89,7 +89,7 @@ One natural way to hash time-dependent keys $[k,t]$ is to convert the two elemen
 %\subsubsection{Weighted work load} \label{sec:Weighted_work_load}
 Particles in our problem can be categorized into four types: real particles, wall ghost particles, pressure ghost particles and eruption ghost particles. Ghost particles are for imposition of corresponding boundary conditions (See Fig. \ref{fig:Plume}). As different types of particles involve different amount of computational work, shown by table \ref{tab:Computational_cost_steps}, we assign different work load weights for different types of particles based on profiling data. Instead of simply using number of contained particles as work load for buckets, work load of each bucket is determined by summing up work load weights of all particles within the bucket. The SFC of buckets now becomes a weighted sequence. Domain decomposition  is conducted by cutting the weighted SFC of buckets into pieces. Each piece of the SFC should then have a balanced total work load.
 \begin{figure}
-\center
+\centering
 %\CenterFloatBoxes
 %\ttabbox
 %{	  
@@ -116,7 +116,7 @@ Figure \ref{fig:SFC_domain_decomposition} shows how the domain is decomposed bas
 Movement of particles, addition of new particles, and adjustments of domain will lead to significant load imbalance between processes. To restore load balance, computational load is monitored at a given interval which is optimized based on numerical experiments. Repartitioning is carried out when load imbalance is larger than a given tolerance.
 \\
 As some of the neighbor particles reside in other partitions, a set of ``guest'' particles and buckets are used to synchronize data across partitions. To minimize communications, data is synchronized only where needed, using non-blocking MPI communications. 
-\section{Dynamic Halo Domain} 
+\section{Dynamic halo domain} 
 For plume simulation and similar phenomena, where some fluid ejects into a stationary fluid and gets mixed, the stationary fluid must be represented.
 A lot of CPU time will be spent on computing associated with these stationary particles. If simulation of stationary particles can be avoided, the computational cost will be greatly reduced.
 We propose a simple strategy to add such a feature to our code with low computational cost. We add a scan function to monitor the outermost layer of the domain. When the ejected fluid reaches the boundary of the current domain, pressure ghost particles (light blue particles in the right figure of Fig. \ref{fig:Plume}) will be turned to real particles (red particles in the right figure of Fig. \ref{fig:Plume}) and then add a new layer of pressure ghost particles for pressure boundary conditions. Wall ghost particles (grey particles in the right figure of Fig. \ref{fig:Plume}) will also be added when necessary. The original workflow is modified to enable such a feature. The modified workflow is shown on the right in Fig. \ref{fig:Work_flow}).\\
@@ -134,7 +134,7 @@ A similar scheme is also deployed for buckets resulting in a categorization of b
 \caption{The left figure shows a plume photo of Sakurajima Volcano eruption, the middle figure shows a typical simulation results with the same input parameters as "Run P1" in reference \cite{suzuki2005numerical}. The right figure is a cross-section view of the computational domain, it illustrates how particles are deployed on different boundaries: red are real particles, dark blue are eruption ghost particles, grey are wall ghost particles, the light blue are pressure ghost particles.}
 \label{fig:Plume}
 \end{figure*}
-\section{Numerical Test}
+\section{Numerical test}
 We use the same governing equations and input parameters as the plume simulation presented by Suzuki \cite{suzuki2005numerical}. %Details about discretization of the governing equations will not be covered in this paper, neither. 
 A typical simulation result of volcano plume by our code is shown in Fig. \ref{fig:Plume}.
 %
@@ -156,6 +156,7 @@ The weak scalability test is conducted with the same initial domain as test case
 Right side figure in Fig \ref{fig:2cases_efficiency} shows the timing of a weak scalability test.\\
 \subsection{Effect of workload check interval and calibrated particle weight}
 \begin{figure}
+\centering
 %\CenterFloatBoxes
 %\ttabbox
 {	  
@@ -176,6 +177,7 @@ The best load balance check interval is calibrated based on a series of simulati
 %
 \subsection{Effect of dynamic halo domains}
 \begin{figure}
+\centering
 %\CenterFloatBoxes
 %\begin{floatrow}
 %\ttabbox
@@ -195,8 +197,7 @@ The best load balance check interval is calibrated based on a series of simulati
 }
 {\caption{Computational work load of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain.  Momentum and energy update (UPME) and position update (UPP) also included for comparison.}
 \label{tab:Computational_cost_doamin_adj}}
-%\killfloatstyle
-%\ffigbox
+\centering
 {\includegraphics[scale=0.35]{Chapter-5/Figures/adj_vs_no}}
 {\caption{The figure on the top shows execution time without domain adjusting, the figure on the bottom shows execution time with domain adjusting. Different bins represent execution time up to specific physical time indicated by horizontal axis.}
 \label{fig:adj_vs_no}}

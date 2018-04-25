@@ -1,5 +1,8 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{}{N.d.}{morton1956turbulent}
+ N.d.
+
 \harvarditem[Adami, Hu \harvardand\ Adams]{Adami, Hu \harvardand\
   Adams}{2010}{adami2010new}
 Adami, S, XY Hu \harvardand\ NA Adams. 2010.
@@ -36,10 +39,22 @@ Becker, Markus \harvardand\ Matthias Teschner. 2007.
   of the 2007 ACM SIGGRAPH/Eurographics symposium on Computer animation}.
 \newblock Eurographics Association pp.~209--217.
 
+\harvarditem{Blanc \harvardand\ Pastor}{2012}{blanc2012stabilized}
+Blanc, Thomas \harvardand\ Manuel Pastor. 2012.
+\newblock ``A stabilized Runge--Kutta, Taylor smoothed particle hydrodynamics
+  algorithm for large deformation problems in dynamics.'' {\em International
+  Journal for Numerical Methods in Engineering} 91(13):1427--1458.
+
+\harvarditem{Bonet \harvardand\ Lok}{1999}{bonet1999variational}
+Bonet, J \harvardand\ T-SL Lok. 1999.
+\newblock ``Variational and momentum preservation aspects of smooth particle
+  hydrodynamic formulations.'' {\em Computer Methods in applied mechanics and
+  engineering} 180(1-2):97--115.
+
 \harvarditem[Borgani et~al.]{Borgani, Murante, Brunino \harvardand\
   Cha}{2012}{borgani2012hydrodynamic}
 Borgani, S, G Murante, R Brunino \harvardand\ S-H Cha. 2012.
-\newblock Hydrodynamic simulations with the Godunov SPH.  In {\em Advances in
+\newblock Hydrodynamic Simulations with the Godunov SPH.  In {\em Advances in
   Computational Astrophysics: Methods, Tools, and Outcome}.
 \newblock Vol. 453 p.~259.
 
@@ -253,6 +268,12 @@ Devenish, BJ. 2013.
 \newblock ``Using simple plume models to refine the source mass flux of
   volcanic eruptions according to atmospheric conditions.'' {\em Journal of
   Volcanology and Geothermal Research} 256:118--127.
+
+\harvarditem{Dilts}{1999}{dilts1999moving}
+Dilts, Gary~A. 1999.
+\newblock ``Moving-least-squares-particle hydrodynamics—I. Consistency and
+  stability.'' {\em International Journal for Numerical Methods in Engineering}
+  44(8):1115--1155.
 
 \harvarditem[Dimotakis, Miake-Lye \harvardand\ Papantoniou]{Dimotakis,
   Miake-Lye \harvardand\ Papantoniou}{1983}{dimotakis1983structure}
@@ -555,16 +576,28 @@ Laszloffy, Andras, Jingping Long \harvardand\ Abani~K Patra. 2000.
   managing the irregularities in parallel adaptive hp finite element
   simulations.'' {\em Parallel Computing} 26(13):1765--1788.
 
+\harvarditem{Leonardi \harvardand\ Rung}{2014}{leonardi2014explicit}
+Leonardi, M \harvardand\ T Rung. 2014.
+\newblock Explicit strategies for consistent kernel approximations.  In {\em
+  9th Int. SPHERIC Workshop, Paris (France)}.
+
+\harvarditem{Lind \harvardand\ Stansby}{2016}{lind2016high}
+Lind, SJ \harvardand\ PK Stansby. 2016.
+\newblock ``High-order Eulerian incompressible smoothed particle hydrodynamics
+  with transition to Lagrangian free-surface motion.'' {\em Journal of
+  Computational Physics} 326:290--311.
+
 \harvarditem{List}{1982}{list1982turbulent}
 List, EJ. 1982.
 \newblock ``Turbulent jets and plumes.'' {\em Annual review of fluid mechanics}
   14(1):189--212.
 
-\harvarditem{Liu \harvardand\ Liu}{2010}{liu2010smoothed}
-Liu, MB \harvardand\ GR Liu. 2010.
-\newblock ``Smoothed particle hydrodynamics (SPH): an overview and recent
-  developments.'' {\em Archives of computational methods in engineering}
-  17(1):25--76.
+\harvarditem[L{\'o}pez, Roose \harvardand\ Morfa]{L{\'o}pez, Roose \harvardand\
+  Morfa}{2013}{lopez2013dynamic}
+L{\'o}pez, Yaidel~Reyes, Dirk Roose \harvardand\ Carlos~Recarey Morfa. 2013.
+\newblock ``Dynamic particle refinement in SPH: application to free surface
+  flow and non-cohesive soil simulations.'' {\em Computational Mechanics}
+  51(5):731--741.
 
 \harvarditem{Lucy}{1977}{lucy1977numerical}
 Lucy, Leon~B. 1977.
@@ -576,6 +609,21 @@ Lucy, Leon~B. 1977.
 Luo, Hong, Joseph~D Baum \harvardand\ Rainald L{\"o}hner. 2004.
 \newblock ``On the computation of multi-material flows using ALE formulation.''
   {\em Journal of Computational Physics} 194(1):304--328.
+
+\harvarditem[Lynch, Stephens \harvardand\ Matson]{Lynch, Stephens \harvardand\
+  Matson}{1996}{lynch1996mount}
+Lynch, JS, G Stephens \harvardand\ M Matson. 1996.
+\newblock ``Mount Pinatubo: a satellite perspective of the June 1991
+  eruptions.'' {\em Fire and Mud: The Eruptions and Lahars of Mount Pinatubo,
+  Philippines. University of Washington Press, Seattle} pp.~637--646.
+
+\harvarditem[Madankan et~al.]{Madankan, Pouget, Singla, Bursik, Dehn, Jones,
+  Patra, Pavolonis, Pitman, Singh et~al.}{2014}{madankan2014computation}
+Madankan, Reza, S Pouget, Puneet Singla, Marcus Bursik, Jon Dehn, M Jones, A
+  Patra, Michael Pavolonis, E~Bruce Pitman, Tarunraj Singh et~al. 2014.
+\newblock ``Computation of probabilistic hazard maps and source parameter
+  estimation for volcanic ash transport and dispersion.'' {\em Journal of
+  Computational Physics} 271:39--59.
 
 \harvarditem{Mastin}{2007}{mastin2007user}
 Mastin, Larry~G. 2007.
@@ -653,14 +701,6 @@ Morris, JP \harvardand\ JJ Monaghan. 1997.
 \newblock ``A switch to reduce SPH viscosity.'' {\em Journal of Computational
   Physics} 136(1):41--50.
 
-\harvarditem[Morton, Taylor \harvardand\ Turner]{Morton, Taylor \harvardand\
-  Turner}{1956}{morton1956turbulent}
-Morton, BR, Geoffrey Taylor \harvardand\ JS Turner. 1956.
-\newblock Turbulent gravitational convection from maintained and instantaneous
-  sources.  In {\em Proceedings of the Royal Society of London A: Mathematical,
-  Physical and Engineering Sciences}.
-\newblock Vol. 234 The Royal Society pp.~1--23.
-
 \harvarditem[Neri et~al.]{Neri, Esposti~Ongaro, Macedonio \harvardand\
   Gidaspow}{2003}{neri2003multiparticle}
 Neri, Augusto, Thmaso Esposti~Ongaro, Giovanni Macedonio \harvardand\ Dimitri
@@ -721,6 +761,14 @@ Patra, Abani~K, AC Bauer, CC Nichita, E~Bruce Pitman, MF Sheridan, M Bursik, B
 \newblock ``Parallel adaptive numerical simulation of dry avalanches over
   natural terrain.'' {\em Journal of Volcanology and Geothermal Research}
   139(1):1--21.
+
+\harvarditem[Patra et~al.]{Patra, Bursik, Dehn, Jones, Madankan, Morton,
+  Pavolonis, Pitman, Pouget, Singh et~al.}{2013}{patra2013challenges}
+Patra, Abani~K, Marcus Bursik, Jon Dehn, M Jones, Reza Madankan, D Morton,
+  Michael Pavolonis, E~Bruce Pitman, S Pouget, Tarunraj Singh et~al. 2013.
+\newblock ``Challenges in developing DDDAS based methodology for volcanic ash
+  hazard analysis--effect of numerical weather prediction variability and
+  parameter estimation.'' {\em Procedia Computer Science} 18:1871--1880.
 
 \harvarditem{Patra \harvardand\ Kim}{1999}{patra1999efficient}
 Patra, AK \harvardand\ DW Kim. 1999.
@@ -985,6 +1033,13 @@ Vacondio, R, BD Rogers \harvardand\ PK Stansby. 2012.
 \newblock ``Accurate particle splitting for smoothed particle hydrodynamics in
   shallow water with shock capturing.'' {\em International Journal for
   Numerical Methods in Fluids} 69(8):1377--1410.
+
+\harvarditem[Vacondio et~al.]{Vacondio, Rogers, Stansby \harvardand\
+  Mignosa}{2016}{vacondio2016variable}
+Vacondio, R, BD Rogers, PK Stansby \harvardand\ P Mignosa. 2016.
+\newblock ``Variable resolution for SPH in three dimensions: Towards optimal
+  splitting and coalescing for dynamic adaptivity.'' {\em Computer Methods in
+  Applied Mechanics and Engineering} 300:442--460.
 
 \harvarditem{Violeau \harvardand\ Issa}{2007}{violeau2007numerical}
 Violeau, Damien \harvardand\ Reza Issa. 2007.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  13 APR 2018 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  17 APR 2018 07:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5992,7 +5992,7 @@ Overfull \hbox (5.32408pt too wide) in paragraph at lines 113--118
 
 ! Undefined control sequence.
 l.119 \section
-              {Discretization of governing equations and extensibility}
+              {Discretization of Euler equations and extensibility}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6007,7 +6007,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.119 \section{D
-                iscretization of governing equations and extensibility}
+                iscretization of Euler equations and extensibility}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6027,15 +6027,11 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no v in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no q in font nullfont!
 Missing character: There is no u in font nullfont!
@@ -11969,15 +11965,6 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
-l.216 \includegraphics
-                      [width=12cm]{Chapter-3/Figures/Interface}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -11985,10 +11972,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.216 \includegraphics[
-                       width=12cm]{Chapter-3/Figures/Interface}
+l.216 \center
+             
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 216--216
+[] 
+ []
+
+! Undefined control sequence.
+l.217 \includegraphics
+                      [width=12cm]{Chapter-3/Figures/Interface}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
 Missing character: There is no w in font nullfont!
@@ -12036,7 +12037,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.217 \caption
+l.218 \caption
               {In the left figure, the blue particles (phaseID=1) represent ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -12235,7 +12236,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...rence `eq:gov-sph-d1' on page \thepage 
                                                   \space undefined\on@line .
-l.217 ...aluated based on Eq. (\ref{eq:gov-sph-d1}
+l.218 ...aluated based on Eq. (\ref{eq:gov-sph-d1}
                                                   ) and Eq. (\ref{eq:gov-sph...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12244,7 +12245,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:gov-sph-d1' on page  undefined on input line 217.
+LaTeX Warning: Reference `eq:gov-sph-d1' on page  undefined on input line 218.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -12257,7 +12258,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...rence `eq:gov-sph-d1' on page \thepage 
                                                   \space undefined\on@line .
-l.217 ...gov-sph-d1}) and Eq. (\ref{eq:gov-sph-d1}
+l.218 ...gov-sph-d1}) and Eq. (\ref{eq:gov-sph-d1}
                                                   ) without any other interf...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12266,7 +12267,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:gov-sph-d1' on page  undefined on input line 217.
+LaTeX Warning: Reference `eq:gov-sph-d1' on page  undefined on input line 218.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no w in font nullfont!
@@ -12321,24 +12322,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.219 \end{figure}
+l.220 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 216--220
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 217--221
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 216--220
-[]
- []
-
-
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 216--220
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 217--221
 []
  []
 
@@ -12349,7 +12345,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 I
+l.222 I
        nterface construction will become necessary and important when attemp...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -12799,7 +12795,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Undefined control sequence.
-l.223 ...er interface tracking (Lagrangian) \citep
+l.224 ...er interface tracking (Lagrangian) \citep
                                                   {harlow1965numerical, wrob...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -12901,7 +12897,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Undefined control sequence.
-l.223 ... or interface capturing (Eulerian) \citep
+l.224 ... or interface capturing (Eulerian) \citep
                                                   {hirt1981volume, youngs198...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13192,7 +13188,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.223 ...t drawbacks of tracking techniques \citep
+l.224 ...t drawbacks of tracking techniques \citep
                                                   {hirt1981volume, unverdi19...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13481,7 +13477,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.223 ... needs additional numerical effort \citep
+l.224 ... needs additional numerical effort \citep
                                                   {hirt1981volume, youngs198...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13724,12 +13720,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 221--225
+Overfull \hbox (20.0pt too wide) in paragraph at lines 222--226
 []
  []
 
 ! Undefined control sequence.
-l.228 \section
+l.229 \section
               {Turbulence modeling with SPH}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13744,7 +13740,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 \section{T
+l.229 \section{T
                 urbulence modeling with SPH}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -14690,7 +14686,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.232 ...existing SPH-SPS turbulence models \citep
+l.233 ...existing SPH-SPS turbulence models \citep
                                                   {holm1999fluctuation, mona...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -14829,7 +14825,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 ! Undefined control sequence.
-l.232 ...$SPH-\varepsilon$ turbulence model \citep
+l.233 ...$SPH-\varepsilon$ turbulence model \citep
                                                   {monaghan2011turbulence}. ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15045,7 +15041,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.232 ...existing SPH-SPS turbulence models \citep
+l.233 ...existing SPH-SPS turbulence models \citep
                                                   {holm1999fluctuation, mona...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15144,32 +15140,32 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 228--233
+Overfull \hbox (20.0pt too wide) in paragraph at lines 229--234
 []
  []
 
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 228--233
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 229--234
 \OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 228--233
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 229--234
 \OML/cmm/m/it/10 "$
  []
 
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 228--233
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 229--234
 \OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 228--233
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 229--234
 \OML/cmm/m/it/10 "$
  []
 
 ! Undefined control sequence.
-l.238 \subsection
+l.239 \subsection
                  {Langrangian average in $SPH-\varepsilon$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15184,7 +15180,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.238 \subsection{L
+l.239 \subsection{L
                    angrangian average in $SPH-\varepsilon$}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -15210,7 +15206,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.239 \citet
+l.240 \citet
             {monaghan2011turbulence} constructed $SPH-\varepsilon$ turbulenc...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15649,57 +15645,57 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 238--240
+Overfull \hbox (20.0pt too wide) in paragraph at lines 239--241
 []
  []
 
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 238--240
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 239--241
 \OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 238--240
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 239--241
 \OML/cmm/m/it/10 "$
  []
 
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 238--240
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 239--241
 \OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 238--240
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 239--241
 \OML/cmm/m/it/10 "$
  []
 
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 238--240
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 239--241
 \OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 238--240
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 239--241
 \OML/cmm/m/it/10 "$
  []
 
 
-Overfull \hbox (6.06941pt too wide) in paragraph at lines 238--240
+Overfull \hbox (6.06941pt too wide) in paragraph at lines 239--241
 []$
  []
 
 
-Overfull \hbox (6.06941pt too wide) in paragraph at lines 238--240
+Overfull \hbox (6.06941pt too wide) in paragraph at lines 239--241
 []$
  []
 
 
-Overfull \hbox (6.06941pt too wide) in paragraph at lines 238--240
+Overfull \hbox (6.06941pt too wide) in paragraph at lines 239--241
 []$ 
  []
 
 ! Undefined control sequence.
-l.241 \dfrac
+l.242 \dfrac
             {d \textbf{x}_a}{dt} = \widehat{\textbf{v}}_a \label{eq:gov-upda...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15708,7 +15704,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (49.16818pt too wide) detected at line 242
+Overfull \hbox (49.16818pt too wide) detected at line 243
 [][] \OT1/cmr/m/n/10 = [][][]
  []
 
@@ -15719,7 +15715,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.244 A
+l.245 A
        verage of physical quantities over space introduces extra terms into ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -15959,22 +15955,22 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 244--247
+Overfull \hbox (20.0pt too wide) in paragraph at lines 245--248
 []
  []
 
 
-Overfull \hbox (6.06941pt too wide) in paragraph at lines 244--247
+Overfull \hbox (6.06941pt too wide) in paragraph at lines 245--248
 []$
  []
 
 
-Overfull \hbox (6.06941pt too wide) in paragraph at lines 244--247
+Overfull \hbox (6.06941pt too wide) in paragraph at lines 245--248
 []$
  []
 
 
-Overfull \hbox (145.87228pt too wide) detected at line 249
+Overfull \hbox (145.87228pt too wide) detected at line 250
 [] [] \OT1/cmr/m/n/10 = [] [] [] \OML/cmm/m/it/10 G [] d[]\OMS/cmsy/m/n/10 0
  []
 
@@ -15994,12 +15990,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 249--251
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 250--252
  $\OML/cmm/m/it/10 G$
  []
 
 
-Overfull \hbox (103.28918pt too wide) detected at line 253
+Overfull \hbox (103.28918pt too wide) detected at line 254
 [] \OML/cmm/m/it/10 G [] d[]\OMS/cmsy/m/n/10 0 \OT1/cmr/m/n/10 = 1
  []
 
@@ -16204,22 +16200,22 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (4.8229pt too wide) in paragraph at lines 253--256
+Overfull \hbox (4.8229pt too wide) in paragraph at lines 254--257
              $\OML/cmm/m/it/10 ^^N$
  []
 
 
-Overfull \hbox (15.9583pt too wide) in paragraph at lines 253--256
+Overfull \hbox (15.9583pt too wide) in paragraph at lines 254--257
 \OML/cmm/m/it/10 l \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 253--256
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 254--257
 \OT1/cmr/m/n/10 0$
  []
 
 
-Overfull \hbox (3.18057pt too wide) in paragraph at lines 253--256
+Overfull \hbox (3.18057pt too wide) in paragraph at lines 254--257
 \OML/cmm/m/it/10 l$
  []
 
@@ -16230,7 +16226,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.257 I
+l.258 I
        t is a common practice in LANS to use a differential equation for the...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -16406,7 +16402,7 @@ Missing character: There is no S in font nullfont!
 Missing character: There is no P in font nullfont!
 Missing character: There is no H in font nullfont!
 ! Undefined control sequence.
-l.257 ...n $SPH-\varepsilon$ method, a XSPH \citep
+l.258 ...n $SPH-\varepsilon$ method, a XSPH \citep
                                                   {monaghan1989problem} smoo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -16742,7 +16738,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.258 ... in the literature -- see for e.g. \citep
+l.259 ... in the literature -- see for e.g. \citep
                                                   {monaghan2011turbulence}. ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -16811,17 +16807,17 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 257--259
+Overfull \hbox (20.0pt too wide) in paragraph at lines 258--260
 []
  []
 
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 257--259
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 258--260
 \OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 257--259
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 258--260
 \OML/cmm/m/it/10 "$
  []
 
@@ -16832,7 +16828,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.260 T
+l.261 T
        he smoothing adopted by \citet{monaghan2011turbulence}  is:
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -16859,7 +16855,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no y in font nullfont!
 ! Undefined control sequence.
-l.260 The smoothing adopted by \citet
+l.261 The smoothing adopted by \citet
                                      {monaghan2011turbulence}  is:
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -16893,12 +16889,12 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 260--261
+Overfull \hbox (20.0pt too wide) in paragraph at lines 261--262
 []
  []
 
 
-Overfull \hbox (222.54219pt too wide) detected at line 263
+Overfull \hbox (222.54219pt too wide) detected at line 264
 [] [] \OT1/cmr/m/n/10 = [] [] + \OML/cmm/m/it/10 ^^O [] [] G [] d[]\OMS/cmsy/m/
 n/10 0
  []
@@ -16988,17 +16984,17 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 263--265
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 264--266
   $\OML/cmm/m/it/10 G$
  []
 
 
-Overfull \hbox (7.42825pt too wide) in paragraph at lines 263--265
+Overfull \hbox (7.42825pt too wide) in paragraph at lines 264--266
 \OML/cmm/m/it/10 w$
  []
 
 ! Undefined control sequence.
-l.266 ...xtbf{x}\right)+\epsilon \sum_b m_b \dfrac
+l.267 ...xtbf{x}\right)+\epsilon \sum_b m_b \dfrac
                                                   {\left(\textbf{v}_b -\text...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17007,7 +17003,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (203.11842pt too wide) detected at line 267
+Overfull \hbox (203.11842pt too wide) detected at line 268
 [][] [] \OT1/cmr/m/n/10 = [] [] + \OML/cmm/m/it/10 ^^O [] m[][][]G []
  []
 
@@ -17035,7 +17031,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.271 \dfrac
+l.272 \dfrac
             {G\left(\vert \textbf{x} _b - \textbf{x} _a \vert, l\right)}{\rh...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17044,7 +17040,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.271 ...rt, l\right)}{\rho _b} \rightarrow \dfrac
+l.272 ...rt, l\right)}{\rho _b} \rightarrow \dfrac
                                                   {K_{ab}}{M}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17053,7 +17049,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (116.08401pt too wide) detected at line 272
+Overfull \hbox (116.08401pt too wide) detected at line 273
 [][][] \OMS/cmsy/m/n/10 ! []\OML/cmm/m/it/10 M
  []
 
@@ -17153,47 +17149,47 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (27.40288pt too wide) in paragraph at lines 272--274
+Overfull \hbox (27.40288pt too wide) in paragraph at lines 273--275
  $\OML/cmm/m/it/10 K[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (24.06024pt too wide) in paragraph at lines 272--274
+Overfull \hbox (24.06024pt too wide) in paragraph at lines 273--275
 \OML/cmm/m/it/10 l[]G[]$
  []
 
 
-Overfull \hbox (21.34717pt too wide) in paragraph at lines 272--274
+Overfull \hbox (21.34717pt too wide) in paragraph at lines 273--275
 \OML/cmm/m/it/10 M \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (17.49973pt too wide) in paragraph at lines 272--274
+Overfull \hbox (17.49973pt too wide) in paragraph at lines 273--275
 \OML/cmm/m/it/10 ^^Z[]l[]$
  []
 
 
-Overfull \hbox (5.20486pt too wide) in paragraph at lines 272--274
+Overfull \hbox (5.20486pt too wide) in paragraph at lines 273--275
 \OML/cmm/m/it/10 d$
  []
 
 
-Overfull \hbox (9.65628pt too wide) in paragraph at lines 272--274
+Overfull \hbox (9.65628pt too wide) in paragraph at lines 273--275
 \OML/cmm/m/it/10 ^^Z[]$
  []
 
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 272--274
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 273--275
 \OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 272--274
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 273--275
 \OML/cmm/m/it/10 "$
  []
 
 ! Undefined control sequence.
-l.276 \dfrac
+l.277 \dfrac
             {d \textbf{v}_a}{dt} = -\sum_b \left[ m_b \left(\dfrac{p_b}{\rho...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17202,7 +17198,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.276 ..._a}{dt} = -\sum_b \left[ m_b \left(\dfrac
+l.277 ..._a}{dt} = -\sum_b \left[ m_b \left(\dfrac
                                                   {p_b}{\rho_b^2} + \dfrac{p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17211,7 +17207,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.276 ... m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac
+l.277 ... m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac
                                                   {p_a}{\rho_a^2}\right) \bi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17220,7 +17216,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.276 ...\left(h\right)\right] + \sum_b m_b \dfrac
+l.277 ...\left(h\right)\right] + \sum_b m_b \dfrac
                                                   {\varepsilon}{2} \dfrac{\t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17229,7 +17225,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.276 ... \sum_b m_b \dfrac{\varepsilon}{2} \dfrac
+l.277 ... \sum_b m_b \dfrac{\varepsilon}{2} \dfrac
                                                   {\textbf{v}_{ab} \cdot \te...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17238,7 +17234,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (319.25758pt too wide) detected at line 277
+Overfull \hbox (319.25758pt too wide) detected at line 278
 [][][] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@ [] [] \OT1/cmr/m/n/10 + [] \OML/c
 mm/m/it/10 m[]"\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 M \OMS/cmsy/m/n/10 5[] \OML/
 cmm/m/it/10 K[]
@@ -17268,12 +17264,12 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (3.18057pt too wide) in paragraph at lines 277--283
+Overfull \hbox (3.18057pt too wide) in paragraph at lines 278--284
    $\OML/cmm/m/it/10 l$
  []
 
 
-Overfull \hbox (127.46771pt too wide) detected at line 285
+Overfull \hbox (127.46771pt too wide) detected at line 286
 \OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 K[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 r [] 
 \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 l[]\OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 G[]
  []
@@ -17359,27 +17355,27 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 285--287
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 286--288
      $\OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 285--287
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 286--288
 \OML/cmm/m/it/10 "$
  []
 
 
-Overfull \hbox (16.2168pt too wide) in paragraph at lines 285--287
+Overfull \hbox (16.2168pt too wide) in paragraph at lines 286--288
 \OML/cmm/m/it/10 G[]$
  []
 
 
-Overfull \hbox (16.84737pt too wide) in paragraph at lines 285--287
+Overfull \hbox (16.84737pt too wide) in paragraph at lines 286--288
 \OML/cmm/m/it/10 K[]$ 
  []
 
 ! Undefined control sequence.
-l.289 \dfrac
+l.290 \dfrac
             {d \textbf{v}_a}{dt} = -\sum_b \left[m_b \left(\dfrac{p_b}{\rho_...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17388,7 +17384,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.289 ...}_a}{dt} = -\sum_b \left[m_b \left(\dfrac
+l.290 ...}_a}{dt} = -\sum_b \left[m_b \left(\dfrac
                                                   {p_b}{\rho_b^2} + \dfrac{p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17397,7 +17393,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.289 ...[m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac
+l.290 ...[m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac
                                                   {p_a}{\rho_a^2}\right) \bi...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17406,7 +17402,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (290.30414pt too wide) detected at line 290
+Overfull \hbox (290.30414pt too wide) detected at line 291
 [][][] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@ [] [] \OT1/cmr/m/n/10 + [] \OML/c
 mm/m/it/10 m[]\OT1/cmr/m/n/10 ^^H[] \OMS/cmsy/m/n/10 5[] \OML/cmm/m/it/10 G[] [
 ]
@@ -17418,7 +17414,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.293 \Phi_{ab}=\dfrac
+l.294 \Phi_{ab}=\dfrac
                       {\varepsilon}{2} \dfrac{\textbf{v}_{ab} \cdot \textbf{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17427,7 +17423,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.293 \Phi_{ab}=\dfrac{\varepsilon}{2} \dfrac
+l.294 \Phi_{ab}=\dfrac{\varepsilon}{2} \dfrac
                                              {\textbf{v}_{ab} \cdot \textbf{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17436,7 +17432,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (83.82933pt too wide) detected at line 294
+Overfull \hbox (83.82933pt too wide) detected at line 295
 \OT1/cmr/m/n/10 ^^H[] = \OML/cmm/m/it/10 "\OT1/cmr/m/n/10 2[][]
  []
 
@@ -17514,7 +17510,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 ! Undefined control sequence.
-l.295 ...ent $\varepsilon$ as 0.8 following \citet
+l.296 ...ent $\varepsilon$ as 0.8 following \citet
                                                   {monaghan2011turbulence}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17546,7 +17542,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 294--296
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 295--297
             $\OML/cmm/m/it/10 "$
  []
 
@@ -17557,7 +17553,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.297 F
+l.298 F
        or compressible flow, the energy equation is coupled with the momentu...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -17768,7 +17764,7 @@ Missing character: There is no g in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.297 ... term induced by velocity average. \citep
+l.298 ... term induced by velocity average. \citep
                                                   {NASACompressibleTurbulenc...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -18537,7 +18533,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.297 ...mes but without other difficulties \citep
+l.298 ...mes but without other difficulties \citep
                                                   {cebeci2013analysis}. We a...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -18726,7 +18722,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.298 ...ferent ways or neglected sometimes \citep
+l.299 ...ferent ways or neglected sometimes \citep
                                                   {NASACompressibleTurbulenc...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -18797,12 +18793,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 297--299
+Overfull \hbox (20.0pt too wide) in paragraph at lines 298--300
 []
  []
 
 ! Undefined control sequence.
-l.300 \subsection
+l.301 \subsection
                  {Turbulent heat transfer}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -18817,7 +18813,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.300 \subsection{T
+l.301 \subsection{T
                    urbulent heat transfer}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -18941,12 +18937,12 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 300--303
+Overfull \hbox (20.0pt too wide) in paragraph at lines 301--304
 []
  []
 
 ! Undefined control sequence.
-l.304 Pr=\dfrac
+l.305 Pr=\dfrac
                {C_p \mu}{\kappa}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -18955,7 +18951,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (49.48825pt too wide) detected at line 305
+Overfull \hbox (49.48825pt too wide) detected at line 306
 \OML/cmm/m/it/10 Pr \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 ^^T
  []
 
@@ -19085,7 +19081,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 \begin{align}
+l.308 \begin{align}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -19094,7 +19090,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.308 \mu
+l.309 \mu
          =\rho \nu
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -19106,7 +19102,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.309 \end{align}
+l.310 \end{align}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -19115,7 +19111,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.309 \end{align}
+l.310 \end{align}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -19128,32 +19124,32 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (6.02548pt too wide) in paragraph at lines 305--311
+Overfull \hbox (6.02548pt too wide) in paragraph at lines 306--312
  $\OML/cmm/m/it/10 ^^V$
  []
 
 
-Overfull \hbox (5.76158pt too wide) in paragraph at lines 305--311
+Overfull \hbox (5.76158pt too wide) in paragraph at lines 306--312
 \OML/cmm/m/it/10 ^^T$
  []
 
 
-Overfull \hbox (6.02548pt too wide) in paragraph at lines 305--311
+Overfull \hbox (6.02548pt too wide) in paragraph at lines 306--312
 \OML/cmm/m/it/10 ^^V$
  []
 
 
-Overfull \hbox (16.581pt too wide) in paragraph at lines 305--311
+Overfull \hbox (16.581pt too wide) in paragraph at lines 306--312
 \OML/cmm/m/it/10 ^^V \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (10.74654pt too wide) in paragraph at lines 305--311
+Overfull \hbox (10.74654pt too wide) in paragraph at lines 306--312
 \OML/cmm/m/it/10 ^^Z^^W$
  []
 
 ! Undefined control sequence.
-l.312 \kappa=\dfrac
+l.313 \kappa=\dfrac
                    {C_p \mu}{Pr}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19162,7 +19158,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (49.48825pt too wide) detected at line 313
+Overfull \hbox (49.48825pt too wide) detected at line 314
 \OML/cmm/m/it/10 ^^T \OT1/cmr/m/n/10 = [][]
  []
 
@@ -19223,7 +19219,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.314 ...r_t=0.85$ for gases as recommended \citet
+l.315 ...r_t=0.85$ for gases as recommended \citet
                                                   {kays1994turbulent} from s...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19286,27 +19282,27 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (15.84146pt too wide) in paragraph at lines 313--315
+Overfull \hbox (15.84146pt too wide) in paragraph at lines 314--316
    $\OML/cmm/m/it/10 Pr[]$
  []
 
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 313--315
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 314--316
 \OMS/cmsy/m/n/10 ^^X$
  []
 
 
-Overfull \hbox (26.39697pt too wide) in paragraph at lines 313--315
+Overfull \hbox (26.39697pt too wide) in paragraph at lines 314--316
 \OML/cmm/m/it/10 Pr[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (17.77783pt too wide) in paragraph at lines 313--315
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 314--316
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 85$
  []
 
 ! Undefined control sequence.
-l.316 \citet
+l.317 \citet
             {monaghan2005smoothed} summarized the simulation of viscosity an...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19321,7 +19317,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.316 \citet{m
+l.317 \citet{m
               onaghan2005smoothed} summarized the simulation of viscosity an...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -19517,7 +19513,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...SPH-mom-epsilon-turb' on page \thepage 
                                                   \space undefined\on@line .
-l.316 ...ation, Eq. (\ref{eq:SPH-mom-epsilon-turb}
+l.317 ...ation, Eq. (\ref{eq:SPH-mom-epsilon-turb}
                                                   ), is the turbulent shear ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19527,7 +19523,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `eq:SPH-mom-epsilon-turb' on page  undefined on input 
-line 316.
+line 317.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -19628,7 +19624,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...`eq:art-vis-original' on page \thepage 
                                                   \space undefined\on@line .
-l.317 ...s shown in Eq. (\ref{eq:art-vis-original}
+l.318 ...s shown in Eq. (\ref{eq:art-vis-original}
                                                   ).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19638,7 +19634,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `eq:art-vis-original' on page  undefined on input line
- 317.
+ 318.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -19763,7 +19759,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.318 ...ere shear viscosity coefficient is \citep
+l.319 ...ere shear viscosity coefficient is \citep
                                                   {monaghan2005smoothed}:
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19793,22 +19789,22 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 316--319
+Overfull \hbox (20.0pt too wide) in paragraph at lines 317--320
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 316--319
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 317--320
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 316--319
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 317--320
 []
  []
 
 
-Overfull \hbox (34.07858pt too wide) detected at line 321
+Overfull \hbox (34.07858pt too wide) detected at line 322
 \OML/cmm/m/it/10 ^^W[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 S^^W
  []
 
@@ -19819,7 +19815,7 @@ Missing character: There is no h in font nullfont!
 ! Undefined control sequence.
 <argument> \dfrac 
                   
-l.326       \dfrac
+l.327       \dfrac
                   {1}{10} & if  \quad d=3 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19828,7 +19824,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.326       \dfrac{1}{10} &
+l.327       \dfrac{1}{10} &
                             if  \quad d=3 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -19840,7 +19836,7 @@ might try typing `S' now just to see what is salvageable.
 ! Undefined control sequence.
 <recently read> \dfrac 
                        
-l.328      \dfrac
+l.329      \dfrac
                  {1}{8}  & if  \quad d=2
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -19849,7 +19845,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.328      \dfrac{1}{8}  &
+l.329      \dfrac{1}{8}  &
                            if  \quad d=2
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -19859,7 +19855,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (120.48586pt too wide) detected at line 330
+Overfull \hbox (120.48586pt too wide) detected at line 331
 \OML/cmm/m/it/10 S \OT1/cmr/m/n/10 = [] 1[]\OML/cmm/m/it/10 if d \OT1/cmr/m/n/1
 0 = 3[] [] 18\OML/cmm/m/it/10 if d \OT1/cmr/m/n/10 = 2
  []
@@ -20060,7 +20056,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.335  \sum_b \dfrac
+l.336  \sum_b \dfrac
                     {\varepsilon}{2} \dfrac{m_b}{\rho_b} \textbf{v}_{ab} \cd...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20069,7 +20065,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.335  \sum_b \dfrac{\varepsilon}{2} \dfrac
+l.336  \sum_b \dfrac{\varepsilon}{2} \dfrac
                                            {m_b}{\rho_b} \textbf{v}_{ab} \cd...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20078,7 +20074,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.335 ...a_a G_{ab}\left(l_a\right)= \sum_b \dfrac
+l.336 ...a_a G_{ab}\left(l_a\right)= \sum_b \dfrac
                                                   {\varepsilon}{2S} m_b \dfr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20087,7 +20083,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.335 ...\sum_b \dfrac{\varepsilon}{2S} m_b \dfrac
+l.336 ...\sum_b \dfrac{\varepsilon}{2S} m_b \dfrac
                                                   {\textbf{v}_{ab}}{\rho_b} ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20096,7 +20092,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.335 ..._b \dfrac{\textbf{v}_{ab}}{\rho_b} \dfrac
+l.336 ..._b \dfrac{\textbf{v}_{ab}}{\rho_b} \dfrac
                                                   {S \textbf{v}_{ab} \cdot \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20105,7 +20101,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.335 ...} \cdot \textbf{x}_{ab}}{x_{ab}^2} \dfrac
+l.336 ...} \cdot \textbf{x}_{ab}}{x_{ab}^2} \dfrac
                                                   {x_{ab}^2}{\textbf{x}_{ab}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20114,7 +20110,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (340.2544pt too wide) detected at line 336
+Overfull \hbox (340.2544pt too wide) detected at line 337
 [][] \OML/cmm/m/it/10 "\OT1/cmr/m/n/10 2[][][][] \OMS/cmsy/m/n/10 ^^A [][]r[]\O
 ML/cmm/m/it/10 G[] [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 "[]m[][][][][][][]\
 OMS/cmsy/m/n/10 r[]\OML/cmm/m/it/10 G[] []
@@ -20180,7 +20176,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...te-to-artificial-vis' on page \thepage 
                                                   \space undefined\on@line .
-l.337 ...urb-stress-reformulate-to-artificial-vis}
+l.338 ...urb-stress-reformulate-to-artificial-vis}
                                                   ).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20190,17 +20186,17 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `eq:turb-stress-reformulate-to-artificial-vis' on page
-  undefined on input line 337.
+  undefined on input line 338.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 336--338
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 337--339
           [] 
  []
 
 ! Undefined control sequence.
-l.339 \nu_t = \dfrac
+l.340 \nu_t = \dfrac
                     {\varepsilon}{2S} \dfrac{\textbf{v}_{ab} \cdot \textbf{x...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20209,7 +20205,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.339 \nu_t = \dfrac{\varepsilon}{2S} \dfrac
+l.340 \nu_t = \dfrac{\varepsilon}{2S} \dfrac
                                             {\textbf{v}_{ab} \cdot \textbf{x...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20218,7 +20214,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (83.42177pt too wide) detected at line 340
+Overfull \hbox (83.42177pt too wide) detected at line 341
 \OML/cmm/m/it/10 ^^W[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 "[][][]
  []
 
@@ -20384,7 +20380,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (15.85432pt too wide) in paragraph at lines 340--342
+Overfull \hbox (15.85432pt too wide) in paragraph at lines 341--343
                            $\OT1/cmr/m/n/10 ^^E[]$
  []
 
@@ -20395,7 +20391,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.343 H
+l.344 H
        owever, the above equation is correct only for the 1D situations. For...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -20778,17 +20774,17 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 343--345
+Overfull \hbox (20.0pt too wide) in paragraph at lines 344--346
 []
  []
 
 
-Overfull \hbox (3.18057pt too wide) in paragraph at lines 343--345
+Overfull \hbox (3.18057pt too wide) in paragraph at lines 344--346
 \OML/cmm/m/it/10 l$
  []
 
 
-Overfull \hbox (5.76158pt too wide) in paragraph at lines 343--345
+Overfull \hbox (5.76158pt too wide) in paragraph at lines 344--346
 \OML/cmm/m/it/10 h$
  []
 
@@ -20799,14 +20795,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.346 \begin{split}
+l.347 \begin{split}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.347 \Upsilon_{ab} &
+l.348 \Upsilon_{ab} &
                      = \dfrac{\dfrac{\varepsilon}{2} \dfrac{\textbf{v}_{ab} ...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -20816,7 +20812,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.347 \Upsilon_{ab} &= \dfrac
+l.348 \Upsilon_{ab} &= \dfrac
                              {\dfrac{\varepsilon}{2} \dfrac{\textbf{v}_{ab} ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20825,7 +20821,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.347 \Upsilon_{ab} &= \dfrac{\dfrac
+l.348 \Upsilon_{ab} &= \dfrac{\dfrac
                                     {\varepsilon}{2} \dfrac{\textbf{v}_{ab} ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20834,7 +20830,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.347 ...} &= \dfrac{\dfrac{\varepsilon}{2} \dfrac
+l.348 ...} &= \dfrac{\dfrac{\varepsilon}{2} \dfrac
                                                   {\textbf{v}_{ab} \cdot \te...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20843,7 +20839,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.347 ...b} \cdot \textbf{v}_{ab}}{\rho_b}}{\dfrac
+l.348 ...b} \cdot \textbf{v}_{ab}}{\rho_b}}{\dfrac
                                                   {S \nu}{\rho_{ab}} \frac{\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20854,7 +20850,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.348  &
+l.349  &
          = \dfrac{\varepsilon \left(x_{ab}^2 + \eta^2 h_{ab}^2\right)}{2 S \...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -20864,7 +20860,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.348  & = \dfrac
+l.349  & = \dfrac
                  {\varepsilon \left(x_{ab}^2 + \eta^2 h_{ab}^2\right)}{2 S \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20873,7 +20869,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.348 ...+ \eta^2 h_{ab}^2\right)}{2 S \nu} \dfrac
+l.349 ...+ \eta^2 h_{ab}^2\right)}{2 S \nu} \dfrac
                                                   {\textbf{v}_{ab} \cdot \te...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20882,20 +20878,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{equation} on input line 345 ended by \end{split}.
+! LaTeX Error: \begin{equation} on input line 346 ended by \end{split}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.349 \end{split}
+l.350 \end{split}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (331.28328pt too wide) detected at line 350
+Overfull \hbox (331.28328pt too wide) detected at line 351
 \OT1/cmr/m/n/10 ^^G[] = [][][]  = [][][][]
  []
 
@@ -21072,7 +21068,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (16.13211pt too wide) in paragraph at lines 350--352
+Overfull \hbox (16.13211pt too wide) in paragraph at lines 351--353
 $\OT1/cmr/m/n/10 ^^G[]$
  []
 
@@ -21083,14 +21079,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.353 \begin{split}
+l.354 \begin{split}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Misplaced alignment tab character &.
-l.354 \nu_{t,ab} &
+l.355 \nu_{t,ab} &
                   = \nu \Upsilon_{ab} \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -21102,7 +21098,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.355 &
+l.356 &
        = \dfrac{\varepsilon \left(x_{ab}^2 + \eta^2 h_{ab}^2\right)}{2 S} \d...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -21112,7 +21108,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.355 &= \dfrac
+l.356 &= \dfrac
                {\varepsilon \left(x_{ab}^2 + \eta^2 h_{ab}^2\right)}{2 S} \d...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21121,7 +21117,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.355 ...}^2 + \eta^2 h_{ab}^2\right)}{2 S} \dfrac
+l.356 ...}^2 + \eta^2 h_{ab}^2\right)}{2 S} \dfrac
                                                   {\textbf{v}_{ab} \cdot \te...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21130,20 +21126,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{equation} on input line 352 ended by \end{split}.
+! LaTeX Error: \begin{equation} on input line 353 ended by \end{split}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.356 \end{split}
+l.357 \end{split}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (216.62671pt too wide) detected at line 357
+Overfull \hbox (216.62671pt too wide) detected at line 358
 \OML/cmm/m/it/10 ^^W[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^W\OT1/cmr/m/n/10 ^^
 G[][]  = [][][][]
  []
@@ -21201,7 +21197,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.360 \kappa_{t,ab}=\dfrac
+l.361 \kappa_{t,ab}=\dfrac
                           {\varepsilon \overline{C_{p,ab}} \overline{\rho_{a...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21210,7 +21206,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (235.43817pt too wide) detected at line 361
+Overfull \hbox (235.43817pt too wide) detected at line 362
 \OML/cmm/m/it/10 ^^T[] \OT1/cmr/m/n/10 = [][]
  []
 
@@ -21317,17 +21313,17 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (21.99887pt too wide) in paragraph at lines 361--363
+Overfull \hbox (21.99887pt too wide) in paragraph at lines 362--364
 $[]$
  []
 
 
-Overfull \hbox (13.52446pt too wide) in paragraph at lines 361--363
+Overfull \hbox (13.52446pt too wide) in paragraph at lines 362--364
 []$
  []
 
 ! Undefined control sequence.
-l.364 \kappa_{t,ab}=\dfrac
+l.365 \kappa_{t,ab}=\dfrac
                           {\varepsilon \overline{C_{p,ab}} \overline{\rho_{a...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21336,7 +21332,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (186.78996pt too wide) detected at line 365
+Overfull \hbox (186.78996pt too wide) detected at line 366
 \OML/cmm/m/it/10 ^^T[] \OT1/cmr/m/n/10 = [][]
  []
 
@@ -21375,7 +21371,7 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Misplaced alignment tab character &.
-l.370       0 &
+l.371       0 &
                 if  \quad \textbf{v}_{ab}=0 \quad or \quad \textbf{x}_{ab}=0 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -21387,7 +21383,7 @@ might try typing `S' now just to see what is salvageable.
 ! Undefined control sequence.
 <recently read> \dfrac 
                        
-l.371       \dfrac
+l.372       \dfrac
                   {\varepsilon \overline{C_{p,ab}} \overline{\rho_{ab}} x_{a...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21396,7 +21392,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.371 ...\textbf{v}_{ab} \cdot \textbf{x}_{ab} } &
+l.372 ...\textbf{v}_{ab} \cdot \textbf{x}_{ab} } &
                                                    \text{otherwise}
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -21406,7 +21402,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.371 ...f{v}_{ab} \cdot \textbf{x}_{ab} } & \text
+l.372 ...f{v}_{ab} \cdot \textbf{x}_{ab} } & \text
                                                   {otherwise}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21415,7 +21411,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (329.77385pt too wide) detected at line 374
+Overfull \hbox (329.77385pt too wide) detected at line 375
 \OML/cmm/m/it/10 ^^T[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 if [][] \OT1/cmr/m
 /n/10 = 0 \OML/cmm/m/it/10 or [][] \OT1/cmr/m/n/10 = 0[] [][][][]
  []
@@ -21427,7 +21423,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.376 H
+l.377 H
        eat conduction equation without source term is:
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -21475,12 +21471,12 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 376--377
+Overfull \hbox (20.0pt too wide) in paragraph at lines 377--378
 []
  []
 
 ! Undefined control sequence.
-l.378 C_p \dfrac
+l.379 C_p \dfrac
                 {dT}{dt} = \dfrac{1}{\rho} \nabla \left(\kappa \nabla T\right)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21489,7 +21485,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.378 C_p \dfrac{dT}{dt} = \dfrac
+l.379 C_p \dfrac{dT}{dt} = \dfrac
                                  {1}{\rho} \nabla \left(\kappa \nabla T\right)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21498,7 +21494,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (95.63182pt too wide) detected at line 379
+Overfull \hbox (95.63182pt too wide) detected at line 380
 \OML/cmm/m/it/10 C[][][] \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ^^Z\OMS/cmsy/m/n/1
 0 r []
  []
@@ -21562,7 +21558,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 ! Undefined control sequence.
-l.380 ...approximated with SPH by following \citet
+l.381 ...approximated with SPH by following \citet
                                                   {monaghan2005smoothed}:
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21592,7 +21588,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.382 C_p \dfrac
+l.383 C_p \dfrac
                 {dT}{dt} = \sum_b \dfrac{m_b}{\rho_a \rho_b} \left(\kappa_a ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21601,7 +21597,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.382 C_p \dfrac{dT}{dt} = \sum_b \dfrac
+l.383 C_p \dfrac{dT}{dt} = \sum_b \dfrac
                                         {m_b}{\rho_a \rho_b} \left(\kappa_a ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21610,7 +21606,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (210.3687pt too wide) detected at line 383
+Overfull \hbox (210.3687pt too wide) detected at line 384
 \OML/cmm/m/it/10 C[][][] \OT1/cmr/m/n/10 = [] [][] [] [] \OML/cmm/m/it/10 F[] [
 ]
  []
@@ -21650,17 +21646,17 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (28.32425pt too wide) in paragraph at lines 383--385
+Overfull \hbox (28.32425pt too wide) in paragraph at lines 384--386
  $\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (60.68515pt too wide) in paragraph at lines 383--385
+Overfull \hbox (60.68515pt too wide) in paragraph at lines 384--386
 \OML/cmm/m/it/10 F []$
  []
 
 
-Overfull \hbox (84.76567pt too wide) detected at line 387
+Overfull \hbox (84.76567pt too wide) detected at line 388
 \OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 h\OT1/cmr/m/n/10 )[][] = 
 \OMS/cmsy/m/n/10 r[]\OML/cmm/m/it/10 w[]
  []
@@ -21797,7 +21793,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (14.78487pt too wide) in paragraph at lines 387--390
+Overfull \hbox (14.78487pt too wide) in paragraph at lines 388--391
 $\OML/cmm/m/it/10 F[]$
  []
 
@@ -21808,14 +21804,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.391 \begin{split}
+l.392 \begin{split}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.392 C_p \dfrac
+l.393 C_p \dfrac
                 {dT}{dt}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21824,7 +21820,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.393 &
+l.394 &
         = \sum_b \dfrac{m_b}{\rho_a \rho_b} \left(\kappa_a + \kappa_b\right)...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -21834,7 +21830,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.393 & = \sum_b \dfrac
+l.394 & = \sum_b \dfrac
                        {m_b}{\rho_a \rho_b} \left(\kappa_a + \kappa_b\right)...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21845,7 +21841,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.394  &
+l.395  &
         = 2 \sum_b \dfrac{m_b}{\rho_a \rho_b} \dfrac{\overline{C_{p,ab}} \ov...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -21855,7 +21851,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.394  &= 2 \sum_b \dfrac
+l.395  &= 2 \sum_b \dfrac
                          {m_b}{\rho_a \rho_b} \dfrac{\overline{C_{p,ab}} \ov...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21864,7 +21860,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.394 ... \sum_b \dfrac{m_b}{\rho_a \rho_b} \dfrac
+l.395 ... \sum_b \dfrac{m_b}{\rho_a \rho_b} \dfrac
                                                   {\overline{C_{p,ab}} \over...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21873,20 +21869,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{equation} on input line 390 ended by \end{split}.
+! LaTeX Error: \begin{equation} on input line 391 ended by \end{split}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.395 \end{split}
+l.396 \end{split}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (507.94858pt too wide) detected at line 397
+Overfull \hbox (507.94858pt too wide) detected at line 398
 \OML/cmm/m/it/10 C[][][] \OT1/cmr/m/n/10 = [] [][] [] [] \OML/cmm/m/it/10 F[] [
 ] []  \OT1/cmr/m/n/10 = 2 [] [][][][] [] \OML/cmm/m/it/10 F[] [][]
  []
@@ -21932,7 +21928,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...b-LANS-heat-conduct1' on page \thepage 
                                                   \space undefined\on@line .
-l.398 ... of Eq. (\ref{eq:turb-LANS-heat-conduct1}
+l.399 ... of Eq. (\ref{eq:turb-LANS-heat-conduct1}
                                                   ) comes from integration a...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21942,7 +21938,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `eq:turb-LANS-heat-conduct1' on page  undefined on inp
-ut line 398.
+ut line 399.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no c in font nullfont!
@@ -22002,7 +21998,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-l.398 ...imation of second order derivative \citep
+l.399 ...imation of second order derivative \citep
                                                    {cleary1999conduction}. B...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22062,12 +22058,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 397--399
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 398--400
           []
  []
 
 ! Undefined control sequence.
-l.400 C_p \dfrac
+l.401 C_p \dfrac
                 {dT}{dt}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22076,7 +22072,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.401  =\dfrac
+l.402  =\dfrac
               {\varepsilon}{S  Pr_t}  \sum_b \dfrac{m_b}{\rho_a \rho_b} \dfr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22085,7 +22081,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.401 ...frac{\varepsilon}{S  Pr_t}  \sum_b \dfrac
+l.402 ...frac{\varepsilon}{S  Pr_t}  \sum_b \dfrac
                                                   {m_b}{\rho_a \rho_b} \dfra...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22094,7 +22090,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.401 ... \sum_b \dfrac{m_b}{\rho_a \rho_b} \dfrac
+l.402 ... \sum_b \dfrac{m_b}{\rho_a \rho_b} \dfrac
                                                   {\overline{C_{p,ab}} \over...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22103,13 +22099,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (318.93628pt too wide) detected at line 402
+Overfull \hbox (318.93628pt too wide) detected at line 403
 \OML/cmm/m/it/10 C[][][] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 "[] [] [][][][] [] 
 F[] []
  []
 
 ! Undefined control sequence.
-l.404 \subsection
+l.405 \subsection
                  {Discretized governing equations with $SPH-\varepsilon$ tur...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22124,7 +22120,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.404 \subsection{D
+l.405 \subsection{D
                    iscretized governing equations with $SPH-\varepsilon$ tur...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -22321,17 +22317,17 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 404--406
+Overfull \hbox (20.0pt too wide) in paragraph at lines 405--407
 []
  []
 
 
-Overfull \hbox (31.42012pt too wide) in paragraph at lines 404--406
+Overfull \hbox (31.42012pt too wide) in paragraph at lines 405--407
 \OML/cmm/m/it/10 SPH \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (4.66318pt too wide) in paragraph at lines 404--406
+Overfull \hbox (4.66318pt too wide) in paragraph at lines 405--407
 \OML/cmm/m/it/10 "$
  []
 
@@ -22342,14 +22338,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.407 \begin{split}
+l.408 \begin{split}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.408 \left\langle\dfrac
+l.409 \left\langle\dfrac
                         {d \textbf{v}_{\alpha}}{d t}\right\rangle
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22358,7 +22354,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.409 &
+l.410 &
         =-\sum_b \left[ m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_{\alpha}}...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -22368,7 +22364,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.409 & =-\sum_b \left[ m_b \left(\dfrac
+l.410 & =-\sum_b \left[ m_b \left(\dfrac
                                         {p_b}{\rho_b^2} + \dfrac{p_{\alpha}}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22377,7 +22373,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.409 ... m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac
+l.410 ... m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac
                                                   {p_{\alpha}}{\rho_{\alpha}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22388,7 +22384,7 @@ and I'll forget about whatever was undefined.
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.410 &
+l.411 &
         -\sum_j \left[m_j \left(\dfrac{p_j}{\rho_j^2} + \dfrac{p_{\alpha}}{\...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -22398,7 +22394,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.410 & -\sum_j \left[m_j \left(\dfrac
+l.411 & -\sum_j \left[m_j \left(\dfrac
                                       {p_j}{\rho_j^2} + \dfrac{p_{\alpha}}{\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22407,7 +22403,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.410 ...[m_j \left(\dfrac{p_j}{\rho_j^2} + \dfrac
+l.411 ...[m_j \left(\dfrac{p_j}{\rho_j^2} + \dfrac
                                                   {p_{\alpha}}{\rho_{\alpha}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22416,20 +22412,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{equation} on input line 406 ended by \end{split}.
+! LaTeX Error: \begin{equation} on input line 407 ended by \end{split}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.412 \end{split}
+l.413 \end{split}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (505.69847pt too wide) detected at line 413
+Overfull \hbox (505.69847pt too wide) detected at line 414
 [] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 ^^@ [] [] []  ^^@ [] [] \OT1/cmr/m/n/10 +
  [][]
  []
@@ -22439,7 +22435,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 ! Undefined control sequence.
-l.416 \Phi_{\alpha \beta}=\dfrac
+l.417 \Phi_{\alpha \beta}=\dfrac
                                 {\varepsilon}{2} \dfrac{\textbf{v}_{\alpha \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22448,7 +22444,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.416 ...lpha \beta}=\dfrac{\varepsilon}{2} \dfrac
+l.417 ...lpha \beta}=\dfrac{\varepsilon}{2} \dfrac
                                                   {\textbf{v}_{\alpha \beta}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22457,7 +22453,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (91.92256pt too wide) detected at line 417
+Overfull \hbox (91.92256pt too wide) detected at line 418
 \OT1/cmr/m/n/10 ^^H[] = \OML/cmm/m/it/10 "\OT1/cmr/m/n/10 2[][]
  []
 
@@ -22468,14 +22464,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.419 \begin{split}
+l.420 \begin{split}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.420 \left\langle\dfrac
+l.421 \left\langle\dfrac
                         {d e_{\alpha}}{d t}\right\rangle
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22484,7 +22480,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.421 &
+l.422 &
         = 0.5\sum_b \left[m_b \widehat{\textbf{v}_{\alpha b}}\left(\dfrac{p_...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -22494,7 +22490,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.421 ...idehat{\textbf{v}_{\alpha b}}\left(\dfrac
+l.422 ...idehat{\textbf{v}_{\alpha b}}\left(\dfrac
                                                   {p_b}{\rho_b^2} + \dfrac{p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22503,29 +22499,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.421 ...a b}}\left(\dfrac{p_b}{\rho_b^2} + \dfrac
+l.422 ...a b}}\left(\dfrac{p_b}{\rho_b^2} + \dfrac
                                                   {p_{\alpha}}{\rho_{\alpha}...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-<recently read> &
-                 
-l.422 &
-       + 2 \sum_b \dfrac{m_b}{\rho_{\alpha} \rho_b} \kappa_{t,\alpha b} \lef...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.422 &+ 2 \sum_b \dfrac
-                        {m_b}{\rho_{\alpha} \rho_b} \kappa_{t,\alpha b} \lef...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -22536,7 +22511,7 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.423 &
-        +0.5\sum_j \left[m_j \widehat{\textbf{v}_{\alpha b}}\left(\dfrac{p_j...
+       + 2 \sum_b \dfrac{m_b}{\rho_{\alpha} \rho_b} \kappa_{t,\alpha b} \lef...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -22545,17 +22520,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.423 ...idehat{\textbf{v}_{\alpha b}}\left(\dfrac
-                                                  {p_j}{\rho_j^2} + \dfrac{p...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.423 ...a b}}\left(\dfrac{p_j}{\rho_j^2} + \dfrac
-                                                  {p_{\alpha}}{\rho_{\alpha}...
+l.423 &+ 2 \sum_b \dfrac
+                        {m_b}{\rho_{\alpha} \rho_b} \kappa_{t,\alpha b} \lef...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -22566,6 +22532,36 @@ and I'll forget about whatever was undefined.
 <recently read> &
                  
 l.424 &
+        +0.5\sum_j \left[m_j \widehat{\textbf{v}_{\alpha b}}\left(\dfrac{p_j...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.424 ...idehat{\textbf{v}_{\alpha b}}\left(\dfrac
+                                                  {p_j}{\rho_j^2} + \dfrac{p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.424 ...a b}}\left(\dfrac{p_j}{\rho_j^2} + \dfrac
+                                                  {p_{\alpha}}{\rho_{\alpha}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.425 &
        + 2 \sum_j \dfrac{m_j}{\rho_{\alpha} \rho_j} \kappa_{t,\alpha j} \lef...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -22575,7 +22571,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.424 &+ 2 \sum_j \dfrac
+l.425 &+ 2 \sum_j \dfrac
                         {m_j}{\rho_{\alpha} \rho_j} \kappa_{t,\alpha j} \lef...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22584,20 +22580,20 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{equation} on input line 418 ended by \end{split}.
+! LaTeX Error: \begin{equation} on input line 419 ended by \end{split}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.425 \end{split}
+l.426 \end{split}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (863.82747pt too wide) detected at line 427
+Overfull \hbox (863.82747pt too wide) detected at line 428
 [] \OT1/cmr/m/n/10 = 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5 [] [] []  + 2 [] [][]
 \OML/cmm/m/it/10 ^^T[] [] F[] [] []  \OT1/cmr/m/n/10 + 0\OML/cmm/m/it/10 :\OT1/
 cmr/m/n/10 5 [] [] []  + 2 [] [][]\OML/cmm/m/it/10 ^^T[] [] F[] [][]
@@ -22621,7 +22617,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...NS-heat-conductivity' on page \thepage 
                                                   \space undefined\on@line .
-l.428 ... Eq. (\ref{eq:SPH-LANS-heat-conductivity}
+l.429 ... Eq. (\ref{eq:SPH-LANS-heat-conductivity}
                                                   ).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22631,7 +22627,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `eq:SPH-LANS-heat-conductivity' on page  undefined on 
-input line 428.
+input line 429.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -22788,7 +22784,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...PH-epsilon-filtering' on page \thepage 
                                                   \space undefined\on@line .
-l.430 ...ng to Eq. (\ref{eq:SPH-epsilon-filtering}
+l.431 ...ng to Eq. (\ref{eq:SPH-epsilon-filtering}
                                                   ). Position of particles i...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22798,7 +22794,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `eq:SPH-epsilon-filtering' on page  undefined on input
- line 430.
+ line 431.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -22848,7 +22844,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...pdate-pos-turbulence' on page \thepage 
                                                   \space undefined\on@line .
-l.430 ...o Eq. (\ref{eq:gov-update-pos-turbulence}
+l.431 ...o Eq. (\ref{eq:gov-update-pos-turbulence}
                                                   ). Smoothed velocity is al...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22858,7 +22854,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `eq:gov-update-pos-turbulence' on page  undefined on i
-nput line 430.
+nput line 431.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -22923,27 +22919,27 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (21.75032pt too wide) in paragraph at lines 427--432
+Overfull \hbox (21.75032pt too wide) in paragraph at lines 428--433
  $\OML/cmm/m/it/10 ^^T[]$
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 427--432
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 428--433
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 427--432
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 428--433
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 427--432
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 428--433
 []
  []
 
 ! Undefined control sequence.
-l.433 \section
+l.434 \section
               {Boundary conditions}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22958,7 +22954,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.433 \section{B
+l.434 \section{B
                 oundary conditions}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -23047,7 +23043,7 @@ Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...bc_and_domain_decomp' on page \thepage 
                                                   \space undefined\on@line .
-l.434 ...b$ of Fig. \ref{fig:bc_and_domain_decomp}
+l.435 ...b$ of Fig. \ref{fig:bc_and_domain_decomp}
                                                    shows how boundaries are ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -23057,7 +23053,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `fig:bc_and_domain_decomp' on page  undefined on input
- line 434.
+ line 435.
 
 Missing character: There is no s in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -23090,7 +23086,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
-l.436 \subsection
+l.437 \subsection
                  {Wall boundary condition}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -23193,7 +23189,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no y in font nullfont!
 ! Undefined control sequence.
-l.437 ...real particles across the boundary \citep
+l.438 ...real particles across the boundary \citep
                                                    {ferrari2009new} or bound...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -23232,7 +23228,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.437 ...ferrari2009new} or boundary forces \citep
+l.438 ...ferrari2009new} or boundary forces \citep
                                                    {monaghan2009sph} have be...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -23575,7 +23571,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no d in font nullfont!
 ! Undefined control sequence.
-l.437 ...rsion of the ghost particle method \citep
+l.438 ...rsion of the ghost particle method \citep
                                                    {kumar2013parallel} for w...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -24294,7 +24290,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `eq:wall_bc_v' on page \thepage 
                                                   \space undefined\on@line .
-l.437 ...undary condition (Eq. (\ref{eq:wall_bc_v}
+l.438 ...undary condition (Eq. (\ref{eq:wall_bc_v}
                                                   )) is imposed naturally. T...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -24303,7 +24299,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:wall_bc_v' on page  undefined on input line 437.
+LaTeX Warning: Reference `eq:wall_bc_v' on page  undefined on input line 438.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ) in font nullfont!
@@ -24444,7 +24440,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.437 ... about this method can be found in \citep
+l.438 ... about this method can be found in \citep
                                                    {kumar2013parallel}. As t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -24547,7 +24543,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ence `eq:wall_bc_rho' on page \thepage 
                                                   \space undefined\on@line .
-l.437 ...n the boundary (Eq. (\ref{eq:wall_bc_rho}
+l.438 ...n the boundary (Eq. (\ref{eq:wall_bc_rho}
                                                   ) and (\ref{eq:wall_bc_xi}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -24556,7 +24552,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:wall_bc_rho' on page  undefined on input line 437.
+LaTeX Warning: Reference `eq:wall_bc_rho' on page  undefined on input line 438.
 
 
 Missing character: There is no ) in font nullfont!
@@ -24567,7 +24563,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...rence `eq:wall_bc_xi' on page \thepage 
                                                   \space undefined\on@line .
-l.437 ...eq:wall_bc_rho}) and (\ref{eq:wall_bc_xi}
+l.438 ...eq:wall_bc_rho}) and (\ref{eq:wall_bc_xi}
                                                   )). In addition, as temper...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -24576,7 +24572,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:wall_bc_xi' on page  undefined on input line 437.
+LaTeX Warning: Reference `eq:wall_bc_xi' on page  undefined on input line 438.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ) in font nullfont!
@@ -24737,7 +24733,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `eq:wall_bc_e' on page \thepage 
                                                   \space undefined\on@line .
-l.437 ...he wall boundary (Eq. (\ref{eq:wall_bc_e}
+l.438 ...he wall boundary (Eq. (\ref{eq:wall_bc_e}
                                                   )).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -24746,7 +24742,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:wall_bc_e' on page  undefined on input line 437.
+LaTeX Warning: Reference `eq:wall_bc_e' on page  undefined on input line 438.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ) in font nullfont!
@@ -24851,7 +24847,7 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
 ! Undefined control sequence.
-l.438 ...y, it has been shown in other work \citep
+l.439 ...y, it has been shown in other work \citep
                                                    {kumar2013parallel} that ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -25101,42 +25097,42 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 433--439
+Overfull \hbox (20.0pt too wide) in paragraph at lines 434--440
 []
  []
 
 
-Overfull \hbox (4.29166pt too wide) in paragraph at lines 433--439
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 434--440
 \OML/cmm/m/it/10 b$
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 433--439
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 434--440
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 433--439
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 434--440
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 433--439
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 434--440
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 433--439
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 434--440
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 433--439
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 434--440
 []
  []
 
 ! Undefined control sequence.
-l.440 \subsection
+l.441 \subsection
                  {Eruption boundary condition}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -25151,7 +25147,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.440 \subsection{E
+l.441 \subsection{E
                    ruption boundary condition}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -25527,7 +25523,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...rence `eq:erupt_bc_v' on page \thepage 
                                                   \space undefined\on@line .
-l.441 ...uption velocity (Eq. (\ref{eq:erupt_bc_v}
+l.442 ...uption velocity (Eq. (\ref{eq:erupt_bc_v}
                                                   )). The mass of eruption g...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -25536,7 +25532,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:erupt_bc_v' on page  undefined on input line 441.
+LaTeX Warning: Reference `eq:erupt_bc_v' on page  undefined on input line 442.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ) in font nullfont!
@@ -25610,7 +25606,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ference `eq:ns-sph-d' on page \thepage 
                                                   \space undefined\on@line .
-l.441 ...that evaluation of Eq. (\ref{eq:ns-sph-d}
+l.442 ...that evaluation of Eq. (\ref{eq:ns-sph-d}
                                                   ) can return us a density ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -25619,7 +25615,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:ns-sph-d' on page  undefined on input line 441.
+LaTeX Warning: Reference `eq:ns-sph-d' on page  undefined on input line 442.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no c in font nullfont!
@@ -25683,7 +25679,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...nce `eq:erupt_bc_rho' on page \thepage 
                                                   \space undefined\on@line .
-l.441 ...value given in Eq. (\ref{eq:erupt_bc_rho}
+l.442 ...value given in Eq. (\ref{eq:erupt_bc_rho}
                                                   ).
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -25692,7 +25688,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:erupt_bc_rho' on page  undefined on input line 441
+LaTeX Warning: Reference `eq:erupt_bc_rho' on page  undefined on input line 442
 .
 
 Missing character: There is no ) in font nullfont!
@@ -25769,7 +25765,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...rence `eq:erupt_bc_e' on page \thepage 
                                                   \space undefined\on@line .
-l.442 ... a value so that Eq. (\ref{eq:erupt_bc_e}
+l.443 ... a value so that Eq. (\ref{eq:erupt_bc_e}
                                                   ) is satisfied. The mass f...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -25778,7 +25774,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:erupt_bc_e' on page  undefined on input line 442.
+LaTeX Warning: Reference `eq:erupt_bc_e' on page  undefined on input line 443.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -25833,7 +25829,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ence `eq:erupt_bc_xi' on page \thepage 
                                                   \space undefined\on@line .
-l.442 ...upted material (Eq. (\ref{eq:erupt_bc_xi}
+l.443 ...upted material (Eq. (\ref{eq:erupt_bc_xi}
                                                   )) is automatically satisf...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -25842,7 +25838,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `eq:erupt_bc_xi' on page  undefined on input line 442.
+LaTeX Warning: Reference `eq:erupt_bc_xi' on page  undefined on input line 443.
 
 
 Missing character: There is no ) in font nullfont!
@@ -26298,37 +26294,37 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 440--443
+Overfull \hbox (20.0pt too wide) in paragraph at lines 441--444
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 440--443
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 441--444
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 440--443
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 441--444
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 440--443
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 441--444
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 440--443
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 441--444
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 440--443
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 441--444
 []
  []
 
 ! Undefined control sequence.
-l.444 \subsection
+l.445 \subsection
                  {Pressure boundary condition}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -26343,7 +26339,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444 \subsection{P
+l.445 \subsection{P
                    ressure boundary condition}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -26662,7 +26658,7 @@ Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ce `eq:pressure_bc_p' on page \thepage 
                                                   \space undefined\on@line .
-l.445 ...ry condition (Eq. (\ref{eq:pressure_bc_p}
+l.446 ...ry condition (Eq. (\ref{eq:pressure_bc_p}
                                                   )) is more suitable for pl...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -26672,7 +26668,7 @@ and I'll forget about whatever was undefined.
 
 
 LaTeX Warning: Reference `eq:pressure_bc_p' on page  undefined on input line 44
-5.
+6.
 
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ) in font nullfont!
@@ -27251,12 +27247,12 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no y in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 444--446
+Overfull \hbox (20.0pt too wide) in paragraph at lines 445--447
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 444--446
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 445--447
 []
  []
 
@@ -27267,7 +27263,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.447 A
+l.448 A
        s simulations progress, changes in position and physical quantities o...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -27646,12 +27642,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 447--448
+Overfull \hbox (20.0pt too wide) in paragraph at lines 448--449
 []
  []
 
 ! Undefined control sequence.
-l.449 \Delta t \leq CFL_p \dfrac
+l.450 \Delta t \leq CFL_p \dfrac
                                 {h}{v}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -27660,7 +27656,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (63.35515pt too wide) detected at line 450
+Overfull \hbox (63.35515pt too wide) detected at line 451
 \OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 CFL
 []hv
  []
@@ -27889,27 +27885,27 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (27.10986pt too wide) in paragraph at lines 450--452
+Overfull \hbox (27.10986pt too wide) in paragraph at lines 451--453
  $\OML/cmm/m/it/10 CFL[]$
  []
 
 
-Overfull \hbox (22.48752pt too wide) in paragraph at lines 450--452
+Overfull \hbox (22.48752pt too wide) in paragraph at lines 451--453
 \OML/cmm/m/it/10 CFL$
  []
 
 
-Overfull \hbox (27.10986pt too wide) in paragraph at lines 450--452
+Overfull \hbox (27.10986pt too wide) in paragraph at lines 451--453
 \OML/cmm/m/it/10 CFL[]$
  []
 
 
-Overfull \hbox (27.10986pt too wide) in paragraph at lines 450--452
+Overfull \hbox (27.10986pt too wide) in paragraph at lines 451--453
 \OML/cmm/m/it/10 CFL[]$
  []
 
 
-Overfull \hbox (27.10986pt too wide) in paragraph at lines 450--452
+Overfull \hbox (27.10986pt too wide) in paragraph at lines 451--453
 \OML/cmm/m/it/10 CFL[]$
  []
 
@@ -27920,20 +27916,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.453 \begin{figure}
+l.454 \begin{figure}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.454 \includegraphics
-                      [width=18cm]{Chapter-3/Figures/t120_bc_proc}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 ! LaTeX Error: Missing \begin{document}.
@@ -27942,10 +27929,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.454 \includegraphics[
-                       width=18cm]{Chapter-3/Figures/t120_bc_proc}
+l.455 \center
+             
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 455--455
+[] 
+ []
+
+! Undefined control sequence.
+l.456 \includegraphics
+                      [width=18cm]{Chapter-3/Figures/t120_bc_proc}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Missing character: There is no [ in font nullfont!
 Missing character: There is no w in font nullfont!
@@ -27984,13 +27985,13 @@ Missing character: There is no 0 in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.454 ...phics[width=18cm]{Chapter-3/Figures/t120_
+l.456 ...phics[width=18cm]{Chapter-3/Figures/t120_
                                                   bc_proc}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Extra }, or forgotten $.
-l.454 ...dth=18cm]{Chapter-3/Figures/t120_bc_proc}
+l.456 ...dth=18cm]{Chapter-3/Figures/t120_bc_proc}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -28005,7 +28006,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.455 \caption
+l.457 \caption
               {A cross section view of the simulation domain in $y-z$ plane ...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -28014,7 +28015,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.455 ...ection view of the simulation domain in $
+l.457 ...ection view of the simulation domain in $
                                                   y-z$ plane at 66 seconds. ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -28030,7 +28031,7 @@ Missing character: There is no b in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no c in font nullfont!
 ! Extra }, or forgotten $.
-l.455 ...ss section view shows a portion of them.}
+l.457 ...ss section view shows a portion of them.}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -28045,7 +28046,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.457 \end{figure}
+l.459 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -28054,7 +28055,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.457 \end{figure}
+l.459 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -28065,7 +28066,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.457 \end{figure}
+l.459 \end{figure}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -28083,7 +28084,7 @@ my insertion and my current dilemma will both disappear.
 Here is how much of TeX's memory you used:
  57 strings out of 493117
  1082 string characters out of 6135433
- 81909 words of memory out of 5000000
+ 82909 words of memory out of 5000000
  3617 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

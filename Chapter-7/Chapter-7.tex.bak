@@ -1,4 +1,5 @@
-\chapter{Ash Transportation and Dispersal Simulation}
+\chapter{Ash Transportation and Dispersal Simulation} \label{chapter:ash-transportation}
+
 \section{Introduction}
 
 The initial ash cloud which serve as initial conditions for volcanic ash transportation and dispersal simulation are traditionally created based on semiempirical plume shape expressions, which are written as function of several parameters including key global descriptors of the volcanic plumes. These key global descriptors, such as maximum height, are either obtained from 1D (one dimensional) plume simulation or merely parameter calibration. We present in this paper a new method for obtaining initial ash cloud based on 3D (three dimensional) plume simulation without any assumption regarding plume shape. Case study of Pinatubo eruption demonstrates that this new method can create more realistic initial ash cloud and improve accuracy of ash transportation forecast significantly. The importance of initial condition is convinced in sensitivity analyses which prove that volcanic ash transportation simulation is much more sensitive to initial condition than all other input parameters. A further investigation through calibrating of maximum height shows that initial ash particle distribution in vertical direction is one of the dominant aspects of initial ash cloud.
@@ -61,22 +62,40 @@ To summarize, it takes four steps to create initial ash cloud from output of Plu
 
 Table \ref{tab:VATDs-source-term-determination} compares three different manners for creating initial conditions for VATDs: creating initial ash cloud without any plume model, creating initial ash cloud based on output of 1D plume model and extracting initial ash cloud from 3D plume simulation. The first method determines all parameters by calibration. Then create initial ash cloud according to semiempirical plume shape expression. Other two methods both depend on plume models. Compared with 3D plume models, even though 1D plume models also accounting for basic conservation laws, requires calibration of entrainment coefficients. What's more, 3D plume model can generate an initial ash cloud in a 3D space while 1D plume assumes a specific plume shape (such as Poisson or Suzuki). In addition, the number of particles in the first two manners for generating initial ash cloud is free parameter while it depends on simulating in the third manner. 
  
+%\begin{table}[htp]
+%\centering
+%      \caption{Three different manners for determining input parameters that define the initial ash clouds for PUFF simulation}		
+%	  \begin{tabular}{p{19mm}p{23mm}p{20mm}p{20mm}p{20mm}p{20mm}p{18mm}}
+%	    \hline
+%	          & Maximum \newline height & Average \newline height & Vertical \newline spread & Column \newline radius & Plume \newline shape & number \newline of particles\\
+%	    \hline
+%	    No model & Observation $\&$ \newline Calibration & Calibration & Calibration & Calibration & Semiempirical & Free \newline parameter \\
+%	    bent (1D) & Semiempirical & Conservation \newline laws (1D) & Semiempirical & Conservation \newline laws (1D) & Semiempirical & Free \newline parameter\\
+%	    Plume-SPH \newline (3D) & 1st principle & 1st principle & 1st principle & 1st principle & 1st principle & Based on \newline simulation \\
+%	    \hline
+%	  \end{tabular}
+%	  \label{tab:VATDs-source-term-determination}
+%\end{table}
+
 \begin{table}[htp]
 \centering
       \caption{Three different manners for determining input parameters that define the initial ash clouds for PUFF simulation}		
-	  \begin{tabular}{p{19mm}p{23mm}p{20mm}p{20mm}p{20mm}p{20mm}p{18mm}}
+	  \begin{tabular}{p{31mm}p{32mm}p{32mm}p{32mm}}
 	    \hline
-	          & Maximum \newline height & Average \newline height & Vertical \newline spread & Column \newline radius & Plume \newline shape & number \newline of particles\\
-	    \hline
-	    No model & Observation $\&$ \newline Calibration & Calibration & Calibration & Calibration & Semiempirical & Free \newline parameter \\
-	    bent (1D) & Semiempirical & Conservation \newline laws (1D) & Semiempirical & Conservation \newline laws (1D) & Semiempirical & Free \newline parameter\\
-	    Plume-SPH \newline (3D) & 1st principle & 1st principle & 1st principle & 1st principle & 1st principle & Based on \newline simulation \\
+	    		 & No model & bent (1D) & Plume-SPH \newline (3D) \\
+	    		 \hline    		 
+	  Maximum height & Observation $\&$ \newline Calibration & Semiempirical &  1st principle \\
+	  Average height &  Calibration & Conservation \newline laws (1D) &  1st principle  \\
+	  Vertical spread &  Calibration & Semiempirical & 1st principle \\
+	  Column radius & Calibration  &  Conservation \newline laws (1D) &  1st principle \\
+	  Plume shape & Semiempirical & Semiempirical  & 1st principle \\
+	  Number of \newline particles & Free \newline parameter  & Free \newline Parameter & Based on \newline simulation\\ 
 	    \hline
 	  \end{tabular}
 	  \label{tab:VATDs-source-term-determination}
 \end{table}
 
-\subsection{Sensitivity of other parameters}
+\subsection{Sensitivity analysis of other parameters}
 
 Besides initial parameters, other input parameters for PUFF simulation are: horizontal diffusivity, vertical diffusivity, mean grain size, grain size standard deviation, particles' number and eruption duration. We present in this section determination of eruption duration and sensitivity studies on other parameters.
 
@@ -85,10 +104,10 @@ It takes around 600s for Pinatubo plume to reach the steady state. However the d
 
 A systematic sensitivity study is applied to check how other input parameters would influence the simulation results. Such sensitivity analyses will serve as basis for identifying possible sources of disparities between simulation and observation.
 The sensitivity analyses illustrate that adjustment of other input parameters produces negligible visual differences in ash cloud distribution. Using different vertical diffusivities in range of $[100, 100000] m^2s^{-1} $ and different horizontal diffusivities in range of $[1, 20] m^2s^{-1}$ produces visually negligible differences, too. 
-The eruption duration should depend on the actual eruption duration (or the duration of climactic phase) of a specific eruption. We conducted several simulations with eruption duration varying in range of $[5, 11] hours$ with slight different starting time of climactic phase. Table \ref{tab:sensitivity-start-end-time} lists all these simulations. However, only tiny visible differences are observed among the simulated ash distributions. The mean of grain size also has visually ignorable effects on long-term ash distribution according to our sensitivity tests varying the log mean (base 10) grain radius in a range of $[-7.3, -3.5] m$. 
+The eruption duration should depend on the actual eruption duration (or the duration of climactic phase) of a specific eruption. We conducted several simulations with eruption duration varying in range of $[5, 11] hours$ with slight different starting time of climactic phase. Table \ref{tab:Pinatubo-eruption-duration} lists all these simulations. However, only tiny visible differences are observed among the simulated ash distributions. The mean of grain size also has visually ignorable effects on long-term ash distribution according to our sensitivity tests varying the log mean (base 10) grain radius in a range of $[-7.3, -3.5] m$. 
 %When using extreme small mean grain size, PUFF is supposed to forecast transportation of volcanic gases. 
 The standard deviation, when varying in range of $[0.1, 10]$, also generate ignorable difference on long-term ash distribution. Similar conclusion on parameter sensitivity is reported by \citet{fero2008simulation}.
-Among these parameters, the eruption duration and beginning time shows, even though tiny, the most obvious influence on simulated ash distribution. In order to show such differences in an intuitive way, Fig. \ref{fig:PUFF-sensitivity-duration} shows ash distribution corresponding to 4.9 hours duration, 9 hours duration and 11 hours duration respectively. After 72 hours, relative to the simulation starting time, these three cases generate generally similar result, with high concentration ash covers almost the same region. The difference of lower concentration distribution is relatively more obvious. Simulated volcanic ash covers broadest area when eruption duration is 11.1 hours. To summarize, all other input parameters have either tiny or ignorable affects on long-term ash distribution simulation. 
+Among these parameters, the eruption duration and beginning time shows, even though tiny, the most obvious influence on simulated ash distribution. In order to show such differences in an intuitive way, Fig. \ref{tab:Pinatubo-eruption-duration} shows ash distribution corresponding to 4.9 hours duration, 9 hours duration and 11 hours duration respectively. After 72 hours, relative to the simulation starting time, these three cases generate generally similar result, with high concentration ash covers almost the same region. The difference of lower concentration distribution is relatively more obvious. Simulated volcanic ash covers broadest area when eruption duration is 11.1 hours. To summarize, all other input parameters have either tiny or ignorable affects on long-term ash distribution simulation. 
 
 \begin{table}[htp]
 \centering
@@ -414,7 +433,7 @@ To conclude, the obvious disparity between observation and PUFF simulation resul
 
 \section*{Conclusion}
 
-In this paper, we presented, for the first time, a new methodology to create initial conditions for volcanic ash transportation and dispersal simulation. The new method extracts initial ash cloud from 3D plume simulation while traditional methods create initial ash cloud based on semiemperical plume shape expression. Case study of Pinatubo eruption demonstrates that this new method can create more realistic initial ash cloud and improve accuracy of ash transportation forecast. In order to explain why we got much closer ash dispersal forecast merely by adopting new initial conditions, more investigations were conducted. Sensitivity analyses illustrate that initial condition has more significant effects on volcanic ash transportation forecast than most of the other input parameters. Calibrating of the maximum height in semiemperical plume shape expression reveals how vertical ash particle distribution in initial ash cloud could affect ash transportation forecast. At the end, the disparity between simulation and observation of long-term ash transportation is investigated concluding that it is necessary for VATDs to account for aggregation due to ice to reduce disparity in Pinatubo ash transportation forecast.
+In this chapter, we presented, for the first time, a new methodology to create initial conditions for volcanic ash transportation and dispersal simulation. The new method extracts initial ash cloud from 3D plume simulation while traditional methods create initial ash cloud based on semiemperical plume shape expression. Case study of Pinatubo eruption demonstrates that this new method can create more realistic initial ash cloud and improve accuracy of ash transportation forecast. In order to explain why we got much closer ash dispersal forecast merely by adopting new initial conditions, more investigations were conducted. Sensitivity analyses illustrate that initial condition has more significant effects on volcanic ash transportation forecast than most of the other input parameters. Calibrating of the maximum height in semiemperical plume shape expression reveals how vertical ash particle distribution in initial ash cloud could affect ash transportation forecast. At the end, the disparity between simulation and observation of long-term ash transportation is investigated concluding that it is necessary for VATDs to account for aggregation due to ice to reduce disparity in Pinatubo ash transportation forecast.
 
 This new method provides an alternative option for creating initial conditions for ash transportation simulations. Except for the disadvantage of high computational cost it helps overcome several shortcomings of existing methods.
 As numerical models based on first principle, 3D plume models eliminate parameterization and hence user intervention associated with entrainment coefficients. Thereby, obtaining initial conditions from 3D plume models could improve forecast capacity of ash transportation simulation. More importantly, with output in 3D space, no assumption about plume shape needed. The plume shape generated directly by 3D simulation is more realistic and adaptive to various scenarios.

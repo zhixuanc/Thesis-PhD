@@ -8,71 +8,69 @@ A level-1 auxiliary file: Chapter-4/Chapter-4.aux
 A level-1 auxiliary file: Chapter-5/Chapter-5.aux
 A level-1 auxiliary file: Chapter-6/Chapter-6.aux
 A level-1 auxiliary file: Chapter-7/Chapter-7.aux
+A level-1 auxiliary file: Chapter-8/Chapter-8.aux
 A level-1 auxiliary file: Appendix-A/Appendix-A.aux
-A level-1 auxiliary file: Appendix-B/Appendix-B.aux
 The style file: apsr.bst
 Database file #1: dissertation.bib
-Repeated entry---line 1092 of file dissertation.bib
- : @article{sigalotti2006shock
- :                            ,
+You're missing a field name---line 92 of file dissertation.bib
+ : 
+ : %  title={Turbulent gravitational convection from maintained and instantaneous sources},
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1509 of file dissertation.bib
- : @inproceedings{borgani2012hydrodynamic
- :                                       ,
+Repeated entry---line 102 of file dissertation.bib
+ : @inproceedings{morton1956turbulent
+ :                                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2212 of file dissertation.bib
- : @article{glimm1965solutions
- :                            ,
+You're missing a field name---line 778 of file dissertation.bib
+ : 
+ : %  title={HYSPLIT (HYbrid Single-Particle Lagrangian Integrated Trajectory) Model access via NOAA ARL READY Website. NOAA Air Resources Laboratory, Silver Spring},
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 2289 of file dissertation.bib
- : @book{hammersley2013monte
- :                          ,
+Repeated entry---line 2447 of file dissertation.bib
+ : @article{stefanescu2014temporal
+ :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2296 of file dissertation.bib
- : @article{colella1982glimm
- :                          ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "lynch1996mount"
-Warning--can't use both volume and number fields in morton1956turbulent
-You've used 173 entries,
+Warning--empty author in morton1956turbulent
+Warning--empty booktitle in morton1956turbulent
+You've used 182 entries,
             2874 wiz_defined-function locations,
-            1574 strings with 34818 characters,
-and the built_in function-call counts, 941159 in all, are:
-= -- 155221
-> -- 12282
-< -- 4
-+ -- 75023
-- -- 4239
-* -- 82786
-:= -- 185222
-add.period$ -- 699
-call.type$ -- 173
-change.case$ -- 2249
-chr.to.int$ -- 171
-cite$ -- 174
-duplicate$ -- 2619
-empty$ -- 5982
-format.name$ -- 4467
-if$ -- 169275
+            1609 strings with 36583 characters,
+and the built_in function-call counts, 995451 in all, are:
+= -- 164170
+> -- 13083
+< -- 3
++ -- 79411
+- -- 4512
+* -- 87618
+:= -- 195786
+add.period$ -- 732
+call.type$ -- 182
+change.case$ -- 2361
+chr.to.int$ -- 180
+cite$ -- 184
+duplicate$ -- 2762
+empty$ -- 6298
+format.name$ -- 4751
+if$ -- 179073
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 175
-newline$ -- 715
-num.names$ -- 2016
-pop$ -- 541
+missing$ -- 184
+newline$ -- 749
+num.names$ -- 2109
+pop$ -- 586
 preamble$ -- 1
-purify$ -- 2595
+purify$ -- 2725
 quote$ -- 0
-skip$ -- 2349
+skip$ -- 2469
 stack$ -- 0
-substring$ -- 222129
-swap$ -- 372
-text.length$ -- 2426
+substring$ -- 234987
+swap$ -- 390
+text.length$ -- 2541
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 678
-warning$ -- 1
-while$ -- 4120
+type$ -- 714
+warning$ -- 2
+while$ -- 4315
 width$ -- 0
-write$ -- 2448
-(There were 5 error messages)
+write$ -- 2566
+(There were 4 error messages)

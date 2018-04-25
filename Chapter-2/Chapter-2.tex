@@ -1,9 +1,9 @@
 \chapter{Physical Model of Volcanic Plume} \label{chapter:physics-model}
 \section{Introduction}
-The volcanic plume development process is multiphase turbulent mixing flow accompanied by microphysics. Ignoring less dominant physical effects would reduce number of phases, number of governing equations, terms in governing equations making software development numerically, computationally and practically more feasible. Based on assumptions regarding the physics, a complete mathematical descriptions of the problem, written in form of a set of partial differential equations (PDEs), initial conditions and boundary conditions, are obtained. These PDEs, also named as governing equations, originate naturally
+The volcanic plume development process is multiphase turbulent mixing flow accompanied by microphysics. Ignoring less dominant physical effects would reduce number of phases, number of governing equations, terms in governing equations making software development numerically, computationally and practically more feasible. Based on assumptions regarding the physics involved in plume development process, a complete mathematical descriptions of the problem, written in form of a set of partial differential equations (PDEs), initial conditions and boundary conditions, are obtained. These PDEs, also named as governing equations, originate naturally
 from constitutive relationships and the application of the fundamental laws of conservation of mass, Newton’s Second Law and the law of conservation of energy. Eigenstructure of the governing equations are also analyzed in this chapter which is essential for the implementation of advanced numerical methods, such as GSPH and RSPH.
 
-\section{The Volcanic Plume Development}
+\section{Volcanic plume development}
 During an explosive eruption, a volcanic jet erupts out from a vent with a speed of several tens to more than 150 meters per second, driven by expanding gas. The jet is initially denser than the surrounding atmosphere and begins to decelerate through negative buoyancy and turbulent interaction with surrounding air. Cauliflower-like vortices are generated along jet margins, within which process, air is entrained and heated up, reducing the bulk density of the entire jet, in many cases, to less than that of the surrounding atmosphere. Once it becomes buoyant, such a jet develops into a plinian or subplinian plume, rising up to several kilometers to tens of kilometers until its heat is exhausted. Jets that lose their momentum before becoming buoyant collapse back onto the ground and transform into pyroclastic flows, surges and ignimbrites. During the process of plume rising up, relatively larger particles might separate from main stream of the plume, falling down onto the ground and possibly be re-entrained into the plume at a lower height \citep{ernst1996sedimentation}. Within this process, erupted vapor condenses to liquid (droplet) and even further to ice. Latent heat released from phase change of erupted vapor  further heats up entrained air and further dilutes the bulk density. The entrained vapor might also experience a similar process and impact plume development. Particle aggregation processes \citep{carey1982influence,taddeucci2011aggregation}, either due to presence of liquid water, resulting from particle collision or driven by electrostatic forces might occur inside plume and thereby affect the sedimentation. 
 
 All in all, the process of plume development is  essentially a multiphase turbulent mixing process coupled with heat transfer and other microphysical and chemical reactions.
@@ -12,15 +12,16 @@ As an initial effort on exploiting the feasibility and advantage of SPH in plume
 
 Because of the above assumptions, all other microphysical processes (such as the phase changes of $HO_2$, aggregation, disaggregation, absorption of gas on the surface of solids, solution of gas into a liquid) and chemical processes are not considered in this model. These ignored microphysics factors would play critical roles under particular eruption conditions. Capturing of these processes needs a more comprehensive model. One critical element in plume development, the effect of wind, is also not yet considered in this model. Introducing wind effects in our model requires dynamic pressure boundary conditions, which requires more numerical effort and algorithm design. To summarize, our model is not valid for eruptions where wind effect plays a significant role in its development, usually refered as a weak plume. Our model also lacks the ability in modeling plumes with large particles or eruptions in which microphysics plays non-ignorable roles, such as an eruption of \textit{El Chich{\'o}n} volcano on April 4th 1982 \citep{sigurdsson19841982, folch2016fplume}. We are focussed here on developing the SPH based methodoloy in the context of the more basic (and more critical) aspects of volcanic plume and therefore devote our effort to this relative simpler model. It is worthwhile to mention here that because SPH is adopted as our numerical method, adding of these physics into our model would require much less work in terms of programming compared to mesh based methods. Since our plan is an open source distribution of the tool we believe some of these enhancements will rapidly ensue with community participation.
 
-\section{Mathematical Description}
+\section{Mathematical description}\label{sec:chp2-Mathematical-Description}
 
 The following assumptions are made:
 \begin{itemize}
-\item Molecular Viscosity is neglected since eddy viscosity due to turbulence is dominant.
+\item Molecular Viscosity is neglected since eddy viscosity due to turbulence is dominant. Such assumption is a common practice when modelling turbulent flow, for which Reynolds number (ration between inertial force and viscous forces) is large.
 \item Erupted material consist of solid with different size and mixture of gas (various constituent) is assumed to be well mixed and behave like a single phase fluid (phase 2). Air (also a mixture of different gas) is assumed to be another phase (phase 1).
 \item Immediate thermodynamics equilibrium is assumed so that no separate energy equation is needed for each phase. As a result, there is only one energy equation for both phases (Heat transfer term will not show up under this assumption.). 
 \item Immediate dynamics equilibrium is assumed so that no separate momentum equation is needed for each phase. As a result, there is only one vector moment equation for both phases (Drag force term will not show up in the equation).
 \item Because of above assumptions, all other micro-physics process (like phase change of $H_2O$, aggregation, decomposition, absorption of gas on the surface of solid, solution of gas into the liquid,) and chemical process will not be considered in this model.
+\item Assume the effects of wind field is ignorable so that the atmosphere could be treated as stationary. 
 \end{itemize}
 
 \subsection{Governing equations}
@@ -294,7 +295,7 @@ With initial condition:
 As two linear degenerate characteristic fields have the same wave speed, the solution of this Riemann Problem consists of 4 constant states separated by 4 waves (two contact discontinuities in the middle coincide). 
 We assume that the initial data states $\textbf{U}_L$ and $\textbf{U}_R$ are connected by a single wave, all other waves have zero strength in the following elementary wave solution analysis.
 
-\subsubsection{Contact discontinuity}
+\subsection{Contact discontinuity}
 The contact discontinuity can be analysed by utilising the Generalised Riemann Invariants. For a $m \times m$ hyperbolic system, with primitve variable $\textbf{W} = \left[ w_1, w_2, \cdot \cdot \cdot w_m \right]^T$ and right eigenvector $\textbf{K}^{(i)}=[k^{(i)}_1,k^{(i)}_2, \cdot\cdot\cdot, k^{(i)}_m]^T$. The ith Generalised Riemann Invariants are: 
 \begin{equation}
 \frac{dw_1}{k^{(i)}_1}=\frac{dw_2}{k^{(i)}_2}=\frac{dw_3}{k^{(i)}_3}=\cdot\cdot\cdot=\frac{dw_m}{k^{(i)}_m}
@@ -312,7 +313,7 @@ Similarly, Apply the Generalised Riemann Invariants to 3rd eigenvector of the pr
 Which implies that $\rho$, $u$, $p$ keep constant accross waves associated with $\lambda_3$.
 To summarize $u$, $p$ keep constant accross discontinuity waves associated with $\lambda_3$ and $\lambda_2$.
 
-\subsubsection{Rarefaction waves}
+\subsection{Rarefaction waves}
 The wave associated with $\lambda_1$ and $\lambda_4$ can be either rarefaction or shocks.
 Rarefaction waves associated with genuinely nonlinear characteristic fields can also be inspected by utilising Generalised Riemann Invariants. Apply it to $\lambda_1$ of entropy equations: 
 \begin{equation}
@@ -347,7 +348,7 @@ u-\frac{2c}{\gamma_m -1} = const
 \label{eq:RP-solution-rarefaction-u-lamda4}
 \end{equation}
 
-\subsubsection{Shock waves}
+\subsection{Shock waves}
 Shock waves associated with either $\lambda_1$ or $\lambda_4$ can be analysed utilising Rankine-Hugoniot condition. Assume a shock wave associated with $\lambda_4$ has speed $S_4$. Define the relative velocities as:
 \begin{eqnarray}
 \tilde{u}_L = u_L - S_4

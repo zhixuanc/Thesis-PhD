@@ -1,4 +1,5 @@
-\chapter{Classical SPH method}
+
+\chapter{Classical SPH Method} \label{chapter:classical-SPH}
 
 \section{Introduction}
 SPH is a mesh-free Lagragian method. In SPH, the domain is discretized by a set of particles or discretization points and the position of each particle is updated at every time step based on the motion computed. Approximation of all field variables (velocity, density and pressure, ect.) is obtained by interpolation based on discretization points. The physical laws (such as conservation laws of mass, momentum and energy) written in the form of PDEs (partial differential equations)  or ODEs (ordinary differential equations) need to be transformed into the Lagrangian particle formalism of SPH. Using a kernel function that provides the weighted estimation of the field variables at any point, the integral equations are estimated as sums over particles in a compact subdomain defined by the support of the kernel function associated with the discretization points. Thus, field variables associated to the particle are updated based on its neighbors. Each kernel function has a compact support determined by smoothing length of each particle. There are several review papers by \citet{monaghan1992smoothed, monaghan2005smoothed, rosswog2009astrophysical, price2012smoothed, monaghan2012smoothed}, giving a pretty comprehensive view over SPH. We only refer here to the representation of the constitutive equations in SPH and put more focus on specific numerical techniques for plume modeling.
@@ -76,7 +77,7 @@ For vector quantities the expressions are similar, simply replacing $A$ with $\t
 \label{eq:SPH-vecctor-function}
 \end{align}
 
-\section{Artificial Viscosity} \label{sec:artificial-viscosity}
+\section{Artificial viscosity} \label{sec:artificial-viscosity}
 In classical SPH, shock waves are handled by introducing artificial viscosity, a term that is defined based on second derivatives of velocity, to smear out discontinuities. As in the case of first order derivatives, second order derivatives can be estimated by differentiating a SPH interpolation twice. However, such a formulation has two disadvantages: first, it is very sensitive to irregular distribution of particles, second, the second derivative of the kernel can change sign and lead to unphysical representations (for example, viscous dissipation causes decrease of the entropy). 
 
 One of the most commonly used models of artificial viscosity \citep{monaghan1983shock} is:
@@ -116,7 +117,7 @@ $\alpha$ and $\beta$ are two parameters that can be adjusted for different cases
 $\alpha = 1$ and $\beta = 2$ are  recommended by Monaghan for best results. In our simulation, these two parameters are calibrated to  $\alpha = 0.3$ and $\beta = 0.6$. $\eta$ is usually taken as 0.1 to prevent singularities.
 %when $\textbf{x}_{ab} = 0$.
 
-\section{Discretization of governing equations and extensibility}
+\section{Discretization of Euler equations and extensibility}
 The basic interpolation given in Eq. (\ref{eq:SPH-approximation-sum}) to Eq. (\ref{eq:SPH-vecctor-function}) provides a general way to obtain SPH expressions of governing equations. The problem is that using these expressions ``{as is}" in general leads to quite poor gradient estimates. Various tricks can be used to conserve linear and angular momentum and thermal energy \citep{monaghan1992smoothed}. Special treatments are also needed for second order derivative terms \citep{monaghan2005smoothed}. We only refer here to one of these possible discretizations of compressible Euler equations with SPH:
 \begin{align}
 <\rho_a> = \sum_b m_b w_{ab} \left(h\right) \label{eq:ns-sph-d} \\
@@ -185,7 +186,7 @@ The first order derivative term can be obtained in a similar way:
 For problems of higher dimension, the expressions for function approximation are exactly the same as Eq. (\ref{eq:CSP-function-approximation-1d}), even though the derivation is different. The first order derivative can be obtained by solving system of equations explicitly or numerically \citep{chen1999improvement}.
 
 \section{Mass fraction update}
-Air and erupted material are represented by two different sets of SPH particles (or discretization points) in the model. Based on assumptions we made in section \ref{sec:physics-model}, only density needs to be updated respectively for each phase. The updating of density is exactly the same as Eq. (\ref{eq:ns-sph-d}) in spirit.  Particles of phase 1 are not be counted while evaluating density of phase 2 and vice versa. Updating of density is then based on the following discretized equations.
+Air and erupted material are represented by two different sets of SPH particles (or discretization points) in the model. Based on assumptions we made in section \ref{sec:chp2-Mathematical-Description}, only density needs to be updated respectively for each phase. Such assumption also eliminate the tension forces accross the interface and simplified numerical challenges. The updating of density is exactly the same as Eq. (\ref{eq:ns-sph-d}) in spirit.  Particles of phase 1 are not be counted while evaluating density of phase 2 and vice versa. Updating of density is then based on the following discretized equations.
 \begin{equation}
 <\rho_{\alpha}^a>=\frac{\sum m_b w_{\alpha b} \left(h\right)}{\sum \frac{m_b}{\rho_b} w_{\alpha b} \left(h\right) +\sum \frac{m_j}{\rho_j} w_{\alpha j} \left(h\right)} \label{eq:gov-sph-d1}
 \end{equation}
