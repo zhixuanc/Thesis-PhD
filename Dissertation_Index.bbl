@@ -63,13 +63,6 @@ Bursik, M. 2001.
 \newblock ``Effect of wind on the rise height of volcanic plumes.'' {\em
   Geophys. Res. Lett} 28(18):3621--3624.
 
-\harvarditem[Bursik et~al.]{Bursik, Mart{\i}nez-Hackert, Delgado \harvardand\
-  Gonzalez-Huesca}{2003}{bursik2003smoothed}
-Bursik, M, B Mart{\i}nez-Hackert, H Delgado \harvardand\ A Gonzalez-Huesca.
-  2003.
-\newblock ``A smoothed-particle hydrodynamic automaton of landform degradation
-  by overland flow.'' {\em Geomorphology} 53(1):25--44.
-
 \harvarditem{Bursik}{2010}{267}
 Bursik, Marcus~I. 2010.
 \newblock ``bent: A model of plumes in crossflow.''.
@@ -319,6 +312,11 @@ Esposti~Ongaro, Thmaso, Carlo Cavazzoni, Giovanni Erbacci, Augusto Neri
 \newblock ``A parallel multiphase flow code for the 3D simulation of explosive
   volcanic eruptions.'' {\em Parallel Computing} 33(7):541--560.
 
+\harvarditem{Evrard}{1988}{evrard1988beyond}
+Evrard, August~E. 1988.
+\newblock ``Beyond N-body: 3D cosmological gas dynamics.'' {\em Monthly Notices
+  of the Royal Astronomical Society} 235(3):911--934.
+
 \harvarditem[Ezzamel, Salizzoni \harvardand\ Hunt]{Ezzamel, Salizzoni
   \harvardand\ Hunt}{2015}{ezzamel2015dynamical}
 Ezzamel, Adam, Pietro Salizzoni \harvardand\ Gary~R Hunt. 2015.
@@ -391,6 +389,11 @@ Gingold, Robert~A \harvardand\ Joseph~J Monaghan. 1977.
   non-spherical stars.'' {\em Monthly notices of the royal astronomical
   society} 181(3):375--389.
 
+\harvarditem{Gingold \harvardand\ Monaghan}{1978}{gingold1978binary}
+Gingold, Robert~A \harvardand\ Joseph~J Monaghan. 1978.
+\newblock ``Binary fission in damped rotating polytropes.'' {\em Monthly
+  Notices of the Royal Astronomical Society} 184(3):481--499.
+
 \harvarditem[Girault et~al.]{Girault, Carazzo, Tait, Ferrucci \harvardand\
   Kaminski}{2014}{girault2014effect}
 Girault, Fr{\'e}d{\'e}ric, Guillaume Carazzo, Steve Tait, Fabrizio Ferrucci
@@ -427,14 +430,6 @@ Guo, Song, William~I Rose, Gregg~JS Bluth \harvardand\ I~Matthew Watson. 2004.
 \newblock ``Particles in the great Pinatubo volcanic cloud of June 1991: The
   role of ice.'' {\em Geochemistry, Geophysics, Geosystems} 5(5).
 
-\harvarditem[Haddad et~al.]{Haddad, Palacios, Pastor \harvardand\
-  Zamorano}{2016}{haddad2016smoothed}
-Haddad, Bouchra, David Palacios, Manuel Pastor \harvardand\ Jos{\'e}~Juan
-  Zamorano. 2016.
-\newblock ``Smoothed particle hydrodynamic modeling of volcanic debris flows:
-  Application to Huiloac Gorge lahars (Popocat{\'e}petl volcano, Mexico).''
-  {\em Journal of Volcanology and Geothermal Research} 324:73--87.
-
 \harvarditem{Hammersley}{2013}{hammersley2013monte}
 Hammersley, John. 2013.
 \newblock {\em Monte carlo methods}.
@@ -445,6 +440,16 @@ Hammersley, John. 2013.
 Harlow, Francis~H, J~Eddie Welch et~al. 1965.
 \newblock ``Numerical calculation of time-dependent viscous incompressible flow
   of fluid with free surface.'' {\em Physics of fluids} 8(12):2182.
+
+\harvarditem{Hernquist}{1993}{hernquist1993some}
+Hernquist, Lars. 1993.
+\newblock ``Some cautionary remarks about smoothed particle hydrodynamics.''
+  {\em The Astrophysical Journal} 404:717--722.
+
+\harvarditem{Hernquist \harvardand\ Katz}{1989}{hernquist1989treesph}
+Hernquist, Lars \harvardand\ Neal Katz. 1989.
+\newblock ``TREESPH-A unification of SPH with the hierarchical tree method.''
+  {\em The Astrophysical Journal Supplement Series} 70:419--446.
 
 \harvarditem[Herzog et~al.]{Herzog, Graf, Textor \harvardand\
   Oberhuber}{1998}{herzog1998effect}
@@ -701,6 +706,12 @@ Morris, JP \harvardand\ JJ Monaghan. 1997.
 \newblock ``A switch to reduce SPH viscosity.'' {\em Journal of Computational
   Physics} 136(1):41--50.
 
+\harvarditem{Nelson \harvardand\ Papaloizou}{1994}{nelson1994variable}
+Nelson, Richard~P \harvardand\ John~CB Papaloizou. 1994.
+\newblock ``Variable smoothing lengths and energy conservation in smoothed
+  particle hydrodynamics.'' {\em Monthly Notices of the Royal Astronomical
+  Society} 270(1):1--20.
+
 \harvarditem[Neri et~al.]{Neri, Esposti~Ongaro, Macedonio \harvardand\
   Gidaspow}{2003}{neri2003multiparticle}
 Neri, Augusto, Thmaso Esposti~Ongaro, Giovanni Macedonio \harvardand\ Dimitri
@@ -926,6 +937,12 @@ Stefanescu, ER, AK Patra, MI Bursik, R Madankan, S Pouget, M Jones, P Singla, T
   stochastic variability and uncertain eruption source parameters: Example of
   the 14 April 2010 Eyjafjallaj{\"o}kull eruption.'' {\em Journal of Advances
   in Modeling Earth Systems} 6(4):1173--1184.
+
+\harvarditem{Steinmetz \harvardand\
+  M{\"u}ller}{1993}{steinmetz1993capabilities}
+Steinmetz, Matthias \harvardand\ Ewald M{\"u}ller. 1993.
+\newblock ``On the capabilities and limits of smoothed particle
+  hydrodynamics.'' {\em Astronomy and Astrophysics} 268:391--410.
 
 \harvarditem{Suzuki et~al.}{1983}{suzuki1983theoretical}
 Suzuki, Takeo et~al. 1983.

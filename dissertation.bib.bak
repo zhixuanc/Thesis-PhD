@@ -1088,6 +1088,15 @@
   year={1989}
 }
 
+@article{hernquist1993some,
+  title={Some cautionary remarks about smoothed particle hydrodynamics},
+  author={Hernquist, Lars},
+  journal={The Astrophysical Journal},
+  volume={404},
+  pages={717--722},
+  year={1993}
+}
+
 @article{monaghan1989problem,
   title={On the problem of penetration in particle methods},
   author={Monaghan, JJ},
@@ -1121,6 +1130,16 @@
   volume={268},
   pages={391--410},
   year={1993}
+}
+@article{nelson1994variable,
+  title={Variable smoothing lengths and energy conservation in smoothed particle hydrodynamics},
+  author={Nelson, Richard P and Papaloizou, John CB},
+  journal={Monthly Notices of the Royal Astronomical Society},
+  volume={270},
+  number={1},
+  pages={1--20},
+  year={1994},
+  publisher={Oxford University Press Oxford, UK}
 }
 @article{monaghan1997sph,
   title={SPH and Riemann solvers},

@@ -26,51 +26,55 @@ You're missing a field name---line 778 of file dissertation.bib
  : %  title={HYSPLIT (HYbrid Single-Particle Lagrangian Integrated Trajectory) Model access via NOAA ARL READY Website. NOAA Air Resources Laboratory, Silver Spring},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 2447 of file dissertation.bib
+Repeated entry---line 1110 of file dissertation.bib
+ : @article{hernquist1989treesph
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2466 of file dissertation.bib
  : @article{stefanescu2014temporal
  :                                ,
 I'm skipping whatever remains of this entry
 Warning--empty author in morton1956turbulent
 Warning--empty booktitle in morton1956turbulent
-You've used 182 entries,
+You've used 186 entries,
             2874 wiz_defined-function locations,
-            1609 strings with 36583 characters,
-and the built_in function-call counts, 995451 in all, are:
-= -- 164170
-> -- 13083
+            1628 strings with 36917 characters,
+and the built_in function-call counts, 1002938 in all, are:
+= -- 165327
+> -- 13153
 < -- 3
-+ -- 79411
-- -- 4512
-* -- 87618
-:= -- 195786
-add.period$ -- 732
-call.type$ -- 182
-change.case$ -- 2361
-chr.to.int$ -- 180
-cite$ -- 184
-duplicate$ -- 2762
-empty$ -- 6298
-format.name$ -- 4751
-if$ -- 179073
++ -- 79856
+- -- 4542
+* -- 88173
+:= -- 197445
+add.period$ -- 748
+call.type$ -- 186
+change.case$ -- 2413
+chr.to.int$ -- 184
+cite$ -- 188
+duplicate$ -- 2822
+empty$ -- 6441
+format.name$ -- 4779
+if$ -- 180403
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 184
-newline$ -- 749
-num.names$ -- 2109
-pop$ -- 586
+missing$ -- 188
+newline$ -- 765
+num.names$ -- 2155
+pop$ -- 600
 preamble$ -- 1
-purify$ -- 2725
+purify$ -- 2785
 quote$ -- 0
-skip$ -- 2469
+skip$ -- 2519
 stack$ -- 0
-substring$ -- 234987
-swap$ -- 390
-text.length$ -- 2541
+substring$ -- 236499
+swap$ -- 398
+text.length$ -- 2597
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 714
+type$ -- 730
 warning$ -- 2
-while$ -- 4315
+while$ -- 4415
 width$ -- 0
-write$ -- 2566
-(There were 4 error messages)
+write$ -- 2614
+(There were 5 error messages)

@@ -41,9 +41,9 @@ For any SPH scheme, governing equations in Lagrangian form are needed. By deduct
 \end{align}
 
 \section{GSPH method} \label{sec:GSPH-method}
-The RSPH method is based on standard SPH and GSPH. In addition, these three methods will be compared in the numerical tests section. Standard SPH has been discussed in detail in previous chaper. We present here a brief review on standard GSPH providing corresponding discretization of the compressible Euler equations.
+The RSPH method is based on standard SPH and GSPH. In addition, these three methods will be compared in the numerical tests section. Standard SPH has been discussed in detail in previous chaper. We present here a brief review on standard GSPH resulting in corresponding discretization of the compressible Euler equations.
  
-In GSPH, the density field is updated in the same way as updating of density in SPH, according to Eq. (\ref{eq:ns-sph-d}). Updating of velocity and internal energy in GSPH is different from these in SPH. 
+The density field is updated in the same way as updating of density in SPH, according to Eq. (\ref{eq:ns-sph-d}). The weighting function used in SPH will also be used for both GSPH and RSPH. Updating of velocity and internal energy in GSPH is different from these in SPH.
 Derivation of discretized momentum and energy equation in first GSPH paper \citep{inutsuka2002reformulation} is based on the following discrete consistency identities: 
 \begin{equation}
 1=\sum_{b} \frac{m_{b}}{\rho(\textbf{x})}w(\textbf{x} - \textbf{x}_{b}, h)
@@ -53,7 +53,90 @@ Derivation of discretized momentum and energy equation in first GSPH paper \cite
 0=\sum_{b} m_{b} \nabla \frac{w(\textbf{x} - \textbf{x}_{b}, h)}{\rho(\textbf{x})}
 \label{eq:GSPH-basic2}
 \end{equation}
-Lengthy algebraic manipulations \citep{inutsuka2002reformulation,iwasaki2011smoothed} lead to the discretized momentum and energy equations:
+These two identities originate from the density updating equation (Eq. (\ref{eq:ns-sph-d})). They should not be applied when alternative formulation for density updating is adopted.
+Plug the identities into Eq. (\ref{eq:SPH-fundamental-principle})
+\begin{equation}
+\begin{split}
+<A\left(\textbf{x}\right)> 
+& \approx \int_{\Omega} A\left(\textbf{x} \prime\right) w\left(\textbf{x}-\textbf{x}\prime, h\right) d\textbf{x}\prime \\
+& = \int_{\Omega}  \sum_{b} m_{b} \frac{A\left(\textbf{x} \prime\right)}{\rho(\textbf{x})} w\left(\textbf{x}-\textbf{x}\prime, h\right) w(\textbf{x}\prime - \textbf{x}_{b}, h) d\textbf{x}\prime
+\end{split}
+\label{eq:GSPH-fundamental-principle}
+\end{equation}
+Equation (\ref{eq:GSPH-fundamental-principle}) reduces to fundamental SPH approximation when assuming $w(\textbf{x} - \textbf{x}_{b}, h) \approx \delta (\textbf{x} - \textbf{x}_{b})$. 
+Algebraic manipulations \citep{inutsuka2002reformulation,iwasaki2011smoothed} lead to the following approximation of momentum and energy equations:
+\begin{equation}
+\begin{split}
+&<\dfrac{d \textbf{v}_{a}}{dt}> =-\sum_{b} m_{b} \int \frac{p(\textbf{x})}{\rho(\textbf{x})^2} \\
+&\left[w(\textbf{x} - \textbf{x}_b, h) \nabla w(\textbf{x} - \textbf{x}_a, h) - w(\textbf{x} - \textbf{x}_a, h) \nabla w(\textbf{x} - \textbf{x}_b, h)\right] d\textbf{x} 
+\end{split}
+\label{eq:gov-gsph-v-approx}
+\end{equation}
+\begin{equation}
+\begin{split}
+&<\dfrac{d e_{a}}{dt}> =-\sum_{b} m_{b} \int \frac{p(\textbf{x})}{\rho(\textbf{x})^2} (\textbf{v} - \dot{\textbf{x}}_{a}^{\ast})\\
+&\left[ w(\textbf{x}- \textbf{x}_b, h) \nabla w(\textbf{x} - \textbf{x}_a, h) - w(\textbf{x} - \textbf{x}_a, h) \nabla w(\textbf{x} - \textbf{x}_b, h) \right] d\textbf{x} 
+\end{split}
+\label{eq:gov-gsph-e--approx}
+\end{equation}
+where $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
+\begin{equation}
+\dot{\textbf{x}}_{a}^{\ast} = <\textbf{v}_{a}> + \frac{\Delta t}{2} \ddot{\textbf{x}}_{a}
+\end{equation}
+
+Evaluating of the integral in Eq. (\ref{eq:gov-gsph-v-approx}) and Eq. (\ref{eq:gov-gsph-e--approx}) depends on interpolation of the specific volume $V(q) = \frac{1}{\rho(q)}$, where $q$ is coordinate in a local coordinate system. If the specific volume is interpolated linearly in the local coordinate system, the intergrals finally result in discretized formulation as showing in Eq. (\ref{eq:gov-gsph-v-with-convolution}) and Eq. (\ref{eq:gov-gsph-e-with-convolution}).
+Details on mathematical derivations and higher order interpolation of the specific volume please refer to \citep{inutsuka2002reformulation}.
+\begin{equation}
+<\dfrac{d \textbf{v}_{a}}{dt}>= -\sum_{b} m_{b} p_{a b}^{\ast} \left[ V_{ab}^2(h_a) \nabla w_{a b}(\sqrt{2} h_{a}) + V_{ab}^2(h_b) \nabla w_{a b}(\sqrt{2} h_{b}) \right]
+\label{eq:gov-gsph-v-with-convolution}
+\end{equation}
+\begin{equation}
+<\dfrac{d e_{a}}{dt}>= - \sum_{b} m_{b} p_{a b}^{\ast} [\textbf{v}_{a b}^{\ast} - \dot{\textbf{x}}_{a}^{\ast}] \left[V_{ab}^2(h_a) \nabla w_{a b}(\sqrt{2} h_{a}) + V_{ab}^2(h_b) \nabla w_{a b}(\sqrt{2} h_{b}) \right]
+\label{eq:gov-gsph-e-with-convolution}
+\end{equation}
+where, the starred quantity are interpolated value of the solution to the Riemann problem at the imaginary interface.
+$V_{ab}^2(h_a)$ and $V_{ab}^2(h_b)$ are evaluated based on interpolation of specific volume in the local coordinate system, for example linear interpolation: 
+\begin{equation}
+V(q) = C_{ab}q+D_{ab}
+\label{eq:gsph-V-linear-interplation}
+\end{equation}
+If specific volume is interpolated linearly, then the $V^2_{ab}(h)$ is evaluated according to:
+\begin{equation}
+V^2_{ab}(h) = \frac{1}{4}h^2C_{ab}^2+D_{ab}^2
+\label{eq:gsph-V-linear-interplation-sq}
+\end{equation}
+where
+\begin{equation}
+C_{ab} = \frac{V_a-V_b}{\Delta q_{ab}}
+\label{eq:gsph-V-linear-interplation-C}
+\end{equation}
+\begin{equation}
+D_{ab} = \frac{V_a+V_b}{2}
+\label{eq:gsph-V-linear-interplation-D}
+\end{equation}
+In purpose of determining the position of the imaginary interface, a weighted-average $A_{ab}^{\ast}$ of generic function $A(x)$ need to be defined.
+\begin{equation}
+\begin{split}
+& \int_{\Omega} \frac{A\left(\textbf{x} \right)}{\rho^2(\textbf{x})} w\left(\textbf{x} -\textbf{x}_a, h\right) w(\textbf{x} - \textbf{x}_{b}, h) d\textbf{x} \\
+& =A_{ab}^{\ast} \int_{\Omega} \frac{1}{\rho^2(\textbf{x})} w\left(\textbf{x} -\textbf{x}_a, h\right) w(\textbf{x} - \textbf{x}_{b}, h) d\textbf{x}
+\end{split}
+\label{eq:GSPH-f-interpolation-def}
+\end{equation}
+Using then the linear approximation for $A(q) = q(A_a - A_b)/ \Delta q_{ab}$ and then the linear interpolation of specific volume (see Eq. (\ref{eq:gsph-V-linear-interplation})), on obtains 
+\begin{equation}
+A_{ab}^{\ast} = \frac{A_a - A_b}{\Delta q_{ab}} q_{ab}^{\ast} + \frac{A_a + A_b}{2}
+\label{eq:GSPH-f-interpolation-evaluation}
+\end{equation}
+where the interface position 
+\begin{equation}
+s_{ab}^{\ast} = \frac{h^2 C_{ab} D_{ab}}{2V_{ab}^2(h)}
+\label{eq:GSPH-f-interpolation-evaluation}
+\end{equation}
+
+The starred qunality, $p_{a b}^{\ast}$ and $\textbf{v}_{a b}^{\ast}$, are obtained by solving a 1D Riemann problem constructed based on physical quantity of particle $a$ and particle $b$. The position of the interface is used when constructing the local Riemann problem.
+More discussion about the imaginary interface is in section \ref{sec:Picking-up-single-state}.
+
+An alternative derivation of the GSPH formulations \citep{cha2003implementations}, which neglect the convolution intergrals, are also commonly adopted \citep[e.g.][]{puri2014approximate}. The alternative formulations (see Eq. (\ref{eq:gov-gsph-v-simple-form}) and Eq. (\ref{eq:gov-gsph-e-simple-form})) are equivalent to replacing the interpolationg volumes with the values of $\frac{1}{\rho^2}$ computed at the position of the particle $a$ and $b$. Thereby the constructing of Riemann problem is also simplified. The merit of \citet{cha2003implementations}'s derivation is simplifying the derivation of GSPH formulation and allowing more flexible variants while is criticized for introducing excessive diffusivity \citep{borgani2012hydrodynamic}.  
 \begin{equation}
 \ddot{\textbf{x}}_{a} = <\dfrac{d \textbf{v}_{a}}{dt}>= -\sum_{b} m_{b} p_{a b}^{\ast} \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-v-simple-form}
@@ -61,11 +144,6 @@ Lengthy algebraic manipulations \citep{inutsuka2002reformulation,iwasaki2011smoo
 \begin{equation}
 <\dfrac{d e_{a}}{dt}>= - \sum_{b} m_{b} p_{a b}^{\ast} [\textbf{v}_{a b}^{\ast} - \dot{\textbf{x}}_{a}^{\ast}] \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-e-simple-form}
-\end{equation}
-where, $p_{a b}^{\ast}$ and $\textbf{v}_{a b}^{\ast}$ are obtained by solving a 1D Riemann problem constructed based on physical quantity of particle $a$ and particle $b$. The starred quantity are interpolated value of the solution to the Riemann problem at an imaginary interface. More discussion about the imaginary interface is in section \ref{sec:Picking-up-single-state}.
-$\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
-\begin{equation}
-\dot{\textbf{x}}_{a}^{\ast} = <\textbf{v}_{a}> + \frac{\Delta t}{2} \ddot{\textbf{x}}_{a}
 \end{equation}
 
 The difference between this formulation and classical SPH formulations come from two sources: 
@@ -78,7 +156,6 @@ The difference between this formulation and classical SPH formulations come from
 \end{equation}
 %Where $\textbf{v}_{a b}$ is defined as $\textbf{v}_a - \textbf{v}_b$.
 \end{itemize}
-Actually, Godunov's idea of using Riemann solver can be combined with other SPH discretization formulations as well \citep{cha2003implementations}. 
 
 More technical details of GSPH are in section \ref{sec:RSPH-method}. The construction of Riemann problem, Riemann solvers and projection of picked solution of the Riemann problem back to global coordinate system are exactly the same in GSPH and RSPH. They are described in the next section. The way how to pick up the starred value from solution of the Riemann problem is the only difference between GSPH and RSPH. Detailed discussion is presented in section \ref{sec:Picking-up-single-state}. 
 

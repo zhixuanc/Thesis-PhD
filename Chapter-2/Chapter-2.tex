@@ -78,10 +78,10 @@ At the vent, temperature of erupted material $T$, eruption velocity $\textbf{v}$
 \begin{align}
 \rho =const = p/\left(R_m T\right) \label{eq:erupt_bc_rho} \\
 \xi=const=1 \label{eq:erupt_bc_xi}\\
-\textbf{v} = const =\{u,v,w\}^T \label{eq:erupt_bc_v}\\
+\textbf{v} = const =\{0,0, \omega \}^T \label{eq:erupt_bc_v}\\
 \dfrac{\partial e}{\partial n}=\dot M e /\left(\pi r^2\right) \label{eq:erupt_bc_e}
 \end{align} 
-where $r$ is the radius of the vent, $n$ is the direction normal to the boundary.
+where $r$ is the radius of the vent, $n$ is the direction normal to the boundary, value of $\omega$ can be constant or a function of location depending on the eruption profile.
 
 \subsubsection{Non-slip wall boundary}
 Velocity is zero for non-slip wall boundary. If we assume the boundary to be adiabatic, heat flux should be zero on the boundary. The flux of mass should also be zero. As a result, internal energy flux, which consists of heat flux and energy flux carried by mass flux, vanishes on the wall boundary. Equation (\ref{eq:wall_bc_rho}) to (\ref{eq:wall_bc_e}) gives no-slip wall boundary condition written in terms of primitive variables.

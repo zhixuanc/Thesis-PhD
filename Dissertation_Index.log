@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  24 APR 2018 22:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  6 MAY 2018 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -653,8 +653,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (./SupplementaryMaterial/UserDefinedCommands.tex) (./Dissertation_Index.aux
 (./Chapter-1/Chapter-1.aux) (./Chapter-2/Chapter-2.aux)
-(./Chapter-3/Chapter-3.aux) (./Chapter-4/Chapter-4.aux)
-(./Chapter-5/Chapter-5.aux) (./Chapter-6/Chapter-6.aux)
+(./Chapter-3/Chapter-3.aux) (./Chapter-4/Chapter-4.aux
+
+LaTeX Warning: Label `eq:GSPH-f-interpolation-evaluation' multiply defined.
+
+) (./Chapter-5/Chapter-5.aux) (./Chapter-6/Chapter-6.aux)
 (./Chapter-7/Chapter-7.aux) (./Chapter-8/Chapter-8.aux)
 (./Appendix-A/Appendix-A.aux))
 \openout1 = `Dissertation_Index.aux'.
@@ -838,23 +841,21 @@ LaTeX Font Info:    Try loading font information for OT1+ptm on input line 2.
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 4.
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 5.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
 
-Overfull \hbox (6.09726pt too wide) in paragraph at lines 6--13
+Overfull \hbox (6.09726pt too wide) in paragraph at lines 4--11
 \OT1/ppl/m/n/12 erup-tions in-clude py-ro-clas-tic den-sity cur-rents (flows an
 d surges), the widespread|
  []
 
 
-Overfull \hbox (12.57405pt too wide) in paragraph at lines 14--22
+Overfull \hbox (12.57405pt too wide) in paragraph at lines 12--20
 []\OT1/ppl/m/n/12 In re-cent years sig-nif-i-cant ad-vances in the iden-ti-fi-c
 a-tion of vol-canic ash through|
  []
 
 
-Overfull \hbox (6.24109pt too wide) in paragraph at lines 14--22
+Overfull \hbox (6.24109pt too wide) in paragraph at lines 12--20
 \OT1/ppl/m/n/12 satel-lite ob-ser-va-tions, which pro-vide snap-shots of ash cl
 oud con-cen-tra-tion down-|
  []
@@ -863,39 +864,42 @@ oud con-cen-tra-tion down-|
 
 
 
-] [2]
-Overfull \hbox (4.2728pt too wide) in paragraph at lines 33--34
+]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 24.
+ [2]
+Overfull \hbox (4.2728pt too wide) in paragraph at lines 32--33
 \OT1/ppl/m/n/12 mul-ti-phase, 3D com-press-ible flow model. Con-ser-va-tion equ
 a-tions for each phase|
  []
 
 [3] [4]
-Overfull \hbox (7.86037pt too wide) in paragraph at lines 49--51
+Overfull \hbox (7.86037pt too wide) in paragraph at lines 48--50
 \OT1/ppl/m/n/12 Be-sides pro-vid-ing source terms for VATDs, I choose SPH as th
 e nu-mer-i-cal method|
  []
 
 [5]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 52.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 51.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
  [6]
 [7] [8] [9] [10] [11] [12] [13]
-Overfull \hbox (3.04929pt too wide) in paragraph at lines 123--127
+Overfull \hbox (3.04929pt too wide) in paragraph at lines 122--126
 \OT1/ppl/m/n/12 2011) pre-sented a sim-u-la-tion frame-work that en-ables dis-t
 ributed nu-mer-i-cal com-|
  []
 
-[14] [15]
-Overfull \hbox (1.61813pt too wide) in paragraph at lines 130--131
+[14]
+Overfull \hbox (1.61813pt too wide) in paragraph at lines 129--130
 []\OT1/ppl/m/n/12 The pop-u-lar strat-egy, con-strain neigh-bour search-ing in 
 a sub-do-main by back-|
  []
 
-[16] [17]) [18]
+[15] [16] [17]) [18]
 \openout2 = `Chapter-2/Chapter-2.aux'.
 
  (./Chapter-2/Chapter-2.tex
@@ -945,7 +949,7 @@ Overfull \hbox (7.16457pt too wide) in paragraph at lines 396--345
  (./Chapter-3/Chapter-3.tex
 Chapter 3.
 
-Overfull \hbox (10.23766pt too wide) in paragraph at lines 8--9
+Overfull \hbox (10.23766pt too wide) in paragraph at lines 10--11
 \OT1/ppl/m/n/12 There are sev-eral pro-ce-dures for dis-cretiz-ing gov-ern-ing 
 equa-tions (PDEs or ODEs)|
  []
@@ -954,13 +958,13 @@ equa-tions (PDEs or ODEs)|
 
 
 
-] [36] [37] [38] [39] [40]
-Overfull \hbox (7.94473pt too wide) in paragraph at lines 167--168
+] [36] [37] [38] [39] [40] [41] [42]
+Overfull \hbox (7.94473pt too wide) in paragraph at lines 184--185
 \OT1/ppl/m/n/12 The clas-si-cal SPH method was known to suf-fer from ten-sile i
 n-sta-bil-ity and bound-|
  []
 
-[41] [42] [43]
+[43] [44]
 Package epstopdf Info: Source file: <Chapter-3/Figures/Interface.eps>
 (epstopdf)                    date: 2017-02-24 12:37:34
 (epstopdf)                    size: 277064 bytes
@@ -970,31 +974,31 @@ to.pdf>
 (epstopdf)                    size: 110560 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-3/Figures/Interfac
 e-eps-converted-to.pdf Chapter-3/Figures/Interface.eps>
-(epstopdf)             \includegraphics on input line 218.
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-3/Figures/Interface-eps-converted-to.pdf, id=253, 658.46pt x 253.94875
+<Chapter-3/Figures/Interface-eps-converted-to.pdf, id=256, 658.46pt x 253.94875
 pt>
 File: Chapter-3/Figures/Interface-eps-converted-to.pdf Graphic file (type pdf)
  <use Chapter-3/Figures/Interface-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-3/Figures/Interface-eps-converted-to.pdf used 
-on input line 218.
+on input line 235.
 (pdftex.def)             Requested size: 341.43306pt x 131.6821pt.
- [44 <./Chapter-3/Figures/Interface-eps-converted-to.pdf>] [45]
+ [45 <./Chapter-3/Figures/Interface-eps-converted-to.pdf>] [46]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 240.
+(Font)              scaled to size 15.0049pt on input line 253.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 240.
+(Font)              scaled to size 10.42007pt on input line 253.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 240.
+(Font)              scaled to size 8.33606pt on input line 253.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 240.
+(Font)              scaled to size 15.0049pt on input line 253.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 240.
+(Font)              scaled to size 10.42007pt on input line 253.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 240.
- [46] [47] [48] [49] [50] [51]
-[52] [53] [54]
+(Font)              scaled to size 8.33606pt on input line 253.
+ [47] [48] [49] [50] [51] [52]
+[53] [54] [55]
 Package epstopdf Info: Source file: <Chapter-3/Figures/t120_bc_proc.eps>
 (epstopdf)                    date: 2017-03-28 07:23:11
 (epstopdf)                    size: 481708 bytes
@@ -1004,37 +1008,33 @@ ed-to.pdf>
 (epstopdf)                    size: 103583 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-3/Figures/t120_bc_
 proc-eps-converted-to.pdf Chapter-3/Figures/t120_bc_proc.eps>
-(epstopdf)             \includegraphics on input line 457.
+(epstopdf)             \includegraphics on input line 477.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-3/Figures/t120_bc_proc-eps-converted-to.pdf, id=292, 2176.13pt x 687.5
+<Chapter-3/Figures/t120_bc_proc-eps-converted-to.pdf, id=295, 2176.13pt x 687.5
 6876pt>
 File: Chapter-3/Figures/t120_bc_proc-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Chapter-3/Figures/t120_bc_proc-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-3/Figures/t120_bc_proc-eps-converted-to.pdf us
-ed on input line 457.
-(pdftex.def)             Requested size: 512.1496pt x 161.81998pt.
-
-Overfull \hbox (92.98338pt too wide) in paragraph at lines 457--458
- [] |
- []
-
+ed on input line 477.
+(pdftex.def)             Requested size: 412.56496pt x 130.34566pt.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 458.
+(Font)              scaled to size 11.40997pt on input line 478.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 458.
+(Font)              scaled to size 6.25204pt on input line 478.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 458.
+(Font)              scaled to size 11.40997pt on input line 478.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 458.
-) [55] [56 <./Chapter-3/Figures/t120_bc_proc-eps-converted-to.pdf>]
+(Font)              scaled to size 6.25204pt on input line 478.
+) [56]
+[57 <./Chapter-3/Figures/t120_bc_proc-eps-converted-to.pdf>]
 \openout2 = `Chapter-4/Chapter-4.aux'.
 
 
 (./Chapter-4/Chapter-4.tex
 Chapter 4.
-[57
+[58
 
 
 
@@ -1044,31 +1044,31 @@ Overfull \hbox (5.46088pt too wide) in paragraph at lines 10--13
  for multi-dimensional|
  []
 
-[58] [59] [60]
-Overfull \hbox (3.5735pt too wide) in paragraph at lines 71--72
+[59] [60] [61] [62] [63]
+Overfull \hbox (3.5735pt too wide) in paragraph at lines 149--150
 []\OT1/ppl/m/n/12 The dif-fer-ence be-tween this for-mu-la-tion and clas-si-cal
  SPH for-mu-la-tions come|
  []
 
-[61]
-Overfull \hbox (0.69446pt too wide) in paragraph at lines 95--96
+[64]
+Overfull \hbox (0.69446pt too wide) in paragraph at lines 172--173
 []\OT1/ppl/m/n/12 The last sec-ond sub-sec-tion is about gen-er-at-ing of ran-d
 om num-bers for RSPH.|
  []
 
-[62] [63] [64] <Chapter-4/Figures/RSPH-GSPH.pdf, id=327, 722.7pt x 542.025pt>
+[65] [66] [67] <Chapter-4/Figures/RSPH-GSPH.pdf, id=338, 722.7pt x 542.025pt>
 File: Chapter-4/Figures/RSPH-GSPH.pdf Graphic file (type pdf)
 
 <use Chapter-4/Figures/RSPH-GSPH.pdf>
-Package pdftex.def Info: Chapter-4/Figures/RSPH-GSPH.pdf used on input line 158
+Package pdftex.def Info: Chapter-4/Figures/RSPH-GSPH.pdf used on input line 235
 .
 (pdftex.def)             Requested size: 209.5831pt x 157.18321pt.
- [65]
-Overfull \hbox (55.75288pt too wide) detected at line 199
+ [68]
+Overfull \hbox (55.75288pt too wide) detected at line 276
 []\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 pu\OT1/zplm/m/n/12 ) [] = []|
  []
 
-[66] [67] [68] [69]
+[69] [70] [71] [72]
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho.
 eps>
 (epstopdf)                    date: 2017-09-14 05:16:04
@@ -1080,17 +1080,17 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-SPH-alf-rho-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho.
 eps>
-(epstopdf)             \includegraphics on input line 300.
+(epstopdf)             \includegraphics on input line 377.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf, id=345, 1445.4
+<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf, id=355, 1445.4
 pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf Graphic fi
 le (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converte
-d-to.pdf used on input line 300.
+d-to.pdf used on input line 377.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v.ep
 s>
@@ -1103,17 +1103,17 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-SPH-alf-v-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v.eps>
 
-(epstopdf)             \includegraphics on input line 304.
+(epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf, id=346, 1445.4pt
+<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf, id=356, 1445.4pt
  x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-
-to.pdf used on input line 304.
+to.pdf used on input line 381.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e.ep
 s>
@@ -1126,17 +1126,17 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-SPH-alf-e-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e.eps>
 
-(epstopdf)             \includegraphics on input line 309.
+(epstopdf)             \includegraphics on input line 386.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf, id=347, 1445.4pt
+<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf, id=357, 1445.4pt
  x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-eps-converted-
-to.pdf used on input line 309.
+to.pdf used on input line 386.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p.ep
 s>
@@ -1149,17 +1149,17 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-SPH-alf-p-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p.eps>
 
-(epstopdf)             \includegraphics on input line 313.
+(epstopdf)             \includegraphics on input line 390.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf, id=348, 1445.4pt
+<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf, id=358, 1445.4pt
  x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-
-to.pdf used on input line 313.
+to.pdf used on input line 390.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-
 zoom.eps>
@@ -1172,17 +1172,17 @@ zoom-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-SPH-alf-rho-zoom-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-SPH-alf
 -rho-zoom.eps>
-(epstopdf)             \includegraphics on input line 318.
+(epstopdf)             \includegraphics on input line 395.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf, id=349, 1
+<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf, id=359, 1
 445.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-con
-verted-to.pdf used on input line 318.
+verted-to.pdf used on input line 395.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-zo
 om.eps>
@@ -1195,17 +1195,17 @@ om-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-SPH-alf-v-zoom-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v
 -zoom.eps>
-(epstopdf)             \includegraphics on input line 322.
+(epstopdf)             \includegraphics on input line 399.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf, id=350, 144
+<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf, id=360, 144
 5.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-conve
-rted-to.pdf used on input line 322.
+rted-to.pdf used on input line 399.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-zo
 om.eps>
@@ -1218,17 +1218,17 @@ om-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-SPH-alf-e-zoom-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e
 -zoom.eps>
-(epstopdf)             \includegraphics on input line 327.
+(epstopdf)             \includegraphics on input line 404.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf, id=351, 144
+<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf, id=361, 144
 5.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-conve
-rted-to.pdf used on input line 327.
+rted-to.pdf used on input line 404.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-zo
 om.eps>
@@ -1241,23 +1241,23 @@ om-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-SPH-alf-p-zoom-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p
 -zoom.eps>
-(epstopdf)             \includegraphics on input line 331.
+(epstopdf)             \includegraphics on input line 408.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf, id=352, 144
+<Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf, id=362, 144
 5.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-zoom-eps-conve
-rted-to.pdf used on input line 331.
+rted-to.pdf used on input line 408.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 
 
-LaTeX Warning: Float too large for page by 62.79575pt on input line 335.
+LaTeX Warning: Float too large for page by 62.79575pt on input line 412.
 
-[70]
+[73]
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 -rho.eps>
 (epstopdf)                    date: 2017-11-16 13:02:00
@@ -1269,17 +1269,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-GSPH-compare-rho-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-GSPH-co
 mpare-rho.eps>
-(epstopdf)             \includegraphics on input line 350.
+(epstopdf)             \includegraphics on input line 427.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf, id=356, 1
+<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf, id=366, 1
 445.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf Graph
 ic file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-eps-con
-verted-to.pdf used on input line 350.
+verted-to.pdf used on input line 427.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 -v.eps>
@@ -1292,17 +1292,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-GSPH-compare-v-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-GSPH-comp
 are-v.eps>
-(epstopdf)             \includegraphics on input line 354.
+(epstopdf)             \includegraphics on input line 431.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf, id=357, 144
+<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf, id=367, 144
 5.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-eps-conve
-rted-to.pdf used on input line 354.
+rted-to.pdf used on input line 431.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 -e.eps>
@@ -1315,17 +1315,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-GSPH-compare-e-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-GSPH-comp
 are-e.eps>
-(epstopdf)             \includegraphics on input line 359.
+(epstopdf)             \includegraphics on input line 436.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf, id=358, 144
+<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf, id=368, 144
 5.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-eps-conve
-rted-to.pdf used on input line 359.
+rted-to.pdf used on input line 436.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 -p.eps>
@@ -1338,17 +1338,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-GSPH-compare-p-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-GSPH-comp
 are-p.eps>
-(epstopdf)             \includegraphics on input line 363.
+(epstopdf)             \includegraphics on input line 440.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf, id=359, 144
+<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf, id=369, 144
 5.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf Graphic
  file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-eps-conve
-rted-to.pdf used on input line 363.
+rted-to.pdf used on input line 440.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 -rho-zoom.eps>
@@ -1361,17 +1361,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-GS
 PH-compare-rho-zoom.eps>
-(epstopdf)             \includegraphics on input line 368.
+(epstopdf)             \includegraphics on input line 445.
 Package epstopdf Info: Output file is already uptodate.
 
 <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf, id=3
-60, 1445.4pt x 721.69624pt>
+70, 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-rho-zoom-ep
-s-converted-to.pdf used on input line 368.
+s-converted-to.pdf used on input line 445.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 -e-zoom.eps>
@@ -1384,17 +1384,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-GSPH-compare-e-zoom-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-GSPH
 -compare-e-zoom.eps>
-(epstopdf)             \includegraphics on input line 372.
+(epstopdf)             \includegraphics on input line 449.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf, id=361
+<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf, id=371
 , 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-
-converted-to.pdf used on input line 372.
+converted-to.pdf used on input line 449.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 -v-zoom.eps>
@@ -1407,17 +1407,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-GSPH-compare-v-zoom-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-GSPH
 -compare-v-zoom.eps>
-(epstopdf)             \includegraphics on input line 377.
+(epstopdf)             \includegraphics on input line 454.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf, id=362
+<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf, id=372
 , 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-
-converted-to.pdf used on input line 377.
+converted-to.pdf used on input line 454.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 -p-zoom.eps>
@@ -1430,25 +1430,25 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sod/RCM-
 Sod-GSPH-compare-p-zoom-eps-converted-to.pdf Chapter-4/Figures/Sod/RCM-Sod-GSPH
 -compare-p-zoom.eps>
-(epstopdf)             \includegraphics on input line 381.
+(epstopdf)             \includegraphics on input line 458.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf, id=363
+<Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf, id=373
 , 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-
-converted-to.pdf used on input line 381.
+converted-to.pdf used on input line 458.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 
-Overfull \hbox (11.10036pt too wide) in paragraph at lines 387--388
+Overfull \hbox (11.10036pt too wide) in paragraph at lines 464--465
 \OT1/ppl/m/n/12 suf-fi-cient dis-si-pa-tion com-pared with GSPH. The at-trac-ti
 ve fea-ture of RCM method|
  []
 
-[71]
+[74]
 Package epstopdf Info: Source file: <Chapter-4/Figures/Accuracy-des.eps>
 (epstopdf)                    date: 2017-11-21 07:02:44
 (epstopdf)                    size: 32709 bytes
@@ -1458,16 +1458,16 @@ ed-to.pdf>
 (epstopdf)                    size: 9982 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Accuracy
 -des-eps-converted-to.pdf Chapter-4/Figures/Accuracy-des.eps>
-(epstopdf)             \includegraphics on input line 405.
+(epstopdf)             \includegraphics on input line 482.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Accuracy-des-eps-converted-to.pdf, id=368, 764.8575pt x 718.
+<Chapter-4/Figures/Accuracy-des-eps-converted-to.pdf, id=377, 764.8575pt x 718.
 685pt>
 File: Chapter-4/Figures/Accuracy-des-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Chapter-4/Figures/Accuracy-des-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Accuracy-des-eps-converted-to.pdf us
-ed on input line 405.
+ed on input line 482.
 (pdftex.def)             Requested size: 137.7726pt x 129.4564pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Accuracy-vel.eps>
 (epstopdf)                    date: 2017-11-21 07:02:44
@@ -1478,16 +1478,16 @@ ed-to.pdf>
 (epstopdf)                    size: 9891 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Accuracy
 -vel-eps-converted-to.pdf Chapter-4/Figures/Accuracy-vel.eps>
-(epstopdf)             \includegraphics on input line 409.
+(epstopdf)             \includegraphics on input line 486.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Accuracy-vel-eps-converted-to.pdf, id=369, 764.8575pt x 718.
+<Chapter-4/Figures/Accuracy-vel-eps-converted-to.pdf, id=378, 764.8575pt x 718.
 685pt>
 File: Chapter-4/Figures/Accuracy-vel-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Chapter-4/Figures/Accuracy-vel-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Accuracy-vel-eps-converted-to.pdf us
-ed on input line 409.
+ed on input line 486.
 (pdftex.def)             Requested size: 137.7726pt x 129.4564pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Accuracy-pre.eps>
 (epstopdf)                    date: 2017-11-21 07:02:44
@@ -1498,18 +1498,18 @@ ed-to.pdf>
 (epstopdf)                    size: 9823 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Accuracy
 -pre-eps-converted-to.pdf Chapter-4/Figures/Accuracy-pre.eps>
-(epstopdf)             \includegraphics on input line 413.
+(epstopdf)             \includegraphics on input line 490.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Accuracy-pre-eps-converted-to.pdf, id=370, 764.8575pt x 718.
+<Chapter-4/Figures/Accuracy-pre-eps-converted-to.pdf, id=379, 764.8575pt x 718.
 685pt>
 File: Chapter-4/Figures/Accuracy-pre-eps-converted-to.pdf Graphic file (type pd
 f)
  <use Chapter-4/Figures/Accuracy-pre-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Accuracy-pre-eps-converted-to.pdf us
-ed on input line 413.
+ed on input line 490.
 (pdftex.def)             Requested size: 137.7726pt x 129.4564pt.
- [72]
+ [75]
 Package epstopdf Info: Source file: <Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho.ep
 s>
 (epstopdf)                    date: 2017-09-20 07:24:36
@@ -1521,17 +1521,17 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/GSPH-Sod
 /GRod-RCM-rho-eps-converted-to.pdf Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho.eps>
 
-(epstopdf)             \includegraphics on input line 429.
+(epstopdf)             \includegraphics on input line 506.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf, id=374, 1441.385
+<Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf, id=383, 1441.385
 pt x 716.6775pt>
 File: Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-
-to.pdf used on input line 429.
+to.pdf used on input line 506.
 (pdftex.def)             Requested size: 205.4115pt x 102.1276pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/GSPH-Sod/GRod-RCM-v.eps>
 
@@ -1543,17 +1543,17 @@ converted-to.pdf>
 (epstopdf)                    size: 31137 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/GSPH-Sod
 /GRod-RCM-v-eps-converted-to.pdf Chapter-4/Figures/GSPH-Sod/GRod-RCM-v.eps>
-(epstopdf)             \includegraphics on input line 433.
+(epstopdf)             \includegraphics on input line 510.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf, id=375, 1441.385pt
+<Chapter-4/Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf, id=384, 1441.385pt
  x 716.6775pt>
 File: Chapter-4/Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use Chapter-4/Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to
-.pdf used on input line 433.
+.pdf used on input line 510.
 (pdftex.def)             Requested size: 205.4115pt x 102.1276pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/GSPH-Sod/GRod-RCM-e.eps>
 
@@ -1565,17 +1565,17 @@ converted-to.pdf>
 (epstopdf)                    size: 30321 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/GSPH-Sod
 /GRod-RCM-e-eps-converted-to.pdf Chapter-4/Figures/GSPH-Sod/GRod-RCM-e.eps>
-(epstopdf)             \includegraphics on input line 438.
+(epstopdf)             \includegraphics on input line 515.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf, id=376, 1441.385pt
+<Chapter-4/Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf, id=385, 1441.385pt
  x 716.6775pt>
 File: Chapter-4/Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use Chapter-4/Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to
-.pdf used on input line 438.
+.pdf used on input line 515.
 (pdftex.def)             Requested size: 205.4115pt x 102.1276pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/GSPH-Sod/GRod-RCM-p.eps>
 
@@ -1587,16 +1587,16 @@ converted-to.pdf>
 (epstopdf)                    size: 30808 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/GSPH-Sod
 /GRod-RCM-p-eps-converted-to.pdf Chapter-4/Figures/GSPH-Sod/GRod-RCM-p.eps>
-(epstopdf)             \includegraphics on input line 442.
+(epstopdf)             \includegraphics on input line 519.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf, id=377, 1441.385pt
+<Chapter-4/Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf, id=386, 1441.385pt
  x 718.685pt>
 File: Chapter-4/Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf Graphic file (
 type pdf)
  <use Chapter-4/Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/GSPH-Sod/GRod-RCM-p-eps-converted-to
-.pdf used on input line 442.
+.pdf used on input line 519.
 (pdftex.def)             Requested size: 205.4115pt x 102.41367pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/double_exp/Dexp-RCM-rho.
 eps>
@@ -1609,17 +1609,17 @@ eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/double_e
 xp/Dexp-RCM-rho-eps-converted-to.pdf Chapter-4/Figures/double_exp/Dexp-RCM-rho.
 eps>
-(epstopdf)             \includegraphics on input line 452.
+(epstopdf)             \includegraphics on input line 529.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf, id=378, 1441.3
+<Chapter-4/Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf, id=387, 1441.3
 85pt x 718.685pt>
 File: Chapter-4/Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf Graphic fi
 le (type pdf)
 
 <use Chapter-4/Figures/double_exp/Dexp-RCM-rho-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/double_exp/Dexp-RCM-rho-eps-converte
-d-to.pdf used on input line 452.
+d-to.pdf used on input line 529.
 (pdftex.def)             Requested size: 205.4115pt x 102.41367pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/double_exp/Dexp-RCM-v.ep
 s>
@@ -1632,17 +1632,17 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/double_e
 xp/Dexp-RCM-v-eps-converted-to.pdf Chapter-4/Figures/double_exp/Dexp-RCM-v.eps>
 
-(epstopdf)             \includegraphics on input line 456.
+(epstopdf)             \includegraphics on input line 533.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf, id=379, 1445.4pt
+<Chapter-4/Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf, id=388, 1445.4pt
  x 721.69624pt>
 File: Chapter-4/Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use Chapter-4/Figures/double_exp/Dexp-RCM-v-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/double_exp/Dexp-RCM-v-eps-converted-
-to.pdf used on input line 456.
+to.pdf used on input line 533.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/double_exp/Dexp-RCM-e.ep
 s>
@@ -1655,17 +1655,17 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/double_e
 xp/Dexp-RCM-e-eps-converted-to.pdf Chapter-4/Figures/double_exp/Dexp-RCM-e.eps>
 
-(epstopdf)             \includegraphics on input line 461.
+(epstopdf)             \includegraphics on input line 538.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf, id=380, 1445.4pt
+<Chapter-4/Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf, id=389, 1445.4pt
  x 721.69624pt>
 File: Chapter-4/Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use Chapter-4/Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/double_exp/Dexp-RCM-e-eps-converted-
-to.pdf used on input line 461.
+to.pdf used on input line 538.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/double_exp/Dexp-RCM-p.ep
 s>
@@ -1678,17 +1678,17 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/double_e
 xp/Dexp-RCM-p-eps-converted-to.pdf Chapter-4/Figures/double_exp/Dexp-RCM-p.eps>
 
-(epstopdf)             \includegraphics on input line 465.
+(epstopdf)             \includegraphics on input line 542.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf, id=381, 1445.4pt
+<Chapter-4/Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf, id=390, 1445.4pt
  x 721.69624pt>
 File: Chapter-4/Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use Chapter-4/Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/double_exp/Dexp-RCM-p-eps-converted-
-to.pdf used on input line 465.
+to.pdf used on input line 542.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/double_shock/Dshock-RCM-
 rho-Rp6.eps>
@@ -1701,17 +1701,17 @@ rho-Rp6-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/double_s
 hock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf Chapter-4/Figures/double_shock/Dsh
 ock-RCM-rho-Rp6.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 552.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf, id=382
+<Chapter-4/Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf, id=391
 , 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use Chapter-4/Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/double_shock/Dshock-RCM-rho-Rp6-eps-
-converted-to.pdf used on input line 475.
+converted-to.pdf used on input line 552.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/double_shock/Dshock-RCM-
 v-Rp6.eps>
@@ -1724,17 +1724,17 @@ v-Rp6-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/double_s
 hock/Dshock-RCM-v-Rp6-eps-converted-to.pdf Chapter-4/Figures/double_shock/Dshoc
 k-RCM-v-Rp6.eps>
-(epstopdf)             \includegraphics on input line 479.
+(epstopdf)             \includegraphics on input line 556.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf, id=383, 
+<Chapter-4/Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf, id=392, 
 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Chapter-4/Figures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/double_shock/Dshock-RCM-v-Rp6-eps-co
-nverted-to.pdf used on input line 479.
+nverted-to.pdf used on input line 556.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/double_shock/Dshock-RCM-
 e-Rp6.eps>
@@ -1747,17 +1747,17 @@ e-Rp6-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/double_s
 hock/Dshock-RCM-e-Rp6-eps-converted-to.pdf Chapter-4/Figures/double_shock/Dshoc
 k-RCM-e-Rp6.eps>
-(epstopdf)             \includegraphics on input line 484.
+(epstopdf)             \includegraphics on input line 561.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf, id=384, 
+<Chapter-4/Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf, id=393, 
 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Chapter-4/Figures/double_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/double_shock/Dshock-RCM-e-Rp6-eps-co
-nverted-to.pdf used on input line 484.
+nverted-to.pdf used on input line 561.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/double_shock/Dshock-RCM-
 p-Rp6.eps>
@@ -1770,17 +1770,17 @@ p-Rp6-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/double_s
 hock/Dshock-RCM-p-Rp6-eps-converted-to.pdf Chapter-4/Figures/double_shock/Dshoc
 k-RCM-p-Rp6.eps>
-(epstopdf)             \includegraphics on input line 488.
+(epstopdf)             \includegraphics on input line 565.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf, id=385, 
+<Chapter-4/Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf, id=394, 
 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Chapter-4/Figures/double_shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/double_shock/Dshock-RCM-p-Rp6-eps-co
-nverted-to.pdf used on input line 488.
+nverted-to.pdf used on input line 565.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sjogreen/Sjogreen-RCM-rh
 o-Adpt1.eps>
@@ -1793,17 +1793,17 @@ o-Adpt1-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sjogreen
 /Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf Chapter-4/Figures/Sjogreen/Sjogree
 n-RCM-rho-Adpt1.eps>
-(epstopdf)             \includegraphics on input line 498.
+(epstopdf)             \includegraphics on input line 575.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf, id=386
+<Chapter-4/Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf, id=395
 , 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use Chapter-4/Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1-eps-
-converted-to.pdf used on input line 498.
+converted-to.pdf used on input line 575.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sjogreen/Sjogreen-RCM-v-
 Adpt1.eps>
@@ -1816,17 +1816,17 @@ Adpt1-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sjogreen
 /Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf Chapter-4/Figures/Sjogreen/Sjogreen-
 RCM-v-Adpt1.eps>
-(epstopdf)             \includegraphics on input line 502.
+(epstopdf)             \includegraphics on input line 579.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf, id=387, 
+<Chapter-4/Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf, id=396, 
 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Chapter-4/Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sjogreen/Sjogreen-RCM-v-Adpt1-eps-co
-nverted-to.pdf used on input line 502.
+nverted-to.pdf used on input line 579.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sjogreen/Sjogreen-RCM-e-
 Adpt1.eps>
@@ -1839,17 +1839,17 @@ Adpt1-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sjogreen
 /Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf Chapter-4/Figures/Sjogreen/Sjogreen-
 RCM-e-Adpt1.eps>
-(epstopdf)             \includegraphics on input line 507.
+(epstopdf)             \includegraphics on input line 584.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf, id=388, 
+<Chapter-4/Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf, id=397, 
 1441.385pt x 718.685pt>
 File: Chapter-4/Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Chapter-4/Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sjogreen/Sjogreen-RCM-e-Adpt1-eps-co
-nverted-to.pdf used on input line 507.
+nverted-to.pdf used on input line 584.
 (pdftex.def)             Requested size: 205.4115pt x 102.41367pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/Sjogreen/Sjogreen-RCM-p-
 Adpt1.eps>
@@ -1862,17 +1862,17 @@ Adpt1-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/Sjogreen
 /Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf Chapter-4/Figures/Sjogreen/Sjogreen-
 RCM-p-Adpt1.eps>
-(epstopdf)             \includegraphics on input line 511.
+(epstopdf)             \includegraphics on input line 588.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf, id=389, 
+<Chapter-4/Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf, id=398, 
 1441.385pt x 718.685pt>
 File: Chapter-4/Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf Grap
 hic file (type pdf)
 
 <use Chapter-4/Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/Sjogreen/Sjogreen-RCM-p-Adpt1-eps-co
-nverted-to.pdf used on input line 511.
+nverted-to.pdf used on input line 588.
 (pdftex.def)             Requested size: 205.4115pt x 102.41367pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/strong-blast/StrBlst-RCM
 -rho-Rp3.eps>
@@ -1885,17 +1885,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/strong-blast/StrBlst-RCM
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/strong-b
 last/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf Chapter-4/Figures/strong-blast/St
 rBlst-RCM-rho-Rp3.eps>
-(epstopdf)             \includegraphics on input line 521.
+(epstopdf)             \includegraphics on input line 598.
 Package epstopdf Info: Output file is already uptodate.
 
 <Chapter-4/Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf, id=39
-0, 1445.4pt x 721.69624pt>
+9, 1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use Chapter-4/Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/strong-blast/StrBlst-RCM-rho-Rp3-eps
--converted-to.pdf used on input line 521.
+-converted-to.pdf used on input line 598.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/strong-blast/StrBlst-RCM
 -v-Rp3.eps>
@@ -1908,17 +1908,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/strong-blast/StrBlst-RCM
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/strong-b
 last/StrBlst-RCM-v-Rp3-eps-converted-to.pdf Chapter-4/Figures/strong-blast/StrB
 lst-RCM-v-Rp3.eps>
-(epstopdf)             \includegraphics on input line 525.
+(epstopdf)             \includegraphics on input line 602.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf, id=391,
+<Chapter-4/Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf, id=400,
  1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use Chapter-4/Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/strong-blast/StrBlst-RCM-v-Rp3-eps-c
-onverted-to.pdf used on input line 525.
+onverted-to.pdf used on input line 602.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/strong-blast/StrBlst-RCM
 -e-Rp3.eps>
@@ -1931,17 +1931,17 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/strong-blast/StrBlst-RCM
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/strong-b
 last/StrBlst-RCM-e-Rp3-eps-converted-to.pdf Chapter-4/Figures/strong-blast/StrB
 lst-RCM-e-Rp3.eps>
-(epstopdf)             \includegraphics on input line 530.
+(epstopdf)             \includegraphics on input line 607.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf, id=392,
+<Chapter-4/Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf, id=401,
  1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use Chapter-4/Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-c
-onverted-to.pdf used on input line 530.
+onverted-to.pdf used on input line 607.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 Package epstopdf Info: Source file: <Chapter-4/Figures/strong-blast/StrBlst-RCM
 -p-Rp3.eps>
@@ -1954,108 +1954,108 @@ Package epstopdf Info: Source file: <Chapter-4/Figures/strong-blast/StrBlst-RCM
 (epstopdf)             Command: <repstopdf --outfile=Chapter-4/Figures/strong-b
 last/StrBlst-RCM-p-Rp3-eps-converted-to.pdf Chapter-4/Figures/strong-blast/StrB
 lst-RCM-p-Rp3.eps>
-(epstopdf)             \includegraphics on input line 534.
+(epstopdf)             \includegraphics on input line 611.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-4/Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf, id=393,
+<Chapter-4/Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf, id=402,
  1445.4pt x 721.69624pt>
 File: Chapter-4/Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use Chapter-4/Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-4/Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-c
-onverted-to.pdf used on input line 534.
+onverted-to.pdf used on input line 611.
 (pdftex.def)             Requested size: 205.4115pt x 102.55646pt.
 
-[73]
-<Chapter-4/Figures/SPH-alf2-t3-cutView.jpg, id=397, 612.2875pt x 796.9775pt>
+[76]
+<Chapter-4/Figures/SPH-alf2-t3-cutView.jpg, id=406, 612.2875pt x 796.9775pt>
 File: Chapter-4/Figures/SPH-alf2-t3-cutView.jpg Graphic file (type jpg)
 
 <use Chapter-4/Figures/SPH-alf2-t3-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/SPH-alf2-t3-cutView.jpg used on inpu
-t line 554.
+t line 631.
 (pdftex.def)             Requested size: 134.8662pt x 175.54231pt.
 
-<Chapter-4/Figures/SPH-alf1-t3-cutView.jpg, id=398, 562.1pt x 786.94pt>
+<Chapter-4/Figures/SPH-alf1-t3-cutView.jpg, id=407, 562.1pt x 786.94pt>
 File: Chapter-4/Figures/SPH-alf1-t3-cutView.jpg Graphic file (type jpg)
 
 <use Chapter-4/Figures/SPH-alf1-t3-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/SPH-alf1-t3-cutView.jpg used on inpu
-t line 558.
+t line 635.
 (pdftex.def)             Requested size: 134.8662pt x 188.80942pt.
 
-<Chapter-4/Figures/SPH-alfp3-t3-cutView.jpg, id=399, 501.875pt x 803.0pt>
+<Chapter-4/Figures/SPH-alfp3-t3-cutView.jpg, id=408, 501.875pt x 803.0pt>
 File: Chapter-4/Figures/SPH-alfp3-t3-cutView.jpg Graphic file (type jpg)
 
 <use Chapter-4/Figures/SPH-alfp3-t3-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/SPH-alfp3-t3-cutView.jpg used on inp
-ut line 562.
+ut line 639.
 (pdftex.def)             Requested size: 134.8662pt x 215.78366pt.
 
-<Chapter-4/Figures/SPH-alf1-t1p5-cutView.jpg, id=400, 562.1pt x 697.60625pt>
+<Chapter-4/Figures/SPH-alf1-t1p5-cutView.jpg, id=409, 562.1pt x 697.60625pt>
 File: Chapter-4/Figures/SPH-alf1-t1p5-cutView.jpg Graphic file (type jpg)
 
 <use Chapter-4/Figures/SPH-alf1-t1p5-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/SPH-alf1-t1p5-cutView.jpg used on in
-put line 572.
+put line 649.
 (pdftex.def)             Requested size: 134.8662pt x 167.37569pt.
 
-<Chapter-4/Figures/GSPH-HLLC-t1p5-cutView.jpg, id=401, 593.21625pt x 702.625pt>
+<Chapter-4/Figures/GSPH-HLLC-t1p5-cutView.jpg, id=410, 593.21625pt x 702.625pt>
 File: Chapter-4/Figures/GSPH-HLLC-t1p5-cutView.jpg Graphic file (type jpg)
 <use Chapter-4/Figures/GSPH-HLLC-t1p5-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/GSPH-HLLC-t1p5-cutView.jpg used on i
-nput line 576.
+nput line 653.
 (pdftex.def)             Requested size: 134.8662pt x 159.73486pt.
 
-<Chapter-4/Figures/RSPH-t1p5-cutView.jpg, id=402, 557.08125pt x 608.2725pt>
+<Chapter-4/Figures/RSPH-t1p5-cutView.jpg, id=411, 557.08125pt x 608.2725pt>
 File: Chapter-4/Figures/RSPH-t1p5-cutView.jpg Graphic file (type jpg)
 
 <use Chapter-4/Figures/RSPH-t1p5-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/RSPH-t1p5-cutView.jpg used on input 
-line 580.
+line 657.
 (pdftex.def)             Requested size: 134.8662pt x 147.25066pt.
 File: Chapter-4/Figures/SPH-alf1-t3-cutView.jpg Graphic file (type jpg)
 
 <use Chapter-4/Figures/SPH-alf1-t3-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/SPH-alf1-t3-cutView.jpg used on inpu
-t line 586.
+t line 663.
 (pdftex.def)             Requested size: 134.8662pt x 188.80942pt.
 
-<Chapter-4/Figures/GSPH-HLLC-t3-cutView.jpg, id=403, 593.21625pt x 796.9775pt>
+<Chapter-4/Figures/GSPH-HLLC-t3-cutView.jpg, id=412, 593.21625pt x 796.9775pt>
 File: Chapter-4/Figures/GSPH-HLLC-t3-cutView.jpg Graphic file (type jpg)
 
 <use Chapter-4/Figures/GSPH-HLLC-t3-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/GSPH-HLLC-t3-cutView.jpg used on inp
-ut line 590.
+ut line 667.
 (pdftex.def)             Requested size: 134.8662pt x 181.18497pt.
 
-<Chapter-4/Figures/RSPH-t3-cutView.jpg, id=404, 557.08125pt x 788.9475pt>
+<Chapter-4/Figures/RSPH-t3-cutView.jpg, id=413, 557.08125pt x 788.9475pt>
 File: Chapter-4/Figures/RSPH-t3-cutView.jpg Graphic file (type jpg)
 
 <use Chapter-4/Figures/RSPH-t3-cutView.jpg>
 Package pdftex.def Info: Chapter-4/Figures/RSPH-t3-cutView.jpg used on input li
-ne 594.
+ne 671.
 (pdftex.def)             Requested size: 134.8662pt x 190.98848pt.
- [74]
-Overfull \hbox (4.03307pt too wide) in paragraph at lines 605--607
+ [77]
+Overfull \hbox (4.03307pt too wide) in paragraph at lines 682--684
 \OT1/ppl/m/n/12 We pro-posed RSPH, a novel SPH scheme for solv-ing hy-per-bolic
  non-linear PDEs.|
  []
 
 
-Overfull \hbox (25.21223pt too wide) in paragraph at lines 605--607
+Overfull \hbox (25.21223pt too wide) in paragraph at lines 682--684
 \OT1/ppl/m/n/12 mann solvers. The at-trac-tive prop-erty of less dis-si-pa-tion
  per-sist in multi-dimensional|
  []
 
-) [75] [76] [77 <./Chapter-4/Figures/RSPH-GSPH.pdf>] [78 <./Chapter-4/Figures/S
+) [78] [79] [80 <./Chapter-4/Figures/RSPH-GSPH.pdf>] [81 <./Chapter-4/Figures/S
 od/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-S
 PH-alf-v-eps-converted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-e-eps-c
 onverted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-p-eps-converted-to.pd
 f> <./Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-zoom-eps-converted-to.pdf> <./C
 hapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-zoom-eps-converted-to.pdf> <./Chapter-4/
 Figures/Sod/RCM-Sod-SPH-alf-e-zoom-eps-converted-to.pdf> <./Chapter-4/Figures/S
-od/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf>] [79 <./Chapter-4/Figures/Sod/R
+od/RCM-Sod-SPH-alf-p-zoom-eps-converted-to.pdf>] [82 <./Chapter-4/Figures/Sod/R
 CM-Sod-GSPH-compare-rho-eps-converted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-
 GSPH-compare-v-eps-converted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-GSPH-comp
 are-e-eps-converted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-eps
@@ -2063,19 +2063,19 @@ are-e-eps-converted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-eps
 onverted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-zoom-eps-conve
 rted-to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-zoom-eps-converted
 -to.pdf> <./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-p-zoom-eps-converted-to.
-pdf>] [80 <./Chapter-4/Figures/Accuracy-des-eps-converted-to.pdf> <./Chapter-4/
+pdf>] [83 <./Chapter-4/Figures/Accuracy-des-eps-converted-to.pdf> <./Chapter-4/
 Figures/Accuracy-vel-eps-converted-to.pdf> <./Chapter-4/Figures/Accuracy-pre-ep
 s-converted-to.pdf> <./Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho-eps-converted-to
 .pdf> <./Chapter-4/Figures/GSPH-Sod/GRod-RCM-v-eps-converted-to.pdf> <./Chapter
 -4/Figures/GSPH-Sod/GRod-RCM-e-eps-converted-to.pdf> <./Chapter-4/Figures/GSPH-
-Sod/GRod-RCM-p-eps-converted-to.pdf>] [81 <./Chapter-4/Figures/double_exp/Dexp-
+Sod/GRod-RCM-p-eps-converted-to.pdf>] [84 <./Chapter-4/Figures/double_exp/Dexp-
 RCM-rho-eps-converted-to.pdf> <./Chapter-4/Figures/double_exp/Dexp-RCM-v-eps-co
 nverted-to.pdf> <./Chapter-4/Figures/double_exp/Dexp-RCM-e-eps-converted-to.pdf
 > <./Chapter-4/Figures/double_exp/Dexp-RCM-p-eps-converted-to.pdf> <./Chapter-4
 /Figures/double_shock/Dshock-RCM-rho-Rp6-eps-converted-to.pdf> <./Chapter-4/Fig
 ures/double_shock/Dshock-RCM-v-Rp6-eps-converted-to.pdf> <./Chapter-4/Figures/d
 ouble_shock/Dshock-RCM-e-Rp6-eps-converted-to.pdf> <./Chapter-4/Figures/double_
-shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf>] [82 <./Chapter-4/Figures/Sjogreen
+shock/Dshock-RCM-p-Rp6-eps-converted-to.pdf>] [85 <./Chapter-4/Figures/Sjogreen
 /Sjogreen-RCM-rho-Adpt1-eps-converted-to.pdf> <./Chapter-4/Figures/Sjogreen/Sjo
 green-RCM-v-Adpt1-eps-converted-to.pdf> <./Chapter-4/Figures/Sjogreen/Sjogreen-
 RCM-e-Adpt1-eps-converted-to.pdf> <./Chapter-4/Figures/Sjogreen/Sjogreen-RCM-p-
@@ -2083,9 +2083,9 @@ Adpt1-eps-converted-to.pdf> <./Chapter-4/Figures/strong-blast/StrBlst-RCM-rho-R
 p3-eps-converted-to.pdf> <./Chapter-4/Figures/strong-blast/StrBlst-RCM-v-Rp3-ep
 s-converted-to.pdf> <./Chapter-4/Figures/strong-blast/StrBlst-RCM-e-Rp3-eps-con
 verted-to.pdf> <./Chapter-4/Figures/strong-blast/StrBlst-RCM-p-Rp3-eps-converte
-d-to.pdf>] [83 <./Chapter-4/Figures/SPH-alf2-t3-cutView.jpg> <./Chapter-4/Figur
+d-to.pdf>] [86 <./Chapter-4/Figures/SPH-alf2-t3-cutView.jpg> <./Chapter-4/Figur
 es/SPH-alf1-t3-cutView.jpg> <./Chapter-4/Figures/SPH-alfp3-t3-cutView.jpg>]
-[84 <./Chapter-4/Figures/SPH-alf1-t1p5-cutView.jpg> <./Chapter-4/Figures/GSPH-H
+[87 <./Chapter-4/Figures/SPH-alf1-t1p5-cutView.jpg> <./Chapter-4/Figures/GSPH-H
 LLC-t1p5-cutView.jpg> <./Chapter-4/Figures/RSPH-t1p5-cutView.jpg> <./Chapter-4/
 Figures/GSPH-HLLC-t3-cutView.jpg> <./Chapter-4/Figures/RSPH-t3-cutView.jpg>]
 \openout2 = `Chapter-5/Chapter-5.aux'.
@@ -2093,91 +2093,75 @@ Figures/GSPH-HLLC-t3-cutView.jpg> <./Chapter-4/Figures/RSPH-t3-cutView.jpg>]
 
 (./Chapter-5/Chapter-5.tex
 Chapter 5.
-
-Overfull \hbox (0.48099pt too wide) in paragraph at lines 5--14
-\OT1/ppl/m/n/12 cost by avoid-ing com-put-ing of un-in-flu-enced flu-ids. This 
-fea-ture is ac-com-plished|
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--14
-
- []
-
-[85
+[88
 
 
 
-] [86] <Chapter-5/Figures/Work_flow.pdf, id=714, 524.96124pt x 683.55376pt>
+] <Chapter-5/Figures/Work_flow.pdf, id=720, 524.96124pt x 683.55376pt>
 File: Chapter-5/Figures/Work_flow.pdf Graphic file (type pdf)
 
 <use Chapter-5/Figures/Work_flow.pdf>
-Package pdftex.def Info: Chapter-5/Figures/Work_flow.pdf used on input line 17.
+Package pdftex.def Info: Chapter-5/Figures/Work_flow.pdf used on input line 19.
 
-(pdftex.def)             Requested size: 167.99103pt x 218.74167pt.
+(pdftex.def)             Requested size: 225.72893pt x 293.92238pt.
 
-<Chapter-5/Figures/Work_flow_adjust.pdf, id=715, 438.63875pt x 683.55376pt>
+<Chapter-5/Figures/Work_flow_adjust.pdf, id=721, 438.63875pt x 683.55376pt>
 File: Chapter-5/Figures/Work_flow_adjust.pdf Graphic file (type pdf)
 
 <use Chapter-5/Figures/Work_flow_adjust.pdf>
 Package pdftex.def Info: Chapter-5/Figures/Work_flow_adjust.pdf used on input l
-ine 19.
-(pdftex.def)             Requested size: 140.36726pt x 218.74167pt.
- [87 <./Chapter-5/Figures/Work_flow.pdf> <./Chapter-5/Figures/Work_flow_adjust.
-pdf
+ine 21.
+(pdftex.def)             Requested size: 188.61098pt x 293.92238pt.
+ [89] [90 <./Chapter-5/Figures/Work_flow.pdf> <./Chapter-5/Figures/Work_flow_ad
+just.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Chapter-5/Figures/Work_flow_adjust
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <Chapter-5/Figures/SFC_particles_buckets.pdf, id=736, 722.7pt x 542.025pt>
+>] [91]
+<Chapter-5/Figures/SFC_particles_buckets.pdf, id=749, 722.7pt x 542.025pt>
 File: Chapter-5/Figures/SFC_particles_buckets.pdf Graphic file (type pdf)
 
 <use Chapter-5/Figures/SFC_particles_buckets.pdf>
 Package pdftex.def Info: Chapter-5/Figures/SFC_particles_buckets.pdf used on in
-put line 37.
-(pdftex.def)             Requested size: 122.85736pt x 92.14302pt.
+put line 49.
+(pdftex.def)             Requested size: 187.89757pt x 140.92317pt.
 
-<Chapter-5/Figures/SFC_particles_buckets_partition.pdf, id=737, 722.7pt x 542.0
+<Chapter-5/Figures/SFC_particles_buckets_partition.pdf, id=750, 722.7pt x 542.0
 25pt>
 File: Chapter-5/Figures/SFC_particles_buckets_partition.pdf Graphic file (type 
 pdf)
  <use Chapter-5/Figures/SFC_particles_buckets_partition.pdf>
 Package pdftex.def Info: Chapter-5/Figures/SFC_particles_buckets_partition.pdf 
-used on input line 39.
-(pdftex.def)             Requested size: 130.08038pt x 97.56029pt.
- [88 <./Chapter-5/Figures/SFC_particles_buckets.pdf> <./Chapter-5/Figures/SFC_p
+used on input line 51.
+(pdftex.def)             Requested size: 198.7376pt x 149.05319pt.
+ [92 <./Chapter-5/Figures/SFC_particles_buckets.pdf> <./Chapter-5/Figures/SFC_p
 articles_buckets_partition.pdf
 
 pdfTeX warning: /usr/texbin/pdflatex (file ./Chapter-5/Figures/SFC_particles_bu
 ckets_partition.pdf): PDF inclusion: multiple pdfs with page group included in 
 a single page
->] [89]
-<Chapter-5/Figures/Particle_adding_with_link.pdf, id=762, 723.70375pt x 476.781
+>] [93]
+<Chapter-5/Figures/Particle_adding_with_link.pdf, id=774, 723.70375pt x 476.781
 25pt>
 File: Chapter-5/Figures/Particle_adding_with_link.pdf Graphic file (type pdf)
  <use Chapter-5/Figures/Particle_adding_with_link.pdf>
 Package pdftex.def Info: Chapter-5/Figures/Particle_adding_with_link.pdf used o
-n input line 69.
-(pdftex.def)             Requested size: 202.63567pt x 133.49783pt.
-
-<Chapter-5/Figures/int_bar.png, id=763, 421.575pt x 371.88937pt>
+n input line 91.
+(pdftex.def)             Requested size: 303.9535pt x 200.24675pt.
+ [94]
+<Chapter-5/Figures/int_bar.png, id=778, 421.575pt x 371.88937pt>
 File: Chapter-5/Figures/int_bar.png Graphic file (type png)
 
 <use Chapter-5/Figures/int_bar.png>
-Package pdftex.def Info: Chapter-5/Figures/int_bar.png used on input line 74.
-(pdftex.def)             Requested size: 143.33359pt x 126.4407pt.
- [90] [91 <./Chapter-5/Figures/Particle_adding_with_link.pdf> <./Chapter-5/Figu
+Package pdftex.def Info: Chapter-5/Figures/int_bar.png used on input line 98.
+(pdftex.def)             Requested size: 189.70699pt x 167.34866pt.
+ [95 <./Chapter-5/Figures/Particle_adding_with_link.pdf>] [96 <./Chapter-5/Figu
 res/int_bar.png (PNG copy)>]
-Overfull \hbox (5.0417pt too wide) in paragraph at lines 96--110
+Overfull \hbox (5.0417pt too wide) in paragraph at lines 128--142
  [][] |
  []
 
-[92] <Chapter-5/Figures/plume_photo.jpg, id=782, 305.14pt x 468.75125pt>
-File: Chapter-5/Figures/plume_photo.jpg Graphic file (type jpg)
-
-<use Chapter-5/Figures/plume_photo.jpg>
-Package pdftex.def Info: Chapter-5/Figures/plume_photo.jpg used on input line 1
-29.
-(pdftex.def)             Requested size: 96.73885pt x 108.11807pt.
+[97] [98]
 Package epstopdf Info: Source file: <Chapter-5/Figures/Plume_simulation.eps>
 (epstopdf)                    date: 2017-04-05 15:07:01
 (epstopdf)                    size: 271258 bytes
@@ -2187,17 +2171,17 @@ verted-to.pdf>
 (epstopdf)                    size: 65059 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-5/Figures/Plume_si
 mulation-eps-converted-to.pdf Chapter-5/Figures/Plume_simulation.eps>
-(epstopdf)             \includegraphics on input line 131.
+(epstopdf)             \includegraphics on input line 179.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-5/Figures/Plume_simulation-eps-converted-to.pdf, id=783, 694.595pt x 6
+<Chapter-5/Figures/Plume_simulation-eps-converted-to.pdf, id=802, 694.595pt x 6
 29.35126pt>
 File: Chapter-5/Figures/Plume_simulation-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use Chapter-5/Figures/Plume_simulation-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-5/Figures/Plume_simulation-eps-converted-to.pd
-f used on input line 131.
-(pdftex.def)             Requested size: 142.2657pt x 108.12146pt.
+f used on input line 179.
+(pdftex.def)             Requested size: 194.48528pt x 176.21715pt.
 Package epstopdf Info: Source file: <Chapter-5/Figures/Boundary-condition.eps>
 (epstopdf)                    date: 2017-03-22 17:12:06
 (epstopdf)                    size: 99550 bytes
@@ -2207,64 +2191,68 @@ onverted-to.pdf>
 (epstopdf)                    size: 16786 bytes
 (epstopdf)             Command: <repstopdf --outfile=Chapter-5/Figures/Boundary
 -condition-eps-converted-to.pdf Chapter-5/Figures/Boundary-condition.eps>
-(epstopdf)             \includegraphics on input line 133.
+(epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-5/Figures/Boundary-condition-eps-converted-to.pdf, id=784, 715.67375pt
+<Chapter-5/Figures/Boundary-condition-eps-converted-to.pdf, id=803, 715.67375pt
  x 643.40375pt>
 File: Chapter-5/Figures/Boundary-condition-eps-converted-to.pdf Graphic file (t
 ype pdf)
 
 <use Chapter-5/Figures/Boundary-condition-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-5/Figures/Boundary-condition-eps-converted-to.
-pdf used on input line 133.
-(pdftex.def)             Requested size: 136.5691pt x 108.12054pt.
- [93]
-<Chapter-5/Figures/strong_scale.png, id=788, 421.575pt x 357.58594pt>
+pdf used on input line 181.
+(pdftex.def)             Requested size: 200.38728pt x 180.15181pt.
+ [99]
+<Chapter-5/Figures/strong_scale.png, id=807, 421.575pt x 357.58594pt>
 File: Chapter-5/Figures/strong_scale.png Graphic file (type png)
 
 <use Chapter-5/Figures/strong_scale.png>
 Package pdftex.def Info: Chapter-5/Figures/strong_scale.png used on input line 
-144.
+192.
 (pdftex.def)             Requested size: 130.68689pt x 110.85048pt.
 
-<Chapter-5/Figures/strong_scale_zoom.png, id=789, 421.575pt x 357.58594pt>
+<Chapter-5/Figures/strong_scale_zoom.png, id=808, 421.575pt x 357.58594pt>
 File: Chapter-5/Figures/strong_scale_zoom.png Graphic file (type png)
 
 <use Chapter-5/Figures/strong_scale_zoom.png>
 Package pdftex.def Info: Chapter-5/Figures/strong_scale_zoom.png used on input 
-line 146.
+line 194.
 (pdftex.def)             Requested size: 130.68689pt x 110.85048pt.
 
-<Chapter-5/Figures/weak_scale.png, id=790, 447.17062pt x 356.0803pt>
+<Chapter-5/Figures/weak_scale.png, id=809, 447.17062pt x 356.0803pt>
 File: Chapter-5/Figures/weak_scale.png Graphic file (type png)
 
 <use Chapter-5/Figures/weak_scale.png>
-Package pdftex.def Info: Chapter-5/Figures/weak_scale.png used on input line 14
-8.
+Package pdftex.def Info: Chapter-5/Figures/weak_scale.png used on input line 19
+6.
 (pdftex.def)             Requested size: 138.62146pt x 110.38374pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--157
-
- []
-
-[94 <./Chapter-5/Figures/plume_photo.jpg> <./Chapter-5/Figures/Plume_simulation
--eps-converted-to.pdf> <./Chapter-5/Figures/Boundary-condition-eps-converted-to
-.pdf>] [95 <./Chapter-5/Figures/strong_scale.png (PNG copy)> <./Chapter-5/Figur
-es/strong_scale_zoom.png (PNG copy)> <./Chapter-5/Figures/weak_scale.png (PNG c
-opy)>] <Chapter-5/Figures/adj_vs_no.png, id=805, 451.6875pt x 311.66437pt>
+ [100 <./Chapter-5/Figures/Plume_simulation-eps-converted-to.pdf> <./Chapter-5/
+Figures/Boundary-condition-eps-converted-to.pdf> <./Chapter-5/Figures/strong_sc
+ale.png (PNG copy)> <./Chapter-5/Figures/strong_scale_zoom.png (PNG copy)> <./C
+hapter-5/Figures/weak_scale.png (PNG copy)>] [101] <Chapter-5/Figures/adj_vs_no
+.png, id=823, 451.6875pt x 311.66437pt>
 File: Chapter-5/Figures/adj_vs_no.png Graphic file (type png)
 
 <use Chapter-5/Figures/adj_vs_no.png>
-Package pdftex.def Info: Chapter-5/Figures/adj_vs_no.png used on input line 201
+Package pdftex.def Info: Chapter-5/Figures/adj_vs_no.png used on input line 251
 .
-(pdftex.def)             Requested size: 158.09299pt x 109.08415pt.
- [96]) [97 <./Chapter-5/Figures/adj_vs_no.png (PNG copy)>] [98]
+(pdftex.def)             Requested size: 225.84319pt x 155.8318pt.
+
+Overfull \hbox (28.45212pt too wide) in paragraph at lines 256--258
+\OT1/ppl/m/n/12 For the test prob-lem, the vol-cano plume fi-nally reaches to a
+ re-gion of $\OT1/zplm/m/n/12 [\OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 10\OML/zplm/
+m/it/12 km   \OT1/ppl/m/n/12 10\OML/zplm/m/it/12 km\OT1/zplm/m/n/12 ] \OMS/zplm
+/m/n/12 ^^B|
+ []
+
+[102] [103 <./Chapter-5/Figures/adj_vs_no.png (PNG copy)>]) [104]
 \openout2 = `Chapter-6/Chapter-6.aux'.
 
- (./Chapter-6/Chapter-6.tex
+
+(./Chapter-6/Chapter-6.tex
 Chapter 6.
-[99
+[105
 
 
 
@@ -2281,7 +2269,7 @@ s-eps-converted-to.pdf Chapter-6/Figures/vel_cross.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/vel_cross-eps-converted-to.pdf, id=818, 431.6125pt x 320.196
+<Chapter-6/Figures/vel_cross-eps-converted-to.pdf, id=836, 431.6125pt x 320.196
 24pt>
 File: Chapter-6/Figures/vel_cross-eps-converted-to.pdf Graphic file (type pdf)
  <use Chapter-6/Figures/vel_cross-eps-converted-to.pdf>
@@ -2289,7 +2277,7 @@ Package pdftex.def Info: Chapter-6/Figures/vel_cross-eps-converted-to.pdf used
 on input line 46.
 (pdftex.def)             Requested size: 227.62204pt x 168.86284pt.
 
-Overfull \hbox (49.47513pt too wide) in paragraph at lines 46--47
+Overfull \hbox (55.76236pt too wide) in paragraph at lines 46--47
  [][] |
  []
 
@@ -2305,7 +2293,7 @@ ss-eps-converted-to.pdf Chapter-6/Figures/conc_cross.eps>
 (epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/conc_cross-eps-converted-to.pdf, id=819, 432.61626pt x 318.1
+<Chapter-6/Figures/conc_cross-eps-converted-to.pdf, id=837, 432.61626pt x 318.1
 8875pt>
 File: Chapter-6/Figures/conc_cross-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2314,8 +2302,8 @@ Package pdftex.def Info: Chapter-6/Figures/conc_cross-eps-converted-to.pdf used
  on input line 50.
 (pdftex.def)             Requested size: 227.62204pt x 167.41573pt.
 
-Overfull \hbox (53.47108pt too wide) in paragraph at lines 50--51
- [][]\OT1/ppl/m/n/12 ] |
+Overfull \hbox (55.76236pt too wide) in paragraph at lines 50--51
+ [][] |
  []
 
 Package epstopdf Info: Source file: <Chapter-6/Figures/velo_along_axis.eps>
@@ -2330,7 +2318,7 @@ ng_axis-eps-converted-to.pdf Chapter-6/Figures/velo_along_axis.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/velo_along_axis-eps-converted-to.pdf, id=820, 396.48125pt x 
+<Chapter-6/Figures/velo_along_axis-eps-converted-to.pdf, id=838, 396.48125pt x 
 239.89626pt>
 File: Chapter-6/Figures/velo_along_axis-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2339,7 +2327,7 @@ Package pdftex.def Info: Chapter-6/Figures/velo_along_axis-eps-converted-to.pdf
  used on input line 60.
 (pdftex.def)             Requested size: 227.62204pt x 137.72696pt.
 
-Overfull \hbox (49.47513pt too wide) in paragraph at lines 60--61
+Overfull \hbox (55.76236pt too wide) in paragraph at lines 60--61
  [][] |
  []
 
@@ -2355,7 +2343,7 @@ ng_axis-eps-converted-to.pdf Chapter-6/Figures/conc_along_axis.eps>
 (epstopdf)             \includegraphics on input line 64.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/conc_along_axis-eps-converted-to.pdf, id=821, 401.5pt x 221.
+<Chapter-6/Figures/conc_along_axis-eps-converted-to.pdf, id=839, 401.5pt x 221.
 82875pt>
 File: Chapter-6/Figures/conc_along_axis-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2364,23 +2352,23 @@ Package pdftex.def Info: Chapter-6/Figures/conc_along_axis-eps-converted-to.pdf
  used on input line 64.
 (pdftex.def)             Requested size: 227.62204pt x 125.76334pt.
 
-Overfull \hbox (49.47513pt too wide) in paragraph at lines 64--65
+Overfull \hbox (55.76236pt too wide) in paragraph at lines 64--65
  [][] |
  []
 
-[100] [101 <./Chapter-6/Figures/vel_cross-eps-converted-to.pdf> <./Chapter-6/Fi
+[106] [107 <./Chapter-6/Figures/vel_cross-eps-converted-to.pdf> <./Chapter-6/Fi
 gures/conc_cross-eps-converted-to.pdf> <./Chapter-6/Figures/velo_along_axis-eps
 -converted-to.pdf> <./Chapter-6/Figures/conc_along_axis-eps-converted-to.pdf>]
-[102]
-<Chapter-6/Figures/JPUE_entrainment.png, id=864, 712.37572pt x 572.60077pt>
+[108]
+<Chapter-6/Figures/JPUE_entrainment.png, id=882, 712.37572pt x 572.60077pt>
 File: Chapter-6/Figures/JPUE_entrainment.png Graphic file (type png)
 
 <use Chapter-6/Figures/JPUE_entrainment.png>
 Package pdftex.def Info: Chapter-6/Figures/JPUE_entrainment.png used on input l
 ine 98.
-(pdftex.def)             Requested size: 227.62204pt x 182.95639pt.
- [103 <./Chapter-6/Figures/JPUE_entrainment.png (PNG copy)>]
-<Chapter-6/Figures/mssfrc-Diverging.jpg, id=868, 1168.365pt x 796.9775pt>
+(pdftex.def)             Requested size: 369.88582pt x 297.31725pt.
+ [109 <./Chapter-6/Figures/JPUE_entrainment.png (PNG copy)>] [110]
+<Chapter-6/Figures/mssfrc-Diverging.jpg, id=889, 1168.365pt x 796.9775pt>
 File: Chapter-6/Figures/mssfrc-Diverging.jpg Graphic file (type jpg)
 
 <use Chapter-6/Figures/mssfrc-Diverging.jpg>
@@ -2388,7 +2376,7 @@ Package pdftex.def Info: Chapter-6/Figures/mssfrc-Diverging.jpg used on input l
 ine 139.
 (pdftex.def)             Requested size: 186.7383pt x 127.37306pt.
 
-<Chapter-6/Figures/mssfrc-Diverging-cut.jpg, id=869, 1168.365pt x 796.9775pt>
+<Chapter-6/Figures/mssfrc-Diverging-cut.jpg, id=890, 1168.365pt x 796.9775pt>
 File: Chapter-6/Figures/mssfrc-Diverging-cut.jpg Graphic file (type jpg)
 
 <use Chapter-6/Figures/mssfrc-Diverging-cut.jpg>
@@ -2407,7 +2395,7 @@ rc-xz-eps-converted-to.pdf Chapter-6/Figures/gmd-mssfrc-xz.eps>
 (epstopdf)             \includegraphics on input line 148.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf, id=870, 1027.84pt x 747.
+<Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf, id=891, 1027.84pt x 747.
 79375pt>
 File: Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2428,7 +2416,7 @@ rc-xz-zoomed-eps-converted-to.pdf Chapter-6/Figures/gmd-mssfrc-xz-zoomed.eps>
 (epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf, id=871, 1027.84pt
+<Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf, id=892, 1027.84pt
  x 747.79375pt>
 File: Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -2437,10 +2425,9 @@ File: Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf Graphic file
 Package pdftex.def Info: Chapter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-t
 o.pdf used on input line 152.
 (pdftex.def)             Requested size: 186.7383pt x 135.8522pt.
- [104]
-[105 <./Chapter-6/Figures/mssfrc-Diverging.jpg> <./Chapter-6/Figures/mssfrc-Div
-erging-cut.jpg> <./Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf> <./Cha
-pter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf>]
+ [111 <./Chapter-6/Figures/mssfrc-Diverging.jpg> <./Chapter-6/Figures/mssfrc-Di
+verging-cut.jpg> <./Chapter-6/Figures/gmd-mssfrc-xz-eps-converted-to.pdf> <./Ch
+apter-6/Figures/gmd-mssfrc-xz-zoomed-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter-6/Figures/Temp.eps>
 (epstopdf)                    date: 2017-02-24 12:37:34
 (epstopdf)                    size: 94549 bytes
@@ -2453,7 +2440,7 @@ f>
 (epstopdf)             \includegraphics on input line 167.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/Temp-eps-converted-to.pdf, id=890, 470.75874pt x 345.29pt>
+<Chapter-6/Figures/Temp-eps-converted-to.pdf, id=908, 470.75874pt x 345.29pt>
 File: Chapter-6/Figures/Temp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Chapter-6/Figures/Temp-eps-converted-to.pdf>
@@ -2472,20 +2459,15 @@ ps-converted-to.pdf Chapter-6/Figures/msfrac.eps>
 (epstopdf)             \includegraphics on input line 173.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/msfrac-eps-converted-to.pdf, id=891, 1441.385pt x 505.89pt>
+<Chapter-6/Figures/msfrac-eps-converted-to.pdf, id=909, 1441.385pt x 505.89pt>
 File: Chapter-6/Figures/msfrac-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Chapter-6/Figures/msfrac-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter-6/Figures/msfrac-eps-converted-to.pdf used on 
 input line 173.
-(pdftex.def)             Requested size: 426.79134pt x 149.79204pt.
-
-Overfull \hbox (7.62512pt too wide) in paragraph at lines 173--174
-[][] |
- []
-
-[106 <./Chapter-6/Figures/Temp-eps-converted-to.pdf> <./Chapter-6/Figures/msfra
-c-eps-converted-to.pdf>]
+(pdftex.def)             Requested size: 412.56496pt x 144.79768pt.
+ [112 <./Chapter-6/Figures/Temp-eps-converted-to.pdf> <./Chapter-6/Figures/msfr
+ac-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter-6/Figures/density_strong.eps>
 (epstopdf)                    date: 2017-02-24 12:37:34
 (epstopdf)                    size: 93635 bytes
@@ -2498,7 +2480,7 @@ strong-eps-converted-to.pdf Chapter-6/Figures/density_strong.eps>
 (epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/density_strong-eps-converted-to.pdf, id=919, 470.75874pt x 3
+<Chapter-6/Figures/density_strong-eps-converted-to.pdf, id=937, 470.75874pt x 3
 45.29pt>
 File: Chapter-6/Figures/density_strong-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -2518,7 +2500,7 @@ trong-eps-converted-to.pdf Chapter-6/Figures/radius_strong.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-6/Figures/radius_strong-eps-converted-to.pdf, id=920, 467.7475pt x 346
+<Chapter-6/Figures/radius_strong-eps-converted-to.pdf, id=938, 467.7475pt x 346
 .29375pt>
 File: Chapter-6/Figures/radius_strong-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2526,437 +2508,466 @@ df)
 Package pdftex.def Info: Chapter-6/Figures/radius_strong-eps-converted-to.pdf u
 sed on input line 205.
 (pdftex.def)             Requested size: 199.16928pt x 147.45558pt.
- [107 <./Chapter-6/Figures/density_strong-eps-converted-to.pdf>] [108 <./Chapte
-r-6/Figures/radius_strong-eps-converted-to.pdf>]) [109]
+ [113]
+Overfull \hbox (1.86046pt too wide) in paragraph at lines 212--213
+\OT1/ppl/m/n/12 The Pinatubo erup-tion is sim-u-lated with dif-fer-ent res-o-lu
+-tion (smooth-ing length).|
+ []
+
+[114 <./Chapter-6/Figures/density_strong-eps-converted-to.pdf> <./Chapter-6/Fig
+ures/radius_strong-eps-converted-to.pdf>]
+Overfull \hbox (103.41666pt too wide) in paragraph at lines 218--230
+ [][] |
+ []
+
+) [115]
 \openout2 = `Chapter-7/Chapter-7.aux'.
 
  (./Chapter-7/Chapter-7.tex
 Chapter 7.
-[110
+[116
 
 
 
-] [111]
-Overfull \hbox (1.61829pt too wide) in paragraph at lines 20--21
+]
+Overfull \hbox (6.09726pt too wide) in paragraph at lines 10--17
+\OT1/ppl/m/n/12 erup-tions in-clude py-ro-clas-tic den-sity cur-rents (flows an
+d surges), the widespread|
+ []
+
+
+Overfull \hbox (12.57405pt too wide) in paragraph at lines 18--26
+[]\OT1/ppl/m/n/12 In re-cent years sig-nif-i-cant ad-vances in the iden-ti-fi-c
+a-tion of vol-canic ash through|
+ []
+
+
+Overfull \hbox (6.24109pt too wide) in paragraph at lines 18--26
+\OT1/ppl/m/n/12 satel-lite ob-ser-va-tions, which pro-vide snap-shots of ash cl
+oud con-cen-tra-tion down-|
+ []
+
+[117] [118]
+Overfull \hbox (1.61829pt too wide) in paragraph at lines 35--38
 []\OT1/ppl/m/n/12 We choose PUFF (Searcy, Dean and Stringer, 1998) as the VATD 
 model among|
  []
 
-
-Overfull \hbox (24.3266pt too wide) in paragraph at lines 24--25
-\OT1/ppl/m/n/12 De-gruyter and Bonadonna, 2012; Wood-house et al., 2013; De-ven
-ish, 2013; de'Michieli|
- []
-
-[112]
+[119]
 Missing character: There is no Â in font pplr7t!
 Missing character: There is no ° in font pplr7t!
- [113] [114]
-<Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg, id=972, 1007.765pt x 796.9
+ [120] [121]
+<Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg, id=993, 1007.765pt x 796.9
 775pt>
 File: Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg Graphic file (type jpg
 )
  <use Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg>
 Package pdftex.def Info: Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg use
-d on input line 49.
+d on input line 60.
 (pdftex.def)             Requested size: 134.8662pt x 106.65092pt.
 
-<Chapter-7/Figures/mssfrc_top-with-axis.jpg, id=973, 1007.765pt x 796.9775pt>
+<Chapter-7/Figures/mssfrc_top-with-axis.jpg, id=994, 1007.765pt x 796.9775pt>
 File: Chapter-7/Figures/mssfrc_top-with-axis.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/mssfrc_top-with-axis.jpg>
 Package pdftex.def Info: Chapter-7/Figures/mssfrc_top-with-axis.jpg used on inp
-ut line 53.
+ut line 64.
 (pdftex.def)             Requested size: 134.8662pt x 106.65092pt.
 
-<Chapter-7/Figures/mssfrc_front-z15000.jpg, id=974, 1007.765pt x 796.9775pt>
+<Chapter-7/Figures/mssfrc_front-z15000.jpg, id=995, 1007.765pt x 796.9775pt>
 File: Chapter-7/Figures/mssfrc_front-z15000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/mssfrc_front-z15000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/mssfrc_front-z15000.jpg used on inpu
-t line 57.
+t line 68.
 (pdftex.def)             Requested size: 134.8662pt x 106.65092pt.
- [115]
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+ [122 <./Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg> <./Chapter-7/Figur
+es/mssfrc_top-with-axis.jpg> <./Chapter-7/Figures/mssfrc_front-z15000.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
 []|\OT1/ppl/m/n/12 Maximum
  []
 
-[116 <./Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg> <./Chapter-7/Figure
-s/mssfrc_top-with-axis.jpg> <./Chapter-7/Figures/mssfrc_front-z15000.jpg>]
-[117]
-Overfull \hbox (30.6365pt too wide) in paragraph at lines 115--127
+[123]
+Overfull \hbox (30.6365pt too wide) in paragraph at lines 126--138
  [][] |
  []
 
 
-<Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg, id=984, 1766.6pt x 995.72
-pt>
+<Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg, id=1002, 1766.6pt x 995.7
+2pt>
 File: Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg Graphic file (type jp
 g)
  <use Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg us
-ed on input line 133.
+ed on input line 144.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg, id=985, 1766.6pt x 995.72
-pt>
+<Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg, id=1003, 1766.6pt x 995.7
+2pt>
 File: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg Graphic file (type jp
 g)
  <use Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg us
-ed on input line 137.
+ed on input line 148.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg, id=986, 1766.6pt x 995.7
-2pt>
+<Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg, id=1004, 1766.6pt x 995.
+72pt>
 File: Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg Graphic file (type j
 pg)
  <use Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg u
-sed on input line 141.
+sed on input line 152.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
- [118]
-<Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg, id=990, 1766.6pt x 995.72p
-t>
+ [124]
+<Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg, id=1008, 1766.6pt x 995.72
+pt>
 File: Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg Graphic file (type jpg
 )
  <use Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg>
 Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg use
-d on input line 153.
+d on input line 164.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 File: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg Graphic file (type jp
 g)
 
 <use Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg us
-ed on input line 157.
+ed on input line 168.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
- [119 <./Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg> <./Chapter-7/Figu
+ [125 <./Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg> <./Chapter-7/Figu
 res/199106180441-ash-9hr-cut15000.jpg> <./Chapter-7/Figures/199106180441-ash-11
-hr-cut15000.jpg> <./Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg>]
-<Chapter-7/Figures/bent-23hr-ash.jpg, id=995, 1606.0pt x 819.06pt>
+hr-cut15000.jpg>]
+[126 <./Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg>]
+<Chapter-7/Figures/bent-23hr-ash.jpg, id=1016, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-23hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-23hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/bent-23hr-ash.jpg used on input line
- 233.
+ 244.
 (pdftex.def)             Requested size: 134.8662pt x 68.77557pt.
 
-<Chapter-7/Figures/SPH-Plume-23hr-ash.jpg, id=996, 1766.6pt x 995.72pt>
+<Chapter-7/Figures/SPH-Plume-23hr-ash.jpg, id=1017, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-23hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg used on input
- line 237.
+ line 248.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-ash-23hr-ash.png, id=997, 571.13374pt x 375.4025pt>
+<Chapter-7/Figures/OB-ash-23hr-ash.png, id=1018, 571.13374pt x 375.4025pt>
 File: Chapter-7/Figures/OB-ash-23hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-ash-23hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-ash-23hr-ash.png used on input li
-ne 241.
+ne 252.
 (pdftex.def)             Requested size: 134.8662pt x 88.64348pt.
 
-<Chapter-7/Figures/bent-31hr-ash.jpg, id=999, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-31hr-ash.jpg, id=1020, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-31hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-31hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/bent-31hr-ash.jpg used on input line
- 246.
+ 257.
 (pdftex.def)             Requested size: 134.8662pt x 68.77557pt.
 
-<Chapter-7/Figures/SPH-Plume-31hr-ash.jpg, id=1000, 1766.6pt x 995.72pt>
+<Chapter-7/Figures/SPH-Plume-31hr-ash.jpg, id=1021, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-31hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg used on input
- line 250.
+ line 261.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-ash-31hr-ash.png, id=1001, 570.13pt x 372.39125pt>
+<Chapter-7/Figures/OB-ash-31hr-ash.png, id=1022, 570.13pt x 372.39125pt>
 File: Chapter-7/Figures/OB-ash-31hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-ash-31hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-ash-31hr-ash.png used on input li
-ne 254.
+ne 265.
 (pdftex.def)             Requested size: 134.8662pt x 88.08585pt.
 
-<Chapter-7/Figures/bent-55hr-ash.jpg, id=1002, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash.jpg, id=1023, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash.jpg used on input line
- 259.
+ 270.
 (pdftex.def)             Requested size: 134.8662pt x 68.77557pt.
 
-<Chapter-7/Figures/SPH-Plume-55hr-ash.jpg, id=1003, 1766.6pt x 995.72pt>
+<Chapter-7/Figures/SPH-Plume-55hr-ash.jpg, id=1024, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-55hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg used on input
- line 263.
+ line 274.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-ash-55hr-ash.png, id=1004, 569.12625pt x 374.39874pt>
+<Chapter-7/Figures/OB-ash-55hr-ash.png, id=1025, 569.12625pt x 374.39874pt>
 File: Chapter-7/Figures/OB-ash-55hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-ash-55hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-ash-55hr-ash.png used on input li
-ne 267.
+ne 278.
 (pdftex.def)             Requested size: 134.8662pt x 88.72067pt.
 
-Overfull \hbox (40.49773pt too wide) in paragraph at lines 273--275
+Overfull \hbox (40.49773pt too wide) in paragraph at lines 284--286
 []\OT1/ppl/m/n/12 The dif-fer-ence in sim-u-la-tion re-sults be-tween ``bent+PU
 FF" and ``Plume-SPH+PUFF"|
  []
 
 
-Overfull \hbox (27.79332pt too wide) in paragraph at lines 273--275
+Overfull \hbox (27.79332pt too wide) in paragraph at lines 284--286
 \OT1/ppl/m/n/12 23 hours and 31 hours af-ter the be-gin-ning of the cli-mac-tic
  phase, ``Plume-SPH+PUFF"|
  []
 
-[120] [121] [122 <./Chapter-7/Figures/bent-23hr-ash.jpg> <./Chapter-7/Figures/S
-PH-Plume-23hr-ash.jpg> <./Chapter-7/Figures/OB-ash-23hr-ash.png> <./Chapter-7/F
-igures/bent-31hr-ash.jpg> <./Chapter-7/Figures/SPH-Plume-31hr-ash.jpg> <./Chapt
-er-7/Figures/OB-ash-31hr-ash.png> <./Chapter-7/Figures/bent-55hr-ash.jpg> <./Ch
-apter-7/Figures/SPH-Plume-55hr-ash.jpg> <./Chapter-7/Figures/OB-ash-55hr-ash.pn
-g>] [123]
-<Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png, id=1020, 562.1pt x 
+[127] [128 <./Chapter-7/Figures/bent-23hr-ash.jpg> <./Chapter-7/Figures/SPH-Plu
+me-23hr-ash.jpg> <./Chapter-7/Figures/OB-ash-23hr-ash.png> <./Chapter-7/Figures
+/bent-31hr-ash.jpg> <./Chapter-7/Figures/SPH-Plume-31hr-ash.jpg> <./Chapter-7/F
+igures/OB-ash-31hr-ash.png> <./Chapter-7/Figures/bent-55hr-ash.jpg> <./Chapter-
+7/Figures/SPH-Plume-55hr-ash.jpg> <./Chapter-7/Figures/OB-ash-55hr-ash.png>]
+[129] [130]
+<Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png, id=1041, 562.1pt x 
 702.625pt>
 File: Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png Graphic file (t
 ype png)
  <use Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.
-png used on input line 307.
+png used on input line 318.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Plume-SPH-ParticleDis-z.png, id=1021, 562.1pt x 702.625pt>
+<Chapter-7/Figures/Plume-SPH-ParticleDis-z.png, id=1042, 562.1pt x 702.625pt>
 File: Chapter-7/Figures/Plume-SPH-ParticleDis-z.png Graphic file (type png)
 
 <use Chapter-7/Figures/Plume-SPH-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Plume-SPH-ParticleDis-z.png used on 
-input line 311.
+input line 322.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png, id=1022, 562.1pt x 696.60
+<Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png, id=1043, 562.1pt x 696.60
 25pt>
 File: Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png Graphic file (type pn
 g)
  <use Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png us
-ed on input line 315.
+ed on input line 326.
 (pdftex.def)             Requested size: 102.49678pt x 127.01994pt.
 
-<Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png, id=1023, 562.1pt x 702.625
+<Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png, id=1044, 562.1pt x 702.625
 pt>
 File: Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png Graphic file (type png
 )
  <use Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png use
-d on input line 319.
+d on input line 330.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
- [124]
-<Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png, id=1027, 562.1pt x 702.62
+ [131 <./Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png (PNG copy)> 
+<./Chapter-7/Figures/Plume-SPH-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figur
+es/Possion-Hmax40k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/Suzuki-Hm
+ax40k-ParticleDis-z.png (PNG copy)>]
+<Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png, id=1049, 562.1pt x 702.62
 5pt>
 File: Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png Graphic file (type pn
 g)
  <use Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png us
-ed on input line 331.
+ed on input line 342.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png, id=1028, 562.1pt x 702.62
+<Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png, id=1050, 562.1pt x 702.62
 5pt>
 File: Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png Graphic file (type pn
 g)
  <use Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png us
-ed on input line 335.
+ed on input line 346.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png, id=1029, 562.1pt x 702.62
+<Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png, id=1051, 562.1pt x 702.62
 5pt>
 File: Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png Graphic file (type pn
 g)
  <use Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png us
-ed on input line 339.
+ed on input line 350.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png, id=1030, 562.1pt x 702.62
+<Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png, id=1052, 562.1pt x 702.62
 5pt>
 File: Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png Graphic file (type pn
 g)
  <use Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png us
-ed on input line 343.
+ed on input line 354.
 (pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
 
-<Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg, id=1031, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg, id=1053, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg used on 
-input line 353.
+input line 364.
 (pdftex.def)             Requested size: 101.66728pt x 51.841pt.
 
-<Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg, id=1032, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg, id=1054, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg used on 
-input line 357.
+input line 368.
 (pdftex.def)             Requested size: 101.66728pt x 51.841pt.
 
-<Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg, id=1033, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg, id=1055, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg used on 
-input line 361.
+input line 372.
 (pdftex.def)             Requested size: 101.66728pt x 51.841pt.
 
-<Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg, id=1034, 1606.0pt x 819.06pt>
+<Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg, id=1056, 1606.0pt x 819.06pt>
 File: Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg>
 Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg used on 
-input line 365.
+input line 376.
 (pdftex.def)             Requested size: 101.66728pt x 51.841pt.
- [125 <./Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png (PNG copy)> 
-<./Chapter-7/Figures/Plume-SPH-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figur
-es/Possion-Hmax40k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/Suzuki-Hm
-ax40k-ParticleDis-z.png (PNG copy)>] [126 <./Chapter-7/Figures/Possion-Hmax10k-
-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/Possion-Hmax20k-ParticleDis-
-z.png (PNG copy)> <./Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png (PNG c
-opy)> <./Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png (PNG copy)> <./Cha
-pter-7/Figures/bent-55hr-ash-MaxH10000.jpg> <./Chapter-7/Figures/bent-55hr-ash-
-MaxH20000.jpg> <./Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg> <./Chapter-7/F
-igures/bent-55hr-ash-MaxH35000.jpg>] [127]
-<Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg, id=1045, 1766.6pt x 995.72pt>
+ [132 <./Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png (PNG copy)> <./Cha
+pter-7/Figures/Possion-Hmax20k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figur
+es/Possion-Hmax30k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/Possion-H
+max35k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/bent-55hr-ash-MaxH100
+00.jpg> <./Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg> <./Chapter-7/Figures/
+bent-55hr-ash-MaxH30000.jpg> <./Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg>]
+ [133]
+<Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg, id=1063, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg used on inpu
-t line 384.
+t line 395.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-7p3hr-ash.png, id=1046, 568.1225pt x 369.38pt>
+<Chapter-7/Figures/OB-SO2-7p3hr-ash.png, id=1064, 568.1225pt x 369.38pt>
 File: Chapter-7/Figures/OB-SO2-7p3hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-7p3hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-SO2-7p3hr-ash.png used on input l
-ine 388.
+ine 399.
 (pdftex.def)             Requested size: 134.8662pt x 87.68356pt.
 File: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-23hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg used on input
- line 393.
+ line 404.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-23hr-ash.png, id=1047, 570.13pt x 372.39125pt>
+<Chapter-7/Figures/OB-SO2-23hr-ash.png, id=1065, 570.13pt x 372.39125pt>
 File: Chapter-7/Figures/OB-SO2-23hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-23hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-SO2-23hr-ash.png used on input li
-ne 397.
+ne 408.
 (pdftex.def)             Requested size: 134.8662pt x 88.08585pt.
 File: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-31hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg used on input
- line 402.
+ line 413.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-31hr-ash.png, id=1048, 571.13374pt x 373.395pt>
+<Chapter-7/Figures/OB-SO2-31hr-ash.png, id=1066, 571.13374pt x 373.395pt>
 File: Chapter-7/Figures/OB-SO2-31hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-31hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-SO2-31hr-ash.png used on input li
-ne 406.
+ne 417.
 (pdftex.def)             Requested size: 134.8662pt x 88.16945pt.
 File: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-55hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg used on input
- line 411.
+ line 422.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-55hr-ash.png, id=1049, 568.1225pt x 374.39874pt>
+<Chapter-7/Figures/OB-SO2-55hr-ash.png, id=1067, 568.1225pt x 374.39874pt>
 File: Chapter-7/Figures/OB-SO2-55hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-55hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-SO2-55hr-ash.png used on input li
-ne 415.
+ne 426.
 (pdftex.def)             Requested size: 134.8662pt x 88.87491pt.
 
-<Chapter-7/Figures/SPH-Plume-73hr-ash.jpg, id=1050, 1766.6pt x 995.72pt>
+<Chapter-7/Figures/SPH-Plume-73hr-ash.jpg, id=1068, 1766.6pt x 995.72pt>
 File: Chapter-7/Figures/SPH-Plume-73hr-ash.jpg Graphic file (type jpg)
 
 <use Chapter-7/Figures/SPH-Plume-73hr-ash.jpg>
 Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-73hr-ash.jpg used on input
- line 420.
+ line 431.
 (pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
 
-<Chapter-7/Figures/OB-SO2-73hr-ash.png, id=1051, 568.1225pt x 371.3875pt>
+<Chapter-7/Figures/OB-SO2-73hr-ash.png, id=1069, 568.1225pt x 371.3875pt>
 File: Chapter-7/Figures/OB-SO2-73hr-ash.png Graphic file (type png)
 
 <use Chapter-7/Figures/OB-SO2-73hr-ash.png>
 Package pdftex.def Info: Chapter-7/Figures/OB-SO2-73hr-ash.png used on input li
-ne 424.
+ne 435.
 (pdftex.def)             Requested size: 134.8662pt x 88.16011pt.
- [128] [129 <./Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg> <./Chapter-7/Figures/
+ [134] [135 <./Chapter-7/Figures/SPH-Plume-7p3hr-ash.jpg> <./Chapter-7/Figures/
 OB-SO2-7p3hr-ash.png> <./Chapter-7/Figures/OB-SO2-23hr-ash.png> <./Chapter-7/Fi
 gures/OB-SO2-31hr-ash.png> <./Chapter-7/Figures/OB-SO2-55hr-ash.png> <./Chapter
--7/Figures/SPH-Plume-73hr-ash.jpg> <./Chapter-7/Figures/OB-SO2-73hr-ash.png>]) 
-[130] [131]
+-7/Figures/SPH-Plume-73hr-ash.jpg> <./Chapter-7/Figures/OB-SO2-73hr-ash.png>] [
+136]) [137]
 \openout2 = `Chapter-8/Chapter-8.aux'.
 
 
 (./Chapter-8/Chapter-8.tex
 Chapter 8.
-[132
+[138
 
 
 
 ]
-Overfull \hbox (15.45712pt too wide) in paragraph at lines 10--11
+Overfull \hbox (13.2131pt too wide) in paragraph at lines 14--16
+\OT1/ppl/m/n/12 My pro-posal for fu-ture im-prove-ment of the soft-ware in-clud
+es four as-pects: physics|
+ []
+
+[139]
+Overfull \hbox (15.45712pt too wide) in paragraph at lines 20--21
 \OT1/ppl/m/n/12 fects de-pends on spe-cific erup-tion sce-nario and phe-nom-ena
  of in-ter-est. PDAC(Neri|
  []
 
-[133]
-Overfull \hbox (2.50865pt too wide) in paragraph at lines 18--20
+[140]
+Overfull \hbox (2.50865pt too wide) in paragraph at lines 28--30
 \OT1/ppl/m/n/12 can be re-duced by as-sign-ing fine res-o-lu-tion only when nec
 -es-sary and hence|
  []
 
-[134] [135]
-Overfull \hbox (22.12932pt too wide) in paragraph at lines 38--40
+[141] [142] [143]
+Overfull \hbox (22.12932pt too wide) in paragraph at lines 48--50
 \OT1/ppl/m/n/12 the-sis were car-ried out based on some low ef-fi-cience par-av
 iew based python/matlab|
  []
 
-[136]
+[144]
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¶ in font pplr7t!
 Missing character: There is no Ã in font pplr7t!
 Missing character: There is no ¶ in font pplr7t!
 
-Overfull \hbox (4.67921pt too wide) in paragraph at lines 46--47
+Overfull \hbox (4.67921pt too wide) in paragraph at lines 56--57
 \OT1/ppl/m/n/12 erup-tion pa-ram-e-ters have been con-ducted based on other 1D 
 and 3D plume|
  []
 
-[137]) [138]
+[145]) [146]
 \openout2 = `Appendix-A/Appendix-A.aux'.
 
  (./Appendix-A/Appendix-A.tex
 Appendix A.
-<Appendix-A/Figures/FigA1.png, id=1092, 1447.65843pt x 455.45157pt>
+<Appendix-A/Figures/FigA1.png, id=1116, 1447.65843pt x 455.45157pt>
 File: Appendix-A/Figures/FigA1.png Graphic file (type png)
 
 <use Appendix-A/Figures/FigA1.png>
@@ -2968,22 +2979,22 @@ Overfull \hbox (1.88326pt too wide) in paragraph at lines 14--15
 t ir-reg-u-larly dis-tribute|
  []
 
-[139
+[147
 
 
 
- <./Appendix-A/Figures/FigA1.png>]) [140] (./Dissertation_Index.bbl
-[141
+ <./Appendix-A/Figures/FigA1.png>]) [148] (./Dissertation_Index.bbl
+[149
 
 
 ]
-Underfull \hbox (badness 1248) in paragraph at lines 117--120
+Underfull \hbox (badness 1248) in paragraph at lines 110--113
 []\OT1/ppl/m/n/12 Cebeci, Tuncer. 2013.  \OT1/ppl/m/it/12 Anal-y-sis of tur-bu-
 lent flows with com-puter pro-grams\OT1/ppl/m/n/12 .
  []
 
-[142]
-Underfull \hbox (badness 1210) in paragraph at lines 176--179
+[150]
+Underfull \hbox (badness 1210) in paragraph at lines 169--172
 []\OT1/ppl/m/n/12 Cleary, Paul W and Joseph J Mon-aghan. 1999.  ``Con-duc-tion 
 mod-elling
  []
@@ -2991,29 +3002,29 @@ mod-elling
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
-[143] [144]
+[151]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ” in font pplr7t!
 
-Underfull \hbox (badness 2435) in paragraph at lines 280--284
+Underfull \hbox (badness 2435) in paragraph at lines 273--277
 []\OT1/ppl/m/n/12 Dimotakis, Paul E, Richard C Miake-Lye and Dim-itris A Pa-pan
 -to-niou.
  []
 
-[145] [146] [147]
+[152] [153] [154] [155]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ” in font pplr7t!
- [148] [149] [150] [151]
-Underfull \hbox (badness 1043) in paragraph at lines 808--811
+ [156] [157] [158] [159]
+Underfull \hbox (badness 1043) in paragraph at lines 819--822
 []\OT1/ppl/m/n/12 Puri, Ku-nal and Prabhu Ra-machan-dran. 2014\OT1/ppl/m/it/12 
 b\OT1/ppl/m/n/12 .  ``A com-par-i-son of SPH
  []
 
-[152] [153] [154] [155]) [156] (./SupplementaryMaterial/Vita.tex)
+[160] [161] [162] [163]) [164] (./SupplementaryMaterial/Vita.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
- [157
+ [165
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
@@ -3025,16 +3036,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
 (./Chapter-8/Chapter-8.aux) (./Appendix-A/Appendix-A.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 403.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 403.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
  ) 
 Here is how much of TeX's memory you used:
- 16426 strings out of 493117
- 292517 string characters out of 6135433
- 401358 words of memory out of 5000000
- 19348 multiletter control sequences out of 15000+600000
+ 16453 strings out of 493117
+ 293255 string characters out of 6135433
+ 402520 words of memory out of 5000000
+ 19376 multiletter control sequences out of 15000+600000
  57893 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,21n,40p,2001b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,21n,40p,2001b,815s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -3048,10 +3063,10 @@ st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb>
-Output written on Dissertation_Index.pdf (177 pages, 18467798 bytes).
+Output written on Dissertation_Index.pdf (185 pages, 18305225 bytes).
 PDF statistics:
- 1200 PDF objects out of 1200 (max. 8388607)
- 766 compressed objects within 8 object streams
+ 1225 PDF objects out of 1440 (max. 8388607)
+ 784 compressed objects within 8 object streams
  0 named destinations out of 1000 (max. 500000)
- 571 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 566 words of extra memory for PDF output out of 10000 (max. 10000000)
 

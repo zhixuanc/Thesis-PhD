@@ -41,13 +41,13 @@ One overall feature of JPUE is "self-similarity" which means that the evolution 
 
 \begin{figure}[!htb]
     \centering
-    \begin{minipage}{.425\textwidth}
+    \begin{minipage}{.41\textwidth}
         \centering
         \includegraphics[width=8cm]{Chapter-6/Figures/vel_cross}
     \end{minipage}%
-    \begin{minipage}{.425 \textwidth}
+    \begin{minipage}{.41 \textwidth}
         \centering
-        \includegraphics[width=8cm]{Chapter-6/Figures/conc_cross}]
+        \includegraphics[width=8cm]{Chapter-6/Figures/conc_cross}
     \end{minipage}%  
     \caption{Dimensionless concentration and velocity distribution across the cross-section.}
     \label{fig:JPUE_cross-section}
@@ -55,11 +55,11 @@ One overall feature of JPUE is "self-similarity" which means that the evolution 
 
 \begin{figure}[!htb]
     \centering
-    \begin{minipage}{.425\textwidth}
+    \begin{minipage}{.41\textwidth}
         \centering
         \includegraphics[width=8cm]{Chapter-6/Figures/velo_along_axis}
     \end{minipage}%
-    \begin{minipage}{.425 \textwidth}
+    \begin{minipage}{.41 \textwidth}
         \centering
         \includegraphics[width=8cm]{Chapter-6/Figures/conc_along_axis}
     \end{minipage}%  
@@ -95,7 +95,7 @@ We also investigated the mixing due to turbulence in JPUE simulation by checking
 
 \begin{figure}
 \centering
-\includegraphics[width=8cm]{Chapter-6/Figures/JPUE_entrainment.png}
+\includegraphics[width=13cm]{Chapter-6/Figures/JPUE_entrainment.png}
 \caption{The left figure shows particle distribution. Particles of phase 1 (blue) are gradually entrained and mixed with erupted particles (red) as jet flows down stream. The right figure shows the mass fraction of erupted material at the moment corresponding to the left figure.}
 \label{fig:Turb_mixing}
 \end{figure}
@@ -170,7 +170,7 @@ The profiles of local variables match well with simulation results of existing 3
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=15cm]{Chapter-6/Figures/msfrac}
+\includegraphics[width=14.5cm]{Chapter-6/Figures/msfrac}
 \caption{The mass fraction of entrained air, gas, and solid as a function of height.}
 \label{fig:strong_plume_mass_fraction}
 \end{figure}
@@ -208,19 +208,50 @@ With more cool air entrained into the plume and mixing with the hot erupted mate
 \end{figure}
 Our model adopts the same assumptions and governing equations as SK-3D. However, there is still a obvious disparity between the profiles of local variables of our model and SK-3D. One of the big differences between these two models is that we adopt a LANS type of turbulence model while SK-3D adopts a LES (large eddy simulation) turbulence model. This implies that choice of  turbulence model might play a critical role in plume simulation.
 
-\subsubsection{Evolution of plume} 
+\subsection{Resolution sensitivity}
+The Pinatubo eruption is simulated with different resolution (smoothing length). The neutral buoyancy level (NBL) of the plume, at which height the plume expands radially, is used as the property of interest in the resolution sensitivity study. Smoothing lengths and obtained NBLs are list in the Table \ref{tab:sml-sensitivity}. Another consideration while picking up smoothing length is to make sure that particle for phase 2 (the erupted material) could symmetrically fill the eruption conduit of given radius. Considering various smoothing lengths can break down the conservation properties of current SPH formulations, large ratio between smoothing length of air particles and smoothing length of erupted material particles is avoided.
 
-\begin{figure}
-\center
-\includegraphics[width=15cm]{strong_elevation}
-\caption{This figure shows the dynamic evolution process of the Pinatubo with time. At the very beginning, it is driven by initial momentum and rises up quickly, mixing and entraining surround air. Around 100s, the jet stage finishes and it becomes a plume as there were enough air entrained. The plume keeps rising up until reaches the top height then starts spreading.}
-\label{fig:strong_evolution}
-\end{figure}
+\begin{table}[htp]
+\centering
+	\begin{centering}
+      \caption{Sensitivity of NBL with respect to smoothing length}		
+	  \begin{tabular}{lrrrr}
+	    \hline
+	           & Smoothing \newline length (air) & Smoothing length \newline (Erupted material) & NBL lower & NBL upper\\
+	    \hline
+	    Case 1 & 100 m& & &  \\
+	    Case 2 & 200 m& & &  \\
+	    Case 3 & 400 m& & &  \\
+	    Case 4 & 600 m& & &  \\
+	    \hline
+	  \end{tabular}
+	  \label{tab:sml-sensitivity}
+	\end{centering}
+\end{table}
 
-\begin{figure}
-\includegraphics[width=10cm]{t50}
-\caption{Contour of mass fraction and velocity quiver at 50 seconds in plane x=0, the column keeps rising up and at the same time entraining air into the plume. The zoomed view (right figure) of the quiver plot clearly shows mechanism of air entrainment. The contour levels of mass fraction are 0.7, 0.5, 0.3, 0.1, $1\times 10 ^{-1}$, $1\times 10 ^{-2}$, $1\times 10 ^{-3}$, $1\times 10^{-4}$ and $1\times 10^{-5}$.}
-\label{fig:strong_plume_t50}
-\end{figure}
+As being showing in the table, the NBL of plume is loosely associated with resolution. When smoothing length of air is $100 m$, $200 m$ and $400 m$ respectively, the predicted NBLs are all between $17 km$ ~ $25 km$, which consistent measurements based on different techniques \citep[][e.g.]{defoor1992early, deshler1992balloonborne, self1993atmospheric}. However, when attemptting with air particle smoothing length of $600 m$, there is a relatively obvious drop in term of NBL, even though it is still within reasonable range. Possible reason for such changes in forecasted NBL might not be the resolution. When taking $600 m$ as smoothing length of air particles, there are much fewer particles in the eruption conduit. Too less particles might poorly represent the erupted material.
 
-Figure \ref{fig:strong_evolution} shows the overall evolution process of plume. Plume keeps rising up and entraining air into the plume until it reaches its top height(around t=300 seconds). Afterwards the mixtures of erupted material and air then fall back to neutral height and starts spreading radially. Detailed velocity quiver plot in Fig. \ref{fig:strong_plume_t50} shows entraining of air into the plume at the edge of column. The evolution of the plume further verifies our model.
+\subsection{Special cases: short period eruption}
+All of the previous results are simulations of successive eruptions from beginning to end. In this subsection, two short periods eruptions are simulated to further investigate the capability of Plume-SPH in capturing the salient physics in volcanic plume development. In these simulations, parameters including eruption condition, material properties, atmosphere condition, resolution and domain specifications are the same as previous simulation. The only difference is that these eruptions end during the middle of simulation, leading to different eruption duration.
+
+%Add figures showing eruption process of two different erutpion duration:
+
+%Add analysis on the eruption process
+As has been shown in Fig. The plume keeps raising up after volcano stops eruption, which excludes "push" of newly erupted material from driven forces that keeps plume raising up.
+
+%\subsubsection{Evolution of plume} 
+%
+%\begin{figure}
+%\center
+%\includegraphics[width=15cm]{strong_elevation}
+%\caption{This figure shows the dynamic evolution process of the Pinatubo with time. At the very beginning, it is driven by initial momentum and rises up quickly, mixing and entraining surround air. Around 100s, the jet stage finishes and it becomes a plume as there were enough air entrained. The plume keeps rising up until reaches the top height then starts spreading.}
+%\label{fig:strong_evolution}
+%\end{figure}
+%
+%\begin{figure}
+%\includegraphics[width=10cm]{t50}
+%\caption{Contour of mass fraction and velocity quiver at 50 seconds in plane x=0, the column keeps rising up and at the same time entraining air into the plume. The zoomed view (right figure) of the quiver plot clearly shows mechanism of air entrainment. The contour levels of mass fraction are 0.7, 0.5, 0.3, 0.1, $1\times 10 ^{-1}$, $1\times 10 ^{-2}$, $1\times 10 ^{-3}$, $1\times 10^{-4}$ and $1\times 10^{-5}$.}
+%\label{fig:strong_plume_t50}
+%\end{figure}
+%
+%Figure \ref{fig:strong_evolution} shows the overall evolution process of plume. Plume keeps rising up and entraining air into the plume until it reaches its top height(around t=300 seconds). Afterwards the mixtures of erupted material and air then fall back to neutral height and starts spreading radially. Detailed velocity quiver plot in Fig. \ref{fig:strong_plume_t50} shows entraining of air into the plume at the edge of column. The evolution of the plume further verifies our model.
