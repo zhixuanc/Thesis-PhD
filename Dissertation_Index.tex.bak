@@ -138,17 +138,18 @@
 % Use of the hyperref package %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %added by czx
-%\usepackage{zref-xr}
-%%\usepackage{xr}
-%\zexternaldocument{Chapter-1/Chapter-1}
-%\zexternaldocument{Chapter-2/Chapter-2}
-%\zexternaldocument{Chapter-3/Chapter-3}
-%\zexternaldocument{Chapter-4/Chapter-4}
-%\zexternaldocument{Chapter-5/Chapter-5}
-%\zexternaldocument{Chapter-6/Chapter-6}
-%\zexternaldocument{Chapter-7/Chapter-7}
-%\zexternaldocument{Chapter-8/Chapter-8}
-%\zexternaldocument{Appendix-A/Appendix-A}
+\usepackage{zref-xr}
+\usepackage{xr}
+%
+\zexternaldocument{Chapter-1/Chapter-1}
+\zexternaldocument{Chapter-2/Chapter-2}
+\zexternaldocument{Chapter-3/Chapter-3}
+\zexternaldocument{Chapter-4/Chapter-4}
+\zexternaldocument{Chapter-5/Chapter-5}
+\zexternaldocument{Chapter-6/Chapter-6}
+\zexternaldocument{Chapter-7/Chapter-7}
+\zexternaldocument{Chapter-8/Chapter-8}
+\zexternaldocument{Appendix-A/Appendix-A}
 %
 % This is optional and is included only for those students
 % who want to use it.
@@ -163,6 +164,14 @@
 % the psuthesis class has unnumbered pages after which page
 % counters are reset.
 %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    SELF ADDED COMMENTS by ZXC    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%To avoid a black box at the end of line which reaches the width of that line
+\overfullrule=0pt
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SPECIAL SYMBOLS AND NEW COMMANDS %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -219,7 +228,8 @@
 % comes first, goes on the second line before the name.
 \advisor[Thesis Advisor, Chair of Committee]
         {Abani K. Patra}
-        {Professor of Mechanical and Aerospace Engineering}
+        {Professor of Mechanical and Aerospace Engineering \\
+        Director and Professor of Computational Data Science and Engineering}
 
 \readerone[Committee Member]
           {Marcus I. Bursik}

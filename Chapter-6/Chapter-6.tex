@@ -39,29 +39,29 @@ One overall feature of JPUE is "self-similarity" which means that the evolution 
 	\end{centering}
 \end{table}
 
-\begin{figure}[!htb]
+\begin{figure}
     \centering
-    \begin{minipage}{.41\textwidth}
+    \begin{minipage}{.49\textwidth}
         \centering
-        \includegraphics[width=8cm]{Chapter-6/Figures/vel_cross}
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/vel_cross}
     \end{minipage}%
-    \begin{minipage}{.41 \textwidth}
+    \begin{minipage}{.49 \textwidth}
         \centering
-        \includegraphics[width=8cm]{Chapter-6/Figures/conc_cross}
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/conc_cross}
     \end{minipage}%  
     \caption{Dimensionless concentration and velocity distribution across the cross-section.}
     \label{fig:JPUE_cross-section}
 \end{figure}
 
-\begin{figure}[!htb]
+\begin{figure}
     \centering
-    \begin{minipage}{.41\textwidth}
+    \begin{minipage}{.49\textwidth}
         \centering
-        \includegraphics[width=8cm]{Chapter-6/Figures/velo_along_axis}
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/velo_along_axis}
     \end{minipage}%
-    \begin{minipage}{.41 \textwidth}
+    \begin{minipage}{.49 \textwidth}
         \centering
-        \includegraphics[width=8cm]{Chapter-6/Figures/conc_along_axis}
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/conc_along_axis}
     \end{minipage}%  
     \caption{The left plot is normalized jet width (which determined based on velocity) along the centerline. The right plot shows normalized concentration along the centerline.}
     \label{fig:JPUE_along-axis}
@@ -95,18 +95,17 @@ We also investigated the mixing due to turbulence in JPUE simulation by checking
 
 \begin{figure}
 \centering
-\includegraphics[width=13cm]{Chapter-6/Figures/JPUE_entrainment.png}
+\includegraphics[width=0.65 \textwidth]{Chapter-6/Figures/JPUE_entrainment.png}
 \caption{The left figure shows particle distribution. Particles of phase 1 (blue) are gradually entrained and mixed with erupted particles (red) as jet flows down stream. The right figure shows the mass fraction of erupted material at the moment corresponding to the left figure.}
 \label{fig:Turb_mixing}
 \end{figure}
 
-\section{Simulation of Pinatubo June 15 1991}
-The development of a volcanic plume is more complicated than JPUE in several aspects. Besides turbulent entrainment of ambient fluids, development of volcanic plume also involves heating up of entrained air and expanding in a stratified atmosphere. A strong eruption column without wind is tested in this section for the purpose of further verification and validation.
+\section{Pinatubo eruption in June 15 1991}
+The development of a volcanic plume is more complicated than JPUE in several aspects. Besides turbulent entrainment of ambient fluids, development of volcanic plume also involves heating up of entrained air and expanding in a stratified atmosphere. A strong eruption (climactic phase of Mountain Pinatubo eruption in Jun 15th 1991), during which the effect of wind field is relatively neglectable, is tested in this section for the purpose of further verification and validation.
 Both global variable and local variables are compared with existing models.
 
 \subsection{Input parameters}
-Eruption parameters, material properties and atmosphere are chosen to be the same as the strong plume no wind case in a comparison study on eruptive column models by \citet {costa2016results}. Eruption conditions are listed in Table \ref{tab:input_parameters}. As our model does not distinguish solid particles of different sizes, only mass fraction of solids of all size is used in simulation even though two size classes were provided by \citet {costa2016results}. The density of erupted material at the vent and radius of the vent can be computed from the given parameters. The eruption pressure is assumed to be as the same as pressure of ambient at the vent and hence is not given in the table. The vertical profiles of atmospheric properties were obtained based on the reanalysis data from ECMWF (European Centre for Medium-Range Weather Forecasts) for the period corresponding to the climactic phase of the Pinatubo eruption (Philippines, 15 June 1991). These conditions are more typical of a tropical atmosphere (see Fig. 1B in \citep{costa2016results}). 
-%Wind speed is not used in our current model even though it is given (by one component speed from west to east and another component speed from south to north). 
+Eruption parameters, material properties and atmosphere are chosen to be the same as the strong plume no wind case in a comparison study on eruptive column models by \citet {costa2016results}. Eruption conditions are listed in Table \ref{tab:input_parameters}. As our model does not distinguish solid particles of different sizes, only mass fraction of solids of all size is used in simulation even though two size classes were provided by \citet {costa2016results}. The density of erupted material at the vent and radius of the vent can be computed from the given parameters. The eruption pressure is assumed to be as the same as pressure of ambient at the vent and hence is not given in the table. The vertical profiles of atmospheric properties were obtained based on the reanalysis data from ECMWF (European Centre for Medium-Range Weather Forecasts) for the period corresponding to the climactic phase of the Pinatubo eruption (Philippines, 15 June 1991). These conditions are more typical of a tropical atmosphere (see Fig. 1B in \citep{costa2016results}).  
 Vertical distribution of temperature, pressure and density is used to establish stratified atmosphere. Wind velocity and specific humidity are not used in our simulation even though they were also provided in Fig. 1B \citep{costa2016results}. Material properties, shown in Table \ref{tab:material_properties}, are selected based on properties of Pinatubo and Shinmoe-dake eruption. Other material properties not given in the table can be inferred from these given parameters based on their relationships.
 
 \begin{table}[htp]
@@ -132,7 +131,7 @@ Vertical distribution of temperature, pressure and density is used to establish 
 
 Fig. \ref{fig:pinatubo-simulation-results-vis} shows the mass fraction of simulated volcanic plume at 300s after eruption, at which time the plume starts spreading radially. A contour plot of the mass fraction on the vertical cross-section (y-z plane) were also provided. The zoomed view of the quivier plot shows detailed entrainment of air at the margin of the plume.
 
-\begin{figure}[!htb]
+\begin{figure}
     \centering
     \begin{minipage}{.45\textwidth}
         \centering
@@ -164,13 +163,13 @@ The profiles of local variables match well with simulation results of existing 3
 
 \begin{figure}
 \center
-\includegraphics[width=7cm]{Chapter-6/Figures/Temp}
+\includegraphics[width=0.5 \textwidth]{Chapter-6/Figures/Temp}
 \caption{Temperature as a function of height}
 \label{fig:strong_local_temp}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=14.5cm]{Chapter-6/Figures/msfrac}
+\includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/msfrac}
 \caption{The mass fraction of entrained air, gas, and solid as a function of height.}
 \label{fig:strong_plume_mass_fraction}
 \end{figure}
@@ -196,13 +195,13 @@ PDAC, which treats particles of two different sizes as two separate phases, pred
 With more cool air entrained into the plume and mixing with the hot erupted material, the temperature of the plume decreases as the height increases as shown in Fig. \ref{fig:strong_local_temp}. In the meanwhile, bulk density decrease due to entrainment and expansion (Fig. \ref{fig:strong_local_density}).
 \begin{figure}
 \center
-\includegraphics[width=7cm]{Chapter-6/Figures/density_strong}
+\includegraphics[width=0.5 \textwidth]{Chapter-6/Figures/density_strong}
 \caption{Density of the strong plume without wind after reaching its top height}
 \label{fig:strong_local_density}
 \end{figure}
 \begin{figure}
 \center
-\includegraphics[width=7cm]{Chapter-6/Figures/radius_strong}
+\includegraphics[width=0.5 \textwidth]{Chapter-6/Figures/radius_strong}
 \caption{Radius of the strong plume without wind after reaching its top height.}
 \label{fig:strong_local_radius}
 \end{figure}
@@ -215,7 +214,7 @@ The Pinatubo eruption is simulated with different resolution (smoothing length).
 \centering
 	\begin{centering}
       \caption{Sensitivity of NBL with respect to smoothing length}		
-	  \begin{tabular}{lrrrr}
+	  \begin{tabular}{lp{2.5cm}p{3.5cm}p{2.2cm} p{2.2cm}}
 	    \hline
 	           & Smoothing \newline length (air) & Smoothing length \newline (Erupted material) & NBL lower & NBL upper\\
 	    \hline
@@ -229,29 +228,17 @@ The Pinatubo eruption is simulated with different resolution (smoothing length).
 	\end{centering}
 \end{table}
 
-As being showing in the table, the NBL of plume is loosely associated with resolution. When smoothing length of air is $100 m$, $200 m$ and $400 m$ respectively, the predicted NBLs are all between $17 km$ ~ $25 km$, which consistent measurements based on different techniques \citep[][e.g.]{defoor1992early, deshler1992balloonborne, self1993atmospheric}. However, when attemptting with air particle smoothing length of $600 m$, there is a relatively obvious drop in term of NBL, even though it is still within reasonable range. Possible reason for such changes in forecasted NBL might not be the resolution. When taking $600 m$ as smoothing length of air particles, there are much fewer particles in the eruption conduit. Too less particles might poorly represent the erupted material.
+As being showing in the table, the NBL of plume is loosely associated with resolution. When smoothing length of air is $100 m$, $200 m$ and $400 m$ respectively, the predicted NBLs are all between $17 km$ ~ $25 km$, which consistent measurements based on different techniques \citep[][e.g.]{defoor1992early, deshler1992balloonborne, self1993atmospheric}. However, when attemptting with air particle smoothing length of $600 m$, there is a relatively obvious drop in term of NBL, even though it is still within reasonable range. Possible reason for such changes in forecasted NBL might not be the resolution. When taking $600 m$ as smoothing length of air particles, there are much fewer particles in the eruption conduit leading to a poorly representing of the erupted material. So we can conclude that on constrain for choosing smoothing length is to make sure that there are enough particles in the conduit.
 
 \subsection{Special cases: short period eruption}
-All of the previous results are simulations of successive eruptions from beginning to end. In this subsection, two short periods eruptions are simulated to further investigate the capability of Plume-SPH in capturing the salient physics in volcanic plume development. In these simulations, parameters including eruption condition, material properties, atmosphere condition, resolution and domain specifications are the same as previous simulation. The only difference is that these eruptions end during the middle of simulation, leading to different eruption duration.
-
+All of the previous results are simulations of successive eruptions from beginning to end. In this subsection, two short periods (100s and 300s) eruptions are simulated to further investigate the capability of Plume-SPH in capturing the salient physics in volcanic plume development. In these simulations, parameters including eruption condition, material properties, atmosphere condition, resolution and domain specifications are the same as previous simulation. The only difference is that these eruptions end during the middle of simulation. Such short period eruption cases are simulated by stopping adding new eruption ghost particles.
 %Add figures showing eruption process of two different erutpion duration:
 
 %Add analysis on the eruption process
-As has been shown in Fig. The plume keeps raising up after volcano stops eruption, which excludes "push" of newly erupted material from driven forces that keeps plume raising up.
+As has been shown in Fig. The plume keeps raising up after volcano stops eruption, which excludes "push" of newly erupted material from driven forces that keeps plume raising up. The NBL of short period eruption is also consistent with observations.
 
-%\subsubsection{Evolution of plume} 
-%
-%\begin{figure}
-%\center
-%\includegraphics[width=15cm]{strong_elevation}
-%\caption{This figure shows the dynamic evolution process of the Pinatubo with time. At the very beginning, it is driven by initial momentum and rises up quickly, mixing and entraining surround air. Around 100s, the jet stage finishes and it becomes a plume as there were enough air entrained. The plume keeps rising up until reaches the top height then starts spreading.}
-%\label{fig:strong_evolution}
-%\end{figure}
-%
-%\begin{figure}
-%\includegraphics[width=10cm]{t50}
-%\caption{Contour of mass fraction and velocity quiver at 50 seconds in plane x=0, the column keeps rising up and at the same time entraining air into the plume. The zoomed view (right figure) of the quiver plot clearly shows mechanism of air entrainment. The contour levels of mass fraction are 0.7, 0.5, 0.3, 0.1, $1\times 10 ^{-1}$, $1\times 10 ^{-2}$, $1\times 10 ^{-3}$, $1\times 10^{-4}$ and $1\times 10^{-5}$.}
-%\label{fig:strong_plume_t50}
-%\end{figure}
-%
-%Figure \ref{fig:strong_evolution} shows the overall evolution process of plume. Plume keeps rising up and entraining air into the plume until it reaches its top height(around t=300 seconds). Afterwards the mixtures of erupted material and air then fall back to neutral height and starts spreading radially. Detailed velocity quiver plot in Fig. \ref{fig:strong_plume_t50} shows entraining of air into the plume at the edge of column. The evolution of the plume further verifies our model.
+%\section{Eyjafjallaj$\ddot{o}$kull eruption in 2010}
+%Another case study is carried out in this section. Plume-SPH is used to simulate the summit explosive eruption during the second phase of Eyjafjallaj$\ddot{o}$kull eruption beginning at sometime between about midnight and sunrise on 14 April 2010. This strong or paroxysmal phase continued until 18 April. The discharge condition during this phase is variable \citep{bursik2012estimation} according to observation made over these days. Plume-SPH currently is not able to assigning eruption condition as a function of time. Single value eruption condition is adopted in the following simulation.
+%Following \citet{{bursik2012estimation}}, the IMO Keflavik radiosonde from 14 April 00Z is used as atmosphere data. The radiosonde is the closest weather data both spatially and temporally to the early period of the eruption between about midnight and 07Z, and therefore best represents the nearvent weather conditions.
+%The physical property of atmosphere and erupted material are the same as those adopted in Pinatubo eruption simulation (see Table \ref{tab:material_properties}). 
+%As for the eruption condition, Temperature calculations \citep{keiding2012geothermobarometry} indicate the magmatic temperatures of around $1170^\circ$C (\pm $25^\circ$C) and a narrow temperature range (<$30^\circ$C) at any given depth. In contrast, benmoritic products crystallized at lower temperatures ( $1000–1060^\circ$C). Considering the cooling effect due to ice melting, we adopt the smaller value $1000^\circ$C. The eruption is actually an over pressured eruption with an average pressure higher than surrouding atmosphere. An pressure equal to that of surrounding atmosphere is adopted in simulation. Magmatic water concentrations were estimated with plagioclase-melt hygrometry by \citet{keiding2012geothermobarometry}. The maximum average water content of $1.8 \% H_2O$, obtained in one of the summit samples, is in agreement with melt inclusion observations. Such upper bound value is adopted in our simulation considering that melting ice might contribute to the water. concentration of the plume. The average value of eruption velocity and vent radius in an uncertainty qualification analysis of Eyjafjallaj$\ddot{o}$kull eruption is adopted as corresponding eruption conditions. A summary on all eruption conditions are show in Table \ref{tab:input_parameters}.

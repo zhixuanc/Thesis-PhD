@@ -1,6 +1,6 @@
 \chapter{Physical Model of Volcanic Plume} \label{chapter:physics-model}
 \section{Introduction}
-The volcanic plume development process is multiphase turbulent mixing flow accompanied by microphysics. Ignoring less dominant physical effects would reduce number of phases, number of governing equations, terms in governing equations making software development numerically, computationally and practically more feasible. Based on assumptions regarding the physics involved in plume development process, a complete mathematical descriptions of the problem, written in form of a set of partial differential equations (PDEs), initial conditions and boundary conditions, are obtained. These PDEs, also named as governing equations, originate naturally
+The volcanic plume development process is multiphase turbulent mixing flow accompanied by microphysics. Ignoring less dominant physical effects would reduce number of phases, number of governing equations, number of terms in governing equations making software development numerically, computationally and practically more feasible. Based on assumptions regarding the physics involved in plume development process, a complete mathematical descriptions of the problem, written in form of a set of PDEs (partial differential equations), equation of state, initial conditions and boundary conditions, are obtained. These PDEs, also named as governing equations, originate naturally
 from constitutive relationships and the application of the fundamental laws of conservation of mass, Newton’s Second Law and the law of conservation of energy. Eigenstructure of the governing equations are also analyzed in this chapter which is essential for the implementation of advanced numerical methods, such as GSPH and RSPH.
 
 \section{Volcanic plume development}
@@ -10,18 +10,18 @@ All in all, the process of plume development is  essentially a multiphase turbul
 
 As an initial effort on exploiting the feasibility and advantage of SPH in plume modeling, our model is designed to describe an injection of well mixed solid and volcanic gas from a circular vent above a flat surface into a stratified stationary atmosphere following SK-3D \citep{suzuki2005numerical}. In this model, molecular viscosity and heat conduction is neglected since turbulent exchange coefficients are dominant. Erupted material consisting of solid with different size and mixture of gases is assumed to be well mixed and behave like a single phase fluid (phase 2) which is valid for eruptions with fine particles and ash. Air (also a mixture of different gases) is assumed to be another phase (phase 1). Thermodynamic equilibrium is assumed so that no separate energy equation is needed for each phase. As a result, there is only one energy equation for both phases (heat exchange term between different phases does not show up under this assumption). Dynamic equilibrium is assumed so that no separate momentum equation is needed for each phase. As a result, there is only one vector momentum equation for both phases (drag force term does not show up with this assumption). 
 
-Because of the above assumptions, all other microphysical processes (such as the phase changes of $HO_2$, aggregation, disaggregation, absorption of gas on the surface of solids, solution of gas into a liquid) and chemical processes are not considered in this model. These ignored microphysics factors would play critical roles under particular eruption conditions. Capturing of these processes needs a more comprehensive model. One critical element in plume development, the effect of wind, is also not yet considered in this model. Introducing wind effects in our model requires dynamic pressure boundary conditions, which requires more numerical effort and algorithm design. To summarize, our model is not valid for eruptions where wind effect plays a significant role in its development, usually refered as a weak plume. Our model also lacks the ability in modeling plumes with large particles or eruptions in which microphysics plays non-ignorable roles, such as an eruption of \textit{El Chich{\'o}n} volcano on April 4th 1982 \citep{sigurdsson19841982, folch2016fplume}. We are focussed here on developing the SPH based methodoloy in the context of the more basic (and more critical) aspects of volcanic plume and therefore devote our effort to this relative simpler model. It is worthwhile to mention here that because SPH is adopted as our numerical method, adding of these physics into our model would require much less work in terms of programming compared to mesh based methods. Since our plan is an open source distribution of the tool we believe some of these enhancements will rapidly ensue with community participation.
+Because of the above assumptions, all other microphysical processes (such as the phase changes of $HO_2$, aggregation, disaggregation, absorption of gas on the surface of solids, solution of gas into a liquid) and chemical processes are not considered in this model. These ignored microphysics factors would play critical roles under particular eruption conditions. Capturing of these processes needs a more comprehensive model. One critical element in plume development, the effect of wind, is also not yet considered in this model. The atmosphere is treated as stationary in Plume-SPH. Introducing wind effects in our model requires dynamic pressure boundary conditions, which requires more numerical effort and algorithm design. To summarize, our model is not valid for eruptions where wind effect plays a significant role in its development, usually refered as a weak plume. Our model also lacks the ability in modeling plumes with large particles or eruptions in which microphysics plays non-ignorable roles, such as an eruption of \textit{El Chich{\'o}n} volcano on April 4th 1982 \citep{sigurdsson19841982, folch2016fplume}. We are focussed here on developing the SPH based methodoloy in the context of the more basic (and more critical) aspects of volcanic plume and therefore devote our effort to this relative simpler model. It is worthwhile to mention here that because SPH is adopted as our numerical method, adding of these physics into our model would require much less work in terms of programming compared to mesh based methods. Since our plan is an open source distribution of the tool we believe some of these enhancements will rapidly ensue with community participation.
 
 \section{Mathematical description}\label{sec:chp2-Mathematical-Description}
 
-The following assumptions are made:
+To summarize, assumptions made to simplify the physics are:
 \begin{itemize}
-\item Molecular Viscosity is neglected since eddy viscosity due to turbulence is dominant. Such assumption is a common practice when modelling turbulent flow, for which Reynolds number (ration between inertial force and viscous forces) is large.
-\item Erupted material consist of solid with different size and mixture of gas (various constituent) is assumed to be well mixed and behave like a single phase fluid (phase 2). Air (also a mixture of different gas) is assumed to be another phase (phase 1).
-\item Immediate thermodynamics equilibrium is assumed so that no separate energy equation is needed for each phase. As a result, there is only one energy equation for both phases (Heat transfer term will not show up under this assumption.). 
-\item Immediate dynamics equilibrium is assumed so that no separate momentum equation is needed for each phase. As a result, there is only one vector moment equation for both phases (Drag force term will not show up in the equation).
-\item Because of above assumptions, all other micro-physics process (like phase change of $H_2O$, aggregation, decomposition, absorption of gas on the surface of solid, solution of gas into the liquid,) and chemical process will not be considered in this model.
-\item Assume the effects of wind field is ignorable so that the atmosphere could be treated as stationary. 
+\item Neglect molecular viscosity. Such assumption is a common practice when modelling turbulent flow, for which Reynolds number (ration between inertial force and viscous forces) is large.
+\item Both erupted material (mixture of gases and solid) and air (also a mixture of different gases) are assumed to behave like single phase fluid.
+\item Assume immediate thermodynamics equilibrium between entrained air and erupted material. 
+\item Assume immediate dynamics equilibrium between entrained air and erupted material.
+\item Ignore all other micro-physics process (like phase change of $H_2O$, aggregation, decomposition, absorption of gas on the surface of solid, solution of gas into the liquid) and chemical reactions.
+\item Assume the effects of wind field is ignorable.
 \end{itemize}
 
 \subsection{Governing equations}
@@ -70,8 +70,14 @@ In mesh based methods, governing equations in Eulerian form, Eq. (\ref{eq:gov-cs
 %Governing equations in Lagrangian form, Eq. (\ref{eq:gov-nc-rho}) to Eq.(\ref{eq:gov-nc-e}), and Eulerian form, Eq. (\ref{eq:gov-cs-rho}) to Eq. (\ref{eq:gov-cs-e}), are a\dfrac{•}{•}ly equivalent, as deriving the Lagrangian form from the Eulerian is purely based on mathematics without any additional physical assumptions.
 
 \subsection{Boundary conditions}
-In the current model the initial domain is a box. The boundaries are categorized as the velocity inlet (a circular area at the center of the bottom of the box), wall boundary (box bottom), pressure outlet (other faces of the box).
+In the current model the initial domain is a box. As shown in Fig. \ref{fig:domain-BCs} the boundaries are categorized as the velocity inlet (a circular area at the center of the bottom of the box), wall boundary (box bottom), pressure outlet (other faces of the box).
 %probably should add a section to list the input parameters in the verification section
+\begin{figure}
+\center
+\includegraphics[width=8cm]{Chapter-2/Figures/Domain_good}
+\caption{Computatinal domain and boundary condtions}
+\label{fig:domain-BCs}
+\end{figure}
 
 \subsubsection{Velocity inlet}
 At the vent, temperature of erupted material $T$, eruption velocity $\textbf{v}$, the mass fraction of vapor in erupted material $\xi_{g0}$ and mass discharge rate $\dot M$ are given. The pressure of erupted material $p$ is assumed to be the same as ambient pressure for pressure-balanced eruption. The radius of vent is determined from $\rho$, $\dot M$ and $\textbf{v}$. Equation (\ref{eq:erupt_bc_rho}) to (\ref{eq:erupt_bc_e}) gives velocity inlet boundary condition wrote in terms of primitive variables.
@@ -99,9 +105,8 @@ p = p_a\left(z\right)  \label{eq:pressure_bc_p}
 \end{equation}
 
 \section{Eigenstructure analysis}
-In this section, the governing equations are categorized into two weakly coupled subgroups based on eigenstructure and elementary wave solution analysis. Such simplification is the basis of utilising GSPH formulations and Riemann solvers of Euler equations to solve our governing equation with GSPH.
 
-Eigenstructures of the homogeneous governing equations is analysed to find the eigenvalues and eigenvectors, which is the basis for defining and solving of Riemann problems. In GSPH, only a 1D Reimann problem need to be solved. So we analyse the 1D homogeneous governing equations. 
+Eigenstructures of the homogeneous governing equations is analysed to find the eigenvalues and eigenvectors, which is necessary to have better understanding on the system. In addition, it is also the basis for defining and solving of Riemann problems. In GSPH and RSPH, only a 1D Reimann problem need to be solved. So we only analyse the 1D homogeneous governing equations (Eq. (\ref{eq:gov-cs-rho-1d-hom}) $\sim$ Eq. (\ref{eq:gov-cs-e-1d-hom})) for simplification.
 \begin{align}
 \dfrac{\partial \rho}{\partial t} + \dfrac{\partial \rho u} {\partial x}= 0 \label{eq:gov-cs-rho-1d-hom} \\
 \dfrac{\partial \rho \xi}{\partial t} + \dfrac{\partial \rho \xi u} {\partial x}= 0 \label{eq:gov-cs-ks-1d-hom}\\
@@ -281,6 +286,7 @@ The eigenvalues of the Jacobian matrix are still the same as those for pressure 
 Extra attention needed when analysing pressure equations or entropy equations as non-conservative formulations might give incorrect shock solution.
  
 \section{Elementary wave solution for Riemann problem}
+Based on Eigenstructure analysis in previous section, the wave structure of the system is discussed in detail in this section. 
 The corresponding Riemann problem for the the governing equation is defined as: 
 \begin{equation}
 \textbf{U(x,t)}_t + \textbf{F(\textbf{U}(x, t))}_x = 0
@@ -292,7 +298,7 @@ With initial condition:
       \textbf{U}_R & x\geq 0
 \end{cases}
 \end{equation}
-As two linear degenerate characteristic fields have the same wave speed, the solution of this Riemann Problem consists of 4 constant states separated by 4 waves (two contact discontinuities in the middle coincide). 
+As the two linear degenerate characteristic fields have the same wave speed, the solution of this Riemann Problem consists of 4 constant states separated by 4 waves (two contact discontinuities in the middle coincide). 
 We assume that the initial data states $\textbf{U}_L$ and $\textbf{U}_R$ are connected by a single wave, all other waves have zero strength in the following elementary wave solution analysis.
 
 \subsection{Contact discontinuity}

@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {1.3}Motivation of Developing 3D Model Based on SPH}{5}{section..1.3}
 \contentsline {section}{\numberline {1.4}Numerical Challenges}{7}{section..1.4}
 \contentsline {subsection}{\numberline {1.4.1}Compressible high speed multiphase turbulent flow}{7}{subsection..1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Mixing challenge}{9}{subsection..1.4.2}
+\contentsline {subsection}{\numberline {1.4.2}Mixing challenge}{10}{subsection..1.4.2}
 \contentsline {subsection}{\numberline {1.4.3}Artifcial viscosity}{11}{subsection..1.4.3}
 \contentsline {subsection}{\numberline {1.4.4}Boundary conditions}{13}{subsection..1.4.4}
 \contentsline {section}{\numberline {1.5}Parallelization of SPH solver}{14}{section..1.5}
@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {2.2}Volcanic plume development}{19}{section..2.2}
 \contentsline {section}{\numberline {2.3}Mathematical description}{21}{section..2.3}
 \contentsline {subsection}{\numberline {2.3.1}Governing equations}{22}{subsection..2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Boundary conditions}{24}{subsection..2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Boundary conditions}{23}{subsection..2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.2.1}Velocity inlet}{24}{subsubsection..2.3.2.1}
 \contentsline {subsubsection}{\numberline {2.3.2.2}Non-slip wall boundary}{25}{subsubsection..2.3.2.2}
 \contentsline {subsubsection}{\numberline {2.3.2.3}Open outlet pressure boundary condition}{25}{subsubsection..2.3.2.3}
@@ -39,73 +39,73 @@
 \contentsline {section}{\numberline {3.7}Tensile instability and corrected derivatives}{43}{section..3.7}
 \contentsline {section}{\numberline {3.8}Mass fraction update}{44}{section..3.8}
 \contentsline {section}{\numberline {3.9}Turbulence modeling with SPH}{46}{section..3.9}
-\contentsline {subsection}{\numberline {3.9.1}Langrangian average in $SPH-\varepsilon $}{47}{subsection..3.9.1}
-\contentsline {subsection}{\numberline {3.9.2}Turbulent heat transfer}{50}{subsection..3.9.2}
-\contentsline {subsection}{\numberline {3.9.3}Discretized governing equations with $SPH-\varepsilon $ turbulence model}{53}{subsection..3.9.3}
-\contentsline {section}{\numberline {3.10}Boundary conditions}{54}{section..3.10}
-\contentsline {subsection}{\numberline {3.10.1}Wall boundary condition}{54}{subsection..3.10.1}
-\contentsline {subsection}{\numberline {3.10.2}Eruption boundary condition}{55}{subsection..3.10.2}
+\contentsline {subsection}{\numberline {3.9.1}Langrangian average in $SPH-\varepsilon $}{46}{subsection..3.9.1}
+\contentsline {subsection}{\numberline {3.9.2}Turbulent heat transfer}{49}{subsection..3.9.2}
+\contentsline {subsection}{\numberline {3.9.3}Discretized governing equations with $SPH-\varepsilon $ turbulence model}{52}{subsection..3.9.3}
+\contentsline {section}{\numberline {3.10}Boundary conditions}{53}{section..3.10}
+\contentsline {subsection}{\numberline {3.10.1}Wall boundary condition}{53}{subsection..3.10.1}
+\contentsline {subsection}{\numberline {3.10.2}Eruption boundary condition}{54}{subsection..3.10.2}
 \contentsline {subsection}{\numberline {3.10.3}Pressure boundary condition}{55}{subsection..3.10.3}
-\contentsline {chapter}{\numberline {4}Godunov SPH and RCM SPH}{58}{chapter..4}
-\contentsline {section}{\numberline {4.1}Introduction}{58}{section..4.1}
-\contentsline {section}{\numberline {4.2}GSPH method}{61}{section..4.2}
-\contentsline {section}{\numberline {4.3}RSPH method}{65}{section..4.3}
-\contentsline {subsection}{\numberline {4.3.1}Defining of local 1D Riemann problem}{66}{subsection..4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Picking up a single state}{67}{subsection..4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Non-iterative Riemann solvers}{69}{subsection..4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Binary Van Der Corput pseudo-random numbers}{71}{subsection..4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}RSPH algorithm (the PESB algorithm)}{72}{subsection..4.3.5}
+\contentsline {chapter}{\numberline {4}Godunov SPH and RCM SPH}{57}{chapter..4}
+\contentsline {section}{\numberline {4.1}Introduction}{57}{section..4.1}
+\contentsline {section}{\numberline {4.2}GSPH method}{60}{section..4.2}
+\contentsline {section}{\numberline {4.3}RSPH method}{64}{section..4.3}
+\contentsline {subsection}{\numberline {4.3.1}Defining of local 1D Riemann problem}{65}{subsection..4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Picking up a single state}{66}{subsection..4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Non-iterative Riemann solvers}{68}{subsection..4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Binary Van Der Corput pseudo-random numbers}{70}{subsection..4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}RSPH algorithm (the PESB algorithm)}{71}{subsection..4.3.5}
 \contentsline {section}{\numberline {4.4}Numerical tests}{72}{section..4.4}
 \contentsline {subsection}{\numberline {4.4.1}Comparison of RSPH with standard SPH and GSPH}{73}{subsection..4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Accuracy tests}{75}{subsection..4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Comprehensive 1D tests}{75}{subsection..4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}3D free jet}{76}{subsection..4.4.4}
-\contentsline {section}{\numberline {4.5}Conclusion}{78}{section..4.5}
-\contentsline {chapter}{\numberline {5}Code Architecture and Parallelism}{88}{chapter..5}
-\contentsline {section}{\numberline {5.1}Introduction}{88}{section..5.1}
-\contentsline {section}{\numberline {5.2}Workflow}{90}{section..5.2}
-\contentsline {section}{\numberline {5.3}Data management and parallelization}{91}{section..5.3}
-\contentsline {subsection}{\numberline {5.3.1}SFC based indexing}{91}{subsection..5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Data management strategies}{93}{subsection..5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.2.1}Particle and bucket}{93}{subsubsection..5.3.2.1}
-\contentsline {subsubsection}{\numberline {5.3.2.2}Hash table and hash collision}{94}{subsubsection..5.3.2.2}
-\contentsline {subsection}{\numberline {5.3.3}Domain decomposition and load balancing strategy}{96}{subsection..5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.3.1}Weighted work load}{96}{subsubsection..5.3.3.1}
-\contentsline {subsubsection}{\numberline {5.3.3.2}Domain decomposition and dynamic load balancing}{97}{subsubsection..5.3.3.2}
-\contentsline {section}{\numberline {5.4}Dynamic halo domain}{98}{section..5.4}
-\contentsline {section}{\numberline {5.5}Numerical test}{100}{section..5.5}
-\contentsline {subsection}{\numberline {5.5.1}Scalability test}{101}{subsection..5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Effect of workload check interval and calibrated particle weight}{101}{subsection..5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Effect of dynamic halo domains}{102}{subsection..5.5.3}
-\contentsline {section}{\numberline {5.6}Conclusion}{103}{section..5.6}
-\contentsline {chapter}{\numberline {6}Verification and Case Studies}{105}{chapter..6}
-\contentsline {section}{\numberline {6.1}Introduction}{105}{section..6.1}
-\contentsline {section}{\numberline {6.2}Simulation of JPUE}{105}{section..6.2}
-\contentsline {section}{\numberline {6.3}Simulation of Pinatubo June 15 1991}{109}{section..6.3}
-\contentsline {subsection}{\numberline {6.3.1}Input parameters}{110}{subsection..6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Global and local variables}{111}{subsection..6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Resolution sensitivity}{114}{subsection..6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Special cases: short period eruption}{115}{subsection..6.3.4}
-\contentsline {chapter}{\numberline {7}Ash Transportation and Dispersal Simulation}{116}{chapter..7}
-\contentsline {section}{\numberline {7.1}Introduction}{116}{section..7.1}
-\contentsline {section}{\numberline {7.2}Background}{117}{section..7.2}
-\contentsline {subsection}{\numberline {7.2.1}Volcanic cloud forecast}{118}{subsection..7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}The Pinatubo eruption}{119}{subsection..7.2.2}
-\contentsline {section}{\numberline {7.3}Seting up simulations}{120}{section..7.3}
-\contentsline {subsection}{\numberline {7.3.1}Creating of initial ash cloud}{120}{subsection..7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Sensitivity analysis of other parameters}{123}{subsection..7.3.2}
-\contentsline {section}{\numberline {7.4}Results and discussion}{126}{section..7.4}
-\contentsline {subsection}{\numberline {7.4.1}``Plume-SPH+PUFF" and ``bent+PUFF"}{127}{subsection..7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Calibration of maximum height}{129}{subsection..7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}$SO_2$ clouds}{133}{subsection..7.4.3}
-\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{138}{chapter..8}
-\contentsline {section}{\numberline {8.1}Conclusion remarks}{138}{section..8.1}
-\contentsline {section}{\numberline {8.2}Improvement of the software}{140}{section..8.2}
-\contentsline {subsection}{\numberline {8.2.1}More comprehensive physics model}{140}{subsection..8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Advanced numerical techniques}{141}{subsection..8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}Computational efficiency and parallel scalability}{142}{subsection..8.2.3}
-\contentsline {subsection}{\numberline {8.2.4}Improve usability}{144}{subsection..8.2.4}
-\contentsline {section}{\numberline {8.3}Future implementations}{145}{section..8.3}
+\contentsline {subsection}{\numberline {4.4.3}Comprehensive 1D tests}{77}{subsection..4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}3D free jet}{78}{subsection..4.4.4}
+\contentsline {section}{\numberline {4.5}Conclusion}{82}{section..4.5}
+\contentsline {chapter}{\numberline {5}Code Architecture and Parallelism}{85}{chapter..5}
+\contentsline {section}{\numberline {5.1}Introduction}{85}{section..5.1}
+\contentsline {section}{\numberline {5.2}Workflow}{87}{section..5.2}
+\contentsline {section}{\numberline {5.3}Data management and parallelization}{88}{section..5.3}
+\contentsline {subsection}{\numberline {5.3.1}SFC based indexing}{88}{subsection..5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Data management strategies}{90}{subsection..5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Particle and bucket}{90}{subsubsection..5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.2}Hash table and hash collision}{91}{subsubsection..5.3.2.2}
+\contentsline {subsection}{\numberline {5.3.3}Domain decomposition and load balancing strategy}{93}{subsection..5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.1}Weighted work load}{93}{subsubsection..5.3.3.1}
+\contentsline {subsubsection}{\numberline {5.3.3.2}Domain decomposition and dynamic load balancing}{94}{subsubsection..5.3.3.2}
+\contentsline {section}{\numberline {5.4}Dynamic halo domain}{95}{section..5.4}
+\contentsline {section}{\numberline {5.5}Numerical test}{97}{section..5.5}
+\contentsline {subsection}{\numberline {5.5.1}Scalability test}{98}{subsection..5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Effect of workload check interval and calibrated particle weight}{98}{subsection..5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Effect of dynamic halo domains}{99}{subsection..5.5.3}
+\contentsline {section}{\numberline {5.6}Conclusion}{100}{section..5.6}
+\contentsline {chapter}{\numberline {6}Verification and Case Studies}{102}{chapter..6}
+\contentsline {section}{\numberline {6.1}Introduction}{102}{section..6.1}
+\contentsline {section}{\numberline {6.2}Simulation of JPUE}{102}{section..6.2}
+\contentsline {section}{\numberline {6.3}Pinatubo eruption in June 15 1991}{106}{section..6.3}
+\contentsline {subsection}{\numberline {6.3.1}Input parameters}{106}{subsection..6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Global and local variables}{108}{subsection..6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Resolution sensitivity}{111}{subsection..6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Special cases: short period eruption}{112}{subsection..6.3.4}
+\contentsline {chapter}{\numberline {7}Ash Transportation and Dispersal Simulation}{114}{chapter..7}
+\contentsline {section}{\numberline {7.1}Introduction}{114}{section..7.1}
+\contentsline {section}{\numberline {7.2}Background}{115}{section..7.2}
+\contentsline {subsection}{\numberline {7.2.1}Volcanic cloud forecast}{115}{subsection..7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}The Pinatubo eruption}{116}{subsection..7.2.2}
+\contentsline {section}{\numberline {7.3}Seting up simulations}{117}{section..7.3}
+\contentsline {subsection}{\numberline {7.3.1}Creating of initial ash cloud}{117}{subsection..7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Sensitivity analysis of other parameters}{120}{subsection..7.3.2}
+\contentsline {section}{\numberline {7.4}Results and discussion}{123}{section..7.4}
+\contentsline {subsection}{\numberline {7.4.1}``Plume-SPH+PUFF" and ``bent+PUFF"}{124}{subsection..7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Calibration of maximum height}{126}{subsection..7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}$SO_2$ clouds}{130}{subsection..7.4.3}
+\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{135}{chapter..8}
+\contentsline {section}{\numberline {8.1}Conclusion remarks}{135}{section..8.1}
+\contentsline {section}{\numberline {8.2}Improvement of the software}{137}{section..8.2}
+\contentsline {subsection}{\numberline {8.2.1}More comprehensive physics model}{137}{subsection..8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Advanced numerical techniques}{138}{subsection..8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Computational efficiency and parallel scalability}{139}{subsection..8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Improve usability}{141}{subsection..8.2.4}
+\contentsline {section}{\numberline {8.3}Future implementations}{142}{section..8.3}
 \renewcommand {\cftchappresnum }{Appendix }
-\contentsline {chapter}{\numberline {A}Post processing of particle data}{147}{appendix.A}
-\contentsline {chapter}{Bibliography}{149}{figure.A.1}
+\contentsline {chapter}{\numberline {A}Post processing of particle data}{144}{appendix.A}
+\contentsline {chapter}{Bibliography}{146}{figure.A.1}
