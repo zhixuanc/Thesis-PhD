@@ -1,7 +1,7 @@
 \chapter{Verification and Case Studies} \label{chapter:case-studies}
 
 \section{Introduction}
-We present a series of numerical simulations to verify and validate our model in this chapter. Plume-SPH has been verified by comprehensive 1D shock tube tests in Chapter \ref{chapter:GSPH-RSPH}. In this chapter, it will be further verified by a JPUE (jet or plume that is ejected from a nozzle into a uniform environment) simulation. Velocity and mass fraction distribution both along the central axis and cross transverse are compared with experimental results. The pattern of ambient particles entrainment is also clearly shown. Then a simulation of representative strong volcanic plume, the Pinatubo eruption at June 15th 1991, is conducted. Integrated local variable are comparable with simulation results from existing 3D plume models.
+We present a series of numerical simulations to verify and validate our model in this chapter. Plume-SPH has been verified by comprehensive 1D shock tube tests in Chapter \ref{chapter:GSPH-RSPH}. In this chapter, Plume-SPH will be further verified by a JPUE simulation. Velocity and mass fraction distribution both along the central axis and cross transverse are compared with experimental results. The pattern of ambient particles entrainment is also clearly shown. Then a simulation of representative strong volcanic plume, the Pinatubo eruption at June 15th 1991, is conducted. Integrated local variable are comparable with simulation results from existing 3D plume models.
 The output of Pinatubo simulation will be used in Chapter \ref{chapter:ash-transportation} to create initial condition for ash transportation simulation of Pinatubo eruption.
 
 \section{Simulation of JPUE}
@@ -18,7 +18,7 @@ B=\dfrac{\rho_0 c^2}{\gamma}
 \end{equation}
 where $c$ is the speed of sound in the liquid. The energy equation is actually decoupled from the momentum conservation equation and the mass conservation equation by using this equation of state (EOS). In addition, the "atmosphere" is assumed to be uniform and gravity is set to be zero. We set the temperature and density of ejected material the same as surrounding ambient. This further simplifies the scenario for the convenience of studying turbulent mixing. 
 
-One overall feature of JPUE is "self-similarity" which means that the evolution of the JPUE is determined solely by the local scale of length and velocity which theoretically account for the fact that the rate of entrainment at the edge of JPUE is proportional to a characteristic velocity at each height. As a results, physical and numerical experiments do not necessary to have exactly the same setups and are compared on a non-dimensional basis.
+One overall feature of JPUE is "self-similarity" which means that the evolution of the JPUE is determined solely by the local scale of length and velocity which theoretically accounts for the fact that the rate of entrainment at the edge of JPUE is proportional to a characteristic velocity at each height. As a result, physical and numerical experiments do not necessary to have exactly the same setups and are compared on a non-dimensional basis.
 
 \begin{table}[htp]
 \centering
@@ -89,7 +89,7 @@ where subscript $0$ represents the cross-sectionally averaged exit value, $D$ is
 $slope$ for jet width based on velocity is 0.104 and for concentration is 0.157. 
 $intercept$ for jet width based on velocity is 2.58 while that for the concentration is 4.35.
 
-Although both velocity and concentration are found to be well matched with experimental results, a small disparity in both velocity and concentration are observed near the boundary of the jet. Which is possibly caused by overestimating of the drag effect by standard SPH \citep {ritchie2001multiphase}. \citet {ritchie2001multiphase} also proposed an alternative way for density update which releived the overestimating of the drag effect. However, how well does his method conserve mass is not clear. There are several other factors that might also attribute to such disparity. Reynolds number is not reported in many experiments assuming a high enough Reynolds number. In addition, some details of the experiments, such as exit velocity profile and viscosity of the experimental liquid, are not reported. These factors prevent us from numerically reproducing these experiments in an exact way as they were conducted. However, the features of JPUE are correctly reproduced with our code.
+Although both velocity and concentration are found to be well matched with experimental results, a small disparity in both velocity and concentration are observed near the boundary of the jet. Which is possibly caused by overestimating of the drag effect by standard SPH \citep {ritchie2001multiphase}. \citet {ritchie2001multiphase} also proposed an alternative way for density update which relieved the overestimating of the drag effect. However, how well does his method conserve mass is not clear. There are several other factors that might also attribute to such disparity. Reynolds number is not reported in many experiments assuming a high enough Reynolds number. In addition, some details of the experiments, such as exit velocity profile and viscosity of the experimental liquid, are not reported. These factors prevent us from numerically reproducing these experiments in an exact way as they were conducted. However, the features of JPUE are correctly reproduced with our code.
 
 We also investigated the mixing due to turbulence in JPUE simulation by checking the mixture of the two phases. It is shown in Fig. \ref{fig:Turb_mixing} that the ejected material and ambient fluids are mixed through eddies at the outer shear region. And the inner dense core dispersed gradually due to erosion of the outer shear region. Hence, our confidence in the numerical correctness of our code is greatly reinforced.
 
@@ -129,7 +129,7 @@ Vertical distribution of temperature, pressure and density is used to establish 
 	\end{centering}
 \end{table}
 
-Fig. \ref{fig:pinatubo-simulation-results-vis} shows the mass fraction of simulated volcanic plume at 300s after eruption, at which time the plume starts spreading radially. A contour plot of the mass fraction on the vertical cross-section (y-z plane) were also provided. The zoomed view of the quivier plot shows detailed entrainment of air at the margin of the plume.
+Fig. \ref{fig:pinatubo-simulation-results-vis} shows the mass fraction of simulated volcanic plume at 300s after eruption, at which time the plume starts spreading radially. A contour plot of the mass fraction on the vertical cross-section (y-z plane) is also provided. The zoomed view of the quivier plot shows detailed entrainment of air at the margin of the plume.
 
 \begin{figure}
     \centering
@@ -150,7 +150,7 @@ Fig. \ref{fig:pinatubo-simulation-results-vis} shows the mass fraction of simula
         \centering
         \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/gmd-mssfrc-xz-zoomed}
     \end{minipage}%  
-    \caption{Mass fraction for $t=300s$ after eruption. Figures on the first row are visualization of SPH simulation results. The figure on the up right corner is visualization of a slice of the computational, whose thickness is around $10000m$. The lowest portion of the plume represents erupted material in eruption vent (the underground portition). Figures at the second row show contour of mass fraction and velocity quiver on x-z plane. These figures are plotted utilizing post-processed data (see Appendix \ref{app:project-SPH-grid}). The contour level in the plot are $0.00001, 0.0001, 0.001, 0.1, 0.3, 0.75, 0.95$. The figure on the lower right corner is a zoomed view of velocity quivier showing plume expansion and entrainment of air.}
+    \caption{Mass fraction for $t=300s$ after eruption. Figures on the first row are visualization of SPH simulation results. The figure on the up right corner is visualization of a slice of the computational, whose thickness is around $10000m$. The lowest portion of the plume represents erupted material in eruption vent (the underground portition). Figures at the second row show contour of mass fraction and velocity quiver on x-z plane. These figures are plotted utilizing post-processed data (see Appendix \ref{app:project-SPH-grid}). The contour levels in the plots are $0.00001, 0.0001, 0.001, 0.1, 0.3, 0.75, 0.95$. The figure on the lower right corner is a zoomed view of velocity quivier showing plume expansion and entrainment of air.}
     \label{fig:pinatubo-simulation-results-vis}
 \end{figure}
 
@@ -159,7 +159,7 @@ One of the key global quantities of great interest is the altitude to which the 
 
 As particles distribute irregularly in the space in SPH simulation results. We need to project simulation results (on irregular particles) onto a pre-defined grid before doing time average and spatial integration. See appendix A for more details of post processing.
 
-The profiles of local variables match well with simulation results of existing 3D models in a general sense. The basic phenomena in volcanic plume development is correctly captured by our model.
+The profiles of local variables match well with simulation results of existing 3D models in a general sense. The basic phenomena in volcanic plume development are correctly captured by our model.
 
 \begin{figure}
 \center
@@ -174,7 +174,7 @@ The profiles of local variables match well with simulation results of existing 3
 \label{fig:strong_plume_mass_fraction}
 \end{figure}
 
-As the height increases, the amount of entrained air also increases. Around the neutral height, where the umbrella expands, the entrainment of air shows a slight decrease due to lack of air surrounding the column at that height. The profile for gas, which account for both air and vapor, shows a very similar tendency as that of entrained air. Recall that vapor condensation is not considered in our model. In addition, we assume that erupted material behaves like a single phase fluid. So the mass fraction of gas is simply a function of entrained air (Eq. (\ref{eq:gas-frac-express})).
+As the height increases, the amount of entrained air also increases. Around the neutral height, where the umbrella expands, the entrainment of air shows a slight decrease due to lack of air surrounding the column at that height. The profile for gas, which account for both air and vapor, shows a very similar tendency as that of entrained air. Recall that vapor condensation is not considered in our model. In addition, we assume that erupted material behaves like a single-phase fluid. So the mass fraction of gas is simply a function of entrained air (Eq. (\ref{eq:gas-frac-express})).
 \begin{equation}
 \xi_a + \xi_g = \xi_a + \left(1-\xi_a\right) \xi_{g0}
 \label{eq:gas-frac-express}
@@ -205,37 +205,87 @@ With more cool air entrained into the plume and mixing with the hot erupted mate
 \caption{Radius of the strong plume without wind after reaching its top height.}
 \label{fig:strong_local_radius}
 \end{figure}
-Our model adopts the same assumptions and governing equations as SK-3D. However, there is still a obvious disparity between the profiles of local variables of our model and SK-3D. One of the big differences between these two models is that we adopt a LANS type of turbulence model while SK-3D adopts a LES (large eddy simulation) turbulence model. This implies that choice of  turbulence model might play a critical role in plume simulation.
+Our model adopts the same assumptions and governing equations as SK-3D. However, there is still a obvious disparity between the profiles of local variables of our model and SK-3D. One of the big differences between these two models is that we adopt a LANS type of turbulence model while SK-3D adopts a LES (large eddy simulation) turbulence model. This implies that choice of turbulence model might play a critical role in plume simulation.
 
-\subsection{Resolution sensitivity}
-The Pinatubo eruption is simulated with different resolution (smoothing length). The neutral buoyancy level (NBL) of the plume, at which height the plume expands radially, is used as the property of interest in the resolution sensitivity study. Smoothing lengths and obtained NBLs are list in the Table \ref{tab:sml-sensitivity}. Another consideration while picking up smoothing length is to make sure that particle for phase 2 (the erupted material) could symmetrically fill the eruption conduit of given radius. Considering various smoothing lengths can break down the conservation properties of current SPH formulations, large ratio between smoothing length of air particles and smoothing length of erupted material particles is avoided.
+%\subsection{Resolution sensitivity}
+%The Pinatubo eruption is simulated with different resolution (smoothing length). The neutral buoyancy level (NBL) of the plume, at which height the plume expands radially, is used as the property of interest in the resolution sensitivity study. Smoothing lengths and obtained NBLs are list in the Table \ref{tab:sml-sensitivity}. Another consideration while picking up smoothing length is to make sure that particle for phase 2 (the erupted material) could symmetrically fill the eruption conduit of given radius. Considering various smoothing lengths can break down the conservation properties of current SPH formulations, large ratio between smoothing length of air particles and smoothing length of erupted material particles is avoided.
+%
+%\begin{table}[htp]
+%\centering
+%	\begin{centering}
+%      \caption{Sensitivity of NBL with respect to smoothing length}		
+%	  \begin{tabular}{lp{2.5cm}p{3.5cm}p{2.2cm} p{2.2cm}}
+%	    \hline
+%	           & Smoothing \newline length (air) & Smoothing length \newline (Erupted material) & NBL lower & NBL upper\\
+%	    \hline
+%	    Case 1 & 170 m & 17.5 km & 19.5.0 km &  \\
+%	    Case 2 & 300 m & 17.5 km & 19.5 km &  \\
+%	    Case 3 & 400 m & 17.0 km & 19.0 km &  \\
+%	    Case 4 & 600 m & 15.5 km & 17.5 km &  \\
+%	    \hline
+%	  \end{tabular}
+%	  \label{tab:sml-sensitivity}
+%	\end{centering}
+%\end{table}
+%
+%As being showing in the table \ref{tab:sml-sensitivity}, the NBL of plume is loosely associated with resolution. When smoothing length of air is $170 m$, $300 m$ and $400 m$ respectively, the predicted NBLs are all between $17 km$ ~ $25 km$, which consistent measurements based on different techniques \citep[][e.g.]{defoor1992early, deshler1992balloonborne, self1993atmospheric}. However, when attemptting with air particle smoothing length of $600 m$, there is a relatively obvious drop in term of NBL, even though it is still within reasonable range. Possible reason for such changes in forecasted NBL might not be the resolution. When taking $600 m$ as smoothing length of air particles, there are much fewer particles in the eruption conduit leading to a poorly representing of the erupted material. So we can conclude that one constrain for choosing smoothing length is to make sure that there are enough particles in the conduit.
 
-\begin{table}[htp]
-\centering
-	\begin{centering}
-      \caption{Sensitivity of NBL with respect to smoothing length}		
-	  \begin{tabular}{lp{2.5cm}p{3.5cm}p{2.2cm} p{2.2cm}}
-	    \hline
-	           & Smoothing \newline length (air) & Smoothing length \newline (Erupted material) & NBL lower & NBL upper\\
-	    \hline
-	    Case 1 & 100 m& & &  \\
-	    Case 2 & 200 m& & &  \\
-	    Case 3 & 400 m& & &  \\
-	    Case 4 & 600 m& & &  \\
-	    \hline
-	  \end{tabular}
-	  \label{tab:sml-sensitivity}
-	\end{centering}
-\end{table}
+\subsection{Short period eruption}
+\begin{figure}
+    \centering
+    \begin{minipage}{.33\textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt100_t100}
+    \end{minipage}%
+    \begin{minipage}{.33 \textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt300_t100}
+    \end{minipage}%
+    \\
+    \begin{minipage}{.33\textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt100_t150}
+    \end{minipage}%
+    \begin{minipage}{.33 \textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt300_t150}
+    \end{minipage}%
+    \\
+    \begin{minipage}{.33 \textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt100_t300}
+    \end{minipage}%
+    \begin{minipage}{.33 \textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt300_t300}
+    \end{minipage}%
+    \\
+    \begin{minipage}{.33\textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt100_t350}
+    \end{minipage}%
+    \begin{minipage}{.33 \textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt300_t350}
+    \end{minipage}%
+    \\
+    \begin{minipage}{.33\textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt100_t550}
+    \end{minipage}%
+    \begin{minipage}{.33 \textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/ShortErupt/Erupt300_t550}
+    \end{minipage}%
+    \\
+    \caption{Evolution of volcano plume for short periods eruption. The pictures on the left are corresponding to eruption period of $100s$ while the right ones are for eruption periods of $300s$. Plume shape at different time is on different rows. From top to bottom, the corresponding time are $100s$, $150s$, $300s$, $350s$ and $550s$} 
+    \label{fig:pinatubo-short-erupt-evolution}
+\end{figure}
 
-As being showing in the table, the NBL of plume is loosely associated with resolution. When smoothing length of air is $100 m$, $200 m$ and $400 m$ respectively, the predicted NBLs are all between $17 km$ ~ $25 km$, which consistent measurements based on different techniques \citep[][e.g.]{defoor1992early, deshler1992balloonborne, self1993atmospheric}. However, when attemptting with air particle smoothing length of $600 m$, there is a relatively obvious drop in term of NBL, even though it is still within reasonable range. Possible reason for such changes in forecasted NBL might not be the resolution. When taking $600 m$ as smoothing length of air particles, there are much fewer particles in the eruption conduit leading to a poorly representing of the erupted material. So we can conclude that on constrain for choosing smoothing length is to make sure that there are enough particles in the conduit.
-
-\subsection{Special cases: short period eruption}
-All of the previous results are simulations of successive eruptions from beginning to end. In this subsection, two short periods (100s and 300s) eruptions are simulated to further investigate the capability of Plume-SPH in capturing the salient physics in volcanic plume development. In these simulations, parameters including eruption condition, material properties, atmosphere condition, resolution and domain specifications are the same as previous simulation. The only difference is that these eruptions end during the middle of simulation. Such short period eruption cases are simulated by stopping adding new eruption ghost particles.
-%Add figures showing eruption process of two different erutpion duration:
+All of the previous results are simulations of successive eruptions from beginning to end. In this subsection, two short periods (100s and 300s) eruptions are simulated to further investigate the capability of Plume-SPH in capturing the salient physics in volcanic plume development. In these simulations, parameters including eruption condition, material properties, atmosphere condition, resolution and domain specifications are the same as previous simulation. The only difference is that these eruptions end during the middle of simulation. Such short period eruption cases are simulated by stopping adding new eruption ghost particles during simulation.
 
 %Add analysis on the eruption process
-As has been shown in Fig. The plume keeps raising up after volcano stops eruption, which excludes "push" of newly erupted material from driven forces that keeps plume raising up. The NBL of short period eruption is also consistent with observations.
+As has been shown in Fig. \ref{fig:pinatubo-short-erupt-evolution}, the plume keeps raising up after stopping eruption, which excludes "push" of newly erupted material from driven forces that keeps plume raising up. The NBL of two short periods eruption are the same being around $17 km \sim 24 km$ which is consistent with observations. That is to say NBL is independent of eruption duration.
 
 %\section{Eyjafjallaj$\ddot{o}$kull eruption in 2010}
 %Another case study is carried out in this section. Plume-SPH is used to simulate the summit explosive eruption during the second phase of Eyjafjallaj$\ddot{o}$kull eruption beginning at sometime between about midnight and sunrise on 14 April 2010. This strong or paroxysmal phase continued until 18 April. The discharge condition during this phase is variable \citep{bursik2012estimation} according to observation made over these days. Plume-SPH currently is not able to assigning eruption condition as a function of time. Single value eruption condition is adopted in the following simulation.

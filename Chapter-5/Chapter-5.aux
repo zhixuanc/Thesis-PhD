@@ -8,61 +8,61 @@
 \citation{crespo2015dualsphysics}
 \citation{ferrari2009new}
 \citation{patra1999efficient}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Code Architecture and Parallelism}{85}{chapter..5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Code Architecture and Parallelism}{87}{chapter..5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:architecture-parallelism}{{5}{85}{Code Architecture and Parallelism}{chapter..5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{85}{section..5.1}}
-\newlabel{sect:introduction}{{5.1}{85}{Introduction}{section..5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Workflow for SPH code. Figure to the left is the basic workflow. The right figure is the workflow that enables dynamic halo domain. These steps in organge box are newly added steps. Extra computational costs associated with these extra steps are discussed in section \ref  {sec:effect-of-halo-domain}}}{87}{figure..5.1}}
-\newlabel{fig:Work_flow}{{5.1}{87}{Workflow for SPH code. Figure to the left is the basic workflow. The right figure is the workflow that enables dynamic halo domain. These steps in organge box are newly added steps. Extra computational costs associated with these extra steps are discussed in section \ref {sec:effect-of-halo-domain}}{figure..5.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Workflow}{87}{section..5.2}}
+\newlabel{chapter:architecture-parallelism}{{5}{87}{Code Architecture and Parallelism}{chapter..5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{87}{section..5.1}}
+\newlabel{sect:introduction}{{5.1}{87}{Introduction}{section..5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Workflow for SPH code. Figure to the left is the basic workflow. The right figure is the workflow that enables dynamic halo domain. These steps in orange box are newly added steps. Extra computational costs associated with these extra steps are discussed in section \ref  {sec:effect-of-halo-domain}}}{89}{figure..5.1}}
+\newlabel{fig:Work_flow}{{5.1}{89}{Workflow for SPH code. Figure to the left is the basic workflow. The right figure is the workflow that enables dynamic halo domain. These steps in orange box are newly added steps. Extra computational costs associated with these extra steps are discussed in section \ref {sec:effect-of-halo-domain}}{figure..5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Workflow}{89}{section..5.2}}
 \citation{sagan2012space}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Data management and parallelization}{88}{section..5.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}SFC based indexing}{88}{subsection..5.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Data management and parallelization}{90}{section..5.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}SFC based indexing}{90}{subsection..5.3.1}}
 \citation{patra1995problem}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The left figure shows SFCs passing all particles and buckets. The right figure shows an example of a domain decomposition based on the SFC of buckets.}}{89}{figure..5.2}}
-\newlabel{fig:SFC_domain_decomposition}{{5.2}{89}{The left figure shows SFCs passing all particles and buckets. The right figure shows an example of a domain decomposition based on the SFC of buckets}{figure..5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Data management strategies}{90}{subsection..5.3.2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.1}Particle and bucket}{90}{subsubsection..5.3.2.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.2}Hash table and hash collision}{91}{subsubsection..5.3.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Non-uniform distribution of particles in the $[0,1]^n \times \textbf  {T}$ space due to adding of new particles at a small area of the whole domain.}}{92}{figure..5.3}}
-\newlabel{fig:Particle_adding_with_link}{{5.3}{92}{Non-uniform distribution of particles in the $[0,1]^n \times \textbf {T}$ space due to adding of new particles at a small area of the whole domain}{figure..5.3}{}}
-\newlabel{eq:hash_function}{{5.3}{92}{Hash table and hash collision}{equation..5.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces The influence of different load balance check intervals on simulation time. The bar values are the extra simulation time in log scale. The optimized interval is 3s.}}{93}{figure..5.4}}
-\newlabel{fig:check_int}{{5.4}{93}{The influence of different load balance check intervals on simulation time. The bar values are the extra simulation time in log scale. The optimized interval is 3s}{figure..5.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Domain decomposition and load balancing strategy}{93}{subsection..5.3.3}}
-\newlabel{sect:load_balance}{{5.3.3}{93}{Domain decomposition and load balancing strategy}{subsection..5.3.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3.1}Weighted work load}{93}{subsubsection..5.3.3.1}}
-\newlabel{sec:Weighted_work_load}{{5.3.3.1}{93}{Weighted work load}{subsubsection..5.3.3.1}{}}
-\newlabel{eq:work-load-bucket}{{5.4}{93}{Weighted work load}{equation..5.3.4}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Computational cost per particle for different steps}}{94}{figure..5.5}}
-\newlabel{tab:Computational_cost_steps}{{5.3.3.1}{94}{Weighted work load}{figure..5.5}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3.2}Domain decomposition and dynamic load balancing}{94}{subsubsection..5.3.3.2}}
-\newlabel{eq:work-load-balance}{{5.5}{94}{Domain decomposition and dynamic load balancing}{equation..5.3.5}{}}
-\newlabel{eq:work-load-process}{{5.6}{94}{Domain decomposition and dynamic load balancing}{equation..5.3.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Dynamic halo domain}{95}{section..5.4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces The left figure shows contour of mass fraction at specific time during simulation. The volcano plume is represented by high mass fraction region. The right figure is a cross-section view of the computational domain at corresponding time.}}{97}{figure..5.6}}
-\newlabel{fig:Plume}{{5.6}{97}{The left figure shows contour of mass fraction at specific time during simulation. The volcano plume is represented by high mass fraction region. The right figure is a cross-section view of the computational domain at corresponding time}{figure..5.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces The left figure shows strong scalability tests result. middle figure is the zoomed view of first one. It is obviously shown that strong scalability is better when the problem size is larger. The right figure is weak scalability test results}}{97}{figure..5.7}}
-\newlabel{fig:2cases_efficiency}{{5.7}{97}{The left figure shows strong scalability tests result. middle figure is the zoomed view of first one. It is obviously shown that strong scalability is better when the problem size is larger. The right figure is weak scalability test results}{figure..5.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Numerical test}{97}{section..5.5}}
-\newlabel{sec:numerical-tests-computation}{{5.5}{97}{Numerical test}{section..5.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Simulation time for the same particle weight and different particle weights at different physical times.}}{98}{figure..5.8}}
-\newlabel{tab:same_diff_particle_weight}{{5.5.2}{98}{Effect of workload check interval and calibrated particle weight}{figure..5.8}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Scalability test}{98}{subsection..5.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Effect of workload check interval and calibrated particle weight}{98}{subsection..5.5.2}}
-\newlabel{sec:effect-of-workload-check-interval}{{5.5.2}{98}{Effect of workload check interval and calibrated particle weight}{subsection..5.5.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}Effect of dynamic halo domains}{99}{subsection..5.5.3}}
-\newlabel{sec:effect-of-halo-domain}{{5.5.3}{99}{Effect of dynamic halo domains}{subsection..5.5.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Computational work load of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison.}}{100}{figure..5.9}}
-\newlabel{tab:Computational_cost_doamin_adj}{{5.9}{100}{Computational work load of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison}{figure..5.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces The figure on the top shows execution time without domain adjusting, the figure on the bottom shows execution time with domain adjusting. Different bins represent execution time up to specific physical time indicated by horizontal axis.}}{100}{figure..5.10}}
-\newlabel{fig:adj_vs_no}{{5.10}{100}{The figure on the top shows execution time without domain adjusting, the figure on the bottom shows execution time with domain adjusting. Different bins represent execution time up to specific physical time indicated by horizontal axis}{figure..5.10}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Conclusion}{100}{section..5.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces The left figure shows SFCs passing all particles and buckets. The right figure shows an example of a domain decomposition based on the SFC of buckets.}}{91}{figure..5.2}}
+\newlabel{fig:SFC_domain_decomposition}{{5.2}{91}{The left figure shows SFCs passing all particles and buckets. The right figure shows an example of a domain decomposition based on the SFC of buckets}{figure..5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Data management strategies}{92}{subsection..5.3.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.1}Particle and bucket}{92}{subsubsection..5.3.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2.2}Hash table and hash collision}{93}{subsubsection..5.3.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Non-uniform distribution of particles in the $[0,1]^n \times \textbf  {T}$ space due to adding of new particles at a small area of the whole domain.}}{94}{figure..5.3}}
+\newlabel{fig:Particle_adding_with_link}{{5.3}{94}{Non-uniform distribution of particles in the $[0,1]^n \times \textbf {T}$ space due to adding of new particles at a small area of the whole domain}{figure..5.3}{}}
+\newlabel{eq:hash_function}{{5.3}{94}{Hash table and hash collision}{equation..5.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces The influence of different load balance check intervals on simulation time. The bar values are the extra simulation time in log scale. The optimized interval is 3s.}}{95}{figure..5.4}}
+\newlabel{fig:check_int}{{5.4}{95}{The influence of different load balance check intervals on simulation time. The bar values are the extra simulation time in log scale. The optimized interval is 3s}{figure..5.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Domain decomposition and load balancing strategy}{95}{subsection..5.3.3}}
+\newlabel{sect:load_balance}{{5.3.3}{95}{Domain decomposition and load balancing strategy}{subsection..5.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3.1}Weighted work load}{95}{subsubsection..5.3.3.1}}
+\newlabel{sec:Weighted_work_load}{{5.3.3.1}{95}{Weighted work load}{subsubsection..5.3.3.1}{}}
+\newlabel{eq:work-load-bucket}{{5.4}{95}{Weighted work load}{equation..5.3.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Computational cost per particle for different steps}}{96}{figure..5.5}}
+\newlabel{tab:Computational_cost_steps}{{5.3.3.1}{96}{Weighted work load}{figure..5.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3.2}Domain decomposition and dynamic load balancing}{96}{subsubsection..5.3.3.2}}
+\newlabel{eq:work-load-balance}{{5.5}{96}{Domain decomposition and dynamic load balancing}{equation..5.3.5}{}}
+\newlabel{eq:work-load-process}{{5.6}{96}{Domain decomposition and dynamic load balancing}{equation..5.3.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Dynamic halo domain}{97}{section..5.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces The left figure shows contour of mass fraction at specific time during simulation. The volcano plume is represented by high mass fraction region. The right figure is a cross-section view of the computational domain at corresponding time.}}{99}{figure..5.6}}
+\newlabel{fig:Plume}{{5.6}{99}{The left figure shows contour of mass fraction at specific time during simulation. The volcano plume is represented by high mass fraction region. The right figure is a cross-section view of the computational domain at corresponding time}{figure..5.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces The left figure shows strong scalability tests result. middle figure is the zoomed view of first one. It is obviously shown that strong scalability is better when the problem size is larger. The right figure is weak scalability test results}}{99}{figure..5.7}}
+\newlabel{fig:2cases_efficiency}{{5.7}{99}{The left figure shows strong scalability tests result. middle figure is the zoomed view of first one. It is obviously shown that strong scalability is better when the problem size is larger. The right figure is weak scalability test results}{figure..5.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Numerical test}{99}{section..5.5}}
+\newlabel{sec:numerical-tests-computation}{{5.5}{99}{Numerical test}{section..5.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Simulation time for the same particle weight and different particle weights at different physical times.}}{100}{figure..5.8}}
+\newlabel{tab:same_diff_particle_weight}{{5.5.2}{100}{Effect of workload check interval and calibrated particle weight}{figure..5.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Scalability test}{100}{subsection..5.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}Effect of workload check interval and calibrated particle weight}{100}{subsection..5.5.2}}
+\newlabel{sec:effect-of-workload-check-interval}{{5.5.2}{100}{Effect of workload check interval and calibrated particle weight}{subsection..5.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.3}Effect of dynamic halo domains}{101}{subsection..5.5.3}}
+\newlabel{sec:effect-of-halo-domain}{{5.5.3}{101}{Effect of dynamic halo domains}{subsection..5.5.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Computational workload of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison.}}{102}{figure..5.9}}
+\newlabel{tab:Computational_cost_doamin_adj}{{5.9}{102}{Computational workload of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison}{figure..5.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces The figure on the top shows execution time without domain adjusting, the figure on the bottom shows execution time with domain adjusting. Different bins represent execution time up to specific physical time indicated by horizontal axis.}}{102}{figure..5.10}}
+\newlabel{fig:adj_vs_no}{{5.10}{102}{The figure on the top shows execution time without domain adjusting, the figure on the bottom shows execution time with domain adjusting. Different bins represent execution time up to specific physical time indicated by horizontal axis}{figure..5.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Conclusion}{102}{section..5.6}}
 \citation{vacondio2012accurate,feldman2007dynamic}
 \@setckpt{Chapter-5/Chapter-5}{
-\setcounter{page}{102}
+\setcounter{page}{104}
 \setcounter{equation}{6}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}

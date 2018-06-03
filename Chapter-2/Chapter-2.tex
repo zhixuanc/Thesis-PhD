@@ -1,22 +1,22 @@
 \chapter{Physical Model of Volcanic Plume} \label{chapter:physics-model}
 \section{Introduction}
-The volcanic plume development process is multiphase turbulent mixing flow accompanied by microphysics. Ignoring less dominant physical effects would reduce number of phases, number of governing equations, number of terms in governing equations making software development numerically, computationally and practically more feasible. Based on assumptions regarding the physics involved in plume development process, a complete mathematical descriptions of the problem, written in form of a set of PDEs (partial differential equations), equation of state, initial conditions and boundary conditions, are obtained. These PDEs, also named as governing equations, originate naturally
-from constitutive relationships and the application of the fundamental laws of conservation of mass, Newton’s Second Law and the law of conservation of energy. Eigenstructure of the governing equations are also analyzed in this chapter which is essential for the implementation of advanced numerical methods, such as GSPH and RSPH.
+The volcanic plume development process is multiphase turbulent mixing flow accompanied by microphysics. Ignoring less dominant physical effects would reduce number of phases, number of governing equations, number of terms in governing equations making software development numerically, computationally and practically more feasible. Based on assumptions regarding the physics involved in plume development process, a complete mathematical description of the problem, written in form of a set of PDEs (partial differential equations), equation of state, initial conditions and boundary conditions, are obtained. These PDEs, also named as governing equations, originate naturally
+from constitutive relationships and the application of the fundamental laws of conservation of mass, Newton's Second Law and the law of conservation of energy. Eigenstructure of the governing equations are also analyzed in this chapter. The eigenstructure analysis is essential for the implementation of advanced numerical methods, such as GSPH and RSPH.
 
 \section{Volcanic plume development}
-During an explosive eruption, a volcanic jet erupts out from a vent with a speed of several tens to more than 150 meters per second, driven by expanding gas. The jet is initially denser than the surrounding atmosphere and begins to decelerate through negative buoyancy and turbulent interaction with surrounding air. Cauliflower-like vortices are generated along jet margins, within which process, air is entrained and heated up, reducing the bulk density of the entire jet, in many cases, to less than that of the surrounding atmosphere. Once it becomes buoyant, such a jet develops into a plinian or subplinian plume, rising up to several kilometers to tens of kilometers until its heat is exhausted. Jets that lose their momentum before becoming buoyant collapse back onto the ground and transform into pyroclastic flows, surges and ignimbrites. During the process of plume rising up, relatively larger particles might separate from main stream of the plume, falling down onto the ground and possibly be re-entrained into the plume at a lower height \citep{ernst1996sedimentation}. Within this process, erupted vapor condenses to liquid (droplet) and even further to ice. Latent heat released from phase change of erupted vapor  further heats up entrained air and further dilutes the bulk density. The entrained vapor might also experience a similar process and impact plume development. Particle aggregation processes \citep{carey1982influence,taddeucci2011aggregation}, either due to presence of liquid water, resulting from particle collision or driven by electrostatic forces might occur inside plume and thereby affect the sedimentation. 
+During an explosive eruption, a volcanic jet erupts out from a vent with a speed of several tens to more than 150 meters per second, driven by expanding gas. The jet is initially denser than the surrounding atmosphere and begins to decelerate through negative buoyancy and turbulent interaction with surrounding air. Cauliflower-like vortices are generated along jet margins, within which process, air is entrained and heated up, reducing the bulk density of the entire jet, in many cases, to less than that of the surrounding atmosphere. Once it becomes buoyant, such a jet develops into a plinian or subplinian plume, rising up to several kilometers to tens of kilometers until its heat is exhausted. Jets that lose their momentum before becoming buoyant collapse back onto the ground and transform into pyroclastic flows, surges and ignimbrites. During the process of plume rising up, relatively larger particles might separate from main stream of the plume, falling down onto the ground and possibly be re-entrained into the plume at a lower height \citep{ernst1996sedimentation}. Within this process, erupted vapor condenses to liquid (droplet) and even further to ice. Latent heat released from phase change of erupted vapor further heats up entrained air and further dilutes the bulk density. The entrained vapor might also experience a similar process and impact plume development. Particle aggregation processes \citep{carey1982influence,taddeucci2011aggregation}, either due to presence of liquid water, resulting from particle collision or driven by electrostatic forces might occur inside plume and thereby affect the sedimentation. 
 
-All in all, the process of plume development is  essentially a multiphase turbulent mixing process coupled with heat transfer and other microphysical and chemical reactions.
+All in all, the process of plume development is essentially a multiphase turbulent mixing process coupled with heat transfer and other microphysical and chemical reactions.
 
-As an initial effort on exploiting the feasibility and advantage of SPH in plume modeling, our model is designed to describe an injection of well mixed solid and volcanic gas from a circular vent above a flat surface into a stratified stationary atmosphere following SK-3D \citep{suzuki2005numerical}. In this model, molecular viscosity and heat conduction is neglected since turbulent exchange coefficients are dominant. Erupted material consisting of solid with different size and mixture of gases is assumed to be well mixed and behave like a single phase fluid (phase 2) which is valid for eruptions with fine particles and ash. Air (also a mixture of different gases) is assumed to be another phase (phase 1). Thermodynamic equilibrium is assumed so that no separate energy equation is needed for each phase. As a result, there is only one energy equation for both phases (heat exchange term between different phases does not show up under this assumption). Dynamic equilibrium is assumed so that no separate momentum equation is needed for each phase. As a result, there is only one vector momentum equation for both phases (drag force term does not show up with this assumption). 
+As an initial effort on exploiting the feasibility and advantage of SPH in plume modeling, our model is designed to describe an injection of well mixed solid and volcanic gas from a circular vent above a flat surface into a stratified stationary atmosphere following SK-3D \citep{suzuki2005numerical}. In this model, molecular viscosity and heat conduction is neglected since turbulent exchange coefficients are dominant. Erupted material consisting of solid with different size and mixture of gases is assumed to be well mixed and behave like a single-phase fluid (phase 2), which is valid for eruptions with fine particles and ash. Air (also a mixture of different gases) is assumed to be another phase (phase 1). Thermodynamic equilibrium is assumed so that no separate energy equation is needed for each phase. As a result, there is only one energy equation for both phases (heat exchange term between different phases does not show up under this assumption). Dynamic equilibrium is assumed so that no separate momentum equation is needed for each phase. As a result, there is only one vector momentum equation for both phases (drag force term does not show up with this assumption). 
 
-Because of the above assumptions, all other microphysical processes (such as the phase changes of $HO_2$, aggregation, disaggregation, absorption of gas on the surface of solids, solution of gas into a liquid) and chemical processes are not considered in this model. These ignored microphysics factors would play critical roles under particular eruption conditions. Capturing of these processes needs a more comprehensive model. One critical element in plume development, the effect of wind, is also not yet considered in this model. The atmosphere is treated as stationary in Plume-SPH. Introducing wind effects in our model requires dynamic pressure boundary conditions, which requires more numerical effort and algorithm design. To summarize, our model is not valid for eruptions where wind effect plays a significant role in its development, usually refered as a weak plume. Our model also lacks the ability in modeling plumes with large particles or eruptions in which microphysics plays non-ignorable roles, such as an eruption of \textit{El Chich{\'o}n} volcano on April 4th 1982 \citep{sigurdsson19841982, folch2016fplume}. We are focussed here on developing the SPH based methodoloy in the context of the more basic (and more critical) aspects of volcanic plume and therefore devote our effort to this relative simpler model. It is worthwhile to mention here that because SPH is adopted as our numerical method, adding of these physics into our model would require much less work in terms of programming compared to mesh based methods. Since our plan is an open source distribution of the tool we believe some of these enhancements will rapidly ensue with community participation.
+Because of the above assumptions, all other microphysical processes (such as the phase changes of $HO_2$, aggregation, disaggregation, absorption of gas on the surface of solids, solution of gas into a liquid) and chemical processes are not considered in this model. These ignored microphysics factors would play critical roles under particular eruption conditions. Capturing of these processes needs a more comprehensive model. One critical element in plume development, the effect of wind, is also not yet considered in this model. The atmosphere is treated as stationary in Plume-SPH. Introducing wind effects in our model requires dynamic pressure boundary conditions, which requires more numerical effort and algorithm design. To summarize, our model is not valid for eruptions where wind effect plays a significant role in its development, usually referred as a weak plume. Our model also lacks the ability in modeling plumes with large particles or eruptions in which microphysics plays non-ignorable roles, such as an eruption of \textit{El Chich{\'o}n} volcano on April 4th 1982 \citep{sigurdsson19841982, folch2016fplume}. This thesis focuses on developing the SPH based methodology in the context of the more basic (and more critical) aspects for volcanic plume. Therefore, I devote my effort to this relative simpler model. It is worthwhile to mention here that because SPH is adopted as our numerical method, adding of these physics into our model would require much less work in terms of programming compared to mesh based methods. Since our plan is an open source distribution of the tool we believe some of these enhancements will rapidly ensue with community participation.
 
 \section{Mathematical description}\label{sec:chp2-Mathematical-Description}
 
 To summarize, assumptions made to simplify the physics are:
 \begin{itemize}
-\item Neglect molecular viscosity. Such assumption is a common practice when modelling turbulent flow, for which Reynolds number (ration between inertial force and viscous forces) is large.
+\item Neglect molecular viscosity. Such assumption is a common practice when modeling turbulent flow, for which Reynolds number (ration between inertial force and viscous forces) is large.
 \item Both erupted material (mixture of gases and solid) and air (also a mixture of different gases) are assumed to behave like single phase fluid.
 \item Assume immediate thermodynamics equilibrium between entrained air and erupted material. 
 \item Assume immediate dynamics equilibrium between entrained air and erupted material.
@@ -67,7 +67,6 @@ In mesh based methods, governing equations in Eulerian form, Eq. (\ref{eq:gov-cs
 \dfrac{D \textbf{v}}{D t} + \dfrac{\nabla P}{\rho} =\textbf{g} \label{eq:gov-nc-v}\\
 \dfrac{D e}{D t} + \dfrac{P \nabla \cdot \textbf{v}}{\rho} = 0 \label{eq:gov-nc-e}
 \end{align}
-%Governing equations in Lagrangian form, Eq. (\ref{eq:gov-nc-rho}) to Eq.(\ref{eq:gov-nc-e}), and Eulerian form, Eq. (\ref{eq:gov-cs-rho}) to Eq. (\ref{eq:gov-cs-e}), are a\dfrac{•}{•}ly equivalent, as deriving the Lagrangian form from the Eulerian is purely based on mathematics without any additional physical assumptions.
 
 \subsection{Boundary conditions}
 In the current model the initial domain is a box. As shown in Fig. \ref{fig:domain-BCs} the boundaries are categorized as the velocity inlet (a circular area at the center of the bottom of the box), wall boundary (box bottom), pressure outlet (other faces of the box).
@@ -75,7 +74,7 @@ In the current model the initial domain is a box. As shown in Fig. \ref{fig:doma
 \begin{figure}
 \center
 \includegraphics[width=8cm]{Chapter-2/Figures/Domain_good}
-\caption{Computatinal domain and boundary condtions}
+\caption{Computational domain and boundary conditions}
 \label{fig:domain-BCs}
 \end{figure}
 
@@ -106,7 +105,7 @@ p = p_a\left(z\right)  \label{eq:pressure_bc_p}
 
 \section{Eigenstructure analysis}
 
-Eigenstructures of the homogeneous governing equations is analysed to find the eigenvalues and eigenvectors, which is necessary to have better understanding on the system. In addition, it is also the basis for defining and solving of Riemann problems. In GSPH and RSPH, only a 1D Reimann problem need to be solved. So we only analyse the 1D homogeneous governing equations (Eq. (\ref{eq:gov-cs-rho-1d-hom}) $\sim$ Eq. (\ref{eq:gov-cs-e-1d-hom})) for simplification.
+Eigenstructures of the homogeneous governing equations is analysed to find the eigenvalues and eigenvectors, which is necessary to have better understanding on the system. In addition, it is also the basis for defining and solving of Riemann problems. In GSPH and RSPH, only a 1D Riemann problem need to be solved. So we only analyse the 1D homogeneous governing equations (Eq. (\ref{eq:gov-cs-rho-1d-hom}) $\sim$ Eq. (\ref{eq:gov-cs-e-1d-hom})) for simplification.
 \begin{align}
 \dfrac{\partial \rho}{\partial t} + \dfrac{\partial \rho u} {\partial x}= 0 \label{eq:gov-cs-rho-1d-hom} \\
 \dfrac{\partial \rho \xi}{\partial t} + \dfrac{\partial \rho \xi u} {\partial x}= 0 \label{eq:gov-cs-ks-1d-hom}\\
@@ -207,7 +206,7 @@ The eigenvalues of the Jacobian are: $\lambda_1 = u-c$,  $\lambda_2 = \lambda_3 
      \label{eq:eigenvector-pressure}
 \end{equation}
 
-It can be proved that the characteristic fields associated with second and third eigenvalues are linear degenerate while the these corresponding to first and forth are genuinely nonlinear. It is obvious that across these two waves associated with $\lambda_2$ and $\lambda_3$, only $\xi$ and $\rho$ changes, which will be proved in later section. Having an additional equation for mass fraction introduces an extra linear degenerate waves.
+It can be proved that the characteristic fields associated with second and third eigenvalues are linear degenerate while these corresponding to first and forth are genuinely nonlinear. It is obvious that across these two waves associated with $\lambda_2$ and $\lambda_3$, only $\xi$ and $\rho$ changes, which will be proved in later section. Having an additional equation for mass fraction introduces an extra linear degenerate waves.
 
 Based on the relationship between entropy, pressure and density (Eq. (\ref{eq:entropy-p-rho})), the governing equations can be written in term of $\rho	$, $\xi$, $u$, $s$ (the entropy).
 \begin{equation}
@@ -218,7 +217,7 @@ Then
 p=C_1 \rho^{\gamma_m} exp(\frac{s}{C_v})
 \end{equation}
 With $C_1=exp(-\frac{C_0}{C_v})$.
-After lengthy derivation, the last governing equation can be written in terms of entropy and the complete set of governing equations (which will be refered as entropy equations in later sections) are: 
+After lengthy derivation, the last governing equation can be written in terms of entropy and the complete set of governing equations (which will be referred as entropy equations in later sections) are: 
 \begin{eqnarray}
 \dfrac{\partial \rho}{\partial t} + u \dfrac{\partial \rho} {\partial x} + \rho \dfrac{\partial u} {\partial x}= 0 \label{eq:gov-EntropyForm-rho-1d-hom} \\
 \dfrac{\partial \xi}{\partial t} + u \dfrac{\partial \xi} {\partial x}= 0 \label{eq:gov-EntropyForm-ks-1d-hom}\\
@@ -287,7 +286,7 @@ Extra attention needed when analysing pressure equations or entropy equations as
  
 \section{Elementary wave solution for Riemann problem}
 Based on Eigenstructure analysis in previous section, the wave structure of the system is discussed in detail in this section. 
-The corresponding Riemann problem for the the governing equation is defined as: 
+The corresponding Riemann problem for the governing equation is defined as: 
 \begin{equation}
 \textbf{U(x,t)}_t + \textbf{F(\textbf{U}(x, t))}_x = 0
 \end{equation}
@@ -302,7 +301,7 @@ As the two linear degenerate characteristic fields have the same wave speed, the
 We assume that the initial data states $\textbf{U}_L$ and $\textbf{U}_R$ are connected by a single wave, all other waves have zero strength in the following elementary wave solution analysis.
 
 \subsection{Contact discontinuity}
-The contact discontinuity can be analysed by utilising the Generalised Riemann Invariants. For a $m \times m$ hyperbolic system, with primitve variable $\textbf{W} = \left[ w_1, w_2, \cdot \cdot \cdot w_m \right]^T$ and right eigenvector $\textbf{K}^{(i)}=[k^{(i)}_1,k^{(i)}_2, \cdot\cdot\cdot, k^{(i)}_m]^T$. The ith Generalised Riemann Invariants are: 
+The contact discontinuity can be analysed by utilizing the Generalised Riemann Invariants. For a $m \times m$ hyperbolic system, with primitive variable $\textbf{W} = \left[ w_1, w_2, \cdot \cdot \cdot w_m \right]^T$ and right eigenvector $\textbf{K}^{(i)}=[k^{(i)}_1,k^{(i)}_2, \cdot\cdot\cdot, k^{(i)}_m]^T$. The ith Generalised Riemann Invariants are: 
 \begin{equation}
 \frac{dw_1}{k^{(i)}_1}=\frac{dw_2}{k^{(i)}_2}=\frac{dw_3}{k^{(i)}_3}=\cdot\cdot\cdot=\frac{dw_m}{k^{(i)}_m}
 \label{eq:Generalised-Riemann-Invariants}
@@ -311,25 +310,25 @@ Apply the Generalised Riemann Invariants to 2nd eigenvector of the pressure equa
 \begin{equation}
 \frac{d \rho}{1}=\frac{d \xi}{0} = \frac{d u}{0} = \frac{d p}{0}
 \end{equation}
-Which implies that $xi$, $u$, $p$ keep constant accross waves associated with $\lambda_2$. 
+Which implies that $xi$, $u$, $p$ keep constant across waves associated with $\lambda_2$. 
 Similarly, Apply the Generalised Riemann Invariants to 3rd eigenvector of the pressure equations (Eq. (\ref{eq:gov-PressForm-rho-1d-hom}) $\sim$ (\ref{eq:gov-PressForm-p-1d-hom})):
 \begin{equation}
 \frac{d \rho}{0}=\frac{d \xi}{1} = \frac{d u}{0} = \frac{d p}{0}
 \end{equation}
-Which implies that $\rho$, $u$, $p$ keep constant accross waves associated with $\lambda_3$.
-To summarize $u$, $p$ keep constant accross discontinuity waves associated with $\lambda_3$ and $\lambda_2$.
+Which implies that $\rho$, $u$, $p$ keep constant across waves associated with $\lambda_3$.
+To summarize $u$, $p$ keep constant across discontinuity waves associated with $\lambda_3$ and $\lambda_2$.
 
 \subsection{Rarefaction waves}
 The wave associated with $\lambda_1$ and $\lambda_4$ can be either rarefaction or shocks.
-Rarefaction waves associated with genuinely nonlinear characteristic fields can also be inspected by utilising Generalised Riemann Invariants. Apply it to $\lambda_1$ of entropy equations: 
+Rarefaction waves associated with genuinely nonlinear characteristic fields can also be inspected by utilizing Generalised Riemann Invariants. Apply it to $\lambda_1$ of entropy equations: 
 \begin{equation}
 \frac{d \rho}{-\frac{\rho}{c}}=\frac{d \xi}{0} = \frac{d u}{1} = \frac{d s}{0}
 \end{equation}
-So $\xi$ and $s$ keep contant. $u$ and $\rho$ have to satisfy: 
+So $\xi$ and $s$ keep constant. $u$ and $\rho$ have to satisfy: 
 \begin{equation}
 \frac{d \rho}{-\frac{\rho}{c}} = \frac{d u}{1}
 \end{equation} 
-Do the intergration: 
+Do the integral: 
 \begin{equation}
 u+\int \frac{c}{\rho} d\rho =const
 \end{equation}
@@ -355,7 +354,7 @@ u-\frac{2c}{\gamma_m -1} = const
 \end{equation}
 
 \subsection{Shock waves}
-Shock waves associated with either $\lambda_1$ or $\lambda_4$ can be analysed utilising Rankine-Hugoniot condition. Assume a shock wave associated with $\lambda_4$ has speed $S_4$. Define the relative velocities as:
+Shock waves associated with either $\lambda_1$ or $\lambda_4$ can be analysed utilizing Rankine-Hugoniot condition. Assume a shock wave associated with $\lambda_4$ has speed $S_4$. Define the relative velocities as:
 \begin{eqnarray}
 \tilde{u}_L = u_L - S_4
 \tilde{u}_R = u_R - S_4
@@ -372,7 +371,7 @@ As the shock keep stationary with respect to the new frame of reference:
 (E_L + p_L) \tilde{u}_L - (E_R + p_R) \tilde{u}_R = 0 \label{eq:RKH-E-cs}\\
 \end{eqnarray}
 Where $E_I = \frac{1}{2} \tilde{u}^2_I \rho_I + \rho_I e_I$, with $I = L , R$.
-Combining Eq. (\ref{eq:RKH-rho-cs}) and (\ref{eq:RKH-xi-cs}), we can easily conclude that $\xi_L = \xi_R$. That is to say, the mass fraction does not change accross shock waves. The same conclusion can be drew for shock waves associated with $\lambda_1$ through a pretty similar analysis procedure. Recall that $\xi$ also keeps constant accross rarefaction waves (Eq. (\ref{eq:RP-solution-rarefaction-xi})). Then we reach to an important conclusion: \textbf{mass fraction does not change across non-linear waves}. The eigenvectors $k_1$ and $k_4$ for pressure equations (Eq. (\ref{eq:gov-PressForm-rho-1d-hom}) $\sim$ (\ref{eq:gov-PressForm-p-1d-hom})) also implies that $\xi$ does not change across any non-linear waves (either shock or rarefaction).
+Combining Eq. (\ref{eq:RKH-rho-cs}) and (\ref{eq:RKH-xi-cs}), we can easily conclude that $\xi_L = \xi_R$. That is to say, the mass fraction does not change across shock waves. The same conclusion can be drew for shock waves associated with $\lambda_1$ through a pretty similar analysis procedure. Recall that $\xi$ also keeps constant across rarefaction waves (Eq. (\ref{eq:RP-solution-rarefaction-xi})). Then we reach to an important conclusion: \textbf{mass fraction does not change across non-linear waves}. The eigenvectors $k_1$ and $k_4$ for pressure equations (Eq. (\ref{eq:gov-PressForm-rho-1d-hom}) $\sim$ (\ref{eq:gov-PressForm-p-1d-hom})) also implies that $\xi$ does not change across any non-linear waves (either shock or rarefaction).
 
 \section{Decouple of mass fraction equation from other governing equations}
 \begin{figure}
@@ -396,8 +395,8 @@ Since the solution of $\xi$ is independent of types of non-linear waves propagat
 \caption{The simplified solution structure of Riemann problems for Plume-SPH governing equations. The simplified solution structure is the same as that for Euler equation.}
 \label{fig:Solution_Structure_RP_simplified}
 \end{figure}
-As the second equation in the original governing equations (Eq. (\ref{eq:gov-cs-rho}) $\sim$ (\ref{eq:gov-cs-e})) are weakly coupled with others and can be solved separately within each time step. Then remove Eq. (\ref{eq:gov-cs-ks}) from the original governing equations, the left will become Euler Equations. Equation (\ref{eq:gov-cs-rho}), (\ref{eq:gov-cs-v}), (\ref{eq:gov-cs-e}) together with Eq. (\ref{eq:EOS}) will form a complete system of equations with a space and time dependent $\gamma_{m}$. The solution structure of Riemann problems can be simplified as shown in Fig. \ref{fig:Solution_Structure_RP_simplified}, which is exactly the same as solution structure for Euler equations. It greatly simplifies the problem as there are plenty of (exact and approximate) Riemann solvers for Euler equations ready to use. Equation (\ref{eq:gov-nc-ks}) together with other equations, Eq. (\ref{eq:gov-gm}) - Eq. (\ref{eq:gov-ns}) will only be used to updating $\gamma_{m}$ which is a function of $\xi$. It is a separate procedure to update $\xi$ in SPH. Based on above analysis, it can be also a separate one in GSPH. In this way, equations are divided into two relatively independent groups, one represents Euler equations and the other one for updating $\gamma_{m}$.
-The GSPH formulism \citep{inutsuka2002reformulation} proposed for sovling Euler equations can be directly used. In this case, we can use usual Riemann solvers for ideal gas (with a time and space dependent $\gamma$). Input variables for Riemann solvers will be $\rho=\rho^a + \rho^{sg}$, prssure $p$ and velocity $\textbf{v}$.
+As the second equation in the original governing equations (Eq. (\ref{eq:gov-cs-rho}) $\sim$ (\ref{eq:gov-cs-e})) are weakly coupled with others and can be solved separately within each time step. Then remove Eq. (\ref{eq:gov-cs-ks}) from the original governing equations, the left will become Euler Equations. Equation (\ref{eq:gov-cs-rho}), (\ref{eq:gov-cs-v}), (\ref{eq:gov-cs-e}) together with Eq. (\ref{eq:EOS}) will form a complete system of equations with a space and time dependent $\gamma_{m}$. The solution structure of Riemann problems can be simplified as shown in Fig. \ref{fig:Solution_Structure_RP_simplified}, which is exactly the same as solution structure for Euler equations. There are plenty of (exact and approximate) Riemann solvers for Euler equations ready to use. Equation (\ref{eq:gov-nc-ks}) together with other equations, Eq. (\ref{eq:gov-gm}) - Eq. (\ref{eq:gov-ns}) will only be used to updating $\gamma_{m}$ which is a function of $\xi$. It is a separate procedure to update $\xi$ in SPH. Based on above analysis, it can be also a separate one in GSPH. In this way, equations are divided into two relatively independent groups, one represents Euler equations and the other one for updating $\gamma_{m}$.
+The GSPH formulism \citep{inutsuka2002reformulation} proposed for solving Euler equations can be directly used. In this case, we can use usual Riemann solvers for ideal gas (with a time and space dependent $\gamma$). Input variables for Riemann solvers will be $\rho=\rho^a + \rho^{sg}$, prssure $p$ and velocity $\textbf{v}$.
  
-The only trick is, in this case, the specific heat ratio $\gamma_{m}$ is not a constant in space and time. Usually exact Riemann solvers for ideal gas are developed based on constant $\gamma_{m}$ assumptions. And an exact Riemann solver for not-constant gamma need to be driven in that case. Some numerical trick can be used. For example, when calculate $p^{ast}$ for the pair of two particles $\alpha$ and $\beta$, We can use Riemann solvers for a constant $\gamma_{m}=\frac{\gamma_{m,\alpha}+\gamma_{m,\beta}}{2}$.
+The only trick is, in this case, the specific heat ratio $\gamma_{m}$ is not a constant in space and time. Usually exact Riemann solvers for ideal gas are developed based on constant $\gamma_{m}$ assumptions. And exact Riemann solver for not-constant gamma need to be driven in that case. Some numerical trick can be used. For example, when calculate $p^{ast}$ for the pair of two particles $\alpha$ and $\beta$, We can use Riemann solvers for a constant $\gamma_{m}=\frac{\gamma_{m,\alpha}+\gamma_{m,\beta}}{2}$.
 Numerically, this treatment is sufficient. 

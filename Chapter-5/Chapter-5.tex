@@ -2,9 +2,9 @@
 
 \section{Introduction}
 \label{sect:introduction}
-Accurate prediction of volcano plume development in a given time window requires resolution (very high particle counts) that can not be accomplished without parallel computing. Imposing  some types of boundary conditions (such as wind field, eruption boundary condition at the vent) requires dynamically adding and removing particles during simulation. This requires an efficient and flexible data management scheme. This chapter will present the architecture that enables efficient and flexible data managemnt and algorithms for solver parallelization.
+Accurate prediction of volcano plume development in a given time window requires resolution (very high particle counts) that can not be accomplished without parallel computing. Imposing some types of boundary conditions (such as wind field, eruption boundary condition at the vent) requires dynamically adding and removing particles during simulation. This requires an efficient and flexible data management scheme. This chapter will present the architecture that enables efficient and flexible data management and algorithms for solver parallelization.
 
-Most implementations of the parallel SPH method presented to date are limited to standard SPH and benchmark problems like dam breaks, or relatively simple scenarios like breaking-waves, flooding, etc. Work on more complicated implementations is relatively rare. The demands of flexible data access are scarely addressed. Among existing CPU parallel SPH schemes, most of them focus on neighbor searching algorithms and dynamic load balancing. (eg. \citep{ferrari2009new, crespo2015dualsphysics}). Less attention has been paid to developing more flexible data management schemes. 
+Most implementations of the parallel SPH method presented to date are limited to standard SPH and benchmark problems like dam breaks, or relatively simple scenarios like breaking-waves, flooding, etc. Work on more complicated implementations is relatively rare. The demands of flexible data access are scarcely addressed. Among existing CPU parallel SPH schemes, most of them focus on neighbor searching algorithms and dynamic load balancing. (eg. \citep{ferrari2009new, crespo2015dualsphysics}). Less attention has been paid to developing more flexible data management schemes. 
 Fortunately, efficient and flexible data management strategies for parallel computing have been successfully implemented in mesh based methods (eg. \citep{laszloffy2000simple} for adaptive hp finite element method (FEM), and \citep{patra2005parallel} for finite volume method (FVM)). Motivated by these techniques developed for mesh based methods, we present a complete framework for parallelizing SPH program with the MPI standard allowing flexible and efficient data access.\\
 Any implementation of SPH requires efficient searching and updating of neighbors during the simulation. Of the many possible choices we adopt the popular background grid method \citep{monaghan1985refined}, which is also used for domain decomposition. We refer to the elements of the background grid as buckets. 
 As for the actual storage of data representing the physical quantities associated to each particle, different strategies have been adopted in existing implementations of SPH. 
@@ -19,7 +19,7 @@ To the best of the author's knowledge, no current implementation of SPH has the 
 \includegraphics[scale=0.43]{Chapter-5/Figures/Work_flow}
 \hfil
 \includegraphics[scale=0.43]{Chapter-5/Figures/Work_flow_adjust}
-\caption{Workflow for SPH code. Figure to the left is the basic workflow. The right figure is the workflow that enables dynamic halo domain. These steps in organge box are newly added steps. Extra computational costs associated with these extra steps are discussed in section \ref{sec:effect-of-halo-domain}}
+\caption{Workflow for SPH code. Figure to the left is the basic workflow. The right figure is the workflow that enables dynamic halo domain. These steps in orange box are newly added steps. Extra computational costs associated with these extra steps are discussed in section \ref{sec:effect-of-halo-domain}}
 \label{fig:Work_flow}
 \end{figure*}
 
@@ -27,8 +27,8 @@ In SPH, the domain is discretized by particles and the position of each particle
 We use buckets, which contain all particles associated with a sub-domain (see Fig. \ref{fig:SFC_domain_decomposition}) 
 and keep them stationary during the entire simulation, to reduce neighbour searching cost (since the search can now be restricted to only neighboring domains). No physical quantities are associated with bucket.
 
-Domian is also partitioned based on the background mesh, whose elements are buckets containing the discretization points. Domain is decomposed by cutting SFC going through centroids of all buckets, as shown in Fig. \ref{fig:SFC_domain_decomposition}.
-Data synchronization is carried out after every updating. Computational load of each subdomain is evaluated by summing up calibrated particle weights. Computational domain is redecomposed to restore load balance when necessary.
+Domain is also partitioned based on the background mesh, whose elements are buckets containing the discretization points. Domain is decomposed by cutting SFC going through centroids of all buckets, as shown in Fig. \ref{fig:SFC_domain_decomposition}.
+Data synchronization is carried out after every updating. Computational load of each subdomain is evaluated by summing up calibrated particle weights. Computational domain is re-decomposed to restore load balance when necessary.
 In current implementation, domain repartition is not carried after every time, instead, at an optimized interval.
 
 The basic elements, particles and buckets, are identified by unique ID that generated based on SFC. All data are managed by hash tables, with external linked list to handle hash conflict. SFC is also used to decompose the computational domain.
@@ -70,17 +70,17 @@ Several features of this indexing scheme are suitable for SPH:
 \end{itemize}
 
 The (time-dependent) SFC based indexing plays central pivot role in the architecture. Besides creating unique ID efficiently and independently, SFC based domain decomposition helps preserve spatial locality making it very easy to design a hash function that preserve such locality in memory. The globalism of such indexing, which is also inherited in hash table, greatly simplifies complexity when moving elements around. As index generating (hence hashing) is independent and fast, creating/deleting of element are efficient and flexible.
-All these features help keep the overall architecture breif, robust and sustainable.
+All these features help keep the overall architecture brief, robust and sustainable.
 
 \subsection{Data management strategies}
 \subsubsection{Particle and bucket}
-The most basic data structure of SPH are particles and buckets. Both are defined as C++ classes. Information that is contained in particle objects can be categorized into six categories: identifier (the key), affiliate(rank of the process that the particle belongs to), primitive variables (variables in governing equations, e.g. density, velocity), secondary variables (physical properties that can be computed from primitive variables, they are stored to avoid repeated computations, e.g., pressure and temperature), flags (indicators, such as indicator for ghost particle or real particle) and neighbor information (it is a vector of particle keys in our application). Similarly, information that is contained in a bucket object can also be categorized into different categories: identifier, affiliate, dimension information (maximum and minimum coordinates, boundary information), flags (indicators, such as guest indicator, which is used  to indicate whether the bucket belongs to another adjacent subdomain or not), neighbor information (keys of 27 neighbor buckets including its own key) and owned particles (it is a vector of particle keys in our application).
+The most basic data structure of SPH are particles and buckets. Both are defined as C++ classes. Information that is contained in particle objects can be categorized into six categories: identifier (the key), affiliate(rank of the process that the particle belongs to), primitive variables (variables in governing equations, e.g. density, velocity), secondary variables (physical properties that can be computed from primitive variables, they are stored to avoid repeated computations, e.g., pressure and temperature), flags (indicators, such as indicator for ghost particle or real particle) and neighbor information (it is a vector of particle keys in our application). Similarly, information that is contained in a bucket object can also be categorized into different categories: identifier, affiliate, dimension information (maximum and minimum coordinates, boundary information), flags (indicators, such as guest indicator, which is used to indicate whether the bucket belongs to another adjacent subdomain or not), neighbor information (keys of 27 neighbor buckets including its own key) and owned particles (it is a vector of particle keys in our application).
 Using of several independent flags creates a multiple-dimensional categorization space which enables flexible elements categorization simplifing algorithms.
 Objects of particles and buckets are then accessed through hash tables.
 
 \subsubsection{Hash table and hash collision}
 Several data structures have been considered for actual data storage. Vector and array can guarantee efficicent and flexible element access while inserting of new elements is either expensive or not allowed. List type of data structure allows flexible and efficient new element insert but element access is expensive ($(O(n)$).
-Hash table guarantees fast element access ($(O(1)$) while allows flexible and efficient new element insert. Hashmap also also allows allows flexible and efficient new element insert, but its element access is a little more expensive($(O(logn)$). We finally choose to use hash table, which is essentially a chunck of memory with many slots. The pointer to certain element object is stored in one slot. Based on the keys of data, the address-calculator(hashing) function determines in which slot the data should be stored:
+Hash table guarantees fast element access ($(O(1)$) while allows flexible and efficient new element insert. Hashmap also allows flexible and efficient new element insert, but its element access is a little more expensive($(O(logn)$). We finally choose to use hash table, which is essentially a chunk of memory with many slots. The pointer to certain element object is stored in one slot. Based on the keys of data, the address-calculator(hashing) function determines in which slot the data should be stored:
 \begin{equation}
 Index = hash(key)
 \end{equation}
@@ -184,7 +184,7 @@ By implementing the algorithm of dynamics halo domain presented above, the compu
 \end{figure*}
 
 \section{Numerical test} \label{sec:numerical-tests-computation}
-Numerical tests are carried out in this section. Tests on overall parallel performance, including the weak scalability and strong scalability, are presented first. The effect, in terms of computational effiency, of several special algorithms are demonstrated, including the optimized load balance check interval, calibrated particle weights and the dynamic halo domain.
+Numerical tests are carried out in this section. Tests on overall parallel performance, including the weak scalability and strong scalability, are presented first. The effect, in terms of computational efficiency, of several special algorithms are demonstrated, including the optimized load balance check interval, calibrated particle weights and the dynamic halo domain.
 
 \subsection{Scalability test}
 \begin{figure*}[!t]
@@ -199,8 +199,8 @@ Numerical tests are carried out in this section. Tests on overall parallel perfo
 \end{figure*}
 
 Experiments have been carried out on the computational cluster of Center for Computational Research (CCR) at Buffalo. 
-The compute servers have 12 cores (two Xeon E5645 processors per server) running at 2.40GHz clock rate with 4GB memory per core on a Q-Logic Infiniband network. Main memory and level 3 cache are shared on each node. The simulation domain is a box with initial dimension $[-4.8km, 4.8km]\times [-4.8km, 4.8km] \times [0km, 6km]$ for case 1 and $[-10km, 10km]\times [-10km, 10km] \times [0km, 5km]$ for case 2. The smoothing length (we set initial intervals between particles equal to smoothing length) equals to 200m and 100m respectively for test case 1 and test case 2. So the computational work load of test case 2 is larger than that of the test case 1. The simulations run for 20s physical time.  Parallel speed up is shown in Fig. \ref{fig:2cases_efficiency}. Test case 2 shows better speed up than test case 1 which implies that strong scalability can be improved by increasing total amount of work load.
-The weak scalability test is conducted with the same initial domain as test case 1 and various smoothing length. Each simulation runs for 400 time steps. The average number of real particles for each process keeps constant at $25900$, so the average work load for each processor is approximately constant. 
+The compute servers have 12 cores (two Xeon E5645 processors per server) running at 2.40GHz clock rate with 4GB memory per core on a Q-Logic Infiniband network. Main memory and level 3 cache are shared on each node. The simulation domain is a box with initial dimension $[-4.8km, 4.8km]\times [-4.8km, 4.8km] \times [0km, 6km]$ for case 1 and $[-10km, 10km]\times [-10km, 10km] \times [0km, 5km]$ for case 2. The smoothing length (we set initial intervals between particles equal to smoothing length) equals to 200m and 100m respectively for test case 1 and test case 2. So the computational workload of test case 2 is larger than that of the test case 1. The simulations run for 20s physical time.  Parallel speed up is shown in Fig. \ref{fig:2cases_efficiency}. Test case 2 shows better speed up than test case 1 which implies that strong scalability can be improved by increasing total amount of work load.
+The weak scalability test is conducted with the same initial domain as test case 1 and various smoothing length. Each simulation runs for 400 time steps. The average number of real particles for each process keeps constant at $25900$, so the average workload for each processor is approximately constant. 
 Right side figure in Fig \ref{fig:2cases_efficiency} shows the timing of a weak scalability test.
 
 \subsection{Effect of workload check interval and calibrated particle weight} \label{sec:effect-of-workload-check-interval}
@@ -245,7 +245,7 @@ The best load balance check interval is calibrated based on a series of simulati
     \hline
   \end{tabular}
 }
-{\caption{Computational work load of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain.  Momentum and energy update (UPME) and position update (UPP) also included for comparison.}
+{\caption{Computational workload of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain.  Momentum and energy update (UPME) and position update (UPP) also included for comparison.}
 \label{tab:Computational_cost_doamin_adj}}
 \centering
 {\includegraphics[scale=0.5]{Chapter-5/Figures/adj_vs_no}}
