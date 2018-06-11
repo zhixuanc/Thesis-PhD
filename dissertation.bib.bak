@@ -88,17 +88,6 @@
 }
 
 %Very old paper on volcano plume---> useful as in review.
-%@inproceedings{morton1956turbulent,
-%  title={Turbulent gravitational convection from maintained and instantaneous sources},
-%  author={Morton, BR and Taylor, Geoffrey and Turner, JS},
-%  booktitle={Proceedings of the Royal Society of London A: Mathematical, Physical and Engineering Sciences},
-%  volume={234},
-%  number={1196},
-%  pages={1--23},
-%  year={1956},
-%  organization={The Royal Society}
-%}
-
 @inproceedings{morton1956turbulent,
   title={Turbulent gravitational convection from maintained and instantaneous sources},
   author={Morton, BR and Taylor, Geoffrey and Turner, JS},

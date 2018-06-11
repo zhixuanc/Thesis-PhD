@@ -12,69 +12,62 @@ A level-1 auxiliary file: Chapter-8/Chapter-8.aux
 A level-1 auxiliary file: Appendix-A/Appendix-A.aux
 The style file: apsr.bst
 Database file #1: dissertation.bib
-You're missing a field name---line 92 of file dissertation.bib
- : 
- : %  title={Turbulent gravitational convection from maintained and instantaneous sources},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 102 of file dissertation.bib
- : @inproceedings{morton1956turbulent
- :                                   ,
-I'm skipping whatever remains of this entry
-You're missing a field name---line 778 of file dissertation.bib
+You're missing a field name---line 767 of file dissertation.bib
  : 
  : %  title={HYSPLIT (HYbrid Single-Particle Lagrangian Integrated Trajectory) Model access via NOAA ARL READY Website. NOAA Air Resources Laboratory, Silver Spring},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1110 of file dissertation.bib
+Repeated entry---line 1099 of file dissertation.bib
  : @article{hernquist1989treesph
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2466 of file dissertation.bib
+Repeated entry---line 2456 of file dissertation.bib
+ : @article{bursik2012estimation
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2467 of file dissertation.bib
  : @article{stefanescu2014temporal
  :                                ,
 I'm skipping whatever remains of this entry
-Warning--empty author in morton1956turbulent
-Warning--empty booktitle in morton1956turbulent
-You've used 186 entries,
+You've used 180 entries,
             2874 wiz_defined-function locations,
-            1628 strings with 36917 characters,
-and the built_in function-call counts, 1002938 in all, are:
-= -- 165327
-> -- 13153
-< -- 3
-+ -- 79856
-- -- 4542
-* -- 88173
-:= -- 197445
-add.period$ -- 748
-call.type$ -- 186
-change.case$ -- 2413
-chr.to.int$ -- 184
-cite$ -- 188
-duplicate$ -- 2822
-empty$ -- 6441
-format.name$ -- 4779
-if$ -- 180403
+            1605 strings with 36353 characters,
+and the built_in function-call counts, 986595 in all, are:
+= -- 162648
+> -- 13041
+< -- 4
++ -- 78686
+- -- 4497
+* -- 86827
+:= -- 194122
+add.period$ -- 727
+call.type$ -- 180
+change.case$ -- 2340
+chr.to.int$ -- 178
+cite$ -- 180
+duplicate$ -- 2734
+empty$ -- 6237
+format.name$ -- 4728
+if$ -- 177460
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 188
-newline$ -- 765
-num.names$ -- 2155
-pop$ -- 600
+missing$ -- 182
+newline$ -- 743
+num.names$ -- 2103
+pop$ -- 568
 preamble$ -- 1
-purify$ -- 2785
+purify$ -- 2700
 quote$ -- 0
-skip$ -- 2519
+skip$ -- 2452
 stack$ -- 0
-substring$ -- 236499
-swap$ -- 398
-text.length$ -- 2597
+substring$ -- 232789
+swap$ -- 392
+text.length$ -- 2524
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 730
-warning$ -- 2
-while$ -- 4415
+type$ -- 706
+warning$ -- 0
+while$ -- 4294
 width$ -- 0
-write$ -- 2614
-(There were 5 error messages)
+write$ -- 2545
+(There were 4 error messages)

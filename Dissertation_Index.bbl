@@ -1,8 +1,5 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{}{N.d.}{morton1956turbulent}
- N.d.
-
 \harvarditem[Adami, Hu \harvardand\ Adams]{Adami, Hu \harvardand\
   Adams}{2010}{adami2010new}
 Adami, S, XY Hu \harvardand\ NA Adams. 2010.
@@ -160,11 +157,6 @@ Cheng, Liang \harvardand\ Steven Armfield. 1995.
   non-staggered grids.'' {\em International journal for numerical methods in
   fluids} 21(1):15--34.
 
-\harvarditem{Chorin}{1976}{chorin1976random}
-Chorin, Alexandre~Joel. 1976.
-\newblock ``Random choice solution of hyperbolic systems.'' {\em Journal of
-  Computational Physics} 22(4):517--533.
-
 \harvarditem{Cleary \harvardand\ Monaghan}{1999}{cleary1999conduction}
 Cleary, Paul~W \harvardand\ Joseph~J Monaghan. 1999.
 \newblock ``Conduction modelling using smoothed particle hydrodynamics.'' {\em
@@ -193,11 +185,6 @@ Compo, Gilbert~P, Jeffrey~S Whitaker, Prashant~D Sardeshmukh, Nobuki Matsui,
   Pierre Bessemoulin et~al. 2011.
 \newblock ``The twentieth century reanalysis project.'' {\em Quarterly Journal
   of the Royal Meteorological Society} 137(654):1--28.
-
-\harvarditem{Concus \harvardand\ Proskurowski}{1979}{concus1979numerical}
-Concus, Paul \harvardand\ Wlodzimierz Proskurowski. 1979.
-\newblock ``Numerical solution of a nonlinear hyperbolic equation by the random
-  choice method.'' {\em Journal of Computational Physics} 30(2):153--166.
 
 \harvarditem[Costa et~al.]{Costa, Suzuki, Cerminara, Devenish, Esposti~Ongaro,
   Herzog, Van~Eaton, Denby, Bursik, de' Michieli~Vitturi
@@ -363,13 +350,6 @@ Folch, Arnau, Antonio Costa \harvardand\ Giovannin Macedonio. 2016.
 \newblock ``FPLUME-1.0: An integral volcanic plume model accounting for ash
   aggregation.'' {\em Geoscientific Model Development} 9(1):431.
 
-\harvarditem{Freist{\"u}hler \harvardand\
-  Pitman}{1992}{freistuhler1992numerical}
-Freist{\"u}hler, Heinrich \harvardand\ E~Bruce Pitman. 1992.
-\newblock ``A numerical study of a rotationally degenerate hyperbolic system.
-  Part I. The Riemann problem.'' {\em Journal of Computational Physics}
-  100(2):306--321.
-
 \harvarditem[George, Alpert \harvardand\ Tamanini]{George, Alpert \harvardand\
   Tamanini}{1977}{george1977turbulence}
 George, William~K, Ronald~L Alpert \harvardand\ Francesco Tamanini. 1977.
@@ -401,12 +381,6 @@ Girault, Fr{\'e}d{\'e}ric, Guillaume Carazzo, Steve Tait, Fabrizio Ferrucci
 \newblock ``The effect of total grain-size distribution on the dynamics of
   turbulent volcanic plumes.'' {\em Earth and Planetary Science Letters}
   394:124--134.
-
-\harvarditem{Glimm}{1965}{glimm1965solutions}
-Glimm, James. 1965.
-\newblock ``Solutions in the large for nonlinear hyperbolic systems of
-  equations.'' {\em Communications on pure and applied mathematics}
-  18(4):697--715.
 
 \harvarditem{Gooz{\'e}e \harvardand\ Jacobs}{2003}{goozee2003distributed}
 Gooz{\'e}e, Richard~J \harvardand\ Peter~A Jacobs. 2003.
@@ -696,15 +670,18 @@ Monaghan, Joe~J \harvardand\ Jules~B Kajtar. 2009.
 \newblock ``SPH particle boundary forces for arbitrary boundaries.'' {\em
   Computer Physics Communications} 180(10):1811--1820.
 
-\harvarditem{Monaghan \harvardand\ Lattanzio}{1985}{monaghan1985refined}
-Monaghan, Joseph~J \harvardand\ John~C Lattanzio. 1985.
-\newblock ``A refined particle method for astrophysical problems.'' {\em
-  Astronomy and astrophysics} 149:135--143.
-
 \harvarditem{Morris \harvardand\ Monaghan}{1997}{morris1997switch}
 Morris, JP \harvardand\ JJ Monaghan. 1997.
 \newblock ``A switch to reduce SPH viscosity.'' {\em Journal of Computational
   Physics} 136(1):41--50.
+
+\harvarditem[Morton, Taylor \harvardand\ Turner]{Morton, Taylor \harvardand\
+  Turner}{1956}{morton1956turbulent}
+Morton, BR, Geoffrey Taylor \harvardand\ JS Turner. 1956.
+\newblock Turbulent gravitational convection from maintained and instantaneous
+  sources.  In {\em Proceedings of the Royal Society of London A: Mathematical,
+  Physical and Engineering Sciences}.
+\newblock Vol. 234 The Royal Society pp.~1--23.
 
 \harvarditem{Nelson \harvardand\ Papaloizou}{1994}{nelson1994variable}
 Nelson, Richard~P \harvardand\ John~CB Papaloizou. 1994.
@@ -916,11 +893,6 @@ Sigurdsson, H, SN Carey \harvardand\ JM Espindola. 1984.
 \newblock ``The 1982 eruptions of El Chich{\'o}n volcano, Mexico: stratigraphy
   of pyroclastic deposits.'' {\em Journal of Volcanology and Geothermal
   Research} 23(1):11--37.
-
-\harvarditem{Sod}{1977}{sod1977numerical}
-Sod, Gary~A. 1977.
-\newblock ``A numerical study of a converging cylindrical shock.'' {\em Journal
-  of Fluid Mechanics} 83(4):785--794.
 
 \harvarditem[Sparks et~al.]{Sparks, Bursik, Carey, Gilbert, Glaze, Sigurdsson
   \harvardand\ Woods}{1997}{sparks1997volcanic}

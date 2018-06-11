@@ -5,14 +5,17 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Overview of 1D shock tube tests}}{73}{table..4.1}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Overview of 1D shock tube tests}}{72}{table..4.1}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Computational cost per particle for different steps}}{93}{table..5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Simulation time when using the same particle weight and different particle weights.}}{97}{table..5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Computational workload of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison.}}{99}{table..5.3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces List of eruption condition for the test cases}}{106}{table..6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces List of material properties}}{109}{table..6.2}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Eruption condition for test cases}}{103}{table..6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Material properties for test cases}}{106}{table..6.2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Three different manners for determining input parameters that define the initial ash clouds for PUFF simulation}}{122}{table..7.1}
-\contentsline {table}{\numberline {7.2}{\ignorespaces The starting and ending time (UT) for simulating the climactic phase of Pinatubo eruption on June 15 1991.}}{124}{table..7.2}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Other parameters for PUFF simulation of the climactic phase of Pinatubo eruption on June 15 1991. The first six parameters define the initial condition. The first four parameters for bent are based on plume modeling.}}{126}{table..7.3}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Three different manners for creating initial conditions (initial ash clouds) for PUFF simulation}}{119}{table..7.1}
+\contentsline {table}{\numberline {7.2}{\ignorespaces The starting and ending time (UT) for simulating the climactic phase of Pinatubo eruption on June 15 1991.}}{121}{table..7.2}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Other parameters for PUFF simulation of the climactic phase of Pinatubo eruption on June 15 1991. The first six parameters define the initial condition. The first four parameters for bent are based on plume modeling.}}{123}{table..7.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

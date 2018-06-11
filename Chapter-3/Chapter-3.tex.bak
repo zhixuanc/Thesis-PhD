@@ -2,9 +2,9 @@
 \chapter{Classical SPH Method} \label{chapter:classical-SPH}
 
 \section{Introduction}
-A mesh-free Lagragian method, SPH, is selected to numerically solve the governing equations. There are several review papers by \citet{monaghan1992smoothed, monaghan2005smoothed, rosswog2009astrophysical, price2012smoothed, monaghan2012smoothed}, giving a pretty comprehensive view over SPH. We only refer here to the representation of the constitutive equations in SPH and put more focus on specific numerical techniques for plume modeling.
-
-In SPH, the domain is discretized by a set of particles or discretization points and the position of each particle is updated at every time step based on the motion computed. Approximation of all field variables (velocity, density and pressure, et al.) is obtained by interpolation based on discretization points. The physical laws (such as conservation laws of mass, momentum and energy) written in the form of PDEs or ODEs (ordinary differential equations) need to be transformed into the Lagrangian particle formalism of SPH. Using a kernel function that provides the weighted estimation of the field variables at any point, the integral equations are estimated as sums over particles in a compact subdomain defined by the support of the kernel function associated with the discretization points. Thus, field variables associated to the particle are updated based on its neighbors. Each kernel function has a compact support determined by smoothing length of each particle.
+A mesh-free Lagragian method, SPH, is selected to numerically solve the governing equations. There are several review papers by \citet{monaghan1992smoothed, monaghan2005smoothed, rosswog2009astrophysical, price2012smoothed, monaghan2012smoothed}, giving a pretty comprehensive view over SPH. We only refer here to the representation of the constitutive equations in SPH and put more focus on specific numerical techniques for volcanic plume modeling.
+In the classical SPH formulation a fluid is divided into a number of particles whose location is updated at every time step. An approximation to the field variables (velocity, density and pressure) is obtained by interpolation of particle quantities using a kernel.
+We will only consider kernel functions with compact support. Derivatives of variables are converted into derivatives of the kernel function, and different formulations of the derivatives can be shown to possess various properties.
 
 \section{Fundamental principles}
 There are several different ways for discretizing governing equations (PDEs or ODEs) with SPH. We present here one of them following \citet{monaghan1992smoothed, monaghan2005smoothed, monaghan2012smoothed}. The starting point of approximating a function with SPH is the translation property of the Dirac function $\delta(\textbf{x})$, for an arbitrary function $A(\textbf{x})$, the following equation holds. 
@@ -81,7 +81,7 @@ For vector quantities the expressions are similar, simply replacing $A$ with $\t
 
 \section{Adaptive smoothing length}
 The spatial resolution of SPH is determined by the smoothing length, $h$. It is common for each particle to have its own time dependent smoothing length which adapts according to the local number density of particles. Adaptive smoothing length can automatically match the resolution length $h$ to the scale of the system and is especially necessary in certain scenarios where density varies in a large range, for example, Sj$\ddot{o}$green tests.
-The adaptivity of smoothing length is less important for incompressible flow while pretty necessary for compressible flow. There are two different ways adjust the smoothing length.
+The adaptivity of smoothing length is less important for incompressible flow while pretty necessary for compressible flow. There are two different ways to adjust the smoothing length.
 
 One robust way of specifying the smoothing length $h$ is proposed by \citet{gingold1978binary}. He suggested that changing of the smoothing length should be related to density according to: 
 \begin{equation}
@@ -90,12 +90,12 @@ h_a = \sigma \left(\frac{m_a}{\rho_a}\right)^{\frac{1}{d}}
 \end{equation}
 Where $d$ is number of dimensions and he suggested to use 1.3 for $\sigma$.
 There are many variations of this formulation. For example, \citet{steinmetz1993capabilities} suggested to use averaged local density to determine the smoothing length. \citet{hernquist1989treesph} suggested to keep number of neighbour particles constant by adjusting smoothing length. \citet{inutsuka2002reformulation} suggested to use a more smooth density to avoid large varying of smoothing length within the neighborhood of each particle.
-Equation (\ref{eq:adptive-sml-Gingold}) is a nonlinear equation for the single variable $\rho_a$  which can be solved rapidly by point iteration possibly combined with a Newton-Raphson scheme.
+Equation (\ref{eq:adptive-sml-Gingold}) is a nonlinear equation for the single variable $\rho_a$  which can be solved rapidly by iteration, possibly combined with a Newton-Raphson scheme.
 
 The introduction of time varying smoothing lengths can, however, lead to serious problems with and momentum energy conservation in certain situations \citep{hernquist1993some}. Few attention has been paid to losing of strict conservation feature in original SPH discretization when smoothing length varies in time and space. The problem arises from the fact that the use of variable smoothing lengths means that additional terms \citep{nelson1994variable} should appear in the particle equations of motion. In our implementation, we adopt a simple strategy \citep{evrard1988beyond}: $h$ takes the average of $h_a$ and $h_b$. Such strategy can help restore the strict conservation feature of classical SPH discretization providing that the two paired particles are in ``pool of neighbouring particles" of each other. 
 
 \section{Artificial viscosity} \label{sec:artificial-viscosity}
-In classical SPH, shock waves are handled by introducing artificial viscosity, a term that is defined based on second derivatives of velocity, to smear out discontinuities. As in the case of first order derivatives, second order derivatives can be estimated by differentiating a SPH interpolation twice. However, such a formulation has two disadvantages: first, it is very sensitive to irregular distribution of particles, second, the second derivative of the kernel can change sign and lead to unphysical representations (for example, viscous dissipation causes decrease of the entropy). 
+In classical SPH, shock waves are handled by introducing artificial viscosity, a term that is defined based on second derivatives of velocity, to smear out discontinuities and stabilize the simulation. As in the case of first order derivatives, second order derivatives can be estimated by differentiating a SPH interpolation twice. However, such a formulation has two disadvantages: first, it is very sensitive to irregular distribution of particles, second, the second derivative of the kernel can change sign and lead to unphysical representations (for example, viscous dissipation causes decrease of the entropy). 
 
 One of the most commonly used models of artificial viscosity \citep{monaghan1983shock} is:
 \begin{equation}
@@ -115,7 +115,7 @@ where
 \end{align}
 The artificial viscosity term $\Pi_{ab}$ is a Galilean invariant and vanishes for rigid rotation. It produces a repulsive force between two particles when they are approaching each other and an attractive force when they are receding from each other. 
 
-The SPH viscosity can be related to a continuum viscosity by converting the summation to integrals \citep{monaghan2005smoothed}. It has been shown that shear viscosity coefficient $\eta = \frac{\rho \alpha h c}{8} $ and bulk viscosity coefficient $ \zeta = \frac{5 \eta}{3}$ are appropriate for two dimensional flows and modified to $\eta = \frac{\rho \alpha h c}{10} $ , $ \zeta = \frac{5 \eta}{3}$ for three dimensional flows.
+The SPH viscosity can be related to a continuum viscosity by converting the summation to integrals \citep{monaghan2005smoothed}. It has been shown that shear viscosity coefficient $\iota= \frac{\rho \alpha h c}{8} $ and bulk viscosity coefficient $ \zeta = \frac{5 \iota}{3}$ are appropriate for two dimensional flows and modified to $\iota= \frac{\rho \alpha h c}{10} $ , $ \zeta = \frac{5 \iota}{3}$ for three dimensional flows.
 An extra term was added to $\nu$ considering aspects of the dissipative term in shock solutions based on Riemann solvers and lead to a new formulation of artificial viscosity. We adopt this new formulation in our simulation:
 \begin{equation}
 \Pi_{ab}^{\beta} = 
@@ -142,7 +142,7 @@ The basic interpolation given in Eq. (\ref{eq:SPH-approximation-sum}) to Eq. (\r
 \left\langle\dfrac{d e_a}{d t}\right\rangle=
  0.5\sum_b m_b \textbf{v}_{a b}\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \cdot \nabla_a w_{a b}\left(h\right) \label{eq:ns-sph-e}
 \end{align}
-where, $a$ is the SPH particle index, $\textbf{v}_{a b} = \textbf{v}_a - \textbf{v}_b$. $\Pi$ is an artificial viscosity term, which is discussed in section \ref{sec:artificial-viscosity}. $w_{a b}\left(h\right)$ is a concise form of $w\left(\textbf{x}_a - \textbf{x}_b, h\right)$ and from here on, we will use this concise form.
+where, $a$ is the SPH particle index. $\Pi$ is an artificial viscosity term, which is discussed in section \ref{sec:artificial-viscosity}. $w_{a b}\left(h\right)$ is a concise form of $w\left(\textbf{x}_a - \textbf{x}_b, h\right)$ and from here on, we will use this concise form.
 %However, these discretized formulations will not guarantee conservation of entropy. We can obtain conservation of entropy by giving up on conservation of mass or thermal energy adopting alternative discretized formulations \citep{monaghan1992smoothed}.
 As a Lagrangian method, particle position is also updated at every time step.
 \begin{equation}
@@ -174,7 +174,7 @@ The physical quantities (velocity, density and pressure) and particle position c
 where $c_a$ is sound speed at particle $a$ and calculated based on heat specific ration of the mixture $\gamma_m$ (See Eq. (\ref{eq:sound-speed-mixture})). 
 $d$ is number of dimensions. 
 \begin{equation}
-c_a = \left( \gamma_m \frac{p}{\rho} \right)^{0.5}
+c_a = \sqrt{\gamma_m \frac{p_a}{\rho_a}}
 \label{eq:sound-speed-mixture}
 \end{equation}
 
@@ -203,7 +203,7 @@ The first order derivative term can be obtained in a similar way:
 For problems of higher dimension, the expressions for function approximation are exactly the same as Eq. (\ref{eq:CSP-function-approximation-1d}), even though the derivation is different. The first order derivative can be obtained by solving system of equations explicitly or numerically \citep{chen1999improvement}.
 
 \section{Mass fraction update}
-Air and erupted material are represented by two different sets of SPH particles (or discretization points) in the model. Based on assumptions we made in section \ref{sec:chp2-Mathematical-Description}, only density is different on two sides of the interface and needs to be updated respectively for each phase. Such assumption also eliminates the tension forces across the interface and simplified numerical challenges. The updating of density is exactly the same as Eq. (\ref{eq:ns-sph-d}) in spirit. Particles of phase 1 are not be counted while evaluating density of phase 2 and vice versa. Updating of density is then based on the following discretized equations.
+Air and erupted material are represented by two different sets of SPH particles (or discretization points) in the model. Based on assumptions we made in section \ref{sec:chp2-Mathematical-Description}, only density is different on two sides of the interface and needs to be updated respectively for each phase. Such assumption also eliminates the surface tension forces across the interface reducing numerical challenges. The updating of density is exactly the same as Eq. (\ref{eq:ns-sph-d}) in spirit. Particles of phase 1 are not counted while evaluating density of phase 2 and vice versa. Updating of density is then based on the following discretized equations.
 \begin{equation}
 <\rho_{\alpha}^a>=\frac{\sum m_b w_{\alpha b} \left(h\right)}{\sum \frac{m_b}{\rho_b} w_{\alpha b} \left(h\right) +\sum \frac{m_j}{\rho_j} w_{\alpha j} \left(h\right)} \label{eq:gov-sph-d1}
 \end{equation}
@@ -233,7 +233,7 @@ That is to say, the same density updating equation can be applied for both phase
 \begin{figure}
 \center
 \includegraphics[width=12cm]{Chapter-3/Figures/Interface}
-\caption{In the left figure, the blue particles (phaseID=1) represent air particles the red ones (phaseID=2) represent erupted material. The right figure shows corresponding mass fraction. Mass fraction are evaluated based on Eq. (\ref{eq:gov-sph-d1}) and Eq. (\ref{eq:gov-sph-d1}) without any other interface track or capture method.}
+\caption{In the left figure, the blue particles (phaseID=1) represent air particles the red ones (phaseID=2) represent erupted material. The right figure shows corresponding mass fraction. Mass fraction are evaluated based on Eq. (\ref{eq:gov-sph-d1}) $\sim$ Eq. (\ref{eq:gov-sph-xi}) without any other interface track or capture method.}
 \label{fig:SPH-multiple-density}
 \end{figure}
 
@@ -310,7 +310,7 @@ For compressible flow, the energy equation is coupled with the momentum equation
 The additional terms associated with molecular diffusion and turbulent transport in the energy equation are either modeled in different ways or neglected sometimes \citep{NASACompressibleTurbulence}. We neglect these terms in our simulation.
 
 \subsection{Turbulent heat transfer}
-We adopt Reynolds analogy to get the heat transfer coefficient due to turbulence.
+Reynolds analogy is adopted to get the heat transfer coefficient due to turbulence.
 The Prandtl number is defined as:
 \begin{equation}
 Pr=\dfrac{C_p \mu}{\kappa}
@@ -323,7 +323,7 @@ Then
 \begin{equation}
 \kappa=\dfrac{C_p \mu}{Pr}
 \end{equation}
-Typical value of $Pr_t$ for air is 0.7 $\sim$ 0.9 . We take $Pr_t=0.85$ for gases as recommended \citet{kays1994turbulent} from summarizing of experimental results. 
+Typical value of $Pr_t$ for air is 0.7 $\sim$ 0.9 . We take $Pr_t=0.85$ for gases as recommended by \citet{kays1994turbulent} from summarizing of experimental results. 
 
 \citet{monaghan2005smoothed} summarized the simulation of viscosity and heat conduction in his review on SPH. We will refer to his summary in our following discussion. The additional term in discretized momentum equation, Eq. (\ref{eq:SPH-mom-epsilon-turb}), is the turbulent shear stress term. 
 Recall that molecular viscosity can be discretized with SPH as shown in Eq. (\ref{eq:art-vis-original}). 
@@ -447,7 +447,7 @@ All boundary conditions are imposed by ghost particles. Subfigure $b$ of Fig. \r
 %Physical quantities of particles, including real particles and different types of ghost particles, are updated differently.
 \subsection{Wall boundary condition}
 Traditionally either ghost particles that mirror real particles across the boundary \citep {ferrari2009new} or boundary forces \citep {monaghan2009sph} have been used to impose the wall boundary conditions. One disadvantage of the latter  is that the boundary forces tend to corrupt the solution in the local neighborhood. In addition, a natural way of imposing eruption boundary condition is using eruption ghost particles. To impose boundary conditions in a consistent way, we adopt a modified version of the ghost particle method \citep {kumar2013parallel} for wall boundary conditions. Stationary wall ghost particles are deployed in the same way as real particles. Instead of enforcing symmetry particle by particle, a symmetric field across the boundary is explicitly enforced. Ghost particles are reflected into the domain and physical quantities are calculated at these reflected positions by SPH interpolations. It should be noted that wall ghost particles should not be counted when computing physical properties of these reflected positions. Assign all properties, except for velocity, at the corresponding reflected position to the ghost particle. The velocity of each wall ghost particles is set to have the same value but opposite direction of the interpolated velocity at its corresponding reflection. By this way, the no-slip wall boundary condition (Eq. (\ref{eq:wall_bc_v})) is imposed naturally. These wall ghost particles serve as neighbors in momentum and energy update. More implementation details about this method can be found in \citep {kumar2013parallel}. As these wall ghost particles are stationary, there is no mass flux on the boundary (Eq. (\ref{eq:wall_bc_rho}) and (\ref{eq:wall_bc_xi})). In addition, as temperature is also symmetric with respect to the boundary, the gradient of temperature vanishes and hence there is no internal energy flux on the wall boundary (Eq. (\ref{eq:wall_bc_e})). 
-In our current model, the ground is assumed to be  flat. For more complicated topography, it has been shown in other work \citep {kumar2013parallel} that it also works as well.
+In our current model, the ground is assumed to be  flat. For more complicated topography, it has been shown in other work \citep {kumar2013parallel} that this method also works as well.
 
 \subsection{Eruption boundary condition}
 A natural way of imposing eruption boundary condition is using ghost particles that move with the eruption velocity and bear the temperature of the erupted material. A parabolic velocity profile that represents a fully developed Hagen-Poiseuille flow is used to determine the inlet particle velocity in Eq. (\ref{eq:erupt_bc_v}). The detailed shape of the parabolic profile is determined based on the averaged eruption velocity $\bar{\omega}$.
@@ -472,6 +472,6 @@ where $CFL_p$ is a safety coefficient which has similar function as the normal $
 \begin{figure}
 \center
 \includegraphics[width=0.99 \textwidth]{Chapter-3/Figures/t120_bc_proc}
-\caption{A cross section view of the simulation domain in $y-z$ plane at 66 seconds. Subfigure $a$ shows the mass fraction. Subfigure $b$ shows all boundary conditions: the dark blue region are occupied by eruption ghost particles with "Ghost particle ID" of 0, the light blue area are occupied by pressure ghost particles with "Ghost particle ID" of 1, the gray area is filled with wall ghost particles with "Ghost particle ID" of 2, "Ghost particle ID" of all real particles are set to 100, they occupy the major portion of the domain in subfigure $b$. Subfigure $c$ shows the cross section view of domain decomposition based on SFC. The simulation is conducted on 12 processors, so there are 12 subdomains in total. The cross section view shows a portion of them.}
+\caption{A cross section view of the simulation domain in $y-z$ plane at 66 seconds. Subfigure $a$ shows the mass fraction. Subfigure $b$ shows all boundary conditions: the dark blue region is occupied by eruption ghost particles with "Ghost particle ID" of 0, the light blue area is occupied by pressure ghost particles with "Ghost particle ID" of 1, the gray area is filled with wall ghost particles with "Ghost particle ID" of 2, "Ghost particle ID" of all real particles are set to 100, they occupy the major portion of the domain in subfigure $b$. Subfigure $c$ shows the cross section view of domain decomposition based on SFC. The simulation is conducted on 12 processors, so there are 12 subdomains in total. The cross section view cut through several subdomains and shows a crosssectional view of domain decomposition.}
 \label{fig:bc_and_domain_decomp}
 \end{figure}
