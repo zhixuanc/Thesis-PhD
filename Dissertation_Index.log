@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 JUN 2018 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 JUN 2018 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -863,7 +863,13 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 \tf@toc=\write3
 \openout3 = `Dissertation_Index.toc'.
 
- [9] (./Dissertation_Index.lot)
+ [9] (./Dissertation_Index.lot
+Overfull \hbox (4.67863pt too wide) in paragraph at lines 19--19
+ [][] []\OT1/ppl/m/n/12 Parameters for PUFF sim-u-la-tion of the cli-mac-tic ph
+ase of Pinatubo 
+ []
+
+)
 \tf@lot=\write4
 \openout4 = `Dissertation_Index.lot'.
 
@@ -879,13 +885,13 @@ Overfull \hbox (3.2752pt too wide) in paragraph at lines 8--8
 [11
 
 
-] [12]
+]
 Overfull \hbox (2.95186pt too wide) in paragraph at lines 16--16
  \OT1/ppl/m/n/12 RSPH, stan-dard SPH, GSPH us-ing Roe Rie-mann solver and GSPH 
 
  []
 
-[13] [14]
+[12] [13] [14]
 Overfull \hbox (97.68025pt too wide) in paragraph at lines 35--35
  \OT1/ppl/m/n/12 pendix A). The con-tour lev-els in the plots are $0.00001, 0.0
 001, 0.001, 0.1, 0.3, 0.75, 0.95$. 
@@ -1327,7 +1333,7 @@ rted-to.pdf used on input line 399.
 (pdftex.def)             Requested size: 205.4115pt x 132.72542pt.
 
 
-LaTeX Warning: Float too large for page by 186.16501pt on input line 403.
+LaTeX Warning: Float too large for page by 50.16495pt on input line 404.
 
 [72] [73 <./Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho-eps-converted-to.pdf> <./
 Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-eps-converted-to.pdf> <./Chapter-4/Figu
@@ -2214,7 +2220,7 @@ File: Chapter-5/Figures/strong_scale.png Graphic file (type png)
 
 <use Chapter-5/Figures/strong_scale.png>
 Package pdftex.def Info: Chapter-5/Figures/strong_scale.png used on input line 
-168.
+159.
 (pdftex.def)             Requested size: 130.68689pt x 110.85048pt.
 
 <Chapter-5/Figures/strong_scale_zoom.png, id=758, 421.575pt x 357.58594pt>
@@ -2222,15 +2228,15 @@ File: Chapter-5/Figures/strong_scale_zoom.png Graphic file (type png)
 
 <use Chapter-5/Figures/strong_scale_zoom.png>
 Package pdftex.def Info: Chapter-5/Figures/strong_scale_zoom.png used on input 
-line 170.
+line 161.
 (pdftex.def)             Requested size: 130.68689pt x 110.85048pt.
 
 <Chapter-5/Figures/weak_scale.png, id=759, 447.17062pt x 356.0803pt>
 File: Chapter-5/Figures/weak_scale.png Graphic file (type png)
 
 <use Chapter-5/Figures/weak_scale.png>
-Package pdftex.def Info: Chapter-5/Figures/weak_scale.png used on input line 17
-2.
+Package pdftex.def Info: Chapter-5/Figures/weak_scale.png used on input line 16
+3.
 (pdftex.def)             Requested size: 138.62146pt x 110.38374pt.
  [96 <./Chapter-5/Figures/strong_scale.png (PNG copy)> <./Chapter-5/Figures/str
 ong_scale_zoom.png (PNG copy)> <./Chapter-5/Figures/weak_scale.png (PNG copy)>]
@@ -2239,18 +2245,18 @@ ong_scale_zoom.png (PNG copy)> <./Chapter-5/Figures/weak_scale.png (PNG copy)>]
 File: Chapter-5/Figures/int_bar.png Graphic file (type png)
 
 <use Chapter-5/Figures/int_bar.png>
-Package pdftex.def Info: Chapter-5/Figures/int_bar.png used on input line 203.
+Package pdftex.def Info: Chapter-5/Figures/int_bar.png used on input line 194.
 (pdftex.def)             Requested size: 189.70699pt x 167.34866pt.
  [97]
 <Chapter-5/Figures/adj_vs_no.png, id=767, 451.6875pt x 311.66437pt>
 File: Chapter-5/Figures/adj_vs_no.png Graphic file (type png)
 
 <use Chapter-5/Figures/adj_vs_no.png>
-Package pdftex.def Info: Chapter-5/Figures/adj_vs_no.png used on input line 231
+Package pdftex.def Info: Chapter-5/Figures/adj_vs_no.png used on input line 222
 .
 (pdftex.def)             Requested size: 225.84319pt x 155.8318pt.
 
-Overfull \hbox (28.45212pt too wide) in paragraph at lines 237--239
+Overfull \hbox (28.45212pt too wide) in paragraph at lines 228--230
 \OT1/ppl/m/n/12 For the test prob-lem, the vol-cano plume fi-nally reaches to a
  re-gion of $\OT1/zplm/m/n/12 [\OMS/zplm/m/n/12 ^^@\OT1/ppl/m/n/12 10\OML/zplm/
 m/it/12 km   \OT1/ppl/m/n/12 10\OML/zplm/m/it/12 km\OT1/zplm/m/n/12 ] \OMS/zplm
@@ -2632,13 +2638,12 @@ File: Chapter-7/Figures/mssfrc_front-z15000.jpg Graphic file (type jpg)
 Package pdftex.def Info: Chapter-7/Figures/mssfrc_front-z15000.jpg used on inpu
 t line 50.
 (pdftex.def)             Requested size: 134.8662pt x 106.65092pt.
-
+ [118 <./Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg> <./Chapter-7/Figur
+es/mssfrc_top-with-axis.jpg> <./Chapter-7/Figures/mssfrc_front-z15000.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 65--65
 []|\OT1/ppl/m/n/12 Maximum
  []
 
-[118 <./Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg> <./Chapter-7/Figure
-s/mssfrc_top-with-axis.jpg> <./Chapter-7/Figures/mssfrc_front-z15000.jpg>]
 [119]
 Overfull \hbox (30.6365pt too wide) in paragraph at lines 93--105
  [][] 
@@ -3109,7 +3114,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 413.
 Here is how much of TeX's memory you used:
  16731 strings out of 493117
  299257 string characters out of 6135433
- 397424 words of memory out of 5000000
+ 392369 words of memory out of 5000000
  19621 multiletter control sequences out of 15000+600000
  57893 words of font info for 159 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3127,7 +3132,7 @@ st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
 /urw/palatino/uplri8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/t
 imes/utmr8a.pfb>
-Output written on Dissertation_Index.pdf (181 pages, 20838494 bytes).
+Output written on Dissertation_Index.pdf (181 pages, 20837418 bytes).
 PDF statistics:
  1181 PDF objects out of 1200 (max. 8388607)
  749 compressed objects within 8 object streams
