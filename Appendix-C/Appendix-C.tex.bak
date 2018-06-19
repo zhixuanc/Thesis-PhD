@@ -1,0 +1,28 @@
+\Appendix{Binary Van Der Corput pseudo-random numbers} \label{app:Van-Der-Corput-RDN} 
+A random number $\theta$ is used to determine the sample location $q_{ab}^{RSPH}$ in RSPH. The quantity of the computed RCM solution depends crucially on the random number $\{\theta ^n\}$. We adopt the Van Der Corupt pseudo-random number sequence \citep{hammersley2013monte} in this investigation following \citet{colella1982glimm}.
+
+A general Van Der Corupt pseudo-random number sequence depends on two parameters $x_1$ and $x_2$ with $x_1 > x_2 > 0$, both are integer and relatively prime. The sequence is formally defined as \citep{hammersley2013monte}:
+\begin{equation}
+\theta ^n = \sum_{i=0}^{s} H_i x_1^{-(i+1)}
+\label{eq:Van-Der-Corput-pseudo-random-num}
+\end{equation}
+where
+\begin{equation}
+H_i = x_2 a_i(mod \ x_1)
+\label{eq:Van-Der-Corput-pseudo-random-num-Hi}
+\end{equation} 
+\begin{equation}
+n = \sum_{i=0}^{s} a_i x_1^i
+\label{eq:Van-Der-Corput-pseudo-random-num-n}
+\end{equation} 
+Equation (\ref{eq:Van-Der-Corput-pseudo-random-num-n}) gives the binary expansion of n when we take $x_1$ as $2$. For example,
+\begin{equation}
+5=1 \times 2^0 + 0 \times 2^1 + 1 \times 2^2
+\end{equation}
+with $m=2$. 
+
+The next stage is to find the coefficient $H_i$ according to Eq. (\ref{eq:Van-Der-Corput-pseudo-random-num-Hi}). If we take $x_2 = 1$, for which case, $H_i = a_i, \ \forall i$. Having $H_i$, $x_1$ and $s$ ready, the random number $\theta ^n $ can be easily obtained according to Eq. (\ref{eq:Van-Der-Corput-pseudo-random-num}).
+We take $x_1=2$  and $x_2 =1$ tests presented in this chapter. Other combinations of $x_1$ and $x_2$ were also discussed by \citet{toro2013riemann}. A desirable statistical property of the sequence $\{\theta ^n\}$ is that $\{\theta ^n\}$ be uniformly distributed over $[0,1]$.
+ 
+The arithmetic mean and the standard deviation of 200 binary Van Der Corput pseudo-random numbers are $0.49459$ and $0.28885$. The chi-square statistic (see \citet{toro2013riemann} for its calculation) $\chi_{sq}$ is $1.0000$. 
+The binary Van Der Corput pseudo-random numbers are generated offline to save computational time.

@@ -1,18 +1,82 @@
-\Appendix{Post processing of particle data}
+\Appendix{Determining of imaginary interface in GSPH} \label{app:determine-imag-int} 
+This appendix is to shown how GSPH determines the imaginary interface, the location $q^(GSPH)$ in Fig. \ref{fig:pick-up-state-GSPH-RSPH}). By choosing the middle point as the imaginary interface, we essentially adopt piece wise constant manner when constructing of Riemann problem. The follows shows how the imaginary interface is determined if a piece wise linear manner is adopted for Riemann problem construction.
 
-\label{app:project-SPH-grid}    %% Appendix A
-%\appendixfigures
-\begin{figure}[!htb]
-    \centering
-	\includegraphics[width=14cm]{Appendix-A/Figures/FigA1.png} 
-    \caption{Procedure of projection of simulation results carried by particles onto regular grids. Figures from left to right are: 1) raw data of SPH simulation results (irregularly distributed in space), 2) Add regular mesh, 3) searching for neighbours of each node (the blue SPH particles within the green circle around the red dot). The last step is not shown in these pictures, which is treating each node on the regular mesh as a SPH particle and projecting data on particles onto nodes utilizing "SPH interpolation" ( see Eq. (\ref{eq:SPH-fundamental-principle})).}
-    \label{appfig:1D-shock-tests-verification}
-\end{figure}
+\section{Piece wise linear approximation of specific volume}
+Given fundamental equation for SPH and GSPH, plug Eq. (\ref{eq:GSPH-basic1}) into Eq. (\ref{eq:SPH-fundamental-principle})
+\begin{equation}
+\begin{split}
+<A\left(\textbf{x}\right)> 
+& \approx \int_{\Omega} A\left(\textbf{x} \prime\right) w\left(\textbf{x}-\textbf{x}\prime, h\right) d\textbf{x}\prime \\
+& = \int_{\Omega}  \sum_{b} m_{b} \frac{A\left(\textbf{x} \prime\right)}{\rho(\textbf{x})} w\left(\textbf{x}-\textbf{x}\prime, h\right) w(\textbf{x}\prime - \textbf{x}_{b}, h) d\textbf{x}\prime
+\end{split}
+\label{eq:GSPH-fundamental-principle}
+\end{equation}
+Equation (\ref{eq:GSPH-fundamental-principle}) reduces to fundamental SPH approximation when assuming $w(\textbf{x} - \textbf{x}_{b}, h) \approx \delta (\textbf{x} - \textbf{x}_{b})$. 
+Algebraic manipulations \citep{inutsuka2002reformulation,iwasaki2011smoothed} lead to the following approximation of momentum and energy equations:
+\begin{equation}
+\begin{split}
+&<\dfrac{d \textbf{v}_{a}}{dt}> =-\sum_{b} m_{b} \int \frac{p(\textbf{x})}{\rho(\textbf{x})^2} \\
+&\left[w(\textbf{x} - \textbf{x}_b, h) \nabla w(\textbf{x} - \textbf{x}_a, h) - w(\textbf{x} - \textbf{x}_a, h) \nabla w(\textbf{x} - \textbf{x}_b, h)\right] d\textbf{x} 
+\end{split}
+\label{eq:gov-gsph-v-approx}
+\end{equation}
+\begin{equation}
+\begin{split}
+&<\dfrac{d e_{a}}{dt}> =-\sum_{b} m_{b} \int \frac{p(\textbf{x})}{\rho(\textbf{x})^2} (\textbf{v} - \dot{\textbf{x}}_{a}^{\ast})\\
+&\left[ w(\textbf{x}- \textbf{x}_b, h) \nabla w(\textbf{x} - \textbf{x}_a, h) - w(\textbf{x} - \textbf{x}_a, h) \nabla w(\textbf{x} - \textbf{x}_b, h) \right] d\textbf{x} 
+\end{split}
+\label{eq:gov-gsph-e--approx}
+\end{equation}
+where $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
+\begin{equation}
+\dot{\textbf{x}}_{a}^{\ast} = <\textbf{v}_{a}> + \frac{\Delta t}{2} \ddot{\textbf{x}}_{a}
+\end{equation}
 
-Particles distribute irregularly in SPH simulation results. To adapt post processing originally proposed for mesh-based method, we need to project simulation results onto a pre-defined regular mesh. As shown in Fig. \ref{appfig:1D-shock-tests-verification}, the basic steps for such projection are:
-\begin{itemize}
-\item obtain raw simulation results carried by particles that irregularly distribute in the space
-\item create regular grids
-\item search for neighbour paricles for each node of the regular grids.
-\item interpolate physical quanties from neighbour particle onto corresponding node of regular grids according to Eq. (\ref{eq:SPH-fundamental-principle})
-\end{itemize}
+Evaluating of the integral in Eq. (\ref{eq:gov-gsph-v-approx}) and Eq. (\ref{eq:gov-gsph-e--approx}) depends on interpolation of the specific volume $V(q) = \frac{1}{\rho(q)}$, where $q$ is coordinate in a local coordinate system. If the specific volume is interpolated linearly in the local coordinate system, the integrals finally result in discretized formulation as showing in Eq. (\ref{eq:gov-gsph-v-with-convolution}) and Eq. (\ref{eq:gov-gsph-e-with-convolution}).
+\begin{equation}
+<\dfrac{d \textbf{v}_{a}}{dt}>= -\sum_{b} m_{b} p_{a b}^{\ast} \left[ V_{ab}^2(h_a) \nabla w_{a b}(\sqrt{2} h_{a}) + V_{ab}^2(h_b) \nabla w_{a b}(\sqrt{2} h_{b}) \right]
+\label{eq:gov-gsph-v-with-convolution}
+\end{equation}
+\begin{equation}
+<\dfrac{d e_{a}}{dt}>= - \sum_{b} m_{b} p_{a b}^{\ast} [\textbf{v}_{a b}^{\ast} - \dot{\textbf{x}}_{a}^{\ast}] \left[V_{ab}^2(h_a) \nabla w_{a b}(\sqrt{2} h_{a}) + V_{ab}^2(h_b) \nabla w_{a b}(\sqrt{2} h_{b}) \right]
+\label{eq:gov-gsph-e-with-convolution}
+\end{equation}
+where, the starred quantity are interpolated value of the solution to the Riemann problem at the imaginary interface.
+$V_{ab}^2(h_a)$ and $V_{ab}^2(h_b)$ are evaluated based on interpolation of specific volume in the local coordinate system, for example, linear interpolation: 
+\begin{equation}
+V(q) = C_{ab}q+D_{ab}
+\label{eq:gsph-V-linear-interplation}
+\end{equation}
+If specific volume is interpolated linearly, then the $V^2_{ab}(h)$ is evaluated according to:
+\begin{equation}
+V^2_{ab}(h) = \frac{1}{4}h^2C_{ab}^2+D_{ab}^2
+\label{eq:gsph-V-linear-interplation-sq}
+\end{equation}
+where
+\begin{equation}
+C_{ab} = \frac{V_a-V_b}{\Delta q_{ab}}
+\label{eq:gsph-V-linear-interplation-C}
+\end{equation}
+\begin{equation}
+D_{ab} = \frac{V_a+V_b}{2}
+\label{eq:gsph-V-linear-interplation-D}
+\end{equation}
+In purpose of determining the position of the imaginary interface, a weighted-average $A_{ab}^{\ast}$ of generic function $A(q)$ need to be defined.
+\begin{equation}
+\begin{split}
+& \int_{\Omega} \frac{A\left(q \right)}{\rho^2(q)} w\left(q -q_a, h\right) w(q - \textbf{x}_{b}, h) dq \\
+& =A_{ab}^{\ast} \int_{\Omega} \frac{1}{\rho^2(q)} w\left(q -q_a, h\right) w(q - q_{b}, h) dq
+\end{split}
+\label{eq:GSPH-f-interpolation-def}
+\end{equation}
+Using then the linear approximation for $A(q) = q(A_a - A_b)/ \Delta q_{ab}$ and then the linear interpolation of specific volume (see Eq. (\ref{eq:gsph-V-linear-interplation})), one obtains 
+\begin{equation}
+A_{ab}^{\ast} = \frac{A_a - A_b}{\Delta q_{ab}} q_{ab}^{\ast} + \frac{A_a + A_b}{2}
+\label{eq:GSPH-f-interpolation-evaluation}
+\end{equation}
+where the interface position is weitten as
+\begin{equation}
+q_{ab}^{\ast} = \frac{h^2 C_{ab} D_{ab}}{2V_{ab}^2(h)}
+\label{eq:GSPH-f-interpolation-evaluation}
+\end{equation}
+This $q_{ab}^{\ast}$ is used as $q_{ab}^{GSPH}$ in Fig. \ref{fig:pick-up-state-GSPH-RSPH}.
