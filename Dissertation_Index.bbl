@@ -415,6 +415,17 @@ Harlow, Francis~H, J~Eddie Welch et~al. 1965.
 \newblock ``Numerical calculation of time-dependent viscous incompressible flow
   of fluid with free surface.'' {\em Physics of fluids} 8(12):2182.
 
+\harvarditem{Harten \harvardand\ Lax}{1981}{hartenlax}
+Harten, A. \harvardand\ P.D. Lax. 1981.
+\newblock ``A Random Choice Finite Difference Scheme for Hyperbolic
+  Conservation Laws.'' {\em SIAM J. Numer. Analy.} 18:289--315.
+
+\harvarditem[Harten, Lax \harvardand\ van Leer]{Harten, Lax \harvardand\ van
+  Leer}{1983}{hll}
+Harten, A., P.D. Lax \harvardand\ B. van Leer. 1983.
+\newblock ``On Upstream Differencing and Godunov-type Schemes for Hyperbolic
+  Conservation Laws.'' {\em SIAM Review} 25:35--61.
+
 \harvarditem{Hernquist}{1993}{hernquist1993some}
 Hernquist, Lars. 1993.
 \newblock ``Some cautionary remarks about smoothed particle hydrodynamics.''

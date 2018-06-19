@@ -10,64 +10,67 @@ A level-1 auxiliary file: Chapter-6/Chapter-6.aux
 A level-1 auxiliary file: Chapter-7/Chapter-7.aux
 A level-1 auxiliary file: Chapter-8/Chapter-8.aux
 A level-1 auxiliary file: Appendix-A/Appendix-A.aux
+A level-1 auxiliary file: Appendix-B/Appendix-B.aux
+A level-1 auxiliary file: Appendix-C/Appendix-C.aux
+A level-1 auxiliary file: Appendix-D/Appendix-D.aux
 The style file: apsr.bst
 Database file #1: dissertation.bib
-You're missing a field name---line 767 of file dissertation.bib
+You're missing a field name---line 797 of file dissertation.bib
  : 
  : %  title={HYSPLIT (HYbrid Single-Particle Lagrangian Integrated Trajectory) Model access via NOAA ARL READY Website. NOAA Air Resources Laboratory, Silver Spring},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1099 of file dissertation.bib
+Repeated entry---line 1129 of file dissertation.bib
  : @article{hernquist1989treesph
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2456 of file dissertation.bib
+Repeated entry---line 2486 of file dissertation.bib
  : @article{bursik2012estimation
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2467 of file dissertation.bib
+Repeated entry---line 2497 of file dissertation.bib
  : @article{stefanescu2014temporal
  :                                ,
 I'm skipping whatever remains of this entry
-You've used 180 entries,
+You've used 182 entries,
             2874 wiz_defined-function locations,
-            1605 strings with 36353 characters,
-and the built_in function-call counts, 986595 in all, are:
-= -- 162648
-> -- 13041
+            1618 strings with 36700 characters,
+and the built_in function-call counts, 994402 in all, are:
+= -- 163889
+> -- 13181
 < -- 4
-+ -- 78686
-- -- 4497
-* -- 86827
-:= -- 194122
-add.period$ -- 727
-call.type$ -- 180
-change.case$ -- 2340
-chr.to.int$ -- 178
-cite$ -- 180
-duplicate$ -- 2734
-empty$ -- 6237
-format.name$ -- 4728
-if$ -- 177460
++ -- 79275
+- -- 4545
+* -- 87494
+:= -- 195713
+add.period$ -- 735
+call.type$ -- 182
+change.case$ -- 2366
+chr.to.int$ -- 180
+cite$ -- 182
+duplicate$ -- 2764
+empty$ -- 6305
+format.name$ -- 4776
+if$ -- 178860
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 182
-newline$ -- 743
-num.names$ -- 2103
-pop$ -- 568
+missing$ -- 184
+newline$ -- 751
+num.names$ -- 2129
+pop$ -- 573
 preamble$ -- 1
-purify$ -- 2700
+purify$ -- 2730
 quote$ -- 0
-skip$ -- 2452
+skip$ -- 2479
 stack$ -- 0
-substring$ -- 232789
-swap$ -- 392
-text.length$ -- 2524
+substring$ -- 234518
+swap$ -- 396
+text.length$ -- 2552
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 706
+type$ -- 714
 warning$ -- 0
-while$ -- 4294
+while$ -- 4344
 width$ -- 0
-write$ -- 2545
+write$ -- 2573
 (There were 4 error messages)
