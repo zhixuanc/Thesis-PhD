@@ -9,23 +9,23 @@ When applied to three dimensional jet flow, this method is demonstrated to intro
 
 Throughout this chapter we will be concerned with solving the Euler equations, written as
 \begin{align}
-\dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \textbf{v} \right) = 0 \label{eq:gov-cs-rho} \\
-\dfrac{\partial \rho \textbf{v}}{\partial t} + \nabla \cdot \left(\rho \textbf{v} \textbf{v} + p\textbf{I}\right) = 0 \label{eq:gov-cs-v} \\
-\dfrac{\partial \rho E}{\partial t} + \nabla \cdot \left[\left(\rho E + p \right)\textbf{v}\right] = 0 \label{eq:gov-cs-e}
+\dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \textbf{v} \right) = 0 \label{eq:gov-cs-rho-erl} \\
+\dfrac{\partial \rho \textbf{v}}{\partial t} + \nabla \cdot \left(\rho \textbf{v} \textbf{v} + p\textbf{I}\right) = 0 \label{eq:gov-cs-v-erl} \\
+\dfrac{\partial \rho E}{\partial t} + \nabla \cdot \left[\left(\rho E + p \right)\textbf{v}\right] = 0 \label{eq:gov-cs-e-erl}
 \end{align}
 Here $\rho$ is the density, $\textbf{v}$ is the velocity, $\textbf{I}$ is a unit tensor.
 $E = e + K $ is the total energy which is a sum of a kinetic energy $K$ and an internal energy $e$.
 The system of equations is closed by the equation of state for an idea gas
 \begin{equation}
-p = \left(\gamma - 1\right)\rho e \label{eq:EOS}
+p = \left(\gamma - 1\right)\rho e \label{eq:EOS-erl}
 \end{equation}
 with $\gamma=1.4$.
 
 SPH is a Lagrangian scheme, so we rewrite the governing equations as
 \begin{align}   %\label{eq:lagrangian}
-\dfrac{D \rho}{D t} + \rho \nabla \cdot \textbf{v} = 0 \label{eq:gov-nc-rho}\\
-\dfrac{D \textbf{v}}{D t} + \dfrac{\nabla P}{\rho} =0 \label{eq:gov-nc-v}\\
-\dfrac{D e}{D t} + \dfrac{P \nabla \cdot \textbf{v}}{\rho} = 0 \label{eq:gov-nc-e}
+\dfrac{D \rho}{D t} + \rho \nabla \cdot \textbf{v} = 0 \label{eq:gov-nc-rho-erl}\\
+\dfrac{D \textbf{v}}{D t} + \dfrac{\nabla P}{\rho} =0 \label{eq:gov-nc-v-erl}\\
+\dfrac{D e}{D t} + \dfrac{P \nabla \cdot \textbf{v}}{\rho} = 0 \label{eq:gov-nc-e-erl}
 \end{align}
 In this formulation we have written the material derivative as 
 $\frac{D A}{Dt} = \frac{\partial A}{\partial t} + \textbf{v} \cdot \nabla A$ for a conserved variable $A$.
@@ -62,6 +62,7 @@ Having solved the local Riemann problem,
 $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
 \begin{equation}
 \dot{\textbf{x}}_{a}^{\ast} = <\textbf{v}_{a}> + \frac{\Delta t}{2} \ddot{\textbf{x}}_{a}
+\label{eq:gsph-time-centered-velocity}
 \end{equation}
 which then updates particle location.
 

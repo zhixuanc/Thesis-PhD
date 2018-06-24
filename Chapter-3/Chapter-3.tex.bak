@@ -258,6 +258,7 @@ The typical LANS model uses a smoothed velocity $\widehat{\textbf{v}}$
 defined in terms of the unsmoothed velocity $\textbf{v}$ by:
 \begin{equation}
 \widehat{\textbf{v}}\left(\textbf{x}\right)=\int \textbf{v}\left(\textbf{x} \prime\right)G\left(\vert \textbf{x} \prime - \textbf{x} \vert, l\right) d\textbf{x} \prime
+\label{eq:turbulence-v-filter}
 \end{equation}
 where $G$ satisfies:
 \begin{equation}
@@ -442,7 +443,7 @@ As the particle-scale movement of flow is based on smoothed velocity, the veloci
 The filtering process is done according to Eq. (\ref{eq:SPH-epsilon-filtering}). Position of particles is updated according to Eq. (\ref{eq:gov-update-pos-turbulence}). Smoothed velocity is also used while computing artificial viscosity.
 % $\Pi_{ab}$.
 
-\section{Boundary conditions}
+\section{Boundary conditions} \label{sec:SPH-bc}
 All boundary conditions are imposed by ghost particles. Subfigure $b$ of Fig. \ref{fig:bc_and_domain_decomp} shows how boundaries are deployed. 
 %Physical quantities of particles, including real particles and different types of ghost particles, are updated differently.
 \subsection{Wall boundary condition}

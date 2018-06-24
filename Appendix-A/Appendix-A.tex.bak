@@ -1,8 +1,8 @@
 \Appendix{Determining of imaginary interface in GSPH} \label{app:determine-imag-int} 
-This appendix is to shown how GSPH determines the imaginary interface, the location $q^(GSPH)$ in Fig. \ref{fig:pick-up-state-GSPH-RSPH}). By choosing the middle point as the imaginary interface, we essentially adopt piece wise constant manner when constructing of Riemann problem. The follows shows how the imaginary interface is determined if a piece wise linear manner is adopted for Riemann problem construction.
+This appendix is to shown how GSPH determines the imaginary interface, the location $q^{GSPH}$ in Fig. \ref{fig:pick-up-state-GSPH-RSPH}). By choosing the middle point as the imaginary interface, we essentially adopt piece wise constant manner when constructing of Riemann problem. The following shows how the imaginary interface is determined if a piece wise linear manner is adopted for Riemann problem construction.
 
 \section{Piece wise linear approximation of specific volume}
-Given fundamental equation for SPH and GSPH, plug Eq. (\ref{eq:GSPH-basic1}) into Eq. (\ref{eq:SPH-fundamental-principle})
+Given fundamental equations (Eq. (\ref{eq:GSPH-basic1}) and (\ref{eq:GSPH-basic2})) for GSPH, plug Eq. (\ref{eq:GSPH-basic1}) into Eq. (\ref{eq:SPH-fundamental-principle})
 \begin{equation}
 \begin{split}
 <A\left(\textbf{x}\right)> 
@@ -77,6 +77,6 @@ A_{ab}^{\ast} = \frac{A_a - A_b}{\Delta q_{ab}} q_{ab}^{\ast} + \frac{A_a + A_b}
 where the interface position is weitten as
 \begin{equation}
 q_{ab}^{\ast} = \frac{h^2 C_{ab} D_{ab}}{2V_{ab}^2(h)}
-\label{eq:GSPH-f-interpolation-evaluation}
+\label{eq:GSPH-f-interpolation-s-star}
 \end{equation}
 This $q_{ab}^{\ast}$ is used as $q_{ab}^{GSPH}$ in Fig. \ref{fig:pick-up-state-GSPH-RSPH}.

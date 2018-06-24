@@ -83,32 +83,35 @@
 \contentsline {subsection}{\numberline {6.3.1}Input parameters}{97}{subsection..6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Global and local variables}{99}{subsection..6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Short period eruption}{102}{subsection..6.3.3}
-\contentsline {chapter}{\numberline {7}Ash Transportation and Dispersal Simulation}{105}{chapter..7}
-\contentsline {section}{\numberline {7.1}Introduction}{105}{section..7.1}
-\contentsline {section}{\numberline {7.2}Background}{106}{section..7.2}
-\contentsline {subsection}{\numberline {7.2.1}Volcanic cloud forecast}{106}{subsection..7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}The Pinatubo eruption}{107}{subsection..7.2.2}
-\contentsline {section}{\numberline {7.3}Setting up simulations}{108}{section..7.3}
-\contentsline {subsection}{\numberline {7.3.1}Creating of initial ash cloud}{108}{subsection..7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Sensitivity analysis of other parameters}{111}{subsection..7.3.2}
-\contentsline {section}{\numberline {7.4}Results and discussion}{114}{section..7.4}
-\contentsline {subsection}{\numberline {7.4.1}``Plume-SPH+PUFF" and ``bent+PUFF"}{115}{subsection..7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Calibration of maximum height}{117}{subsection..7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}$SO_2$ clouds}{121}{subsection..7.4.3}
-\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{126}{chapter..8}
-\contentsline {section}{\numberline {8.1}Conclusion remarks}{126}{section..8.1}
-\contentsline {section}{\numberline {8.2}Improvement of the software}{128}{section..8.2}
-\contentsline {subsection}{\numberline {8.2.1}More comprehensive physics model}{128}{subsection..8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Advanced numerical techniques}{129}{subsection..8.2.2}
-\contentsline {subsection}{\numberline {8.2.3}Computational efficiency and parallel scalability}{130}{subsection..8.2.3}
-\contentsline {subsection}{\numberline {8.2.4}Improve usability}{132}{subsection..8.2.4}
-\contentsline {section}{\numberline {8.3}Future implementations}{133}{section..8.3}
+\contentsline {subsection}{\numberline {6.3.4}GSPH and RSPH simulation}{104}{subsection..6.3.4}
+\contentsline {chapter}{\numberline {7}Ash Transportation and Dispersal Simulation}{106}{chapter..7}
+\contentsline {section}{\numberline {7.1}Introduction}{106}{section..7.1}
+\contentsline {section}{\numberline {7.2}Background}{107}{section..7.2}
+\contentsline {subsection}{\numberline {7.2.1}Volcanic cloud forecast}{107}{subsection..7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}The Pinatubo eruption}{108}{subsection..7.2.2}
+\contentsline {section}{\numberline {7.3}Setting up simulations}{109}{section..7.3}
+\contentsline {subsection}{\numberline {7.3.1}Creating of initial ash cloud}{109}{subsection..7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Restart PUFF}{112}{subsection..7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Sensitivity analysis of other parameters}{113}{subsection..7.3.3}
+\contentsline {section}{\numberline {7.4}Results and discussion}{116}{section..7.4}
+\contentsline {subsection}{\numberline {7.4.1}``Plume-SPH+PUFF" and ``bent+PUFF"}{116}{subsection..7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Calibration of maximum height}{119}{subsection..7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}$SO_2$ clouds}{123}{subsection..7.4.3}
+\contentsline {section}{\numberline {7.5}Conclusion}{126}{section..7.5}
+\contentsline {chapter}{\numberline {8}Conclusion and Future Work}{128}{chapter..8}
+\contentsline {section}{\numberline {8.1}Conclusion remarks}{128}{section..8.1}
+\contentsline {section}{\numberline {8.2}Improvement of the software}{130}{section..8.2}
+\contentsline {subsection}{\numberline {8.2.1}Physics model}{130}{subsection..8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Numerical techniques}{131}{subsection..8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Computational efficiency and parallel scalability}{133}{subsection..8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Usability}{134}{subsection..8.2.4}
+\contentsline {section}{\numberline {8.3}Future implementations}{135}{section..8.3}
 \renewcommand {\cftchappresnum }{Appendix }
-\contentsline {chapter}{\numberline {A}Determining of imaginary interface in GSPH}{135}{appendix.A}
-\contentsline {section}{\numberline {A.1}Piece wise linear approximation of specific volume}{135}{section.A.1}
-\contentsline {chapter}{\numberline {B}Approximate riemann solvers}{138}{appendix.B}
-\contentsline {section}{\numberline {B.1}HLLC Riemann solver}{138}{section.B.1}
-\contentsline {section}{\numberline {B.2}Roe Riemann solver}{139}{section.B.2}
-\contentsline {chapter}{\numberline {C}Binary Van Der Corput pseudo-random numbers}{141}{appendix.C}
-\contentsline {chapter}{\numberline {D}Post processing of particle data}{143}{appendix.D}
-\contentsline {chapter}{Bibliography}{145}{figure.D.1}
+\contentsline {chapter}{\numberline {A}Determining of imaginary interface in GSPH}{137}{appendix.A}
+\contentsline {section}{\numberline {A.1}Piece wise linear approximation of specific volume}{137}{section.A.1}
+\contentsline {chapter}{\numberline {B}Approximate riemann solvers}{140}{appendix.B}
+\contentsline {section}{\numberline {B.1}HLLC Riemann solver}{140}{section.B.1}
+\contentsline {section}{\numberline {B.2}Roe Riemann solver}{141}{section.B.2}
+\contentsline {chapter}{\numberline {C}Binary Van Der Corput pseudo-random numbers}{143}{appendix.C}
+\contentsline {chapter}{\numberline {D}Post processing of particle data}{145}{appendix.D}
+\contentsline {chapter}{Bibliography}{147}{figure.D.1}

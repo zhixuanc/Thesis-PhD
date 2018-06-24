@@ -150,6 +150,9 @@
 \zexternaldocument{Chapter-7/Chapter-7}
 \zexternaldocument{Chapter-8/Chapter-8}
 \zexternaldocument{Appendix-A/Appendix-A}
+\zexternaldocument{Appendix-B/Appendix-B}
+\zexternaldocument{Appendix-C/Appendix-C}
+\zexternaldocument{Appendix-D/Appendix-D}
 %
 % This is optional and is included only for those students
 % who want to use it.
@@ -241,7 +244,8 @@
 
 \readerthree[Committee Member]
             {Paul Bauman}
-            {Professor of Mechanical and Aerospace Engineering}
+            {Professor of Mechanical and Aerospace Engineering \\
+        Professor of Computational Data Science and Engineering}
 
 %\readerfour[Optional Title Here]
 %           {Reader Name}
@@ -264,7 +268,9 @@ Chapter-6/Chapter-6,%
 Chapter-7/Chapter-7,%
 Chapter-8/Chapter-8,%
 Appendix-A/Appendix-A,%
-%Appendix-B/Appendix-B%
+Appendix-B/Appendix-B,%
+Appendix-C/Appendix-C,%
+Appendix-D/Appendix-D%
 }
 
 %%%%%%%%%%%%%%%%%
@@ -369,7 +375,9 @@ Appendix-A/Appendix-A,%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \appendix
 \include{Appendix-A/Appendix-A}
-%\include{Appendix-B/Appendix-B}
+\include{Appendix-B/Appendix-B}
+\include{Appendix-C/Appendix-C}
+\include{Appendix-D/Appendix-D}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ESM students need to include a Nontechnical Abstract as the %
 % last appendix.                                              %

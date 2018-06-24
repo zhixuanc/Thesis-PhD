@@ -1,8 +1,8 @@
 \Appendix{Determining of imaginary interface in GSPH} \label{app:determine-imag-int} 
-This appendix is to shown how GSPH determines the imaginary interface, the location $q^(GSPH)$ in Fig. \ref{fig:pick-up-state-GSPH-RSPH}). By choosing the middle point as the imaginary interface, we essentially adopt piece wise constant manner when constructing of Riemann problem. The follows shows how the imaginary interface is determined if a piece wise linear manner is adopted for Riemann problem construction.
+This appendix is to shown how GSPH determines the imaginary interface, the location $q^{GSPH}$ in Fig. \ref{fig:pick-up-state-GSPH-RSPH}). By choosing the middle point as the imaginary interface, we essentially adopt piece wise constant manner when constructing of Riemann problem. The following shows how the imaginary interface is determined if a piece wise linear manner is adopted for Riemann problem construction.
 
 \section{Piece wise linear approximation of specific volume}
-Given fundamental equation for SPH and GSPH, plug Eq. (\ref{eq:GSPH-basic1}) into Eq. (\ref{eq:SPH-fundamental-principle})
+Given fundamental equations (Eq. (\ref{eq:GSPH-basic1}) and (\ref{eq:GSPH-basic2})) for GSPH, plug Eq. (\ref{eq:GSPH-basic1}) into Eq. (\ref{eq:SPH-fundamental-principle})
 \begin{equation}
 \begin{split}
 <A\left(\textbf{x}\right)> 
@@ -27,10 +27,10 @@ Algebraic manipulations \citep{inutsuka2002reformulation,iwasaki2011smoothed} le
 \end{split}
 \label{eq:gov-gsph-e--approx}
 \end{equation}
-where $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
-\begin{equation}
-\dot{\textbf{x}}_{a}^{\ast} = <\textbf{v}_{a}> + \frac{\Delta t}{2} \ddot{\textbf{x}}_{a}
-\end{equation}
+where $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$, see Eq. (\ref{eq:gsph-time-centered-velocity}):
+%\begin{equation}
+%\dot{\textbf{x}}_{a}^{\ast} = <\textbf{v}_{a}> + \frac{\Delta t}{2} \ddot{\textbf{x}}_{a}
+%\end{equation}
 
 Evaluating of the integral in Eq. (\ref{eq:gov-gsph-v-approx}) and Eq. (\ref{eq:gov-gsph-e--approx}) depends on interpolation of the specific volume $V(q) = \frac{1}{\rho(q)}$, where $q$ is coordinate in a local coordinate system. If the specific volume is interpolated linearly in the local coordinate system, the integrals finally result in discretized formulation as showing in Eq. (\ref{eq:gov-gsph-v-with-convolution}) and Eq. (\ref{eq:gov-gsph-e-with-convolution}).
 \begin{equation}
@@ -47,7 +47,7 @@ $V_{ab}^2(h_a)$ and $V_{ab}^2(h_b)$ are evaluated based on interpolation of spec
 V(q) = C_{ab}q+D_{ab}
 \label{eq:gsph-V-linear-interplation}
 \end{equation}
-If specific volume is interpolated linearly, then the $V^2_{ab}(h)$ is evaluated according to:
+then the $V^2_{ab}(h)$ is evaluated according to:
 \begin{equation}
 V^2_{ab}(h) = \frac{1}{4}h^2C_{ab}^2+D_{ab}^2
 \label{eq:gsph-V-linear-interplation-sq}
@@ -77,6 +77,6 @@ A_{ab}^{\ast} = \frac{A_a - A_b}{\Delta q_{ab}} q_{ab}^{\ast} + \frac{A_a + A_b}
 where the interface position is weitten as
 \begin{equation}
 q_{ab}^{\ast} = \frac{h^2 C_{ab} D_{ab}}{2V_{ab}^2(h)}
-\label{eq:GSPH-f-interpolation-evaluation}
+\label{eq:GSPH-f-interpolation-s-star}
 \end{equation}
 This $q_{ab}^{\ast}$ is used as $q_{ab}^{GSPH}$ in Fig. \ref{fig:pick-up-state-GSPH-RSPH}.

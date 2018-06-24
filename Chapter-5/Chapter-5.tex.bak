@@ -201,7 +201,7 @@ The best load balance check interval is calibrated based on a series of simulati
 
 \begin{table}
 \centering
-{\caption{Computational workload of extra steps for domain adjusting. SWCH represents step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain.  Momentum and energy update (UPME) and position update (UPP) also included for comparison.}  
+{\caption{Computational workload of extra steps for domain adjusting. SWCH represents the step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain.  Momentum and energy update (UPME) and position update (UPP) also included for comparison.}  
     \begin{tabular}{lrr}
     \hline
     Functions & Total time (s) & Called times\\
