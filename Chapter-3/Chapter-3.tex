@@ -2,12 +2,12 @@
 \chapter{Classical SPH Method} \label{chapter:classical-SPH}
 
 \section{Introduction}
-A mesh-free Lagragian method, SPH, is selected to numerically solve the governing equations. There are several review papers by \citet{monaghan1992smoothed, monaghan2005smoothed, rosswog2009astrophysical, price2012smoothed, monaghan2012smoothed}, giving a pretty comprehensive view over SPH. We only refer here to the representation of the constitutive equations in SPH and put more focus on specific numerical techniques for volcanic plume modeling.
-In the classical SPH formulation a fluid is divided into a number of particles whose location is updated at every time step. An approximation to the field variables (velocity, density and pressure) is obtained by interpolation of particle quantities using a kernel.
-We will only consider kernel functions with compact support. Derivatives of variables are converted into derivatives of the kernel function, and different formulations of the derivatives can be shown to possess various properties.
+A mesh-free Lagragian method, SPH, is selected to numerically solve the governing equations. There are several review papers by \citet{monaghan1992smoothed, monaghan2005smoothed, rosswog2009astrophysical, price2012smoothed, monaghan2012smoothed}, giving a pretty comprehensive view of SPH. We only refer here to the representation of the constitutive equations in SPH and put more focus on specific numerical techniques for volcanic plume modeling.
+In the classical SPH formulation a fluid is represented by a number of particles whose location is updated at every time step. An approximation to the field variables (velocity, density and pressure) is obtained by interpolation of particle quantities using a kernel.
+We will only consider kernel functions with compact support. Derivatives of variables are converted into derivatives of the kernel function, and different formulations of the derivatives can be shown to possess different properties.
 
 \section{Fundamental principles}
-There are several different ways for discretizing governing equations (PDEs or ODEs) with SPH. We present here one of them following \citet{monaghan1992smoothed, monaghan2005smoothed, monaghan2012smoothed}. The starting point of approximating a function with SPH is the translation property of the Dirac function $\delta(\textbf{x})$, for an arbitrary function $A(\textbf{x})$, the following equation holds. 
+There are several ways  of discretizing governing equations (PDEs or ODEs) with SPH. We present here one of them following \citet{monaghan1992smoothed, monaghan2005smoothed, monaghan2012smoothed}. The starting point of approximating a function with SPH is the translation property of the Dirac function $\delta(\textbf{x})$. For an arbitrary function $A(\textbf{x})$, the following equation holds. 
 \begin{equation}
 A\left(\textbf{x}\right)=\int_{-\infty}^{\infty} A\left(\textbf{x} \prime\right) \delta \left(\textbf{x} \prime - \textbf{x}\right) d\textbf{x} \prime
 \label{eq:Dirac-translation}
@@ -30,7 +30,7 @@ w\left(\textbf{x}- \textbf{x} \prime, h\right) = w\left(\textbf{x} \prime - \tex
 The weighting function also needs to satisfy conditions such as positivity and compact support. In addition, the kernel function must be monotonically decreasing with the distance between particles.
 
 There is a wide variety of possible weighting functions that can satisfy these requirements, such as spline functions (with different orders) and Gaussian functions. Generally, the accuracy increases with the order of the polynomials of the kernel function, but the computational cost also increases as number of interactions increase. 
-We are adopting a truncated Gaussian function as the weighting function in our simulation.
+We adopt a truncated Gaussian function as the weighting function in our simulation.
 \begin{equation}
 w\left(\textbf{x} - \textbf{x} \prime \right) = 
 \begin{cases} 
@@ -62,7 +62,7 @@ Recall that $d\textbf{x}\prime = \dfrac{dm (\textbf{x} \prime)}{\rho (\textbf{x}
 \label{eq:SPH-approximation-sum}
 \end{equation}
 where the summation is over all the particles within the region of compact support (See Eq. (\ref{eq:SPH-kernel})) of the weighting function. 
-Gradient terms may be straightforwardly calculated by taking the derivative of Eq. (\ref{eq:SPH-approximation-sum}), giving
+Gradient terms may be simply calculated by taking the derivative of Eq. (\ref{eq:SPH-approximation-sum}), giving
 \begin{equation}
 \begin{split}
 <\nabla A\left(\textbf{x}\right)> & = \dfrac{\partial }{\partial \textbf{x}} \int_{\Omega} A\left(\textbf{x} \prime\right) w\left(\textbf{x}-\textbf{x}\prime, h\right) d\textbf{x}\prime + O\left(h^2\right) \\
@@ -81,7 +81,7 @@ For vector quantities the expressions are similar, simply replacing $A$ with $\t
 
 \section{Adaptive smoothing length}
 The spatial resolution of SPH is determined by the smoothing length, $h$. It is common for each particle to have its own time dependent smoothing length which adapts according to the local number density of particles. Adaptive smoothing length can automatically match the resolution length $h$ to the scale of the system and is especially necessary in certain scenarios where density varies in a large range, for example, Sj$\ddot{o}$green tests.
-The adaptivity of smoothing length is less important for incompressible flow while pretty necessary for compressible flow. There are two different ways to adjust the smoothing length.
+The adaptivity of smoothing length is less important for incompressible flow simulations while pretty necessary for compressible flow. There are two different ways to adjust the smoothing length.
 
 One robust way of specifying the smoothing length $h$ is proposed by \citet{gingold1978binary}. He suggested that changing of the smoothing length should be related to density according to: 
 \begin{equation}
@@ -89,7 +89,7 @@ h_a = \sigma \left(\frac{m_a}{\rho_a}\right)^{\frac{1}{d}}
 \label{eq:adptive-sml-Gingold}
 \end{equation}
 Where $d$ is number of dimensions and he suggested to use 1.3 for $\sigma$.
-There are many variations of this formulation. For example, \citet{steinmetz1993capabilities} suggested to use averaged local density to determine the smoothing length. \citet{hernquist1989treesph} suggested to keep number of neighbour particles constant by adjusting smoothing length. \citet{inutsuka2002reformulation} suggested to use a more smooth density to avoid large varying of smoothing length within the neighborhood of each particle.
+There are many variations of this formulation. For example, \citet{steinmetz1993capabilities} suggested to use averaged local density to determine the smoothing length. \citet{hernquist1989treesph} suggested to keep number of neighbour particles constant by adjusting smoothing length. \citet{inutsuka2002reformulation} suggested to use a more smooth density to avoid large variations of smoothing length within the neighborhood of each particle.
 Equation (\ref{eq:adptive-sml-Gingold}) is a nonlinear equation for the single variable $\rho_a$  which can be solved rapidly by iteration, possibly combined with a Newton-Raphson scheme.
 
 The introduction of time varying smoothing lengths can, however, lead to serious problems with and momentum energy conservation in certain situations \citep{hernquist1993some}. Few attention has been paid to losing of strict conservation feature in original SPH discretization when smoothing length varies in time and space. The problem arises from the fact that the use of variable smoothing lengths means that additional terms \citep{nelson1994variable} should appear in the particle equations of motion. In our implementation, we adopt a simple strategy \citep{evrard1988beyond}: $h$ takes the average of $h_a$ and $h_b$. Such strategy can help restore the strict conservation feature of classical SPH discretization providing that the two paired particles are in ``pool of neighbouring particles" of each other. 
@@ -203,7 +203,7 @@ The first order derivative term can be obtained in a similar way:
 For problems of higher dimension, the expressions for function approximation are exactly the same as Eq. (\ref{eq:CSP-function-approximation-1d}), even though the derivation is different. The first order derivative can be obtained by solving system of equations explicitly or numerically \citep{chen1999improvement}.
 
 \section{Mass fraction update}
-Air and erupted material are represented by two different sets of SPH particles (or discretization points) in the model. Based on assumptions we made in section \ref{sec:chp2-Mathematical-Description}, only density is different on two sides of the interface and needs to be updated respectively for each phase. Such assumption also eliminates the surface tension forces across the interface reducing numerical challenges. The updating of density is exactly the same as Eq. (\ref{eq:ns-sph-d}) in spirit. Particles of phase 1 are not counted while evaluating density of phase 2 and vice versa. Updating of density is then based on the following discretized equations.
+Air and erupted material are represented by two different sets of SPH particles (or discretization points) in the model. Based on assumptions we made in section \ref{sec:chp2-Mathematical-Description}, only density is different on two sides of the interface and needs to be updated respectively for each phase. Such an assumption also eliminates the surface tension forces across the interface reducing numerical challenges. The updating of density is exactly the same as Eq. (\ref{eq:ns-sph-d}) in spirit. Particles of phase 1 are not counted while evaluating density of phase 2 and vice versa. Updating of density is then based on the following discretized equations.
 \begin{equation}
 <\rho_{\alpha}^a>=\frac{\sum m_b w_{\alpha b} \left(h\right)}{\sum \frac{m_b}{\rho_b} w_{\alpha b} \left(h\right) +\sum \frac{m_j}{\rho_j} w_{\alpha j} \left(h\right)} \label{eq:gov-sph-d1}
 \end{equation}
