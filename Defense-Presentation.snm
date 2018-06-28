@@ -50,4 +50,5 @@
 \beamer@slide {fig:2cases_efficiency}{33}
 \beamer@slide {fig:JPUE_all}{37}
 \beamer@slide {fig:JPUE_all}{37}
-\beamer@slide {fig:Plume-SPH-Pinatubo-SO2-cloud}{39}
+\beamer@slide {eq:Poisson-plume-shape}{42}
+\beamer@slide {fig:Plume-SPH-Pinatubo-SO2-cloud}{44}

@@ -983,7 +983,7 @@ SWCH: switch pressure ghost particles to real. ADPP: add new pressure ghost part
 %----------------------------------------------------------------------------
 
 %------------------------------------------------------------------
-\section{Verification, Validation and Application}
+\section{Verification, Validation}
 \begin{frame}{Verification and Validation}
 \begin{figure}
 \flushleft
@@ -1025,8 +1025,8 @@ Eruption conditions: vent velocity is 275 $m\cdot s^{-1}$, vent gas mass fractio
   height=1.3\linewidth,
   activate=onclick,
   deactivate=onclick,
-  addresource=./PPT/mssfrc_sml400.mp4,
-  flashvars={source=./PPT/mssfrc_sml400.mp4 &loop=true}
+  addresource=./Movies/mssfrc_sml400.mp4,
+  flashvars={source=./Movies/mssfrc_sml400.mp4 &loop=true}
   ]{}{VPlayer.swf}
 \end{minipage}
 \hfill
@@ -1037,8 +1037,8 @@ Eruption conditions: vent velocity is 275 $m\cdot s^{-1}$, vent gas mass fractio
   height=1.3\linewidth,
   activate=onclick,
   deactivate=onclick,
-  addresource=./PPT/cut_view_mssfrc_sml400.mp4,
-  flashvars={source=./PPT/cut_view_mssfrc_sml400.mp4 &loop=true}]
+  addresource=./Movies/cut_view_mssfrc_sml400.mp4,
+  flashvars={source=./Movies/cut_view_mssfrc_sml400.mp4 &loop=true}]
   {}{VPlayer.swf}
 \end{minipage}
 \hfill  
@@ -1049,8 +1049,8 @@ Eruption conditions: vent velocity is 275 $m\cdot s^{-1}$, vent gas mass fractio
   height=1.3\linewidth,
   activate=onclick,
   deactivate=onclick,
-  addresource=./PPT/cut_view_Involved_sml400.mp4,
-  flashvars={source=./PPT/cut_view_Involved_sml400.mp4 &loop=true}]
+  addresource=./Movies/cut_view_Involved_sml400.mp4,
+  flashvars={source=./Movies/cut_view_Involved_sml400.mp4 &loop=true}]
   {}{VPlayer.swf}
 \end{minipage}
 %  
@@ -1062,7 +1062,123 @@ Eruption conditions: vent velocity is 275 $m\cdot s^{-1}$, vent gas mass fractio
 %
 \end{frame}
 
-\begin{frame}{Application of our model}
+\begin{frame}{Short Period Eruption}
+\begin{minipage}{.49\linewidth} 
+  \includemedia[
+  label=vidB,
+  width=0.99\linewidth,
+  height=1.3\linewidth,
+  activate=onclick,
+  deactivate=onclick,
+  addresource=./Movies/sml400-100s-massfrc.mp4,
+  flashvars={source=./sml400-100s-massfrc.mp4 &loop=true}]
+  {}{VPlayer.swf}
+\end{minipage}
+\hfill  
+\begin{minipage}{.49\linewidth} 
+  \includemedia[
+  label=vidC,
+  width=0.99\linewidth,
+  height=1.3\linewidth,
+  activate=onclick,
+  deactivate=onclick,
+  addresource=./Movies/sml400-300s-massfrc.mp4,
+  flashvars={source=./Movies/sml400-300s-massfrc.mp4 &loop=true}]
+  {}{VPlayer.swf}
+\end{minipage}
+%  
+  \mediabutton[
+  mediacommand=vidA:playPause,
+  mediacommand=vidB:playPause,
+  mediacommand=vidC:playPause,
+]{\fbox{Play/Pause}}
+%
+\end{frame}
+
+\begin{frame}{GSPH and RSPH}
+\begin{minipage}{.49\linewidth} 
+  \includemedia[
+  label=vidB,
+  width=0.99\linewidth,
+  height=1.3\linewidth,
+  activate=onclick,
+  deactivate=onclick,
+  addresource=./Movies/GSPH_mssfrc_640_HSV.mp4,
+  flashvars={source=./Movies/GSPH_mssfrc_640_HSV.mp4  &loop=true}]
+  {}{VPlayer.swf}
+\end{minipage}
+\hfill  
+\begin{minipage}{.49\linewidth} 
+  \includemedia[
+  label=vidC,
+  width=0.99\linewidth,
+  height=1.3\linewidth,
+  activate=onclick,
+  deactivate=onclick,
+  addresource=./Movies/RSPH_mssfrc_HSV.mp4,
+  flashvars={source=./Movies/RSPH_mssfrc_HSV.mp4 &loop=true}]
+  {}{VPlayer.swf}
+\end{minipage}
+%  
+  \mediabutton[
+  mediacommand=vidA:playPause,
+  mediacommand=vidB:playPause,
+  mediacommand=vidC:playPause,
+]{\fbox{Play/Pause}}
+%
+\end{frame}
+
+\section{Plume-SPH + VATDs}
+\begin{frame}{Initial Ash Cloud}
+\begin{minipage}{.67\textwidth}
+\textbf{Create Initial condition based on 1D model}
+\begin{itemize}
+\item 1D model predict $H_{max}$, $H_{width}$ and $R_{width}$.
+\item\begin{equation}
+H=H_{max} - 0.5 H_{width}*P+H_{width}R
+\label{eq:Poisson-plume-shape}
+\end{equation}
+$P$: random number from a Poisson
+distribution of unit mean \\ 
+$R$: a uniformly distributed random number between 0 and 1
+\item Distribute ash horizontally uniformally according to $R_{width}$
+\item Generate the initial ash cloud.
+\end{itemize}
+\end{minipage}
+\noindent
+\begin{minipage}{.32\textwidth}
+\includegraphics[width=0.99\textwidth]{./PPT/Creat_initial_Ash}
+\end{minipage} % This must go next to 
+%
+\end{frame}
+
+\begin{frame}{Vertical ash distribution}
+\begin{figure}
+    \centering
+    \begin{minipage}{.30 \textwidth}
+        \centering
+        \includegraphics[width=0.90 \textwidth]{Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z}
+    \end{minipage}%
+    \begin{minipage}{.30 \textwidth}
+        \centering
+        \includegraphics[width=0.90 \textwidth]{Chapter-7/Figures/Plume-SPH-ParticleDis-z}
+    \end{minipage}%
+    \begin{minipage}{.30 \textwidth}
+        \centering
+        \includegraphics[width=0.90 \textwidth]{Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z}
+    \end{minipage}% 
+%    \caption{Particle distribution of initial ash cloud in vertical direction. The picture to the left is corresponding to initial ash cloud obtained from Plume-SPH output. The second picture is corresponding to ash distribution truncated by a elevation threshold of $15000 m$. Third picture is corresponding to Poisson distribution with maximum height based on bent simulation. Another parameter, the vertical spread, in the expression of Poisson plume shape is $6662 m$. The picture to the right is corresponding to Suzuki distribution with maximum height based on bent simulation. Another parameter in Suzuki distribution, the shape factor, is $4$. The $x$ axis is the percentage of particle number for Plume-SPH and Poisson, is the percentage of erupted material mass percentage for Suzuki.}
+\end{figure}
+
+\begin{figure}
+\center
+\includegraphics[width=0.60 \textwidth]{Chapter-7/Figures/Restart-PUFF} 
+%    \caption{Mimic successive eruption with intermittent pulsing releasing of ash particles. $t_I$ is the period of pulsing release. $t_I$ equals to physical time of plume simulation.}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Ash transportation}
 \begin{figure}[!htb]
     \centering
     \begin{minipage}{.295\textwidth}
@@ -1113,13 +1229,12 @@ Eruption conditions: vent velocity is 275 $m\cdot s^{-1}$, vent gas mass fractio
 \begin{frame}{}
 \center
 \Large{
-Thanks to my committee member \\
+Thanks to my committee members (Dr. Patra, Dr. Bursik, Dr. Pitamn, Dr. Bauman) \\
+Thanks to 
 Thanks to my friends \\
 Thanks to my family \\
 }
 
-\center
-zhixuanc@buffalo.edu
 \end{frame}
 
 

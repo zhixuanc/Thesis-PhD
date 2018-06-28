@@ -3,4 +3,5 @@
 \beamer@sectionintoc {2}{Physics Model}{6}{0}{2}
 \beamer@sectionintoc {3}{SPH Discretization}{10}{0}{3}
 \beamer@sectionintoc {4}{Architecture, Data Management and Parallelization}{22}{0}{4}
-\beamer@sectionintoc {5}{Verification, Validation and Application}{36}{0}{5}
+\beamer@sectionintoc {5}{Verification, Validation}{36}{0}{5}
+\beamer@sectionintoc {6}{Plume-SPH + VATDs}{41}{0}{6}
