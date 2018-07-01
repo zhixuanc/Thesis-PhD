@@ -48,6 +48,10 @@
 \usepackage{media9}
 \usepackage{textpos}
 
+%For footcitation: 
+\usepackage[style=authortitle,backend=bibtex]{biblatex}
+\addbibresource{dissertation.bib}
+
 %\setbeamerfont{footline}{size=\fontsize{9}{11}\selectfont}
 
 \title [Plume-SPH]{Smoothed particle hydrodynamics (SPH) method for compressible multiphase turbulent flow with application to volcanic plume modeling}
@@ -93,8 +97,7 @@ University at Buffalo, Buffalo, New York, U.S.A.
 %   yourself) who are reading the slides online
 
 \subject{Numerical modelling}
-% This is only inserted into the PDF information catalog. Can be left
-% out. 
+% This is only inserted into the PDF information catalog. Can be left out. 
 
 % If you have a file called "university-logo-filename.xxx", where xxx
 % is a graphic format that can be processed by latex or pdflatex,
@@ -126,6 +129,13 @@ University at Buffalo, Buffalo, New York, U.S.A.
 %-----------------------------------------------------
 % Section and subsections will appear in the presentation overview
 % and table of contents.
+
+
+\begin{frame}{Outline}
+  \tableofcontents
+%   You might wish to add the option [pausesections]
+\end{frame}
+
 \section{Overview}
 \begin{frame}{Volcano plume and Hazards}
 \noindent
@@ -156,7 +166,7 @@ University at Buffalo, Buffalo, New York, U.S.A.
 \end{figure}
 
 \begin{block} {Numerical tools}
-\textbf{Four} 3D plumes models, more than \textbf{Ten} 1D plume models, several VATDs.
+\textbf{Four} 3D plumes models, around \textbf{Ten} 1D plume models, several VATDs.
 \end{block}
 \end{frame}
 
@@ -181,17 +191,12 @@ University at Buffalo, Buffalo, New York, U.S.A.
 \end{figure}
 \end{frame}
 
-%\begin{frame}[pausesections]{Outline}
-%  \tableofcontents
-  % You might wish to add the option [pausesections]
-%\end{frame}
 %---------------------------------------------------------------------------
 \section{Physics Model}
 
 \begin{frame}{Governing Equations}
-\noindent
+The governing equations\footcite{suzuki2005numerical}:\\
 \begin{minipage}{.505\textwidth}
-The governing equations and EOS for closing the system of equations:
 \begin{equation}
 \dfrac{\partial \rho}{\partial t} + \nabla \cdot \left(\rho \textbf{v}\right) = 0 \label{eq:gov-cs-rho}
 \end{equation}
@@ -203,8 +208,8 @@ The governing equations and EOS for closing the system of equations:
 \end{equation}
 \begin{equation}
 \dfrac{\partial \rho E}{\partial t} + \nabla \cdot \left[\left(\rho E + p \right)\textbf{v}\right] = \rho \textbf{g} \cdot\textbf{v} \label{eq:gov-cs-e}
-\end{equation}
-%
+\end{equation}\\
+EOS for closing the system of equations
 \begin{equation}
 p = \left(\gamma_m - 1\right)\rho e \label{eq:EOS}
 \end{equation}
@@ -212,13 +217,6 @@ p = \left(\gamma_m - 1\right)\rho e \label{eq:EOS}
 \end{minipage} % This must go next to `\end{minipage}`
 %
 \begin{minipage}{.01\textwidth}
-$\vert$\\
-$\vert$\\
-$\vert$\\
-$\vert$\\
-$\vert$\\
-$\vert$\\
-$\vert$\\
 $\vert$\\
 $\vert$\\
 $\vert$\\
@@ -357,8 +355,8 @@ $\vert$\\
 \begin{minipage}{.43\textwidth}
 \begin{itemize}
 \item only $\rho$ changes accross second wave, only $\xi$ changes accross the third wave.
-\item \textbf{$\xi$ keeps constant accross nonlinear waves}
-\item \textbf{$\xi$ keeps constant accross rarefaction}
+\item \textbf{$\xi$ keeps constant accross shocks}
+\item \textbf{$\xi$ keeps constant accross rarefactions}
 \item $c_m$, $\gamma_m$ depends on $\xi$.
 \end{itemize} 
 \begin{figure}
@@ -422,15 +420,13 @@ Particle position is also updated at every time step.
 \end{frame}
 
 \begin{frame}{Tensile Instability and Corrected Derivatives}
-\begin{minipage}{0.99 \textwidth}
-The classical SPH method suffers from tensile instability and boundary deficiency. To address these difficulties, adopt a corrected SPH formulation.
+To handle tensile instability and boundary deficiency, adopt a corrected SPH formulation \footcite{chen1999improvement}.
 \begin{equation}
 \begin{split}
 \int_{\Omega} A\left(x\right) w\left(x- x_a, h\right) dx &= 
 A_a \int_{\Omega} w\left(x - x_a, h\right) dx \\  & +A_{xa} \int_{\Omega} \left(x-x_a\right) w\left(x - x_a, h\right) dx +...
 \end{split}
 \end{equation}
-\end{minipage}
 \\
 \noindent
 \begin{minipage}{0.99 \textwidth}
@@ -460,7 +456,7 @@ $\vert$\\
 \label{eq:SPH-kernel-normalization-prop}
 \end{equation}
 \begin{equation}
-\sum_b m_b \dfrac{x_b - x_a}{\rho_b} w_{ab} = 1 
+\sum_b m_b \dfrac{x_b - x_a}{\rho_b} \nabla w_{ab} = 1 
 \label{eq:SPH-kernel-normalization-prop}
 \end{equation}
 \end{minipage}
@@ -504,10 +500,10 @@ In our model, only density needs to be updated respectively for each phase:
 \end{frame}
 
 \begin{frame}{A LANS Type Turbulence Model}
-To capture sub-particle scale momentum and energy exchange due to turbulence, we adopt a LANS type turbulence model, the $SPH-\varepsilon$ turbulence model and extend it for compressible flow.\\
+To capture sub-particle scale momentum and energy exchange due to turbulence, we adopt a LANS type turbulence model \footcite{monaghan2011turbulence}.\\
 \noindent
 \begin{minipage}{0.65 \textwidth}
-Velocity is filtered (averaged) by
+Velocity is filtered (averaged) in space
 \begin{equation}
 \widehat{\textbf{v}}\left(\textbf{x}\right)=\textbf{v}\left(\textbf{x}\right)+ \epsilon \int \left(\textbf{v}\left(\textbf{x} \prime\right)-\textbf{v}\left(\textbf{x}\right)\right)G\left(\vert \textbf{x} \prime - \textbf{x} \vert, l\right) d\textbf{x} \prime
 \end{equation}
@@ -519,7 +515,7 @@ Where $G$ satisfies:
 \lim _{l \rightarrow 0} G\left(\textbf{x} \prime-\textbf{x}, l\right) =  \delta \left(\textbf{x} \prime - \textbf{x}\right)
 \label{eq:SPH_kernel_delta}
 \end{equation}
-Averaging introduces an extra turbulence stress term:
+Introduces an extra turbulence stress term:
 \begin{equation}
 \Phi_{ab}=\dfrac{\varepsilon}{2} \dfrac{\textbf{v}_{ab} \cdot \textbf{v}_{ab}}{\rho_b} \label{eq:_LANS_trub_stress}
 \end{equation}
@@ -537,7 +533,7 @@ Averaging introduces an extra turbulence stress term:
 \end{frame}
 
 \begin{frame}{Turbulent Energy Exhange}
-Use Reynolds analogy to model the heat transfer due to turbulence.
+Use Reynolds analogy to model the heat transfer due to turbulence \footcite{gmd-2017-119}.
 \begin{equation}
 Pr=\dfrac{C_p \mu}{\kappa}
 \end{equation}
@@ -577,10 +573,11 @@ Where
 \mu_{ab} = \dfrac{h \textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\textbf{x}_{ab}^2 + \left(\eta h\right)^2} 
 \end{equation}
 
-However, the artificial dissipation introduced in this usually is more than needed resulting to undesirable smearing of discontinuity and overwhelms fluid turbulence.
+However, the artificial dissipation introduced in this way usually is more than needed resulting in undesirable smearing of discontinuity and overwhelms fluid turbulence.
 \end{frame}
 
-\begin{frame}{GSPH and RSPH}
+\begin{frame}{RSPH and GSPH}
+Discretized formulation of RSPH is exactly the same as that of GSPH \footcite{inutsuka2002reformulation}.
 \begin{equation}
 \ddot{\textbf{x}}_{a} = <\dfrac{d \textbf{v}_{a}}{dt}>= -\sum_{b} m_{b} p_{a b}^{\ast} \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-v-simple-form}
@@ -589,18 +586,95 @@ However, the artificial dissipation introduced in this usually is more than need
 <\dfrac{d e_{a}}{dt}>= - \sum_{b} m_{b} p_{a b}^{\ast} [\textbf{v}_{a b}^{\ast} - \dot{\textbf{x}}_{a}^{\ast}] \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-e-simple-form}
 \end{equation}
-
-\begin{figure}
-    \center
-	\includegraphics[width=0.5 \textwidth]{./Chapter-4/Figures/RSPH-GSPH}
-%    \caption{Evaluating of the starred state for  RSPH and GSPH implementations.
-%Particles are located at $\textbf{x}_{a} $ and $ \textbf{x}_{ b}$, and the local Riemann problem is defined by the constant states $(u, p)_a$ and $(u,p)_b$. The horizontal bold solid line at time $\Delta t$ indicates the interval on which to evaluate the solution of the Riemann problem. The dark ellipse is an example sample point of RSPH with the random number. The white ellipse indicates the stationary state, which is the starred state in GSPH.}
-    \label{fig:pick-up-state-GSPH-RSPH}
-\end{figure}
+$\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
+\begin{equation}
+\dot{\textbf{x}}_{a}^{\ast} = <\textbf{v}_{a}> + \frac{\Delta t}{2} \ddot{\textbf{x}}_{a}
+\label{eq:gsph-time-centered-velocity}
+\end{equation}
+Recall the classical SPH discretization
+\begin{align}
+\left\langle\dfrac{d \textbf{v}_a}{d t}\right\rangle = -\sum_b m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \nabla_a w_{a b}\left(h\right) +\textbf{g} \label{eq:ns-sph-v} \\
+\left\langle\dfrac{d e_a}{d t}\right\rangle=
+ 0.5\sum_b m_b \textbf{v}_{a b}\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \cdot \nabla_a w_{a b}\left(h\right) \label{eq:ns-sph-e}
+\end{align}
 \end{frame}
 
-\begin{frame}{GSPH and RSPH}
-%\textbf{RSPH Vs Classical SPH} 
+\begin{frame}{RSPH}
+The basic procedure of RSPH\footcite{zhixuan2018rcm}\\
+\begin{minipage}{0.45\textwidth}
+\begin{itemize}
+\item Establish a local coordinate system, project and define left and right states
+\item Solve this local Riemann problem 
+\item Sample the solution obtaining $p^{\ast}, u^{\ast}$ at $\theta \frac{|\textbf{x}_{a} - \textbf{x}_{ b}|}{2}$ relative to origin
+\item Project $p^{\ast}, u^{\ast}$  back to the global coordinate system, get $p^{\ast}$ and $\textbf{v}^{\ast}$;
+\item Update the particle positions and physical quantities.
+\end{itemize}
+\end{minipage}
+\begin{minipage}{.54 \textwidth}
+\begin{equation}
+\hat{r}_{a b}= \frac{\textbf{x}_{a} - \textbf{x}_{ b}}{|\textbf{x}_{a} - \textbf{x}_{ b}|}
+\end{equation}
+\begin{equation}
+u_{a}= \textbf{v}_{a} \cdot \hat{r}_{a b}
+~~~~~~~~~~
+u_{b}= \textbf{v}_{b} \cdot \hat{r}_{a b}
+\label{eq:RP-project-2-local}
+\end{equation}
+\begin{figure}
+    \center
+	\includegraphics[width=0.85 \textwidth]{./Chapter-4/Figures/RSPH-GSPH}
+    \label{fig:pick-up-state-GSPH-RSPH}
+\end{figure}
+
+\end{minipage}
+\end{frame}
+%
+\begin{frame}{Benchmark Tests}
+ \center{ 
+    \begin{minipage}{.3\textwidth}
+        \includegraphics[width=0.90 \textwidth,height=0.7\textwidth]{./Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-rho}
+    \end{minipage}%
+    \begin{minipage}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.90 \textwidth]{./Chapter-4/Figures/GSPH-Sod/GRod-RCM-rho}
+    \end{minipage}%  
+    \begin{minipage}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.90 \textwidth]{./Chapter-4/Figures/double_exp/Dexp-RCM-rho}
+    \end{minipage}}% 
+   \\
+   \center{    
+     \begin{minipage}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.90 \textwidth]{./Chapter-4/Figures/double_shock/Dshock-RCM-rho-Rp6}
+    \end{minipage}%
+    \begin{minipage}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.90 \textwidth]{./Chapter-4/Figures/Sjogreen/Sjogreen-RCM-rho-Adpt1}
+    \end{minipage}% 
+    \begin{minipage}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.90 \textwidth]{./Chapter-4/Figures/strong-blast/StrBlst-RCM-rho-Rp3}
+    \end{minipage}}
+    \\
+\begin{figure}
+    \centering
+    \begin{minipage}{.3\textwidth}
+        \centering
+        \includegraphics[width=0.95 \textwidth]{./Chapter-4/Figures/Accuracy-des}
+    \end{minipage}%
+    \begin{minipage}{.3 \textwidth}
+        \centering
+        \includegraphics[width=0.95 \textwidth]{./Chapter-4/Figures/Accuracy-vel}
+    \end{minipage}%
+    \begin{minipage}{.3 \textwidth}
+        \centering
+        \includegraphics[width=0.95 \textwidth]{./Chapter-4/Figures/Accuracy-pre}
+    \end{minipage}%  
+\end{figure}     
+\end{frame}
+%
+\begin{frame}{GSPH Vs RSPH}
 \begin{figure}[t]
     \centering
     \begin{minipage}{.33 \textwidth}
@@ -617,24 +691,27 @@ However, the artificial dissipation introduced in this usually is more than need
     \end{minipage}%    
 \end{figure}
 
-	\begin{minipage}[b][][c]{.24 \textwidth}
+\begin{minipage}{0.35 \textwidth}
+%\begin{figure}[t]
 		\centering
-        \includegraphics[width=0.90 \textwidth]{./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-zoom}
-    \end{minipage}% 
-    \begin{minipage}[b][][c]{.24 \textwidth}
-    		\centering
-        \includegraphics[width=0.90 \textwidth]{./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-zoom}
-    \end{minipage}%
-	\begin{minipage}[b][][b]{.25 \textwidth}
-%        \centering GSPH
+        \includegraphics[width=0.99 \textwidth]{./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-v-zoom}   
+        
+        \centering
+        \includegraphics[width=0.99 \textwidth]{./Chapter-4/Figures/Sod/RCM-Sod-GSPH-compare-e-zoom}
+%\end{figure}
+\end{minipage}
+%
+\begin{minipage}{0.64 \textwidth}
+	\begin{minipage}[b][][b]{.49 \textwidth}
+       \centering \small{GSPH}
         \includegraphics[width=0.99 \textwidth]{./Chapter-4/Figures/GSPH-HLLC-t3-cutView}
     \end{minipage}%
     \centering
-    \begin{minipage}[b][][b]{.25 \textwidth}
-%        \centering RSPH
+    \begin{minipage}[b][][b]{.49 \textwidth}
+        \centering \small{RSPH}
         \includegraphics[width=0.99 \textwidth]{./Chapter-4/Figures/RSPH-t3-cutView}
     \end{minipage}%
-    
+\end{minipage} 
 \end{frame}
 
 \begin{frame}{Discretized Governing Equations}
@@ -692,25 +769,41 @@ However, the artificial dissipation introduced in this usually is more than need
 
 %-----------------------------------------------------
 \section{Architecture, Data Management and Parallelization}
-\begin{frame}{Requirements and Our Strategies}
+\begin{frame}{Requirements and Strategies}
+All requirements and strategies with respect to code architecture \footcite{cao2017data}.
 \begin{figure}[!t]
 \centering
-\includegraphics[scale=0.35]{./PPT/Requirement_all}
+\includegraphics[width=0.83 \textwidth]{./PPT/Requirement_all}
 %\caption{Scope of the problem}
 \label{fig:Requirements}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Paricles and Buckets}
-The basic data structures used to support SPH are particles and buckets. %Both are need as $C++$ classes.
-\begin{block}{Particle Class}
+\centering
+\begin{minipage}{0.66\linewidth}
+The basic data structures used to support SPH are particles and buckets %, both are defined as C++ classes
+\begin{block}{Particle Class  -- Discretization}
 Information that is contained in particle objects :
 Unique ID (key), affiliation, {\bf primary variables, secondary variables}, flags and neighbor information.
 \end{block}
-\begin{block}{Bucket Class}
+\begin{block}{Bucket Class -- Partition and neighbour searching}
 Information that is contained in bucket objects :
 Unique ID (key), affiliation, dimension information, flags, neighbor information and contained particles.
 \end{block}
+\end{minipage}
+\begin{minipage}{0.33 \linewidth}
+\begin{figure}
+\flushright
+\includegraphics[width=0.75\textwidth]{./PPT/Neighbor-Search}
+\\
+\flushright
+\includegraphics[width=0.75\textwidth]{./Chapter-5/Figures/SFC_particles_buckets}
+\\
+\flushright
+\includegraphics[width=0.70\textwidth]{./Chapter-5/Figures/SFC_particles_buckets_partition}
+\end{figure}
+\end{minipage}
 \end{frame}
 
 \begin{frame}{SFC-based Index}
@@ -742,22 +835,7 @@ Then the time-dependent key can be expressed as: $(k,n)$
 \end{block}
 \end{frame}
 
-\begin{frame}{Neighbour Searching and Domain Decomposition}
-\begin{figure}
-\flushleft
-\includegraphics[width=0.415\textwidth]{./PPT/Neighor-searching-noBG}
-\hfill
-\includegraphics[width=0.415\textwidth]{./PPT/Neighbor-Search}
-\end{figure}
-\begin{figure}
-\flushleft
-\includegraphics[width=0.385\textwidth]{./Chapter-5/Figures/SFC_particles_buckets}
-\hfill
-\includegraphics[width=0.415\textwidth]{./Chapter-5/Figures/SFC_particles_buckets_partition}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Hash Table with External Linked List}
+\begin{frame}{Data management}
 \begin{minipage}{0.66 \textwidth}
 \begin{figure}
 \includegraphics[width=0.95\textwidth]{./Chapter-5/Figures/Particle_adding_with_link}
@@ -787,31 +865,47 @@ To avoid a non-uniform sparse hash table, only plug the first number, $k$, of th
 \end{block}
 \end{frame}
 
-\begin{frame}{Load Balance (Naive way)}
-\begin{figure}
-\flushleft
-\includegraphics[width=0.3\textwidth]{./PPT/SFC_bucket_decomposition}
-\hfill
-\includegraphics[width=0.305\textwidth]{./PPT/SFC_bucket_decomposition_Partition}
-\end{figure}
-
-\begin{figure}
-\flushleft
-\includegraphics[width=0.93\textwidth]{./PPT/Domain-Decomposition}
-\end{figure}
-
-Where $N_i$ is the total number of particles contained by the $ith$ bucket. $N_i$ can be used to indicate computational workload associated that bucket. 
-
-Cut the SFC into pieces so that workload are splitted alomost equally.
-\begin{equation}
-\sum_{i=1}^{m} N_i \approx \sum_{i=m+1}^{n} N_i
-\end{equation}
-\end{frame}
+%\begin{frame}{Load Balance (Naive way)}
+%\begin{figure}
+%\flushleft
+%\includegraphics[width=0.3\textwidth]{./PPT/SFC_bucket_decomposition}
+%\hfill
+%\includegraphics[width=0.305\textwidth]{./PPT/SFC_bucket_decomposition_Partition}
+%\end{figure}
+%
+%\begin{figure}
+%\flushleft
+%\includegraphics[width=0.93\textwidth]{./PPT/Domain-Decomposition}
+%\end{figure}
+%
+%Where $N_i$ is the total number of particles contained by the $ith$ bucket. $N_i$ can be used to indicate computational workload associated that bucket. 
+%
+%Cut the SFC into pieces so that workload are splitted alomost equally.
+%\begin{equation}
+%\sum_{i=1}^{m} N_i \approx \sum_{i=m+1}^{n} N_i
+%\end{equation}
+%\end{frame}
 
 \begin{frame}{Load Balance (Weighted particles)}
+\begin{minipage}{0.3 \textwidth}
+\begin{figure}
+\includegraphics[width=0.99\textwidth]{./PPT/SFC_bucket_decomposition}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.69 \textwidth}
+\begin{figure}
+\includegraphics[width=0.99\textwidth]{./PPT/Domain-Decomposition}
+\end{figure}
+$$
+\sum_{i=1}^{m} N_i \approx \sum_{i=m+1}^{n} N_i 
+~~~~~
+W^{bucket} = \sum_i^{N^{particle}} W_i^{particle}
+$$
+\end{minipage}
+
 %The domain is decomposed by cutting SFC of buckets into pieces of equal work load. 
-The work load of each bucket can be more precisely calculated by summing up workload of all particles contained in that bucket. 
-The work load associated to each particle is calibrated based on profilling data.
+%The work load of each bucket can be more precisely calculated by summing up workload of all particles contained in that bucket. 
+%The work load associated to each particle is calibrated based on profilling data.
 \begin{table}
 \resizebox{0.9\textwidth}{!}{  
 	  \begin{tabular}{lrrrrrr}
@@ -829,7 +923,7 @@ The work load associated to each particle is calibrated based on profilling data
 	  \end{tabular}}
       \label{tab:Computational_cost_steps}
 \end{table}
-Compared with uniform particle weight, calibrated particle weights is computationally more efficient.
+%%Compared with uniform particle weight, calibrated particle weights is computationally more efficient.
 \begin{table}
 \resizebox{0.7 \textwidth}{!}{  
 	  \begin{tabular}{lrrrr}
@@ -844,55 +938,55 @@ Compared with uniform particle weight, calibrated particle weights is computatio
 \end{table}
 \end{frame}
 
-\begin{frame}{Data Synchronization (Guest bucket)}
-\begin{minipage}[b]{0.25\textwidth}
-\begin{figure}
-\includegraphics[width=\textwidth]{./PPT/Data_Syn_P0}
-\end{figure}
-\end{minipage}
+%\begin{frame}{Data Synchronization (Guest bucket)}
+%\begin{minipage}[b]{0.25\textwidth}
+%\begin{figure}
+%\includegraphics[width=\textwidth]{./PPT/Data_Syn_P0}
+%\end{figure}
+%\end{minipage}
+%
+%\begin{minipage}[b]{0.78\textwidth}
+%\begin{figure}
+%\flushright
+%\includegraphics[width=0.615\textwidth]{./PPT/Data_Syn}
+%\end{figure}
+%\end{minipage}
+%\begin{minipage}[b]{0.21\textwidth}
+%\begin{figure}
+%\flushright
+%\includegraphics[width=0.78\textwidth]{./PPT/Data_Syn_P2}
+%\end{figure}
+%\end{minipage}
+%
+%\begin{minipage}[b]{0.25\textwidth}
+%\begin{figure}
+%\includegraphics[width=\textwidth]{./PPT/Data_Syn_P1}
+%\end{figure}
+%\end{minipage}
+%\end{frame}
+%
+%\begin{frame}{Data Synchronization}
+%
+%\begin{minipage}{0.38\textwidth}
+%\begin{figure}
+%\flushleft
+%\includegraphics[width=0.99\textwidth]{./Chapter-5/Figures/Work_flow}
+%\end{figure}
+%\end{minipage}
+%\begin{minipage}{0.61\textwidth}
+%Data are synchronized after every update:
+%
+%\begin{itemize}
+%\item Pack up data to send them out together
+%\item User defined MPI data structure for particles and buckets
+%\item Overlap computing/pack/unpack with communication (with MPI non-blocking point to point communication)
+%\item Avoid sending out useless data (e.g. neighbour information)
+%\end{itemize}
+%\end{minipage}
+%
+%\end{frame}
 
-\begin{minipage}[b]{0.78\textwidth}
-\begin{figure}
-\flushright
-\includegraphics[width=0.615\textwidth]{./PPT/Data_Syn}
-\end{figure}
-\end{minipage}
-\begin{minipage}[b]{0.21\textwidth}
-\begin{figure}
-\flushright
-\includegraphics[width=0.78\textwidth]{./PPT/Data_Syn_P2}
-\end{figure}
-\end{minipage}
-
-\begin{minipage}[b]{0.25\textwidth}
-\begin{figure}
-\includegraphics[width=\textwidth]{./PPT/Data_Syn_P1}
-\end{figure}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Data Synchronization}
-
-\begin{minipage}{0.38\textwidth}
-\begin{figure}
-\flushleft
-\includegraphics[width=0.99\textwidth]{./Chapter-5/Figures/Work_flow}
-\end{figure}
-\end{minipage}
-\begin{minipage}{0.61\textwidth}
-Data are synchronized after every update:
-
-\begin{itemize}
-\item Pack up data to send them out together
-\item User defined MPI data structure for particles and buckets
-\item Overlap computing/pack/unpack with communication (with MPI non-blocking point to point communication)
-\item Avoid sending out useless data (e.g. neighbour information)
-\end{itemize}
-\end{minipage}
-
-\end{frame}
-
-\begin{frame}{Dynamic Load Balance (Load check interval)}
+\begin{frame}{Load Balance check Interval}
 The movement of particles and expansion of computational domain can lead to large load imbalance. We check the work load balance with an optimized interval and then redecompose the domain when necessary to restore work load balance.
 \begin{figure}
 \flushleft
@@ -900,6 +994,78 @@ The movement of particles and expansion of computational domain can lead to larg
 \hfill
 \includegraphics[width=0.435\textwidth]{./Chapter-5/Figures/int_bar}
 \end{figure}
+\end{frame}
+
+%\begin{frame}{Dynamic Halo Domain}
+%A lot of CPU time will be spent
+%on computing associated with these stationary particles. The computational cost will be greatly reduced if the computational domain changes adaptively during simulation. 
+%\begin{block}{Our strategy}
+%  \begin{itemize}
+%  \item {
+%    An involvement flag to distinguish different states of involvement
+%  }
+%  \item {
+%    A scan function to monitor the outermost layer of the domain
+%  }
+%  \item {
+%    Shift pressure ghost particles into real particles when necessary
+%  }
+%  \end{itemize}
+%\end{block}
+%%
+%\begin{figure}
+%\flushleft
+%\includegraphics[width=0.33\textwidth]{./PPT/t=66_msfrc}
+%\hfill
+%\includegraphics[width=0.33\textwidth]{./PPT/t=66_bctp}
+%\hfill
+%\includegraphics[width=0.33\textwidth]{./PPT/t=66_involved}
+%\end{figure}
+%\end{frame}
+
+\begin{frame}{Dynamic Halo Domain}
+\begin{minipage}{0.285 \textwidth}
+\begin{figure}
+\flushleft
+\includegraphics[width=0.99\textwidth]{./PPT/t=66_msfrc}
+\\
+\flushleft
+\includegraphics[width=0.99\textwidth]{./PPT/t=66_bctp}
+\\
+\flushleft
+\includegraphics[width=0.99\textwidth]{./PPT/t=66_involved}
+\end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}{0.34\textwidth}
+\begin{figure}
+\includegraphics[width=\textwidth]{./Chapter-5/Figures/Work_flow_adjust}
+\end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}{0.355 \textwidth}
+\begin{scriptsize}
+\linespread{1.0}{
+SWCH: switch pressure ghost particles to real. ADPP: add new pressure ghost particles. ADWP: add wall ghost particles. SCN: scann the outmost layer of the domain}
+\end{scriptsize}
+\center
+\resizebox{0.99 \textwidth}{!}{
+    \begin{tabular}{lrr}
+    \hline
+    Functions & Total time (s) & Called times\\
+    	\hline
+    UPME & 2954.8 & 201 \\
+    UPP & 38.55 &  201 \\
+    ADPP & 21.51 & 3 \\
+    ADWP  & 8.88 & 3 \\
+    SWCH & 0.08 &  2 \\
+    SCN  & 7.72 & 201 \\
+    \hline
+  \end{tabular}}
+\begin{figure}
+\includegraphics[width=0.95\textwidth]  {./Chapter-5/Figures/adj_vs_no}
+\end{figure}
+\end{minipage}
 \end{frame}
 
 %\section{Scalability Test}
@@ -915,70 +1081,6 @@ The movement of particles and expansion of computational domain can lead to larg
 \label{fig:2cases_efficiency}
 \end{figure}
 %
-\end{frame}
-
-\begin{frame}{Dynamic Halo Domain}
-A lot of CPU time will be spent
-on computing associated with these stationary particles. The computational cost will be greatly reduced if the computational domain changes adaptively during simulation. 
-\begin{block}{Our strategy}
-  \begin{itemize}
-  \item {
-    An involvement flag to distinguish different states of involvement
-  }
-  \item {
-    A scan function to monitor the outermost layer of the domain
-  }
-  \item {
-    Shift pressure ghost particles into real particles when necessary
-  }
-  \end{itemize}
-\end{block}
-%
-\begin{figure}
-\flushleft
-\includegraphics[width=0.33\textwidth]{./PPT/t=66_msfrc}
-\hfill
-\includegraphics[width=0.33\textwidth]{./PPT/t=66_bctp}
-\hfill
-\includegraphics[width=0.33\textwidth]{./PPT/t=66_involved}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Dynamic Halo Domain}
-%
-\begin{figure}[!tbp]
-%
-\begin{minipage}[b]{0.39\textwidth}
-\begin{figure}
-\includegraphics[width=\textwidth]{./Chapter-5/Figures/Work_flow_adjust}
-\end{figure}
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.60\textwidth}
-\begin{scriptsize}
-\linespread{1.0}{
-SWCH: switch pressure ghost particles to real. ADPP: add new pressure ghost particles. ADWP: add wall ghost particles. SCN: scann the outmost layer of the domain}
-\end{scriptsize}
-\center
-\resizebox{0.70 \textwidth}{!}{
-    \begin{tabular}{lrr}
-    \hline
-    Functions & Total time (s) & Called times\\
-    	\hline
-    UPME & 2954.8 & 201 \\
-    UPP & 38.55 &  201 \\
-    ADPP & 21.51 & 3 \\
-    ADWP  & 8.88 & 3 \\
-    SWCH & 0.08 &  2 \\
-    SCN  & 7.72 & 201 \\
-    \hline
-  \end{tabular}}
-\begin{figure}
-\includegraphics[width=0.70\textwidth]  {./Chapter-5/Figures/adj_vs_no}
-\end{figure}
-\end{minipage}
-%
-\end{figure}
 \end{frame}
 %----------------------------------------------------------------------------
 
@@ -1225,7 +1327,13 @@ $R$: a uniformly distributed random number between 0 and 1
 \end{frame}
 
 %----------------------------------------------------------------------------
-
+\section{Future Work}
+\begin{frame} {Future work}
+\begin{figure}
+	\includegraphics[width=0.5\textwidth]{./PPT/Future-Work}
+\end{figure}
+\end{frame}
+%
 \begin{frame}{}
 \center
 \huge{
@@ -1233,9 +1341,9 @@ Thanks to \\}
 \Large
 {
 Dr. Patra \\
-Dr. Bursik, Dr. Pitamn, Dr. Bauman \\
-Dr. Jones, Dinesh, Hoession, Romana, Topher \\
-Prashant, Lekha, Qingyuan, Abishek, Ali, Renette, Miaoda \\
+Dr. Bursik, Dr. Pitman, Dr. Bauman \\
+Dr. Jones, Dinesh, Hossein, Ramona, Topher \\
+Prashant, Lekha, Qingyuan, Abhishek, Ali, Renette, Miaoda ...\\
 My family \\
 }
 \end{frame}

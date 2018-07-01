@@ -1,0 +1,240 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{zhixuan2018rcm}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Cao}{C.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patra}{P.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pitman}{P.}%
+     {E.~B.}{E.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CZPPEB1}
+  \strng{fullhash}{CZPPEB1}
+  \field{sortinit}{C}
+  \field{title}{A Random Choice SPH Scheme with Adaptive Viscosity (submitted)}
+  \field{journaltitle}{Journal of Computational Physics}
+  \field{year}{2018}
+\endentry
+
+\entry{gmd-2017-119}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Cao}{C.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patra}{P.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bursik}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pitman}{P.}%
+     {E.~B.}{E.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CZ+1}
+  \strng{fullhash}{CZPABMPEBJM1}
+  \field{sortinit}{C}
+  \verb{doi}
+  \verb 10.5194/gmd-2017-119
+  \endverb
+  \field{pages}{1\bibrangedash 37}
+  \field{title}{Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume
+  model based on smoothed particle hydrodynamics}
+  \verb{url}
+  \verb https://www.geosci-model-dev-discuss.net/gmd-2017-119/
+  \endverb
+  \field{volume}{2017}
+  \field{journaltitle}{Geoscientific Model Development Discussions}
+  \field{year}{2017}
+\endentry
+
+\entry{cao2017data}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Cao}{C.}%
+     {Zhixuan}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patra}{P.}%
+     {Abani}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {Matthew}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{CZPAJM1}
+  \strng{fullhash}{CZPAJM1}
+  \field{sortinit}{C}
+  \field{pages}{786\bibrangedash 795}
+  \field{title}{Data Management and Volcano Plume Simulation with Parallel SPH
+  Method and Dynamic Halo Domains}
+  \field{volume}{108}
+  \field{journaltitle}{Procedia Computer Science}
+  \field{year}{2017}
+\endentry
+
+\entry{chen1999improvement}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chen}{C.}%
+     {JK}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Beraun}{B.}%
+     {JE}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jih}{J.}%
+     {CJ}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{CJBJJC1}
+  \strng{fullhash}{CJBJJC1}
+  \field{sortinit}{C}
+  \field{number}{4}
+  \field{pages}{279\bibrangedash 287}
+  \field{title}{An improvement for tensile instability in smoothed particle
+  hydrodynamics}
+  \field{volume}{23}
+  \field{journaltitle}{Computational Mechanics}
+  \field{year}{1999}
+\endentry
+
+\entry{inutsuka2002reformulation}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Inutsuka}{I.}%
+     {Shu-ichiro}{S.-i.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{ISi1}
+  \strng{fullhash}{ISi1}
+  \field{sortinit}{I}
+  \field{number}{1}
+  \field{pages}{238\bibrangedash 267}
+  \field{title}{Reformulation of smoothed particle hydrodynamics with Riemann
+  solver}
+  \field{volume}{179}
+  \field{journaltitle}{Journal of Computational Physics}
+  \field{year}{2002}
+\endentry
+
+\entry{monaghan2011turbulence}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Monaghan}{M.}%
+     {Joe~J}{J.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{MJJ1}
+  \strng{fullhash}{MJJ1}
+  \field{sortinit}{M}
+  \field{number}{4}
+  \field{pages}{360\bibrangedash 370}
+  \field{title}{A turbulence model for Smoothed Particle Hydrodynamics}
+  \field{volume}{30}
+  \field{journaltitle}{European Journal of Mechanics-B/Fluids}
+  \field{year}{2011}
+\endentry
+
+\entry{suzuki2005numerical}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Suzuki}{S.}%
+     {Yujiro~J}{Y.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koyaguchi}{K.}%
+     {Takehiro}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ogawa}{O.}%
+     {Masaki}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hachisu}{H.}%
+     {Izumi}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{SYJ+1}
+  \strng{fullhash}{SYJKTOMHI1}
+  \field{sortinit}{S}
+  \field{number}{B8}
+  \field{title}{A numerical study of turbulent mixing in eruption clouds using
+  a three-dimensional fluid dynamics model}
+  \field{volume}{110}
+  \field{journaltitle}{Journal of Geophysical Research: Solid Earth}
+  \field{year}{2005}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
