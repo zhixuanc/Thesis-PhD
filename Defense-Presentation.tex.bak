@@ -179,7 +179,7 @@ University at Buffalo, Buffalo, New York, U.S.A.
 
 \begin{figure}
 \centering
-\includegraphics[width=.75\textwidth]{./PPT/Why_SPH}
+\includegraphics[width=.72\textwidth]{./PPT/Why_SPH}
 \end{figure}
 \end{frame}
 
@@ -370,9 +370,8 @@ $\vert$\\
 
 \section{SPH Discretization}
 \begin{frame}{SPH Basic}
-\noindent
+Approximation of function $A$ and its derivative \footcite{monaghan2005smoothed}
 \begin{minipage}{0.63 \textwidth}
-Approximation of function $A$ and its derivative:
 \begin{equation}
 <A\left(\textbf{x}\right)> \approx \sum_b m_b \dfrac{A_b}{\rho_b} w\left(\textbf{x}-\textbf{x}_b, h\right)
 \label{eq:SPH-approximation-sum}
@@ -402,7 +401,7 @@ w\left(\textbf{x} - \textbf{x}_b\right) =
 \end{equation}
 \end{frame}
 
-\begin{frame}{SPH Basic-Example (Euler euqation) }
+\begin{frame}{Example (Euler euqation) }
 \begin{align}
 <\rho_a> = \sum_b m_b w_{ab} \left(h\right) \label{eq:ns-sph-d} \\
 \left\langle\dfrac{d \textbf{v}_a}{d t}\right\rangle = -\sum_b m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \nabla_a w_{a b}\left(h\right) +\textbf{g} \label{eq:ns-sph-v} \\
@@ -417,6 +416,73 @@ Particle position is also updated at every time step.
 \begin{equation}
 \left\langle\dfrac{d \textbf{x}_a}{dt}\right\rangle = \textbf{v}_a \label{eq:SPH-update-pos}
 \end{equation}
+\end{frame}
+
+\begin{frame}{Adaptive smoothing length and symmetry}
+Variations with respect to $h$ :
+$h=h_b$ and $h= \frac{h_a+h_b}{2}$
+\begin{minipage}{.43\textwidth}
+        \centering
+        \includegraphics[width=0.88 \textwidth]{./Chapter-3/Figures/Adapt-NoAdapt}
+\end{minipage}%
+\begin{minipage}{.43\textwidth}
+        \centering
+        \includegraphics[width=0.88 \textwidth]{./Chapter-3/Figures/SM-Adapt-MEs}
+\end{minipage}%
+\\
+For compressible, adaptive $h$ is necessary:
+\begin{equation}
+h_a = \sigma \left(\frac{m_a}{\rho_a}\right)^{\frac{1}{d}}
+\label{eq:adptive-sml-Gingold}
+\end{equation}
+Where $d$ is number of dimensions and $\sigma=1.3 $ recommended \footcite{gingold1978binary}.
+\\
+\center
+\begin{minipage}{.43\textwidth}
+        \centering
+        \includegraphics[width=0.88 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-d}
+\end{minipage}%
+\begin{minipage}{.43 \textwidth}
+        \centering
+        \includegraphics[width=0.88 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-v}
+\end{minipage}%
+\end{frame}
+
+\begin{frame}{Numerical perturbation}
+\begin{itemize}
+\item density varies in a larger area in compressible
+\item The atmosphere is stratified so need unequal particle mass
+\end{itemize}
+Leading to $h$ varying in a larger area. Averaging formulation guarantees that conservation property of of SPH discretization still valid. But it will cause artificial fluctuation. \\
+\begin{minipage}{.480\linewidth} 
+  \includemedia[
+  label=vidB,
+  width=0.90\linewidth,
+  height=0.6\linewidth,
+  activate=onclick,
+  deactivate=onclick,
+  addresource=./Movies/No_purterbation-from-sml-of-bc.mp4,
+  flashvars={source=./No_purterbation-from-sml-of-bc.mp4 &loop=true}]
+  {}{VPlayer.swf}
+\end{minipage}
+\hfill
+\begin{minipage}{.480\linewidth} 
+  \includemedia[
+  label=vidC,
+  width=0.90\linewidth,
+  height=0.6\linewidth,
+  activate=onclick,
+  deactivate=onclick,
+  addresource=./Movies/Purterbation-from-sml-of-bc.mp4,
+  flashvars={source=./Movies/Purterbation-from-sml-of-bc.mp4 &loop=true}]
+  {}{VPlayer.swf}
+\end{minipage}
+%  
+  \mediabutton[
+  mediacommand=vidA:playPause,
+  mediacommand=vidB:playPause,
+  mediacommand=vidC:playPause,
+]{\fbox{Play/Pause}}
 \end{frame}
 
 \begin{frame}{Tensile Instability and Corrected Derivatives}
@@ -573,11 +639,14 @@ Where
 \mu_{ab} = \dfrac{h \textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\textbf{x}_{ab}^2 + \left(\eta h\right)^2} 
 \end{equation}
 
-However, the artificial dissipation introduced in this way usually is more than needed resulting in undesirable smearing of discontinuity and overwhelms fluid turbulence.
+%Such artificial dissipation usually is more than needed resulting in undesirable smearing of discontinuity and overdamp turbulence mixing. \\
+Artificial viscosity coefficients are usually tuned \footcite{cullen2010inviscid} to avoid undesirable damping.\\
+$\alpha = 0.3$, $\beta = 0.6$ is adopted in our implementation \\
+GSPH \footcite{inutsuka2002reformulation}, which combines Godunov's idea with SPH introduces artificial viscosity implicitly \\
 \end{frame}
 
-\begin{frame}{RSPH and GSPH}
-Discretized formulation of RSPH is exactly the same as that of GSPH \footcite{inutsuka2002reformulation}.
+\begin{frame}{RSPH}
+The new scheme integrate Random Choice \footcite{chorin1976random} Method into SPH.
 \begin{equation}
 \ddot{\textbf{x}}_{a} = <\dfrac{d \textbf{v}_{a}}{dt}>= -\sum_{b} m_{b} p_{a b}^{\ast} \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-v-simple-form}
@@ -737,31 +806,33 @@ u_{b}= \textbf{v}_{b} \cdot \hat{r}_{a b}
 \end{frame}
 
 \begin{frame}{Boundary Conditions}
-\noindent
-\begin{minipage}{0.69 \textwidth}
+All boundary conditions are imposed using ghost particles. Wall boundary condition is imposed in the same way as Dinesh \footcite{kumar2013parallel}.
+\center 
+\begin{minipage}{0.61 \textwidth}
 \begin{figure}
-\includegraphics[width=0.99 \textwidth]{./PPT/BC_shot}
+\includegraphics[width=0.89 \textwidth]{./PPT/BC_shot}
 \end{figure}
 \end{minipage}
-\begin{minipage}{0.30 \textwidth}
+\begin{minipage}{0.27 \textwidth}
 \begin{figure}
-\includegraphics[width=0.99 \textwidth]{./PPT/BC_real}
+\includegraphics[width=0.85\textwidth]{./PPT/BC_real}
 \end{figure}
 \end{minipage}
 \\
+\flushleft
 \begin{minipage}{0.325 \textwidth}
 \begin{figure}
-\includegraphics[width=0.99 \textwidth]{./PPT/BC_wall2}
-\end{figure}
-\end{minipage}
-\begin{minipage}{0.325 \textwidth}
-\begin{figure}
-\includegraphics[width=0.95 \textwidth]{./PPT/BC_erupt}
+\includegraphics[width=0.71 \textwidth]{./PPT/BC_wall2}
 \end{figure}
 \end{minipage}
 \begin{minipage}{0.325\textwidth}
 \begin{figure}
-\includegraphics[width=0.99 \textwidth]{./PPT/BC_wall1}
+\includegraphics[width=0.67 \textwidth]{./PPT/BC_erupt}
+\end{figure}
+\end{minipage}
+\begin{minipage}{0.325\textwidth}
+\begin{figure}
+\includegraphics[width=0.71 \textwidth]{./PPT/BC_wall1}
 \end{figure}
 \end{minipage}
 \end{frame}
@@ -770,10 +841,10 @@ u_{b}= \textbf{v}_{b} \cdot \hat{r}_{a b}
 %-----------------------------------------------------
 \section{Architecture, Data Management and Parallelization}
 \begin{frame}{Requirements and Strategies}
-All requirements and strategies with respect to code architecture \footcite{cao2017data}.
+The basic code architecture, domain decomposition and data management strategies are based on well developed FV solver \footcite{pitman2003computing} and FE solver \footcite{patra2003data}. 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.83 \textwidth]{./PPT/Requirement_all}
+\includegraphics[width=0.63 \textwidth]{./PPT/Requirement_all}
 %\caption{Scope of the problem}
 \label{fig:Requirements}
 \end{figure}
@@ -807,7 +878,7 @@ Unique ID (key), affiliation, dimension information, flags, neighbor information
 \end{frame}
 
 \begin{frame}{SFC-based Index}
-SFC based key is defined as: $k = h_n (\textbf{x})$, Where $h_n (\textbf{x}): [0,1]^n \rightarrow [0,1]$
+SFC \footcite{sagan2012space} based key is defined as: $k = h_n (\textbf{x})$, Where $h_n (\textbf{x}): [0,1]^n \rightarrow [0,1]$
 \begin{block}{Features of SFC-based Index}
   \begin{itemize}
   \item {
@@ -987,12 +1058,12 @@ $$
 %\end{frame}
 
 \begin{frame}{Load Balance check Interval}
-The movement of particles and expansion of computational domain can lead to large load imbalance. We check the work load balance with an optimized interval and then redecompose the domain when necessary to restore work load balance.
+The movement of particles can lead to large load imbalance. We check the work load balance with an optimized interval and then repartition the domain to restore work load balance \footcite{cao2017data}.
 \begin{figure}
 \flushleft
-\includegraphics[width=0.385\textwidth]{./Chapter-5/Figures/Work_flow}
+\includegraphics[width=0.370\textwidth]{./Chapter-5/Figures/Work_flow}
 \hfill
-\includegraphics[width=0.435\textwidth]{./Chapter-5/Figures/int_bar}
+\includegraphics[width=0.42\textwidth]{./Chapter-5/Figures/int_bar}
 \end{figure}
 \end{frame}
 
@@ -1080,13 +1151,14 @@ SWCH: switch pressure ghost particles to real. ADPP: add new pressure ghost part
 \caption{The left figure shows strong scalability tests result. middle figure is the zoomed view of first one. It is obviously shown that strong scalability is better when the problem size is larger. The right figure is weak scalability test results}
 \label{fig:2cases_efficiency}
 \end{figure}
-%
+%\footcite{cao2017data}
 \end{frame}
 %----------------------------------------------------------------------------
 
 %------------------------------------------------------------------
 \section{Verification, Validation}
 \begin{frame}{Verification and Validation}
+Shock tube test and JPUE test verification: dimensionless velocity and concetration distribution along centraline and across the cross-section compared with experiments \footcite{papanicolaou1988investigations}
 \begin{figure}
 \flushleft
 \includegraphics[width=0.195\textwidth]{./PPT/shocktube}
@@ -1098,10 +1170,9 @@ SWCH: switch pressure ghost particles to real. ADPP: add new pressure ghost part
 \includegraphics[width=0.195\textwidth]{./Chapter-6/Figures/velo_along_axis}
 \hfill
 \includegraphics[width=0.195\textwidth]{./Chapter-6/Figures/vel_cross}
-\caption{Shock tube test and JPUE test verification: dimensionless velocity and concetration distribution along centraline and across the cross-section.}
-\label{fig:JPUE_all}
 \end{figure}
 %
+Simulation of Pinatubo (Philippines, 15 June 1991) : integrated are profiles compared with existing mesh-based models \footcite{costa2016results}
 \begin{figure}
 \flushleft
 \includegraphics[width=0.17\textwidth]{./Chapter-6/Figures/radius_strong}
@@ -1111,8 +1182,6 @@ SWCH: switch pressure ghost particles to real. ADPP: add new pressure ghost part
 \includegraphics[width=0.17\textwidth]{./Chapter-6/Figures/density_strong}
 \hfill
 \includegraphics[width=0.40\textwidth]{./Chapter-6/Figures/msfrac}
-\caption{Simulation of Pinatubo (Philippines, 15 June 1991) : integrated are profiles compared with existing mesh-based models}
-\label{fig:JPUE_all}
 \end{figure}
 \end{frame}
 
@@ -1173,7 +1242,7 @@ Eruption conditions: vent velocity is 275 $m\cdot s^{-1}$, vent gas mass fractio
   activate=onclick,
   deactivate=onclick,
   addresource=./Movies/sml400-100s-massfrc.mp4,
-  flashvars={source=./sml400-100s-massfrc.mp4 &loop=true}]
+  flashvars={source=./Movies/sml400-100s-massfrc.mp4 &loop=true}]
   {}{VPlayer.swf}
 \end{minipage}
 \hfill  
@@ -1281,48 +1350,47 @@ $R$: a uniformly distributed random number between 0 and 1
 \end{frame}
 
 \begin{frame}{Ash transportation}
+Compare simulated ash transportation with observation \footcite{guo2004particles}
 \begin{figure}[!htb]
     \centering
-    \begin{minipage}{.295\textwidth}
+    \begin{minipage}{.293\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/bent-23hr-ash}
     \end{minipage}%
-    \begin{minipage}{.295\textwidth}
+    \begin{minipage}{.293\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/SPH-Plume-23hr-ash}
     \end{minipage}%
-    \begin{minipage}{.295\textwidth}
+    \begin{minipage}{.293\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/OB-ash-23hr-ash}
+        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-23hr-ash}
     \end{minipage}% 
     \\
-        \begin{minipage}{.295\textwidth}
+        \begin{minipage}{.293\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/bent-31hr-ash}
     \end{minipage}%
-    \begin{minipage}{.295\textwidth}
+    \begin{minipage}{.293\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/SPH-Plume-31hr-ash}
     \end{minipage}%
-    \begin{minipage}{.295\textwidth}
+    \begin{minipage}{.293\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/OB-ash-31hr-ash}
+        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-31hr-ash}
     \end{minipage}% 
     \\
-        \begin{minipage}{.295\textwidth}
+        \begin{minipage}{.293\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/bent-55hr-ash}
     \end{minipage}%
-    \begin{minipage}{.295\textwidth}
+    \begin{minipage}{.293\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/SPH-Plume-55hr-ash}
     \end{minipage}%
-    \begin{minipage}{.295\textwidth}
+    \begin{minipage}{.293\textwidth}
         \centering
-        \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/OB-ash-55hr-ash}
+        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-55hr-ash}
     \end{minipage}% 
-    \caption{Taking the output of the SPH plume model as initial condition to forecast volcanic ash transportation.}
-    \label{fig:Plume-SPH-Pinatubo-SO2-cloud}
 \end{figure}
 \end{frame}
 
@@ -1330,7 +1398,7 @@ $R$: a uniformly distributed random number between 0 and 1
 \section{Future Work}
 \begin{frame} {Future work}
 \begin{figure}
-	\includegraphics[width=0.7 \textwidth]{./PPT/Future-Work}
+	\includegraphics[width=0.5\textwidth]{./PPT/Future-Work}
 \end{figure}
 \end{frame}
 %
