@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 JUL 2018 00:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 JUL 2018 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2449,12 +2449,12 @@ Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 8
  [27
 
 ]
-<./PPT/Requirement_all.pdf, id=1360, 648.4225pt x 449.68pt>
+<./PPT/Requirement_all.pdf, id=1360, 655.44875pt x 474.77374pt>
 File: ./PPT/Requirement_all.pdf Graphic file (type pdf)
 
 <use ./PPT/Requirement_all.pdf>
 Package pdftex.def Info: ./PPT/Requirement_all.pdf used on input line 851.
-(pdftex.def)             Requested size: 215.6477pt x 149.55446pt.
+(pdftex.def)             Requested size: 215.6477pt x 156.20493pt.
 File: ./PPT/UB_Secondary_SUNY_Small.png Graphic file (type png)
  <use ./PPT/UB_Secondary_SUNY_Small.png>
 Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 8
@@ -2986,15 +2986,15 @@ Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 1
 File: ./PPT/Creat_initial_Ash.pdf Graphic file (type pdf)
 
 <use ./PPT/Creat_initial_Ash.pdf>
-Package pdftex.def Info: ./PPT/Creat_initial_Ash.pdf used on input line 1324.
+Package pdftex.def Info: ./PPT/Creat_initial_Ash.pdf used on input line 1325.
 (pdftex.def)             Requested size: 108.44223pt x 235.10683pt.
 File: ./PPT/UB_Secondary_SUNY_Small.png Graphic file (type png)
  <use ./PPT/UB_Secondary_SUNY_Small.png>
 Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 1
-324.
+325.
 (pdftex.def)             Requested size: 71.1044pt x 21.33107pt.
 
-Overfull \vbox (6.03624pt too high) detected at line 1324
+Overfull \vbox (6.03624pt too high) detected at line 1325
  []
 
 [42
@@ -3011,7 +3011,7 @@ File: Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png Graphic file (t
 ype png)
  <use Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.
-png used on input line 1350.
+png used on input line 1351.
 (pdftex.def)             Requested size: 92.42003pt x 115.5207pt.
 
 <Chapter-7/Figures/Plume-SPH-ParticleDis-z.png, id=2136, 562.1pt x 702.625pt>
@@ -3019,7 +3019,7 @@ File: Chapter-7/Figures/Plume-SPH-ParticleDis-z.png Graphic file (type png)
 
 <use Chapter-7/Figures/Plume-SPH-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Plume-SPH-ParticleDis-z.png used on 
-input line 1350.
+input line 1351.
 (pdftex.def)             Requested size: 92.42003pt x 115.5207pt.
 
 <Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png, id=2137, 562.1pt x 702.62
@@ -3028,7 +3028,7 @@ File: Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png Graphic file (type pn
 g)
  <use Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png>
 Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png us
-ed on input line 1350.
+ed on input line 1351.
 (pdftex.def)             Requested size: 92.42003pt x 115.5207pt.
 
 <Chapter-7/Figures/Restart-PUFF.pdf, id=2138, 1643.13875pt x 689.57625pt>
@@ -3036,13 +3036,13 @@ File: Chapter-7/Figures/Restart-PUFF.pdf Graphic file (type pdf)
 
 <use Chapter-7/Figures/Restart-PUFF.pdf>
 Package pdftex.def Info: Chapter-7/Figures/Restart-PUFF.pdf used on input line 
-1350.
+1351.
 (pdftex.def)             Requested size: 205.37926pt x 86.1863pt.
 File: ./PPT/UB_Secondary_SUNY_Small.png Graphic file (type png)
 
 <use ./PPT/UB_Secondary_SUNY_Small.png>
 Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 1
-350.
+351.
 (pdftex.def)             Requested size: 71.1044pt x 21.33107pt.
  [43
 
@@ -3059,7 +3059,7 @@ File: ./Chapter-7/Figures/bent-23hr-ash.jpg Graphic file (type jpg)
 
 <use ./Chapter-7/Figures/bent-23hr-ash.jpg>
 Package pdftex.def Info: ./Chapter-7/Figures/bent-23hr-ash.jpg used on input li
-ne 1395.
+ne 1396.
 (pdftex.def)             Requested size: 99.28989pt x 55.95744pt.
 
 <./Chapter-7/Figures/SPH-Plume-23hr-ash.jpg, id=2460, 1766.6pt x 995.72pt>
@@ -3067,7 +3067,7 @@ File: ./Chapter-7/Figures/SPH-Plume-23hr-ash.jpg Graphic file (type jpg)
 
 <use ./Chapter-7/Figures/SPH-Plume-23hr-ash.jpg>
 Package pdftex.def Info: ./Chapter-7/Figures/SPH-Plume-23hr-ash.jpg used on inp
-ut line 1395.
+ut line 1396.
 (pdftex.def)             Requested size: 99.28989pt x 55.95744pt.
 
 <./Chapter-7/Figures/OB-ash-23hr-ash.png, id=2461, 571.13374pt x 375.4025pt>
@@ -3075,7 +3075,7 @@ File: ./Chapter-7/Figures/OB-ash-23hr-ash.png Graphic file (type png)
 
 <use ./Chapter-7/Figures/OB-ash-23hr-ash.png>
 Package pdftex.def Info: ./Chapter-7/Figures/OB-ash-23hr-ash.png used on input 
-line 1395.
+line 1396.
 (pdftex.def)             Requested size: 94.27496pt x 61.96164pt.
 
 <./Chapter-7/Figures/bent-31hr-ash.jpg, id=2462, 1766.6pt x 995.72pt>
@@ -3083,7 +3083,7 @@ File: ./Chapter-7/Figures/bent-31hr-ash.jpg Graphic file (type jpg)
 
 <use ./Chapter-7/Figures/bent-31hr-ash.jpg>
 Package pdftex.def Info: ./Chapter-7/Figures/bent-31hr-ash.jpg used on input li
-ne 1395.
+ne 1396.
 (pdftex.def)             Requested size: 99.28989pt x 55.95744pt.
 
 <./Chapter-7/Figures/SPH-Plume-31hr-ash.jpg, id=2463, 1766.6pt x 995.72pt>
@@ -3091,7 +3091,7 @@ File: ./Chapter-7/Figures/SPH-Plume-31hr-ash.jpg Graphic file (type jpg)
 
 <use ./Chapter-7/Figures/SPH-Plume-31hr-ash.jpg>
 Package pdftex.def Info: ./Chapter-7/Figures/SPH-Plume-31hr-ash.jpg used on inp
-ut line 1395.
+ut line 1396.
 (pdftex.def)             Requested size: 99.28989pt x 55.95744pt.
 
 <./Chapter-7/Figures/OB-ash-31hr-ash.png, id=2464, 570.13pt x 372.39125pt>
@@ -3099,7 +3099,7 @@ File: ./Chapter-7/Figures/OB-ash-31hr-ash.png Graphic file (type png)
 
 <use ./Chapter-7/Figures/OB-ash-31hr-ash.png>
 Package pdftex.def Info: ./Chapter-7/Figures/OB-ash-31hr-ash.png used on input 
-line 1395.
+line 1396.
 (pdftex.def)             Requested size: 94.27496pt x 61.57259pt.
 
 <./Chapter-7/Figures/bent-55hr-ash.jpg, id=2465, 1766.6pt x 995.72pt>
@@ -3107,7 +3107,7 @@ File: ./Chapter-7/Figures/bent-55hr-ash.jpg Graphic file (type jpg)
 
 <use ./Chapter-7/Figures/bent-55hr-ash.jpg>
 Package pdftex.def Info: ./Chapter-7/Figures/bent-55hr-ash.jpg used on input li
-ne 1395.
+ne 1396.
 (pdftex.def)             Requested size: 99.28989pt x 55.95744pt.
 
 <./Chapter-7/Figures/SPH-Plume-55hr-ash.jpg, id=2466, 1766.6pt x 995.72pt>
@@ -3115,7 +3115,7 @@ File: ./Chapter-7/Figures/SPH-Plume-55hr-ash.jpg Graphic file (type jpg)
 
 <use ./Chapter-7/Figures/SPH-Plume-55hr-ash.jpg>
 Package pdftex.def Info: ./Chapter-7/Figures/SPH-Plume-55hr-ash.jpg used on inp
-ut line 1395.
+ut line 1396.
 (pdftex.def)             Requested size: 99.28989pt x 55.95744pt.
 
 <./Chapter-7/Figures/OB-ash-55hr-ash.png, id=2467, 569.12625pt x 374.39874pt>
@@ -3123,16 +3123,16 @@ File: ./Chapter-7/Figures/OB-ash-55hr-ash.png Graphic file (type png)
 
 <use ./Chapter-7/Figures/OB-ash-55hr-ash.png>
 Package pdftex.def Info: ./Chapter-7/Figures/OB-ash-55hr-ash.png used on input 
-line 1395.
+line 1396.
 (pdftex.def)             Requested size: 94.27496pt x 62.01877pt.
 File: ./PPT/UB_Secondary_SUNY_Small.png Graphic file (type png)
 
 <use ./PPT/UB_Secondary_SUNY_Small.png>
 Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 1
-395.
+396.
 (pdftex.def)             Requested size: 71.1044pt x 21.33107pt.
 
-Overfull \vbox (4.97237pt too high) detected at line 1395
+Overfull \vbox (4.97237pt too high) detected at line 1396
  []
 
 [44
@@ -3146,7 +3146,7 @@ SPH-Plume-55hr-ash.jpg> <./Chapter-7/Figures/OB-ash-55hr-ash.png>]
 File: ./PPT/UB_Secondary_SUNY_Small.png Graphic file (type png)
  <use ./PPT/UB_Secondary_SUNY_Small.png>
 Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 1
-398.
+399.
 (pdftex.def)             Requested size: 71.1044pt x 21.33107pt.
  [45
 
@@ -3155,12 +3155,12 @@ Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 1
 File: ./PPT/Future-Work.pdf Graphic file (type pdf)
 
 <use ./PPT/Future-Work.pdf>
-Package pdftex.def Info: ./PPT/Future-Work.pdf used on input line 1403.
+Package pdftex.def Info: ./PPT/Future-Work.pdf used on input line 1404.
 (pdftex.def)             Requested size: 171.14764pt x 167.55917pt.
 File: ./PPT/UB_Secondary_SUNY_Small.png Graphic file (type png)
  <use ./PPT/UB_Secondary_SUNY_Small.png>
 Package pdftex.def Info: ./PPT/UB_Secondary_SUNY_Small.png used on input line 1
-403.
+404.
 (pdftex.def)             Requested size: 71.1044pt x 21.33107pt.
  [46
 
@@ -3194,11 +3194,11 @@ Package atenddvi Info: Last page = 47.
 * 
 * There were multiply-defined labels!
 *************************************************
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1450.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 1450.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1451.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 1451.
 (./Defense-Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1450.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1450.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1451.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1451.
 
 Package rerunfilecheck Info: File `Defense-Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 83B6DA76C87C438E5CE3C1B27DE2AAD6;385.
@@ -3213,12 +3213,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package logreq Info: Writing requests to 'Defense-Presentation.run.xml'.
 \openout1 = `Defense-Presentation.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1450.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1451.
  ) 
 Here is how much of TeX's memory you used:
  32662 strings out of 493117
  658848 string characters out of 6135433
- 786144 words of memory out of 5000000
+ 786149 words of memory out of 5000000
  35243 multiletter control sequences out of 15000+600000
  20233 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3293,7 +3293,7 @@ texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Defense-Presentation.pdf (47 pages, 45034592 bytes).
+Output written on Defense-Presentation.pdf (47 pages, 45035556 bytes).
 PDF statistics:
  2700 PDF objects out of 2984 (max. 8388607)
  1986 compressed objects within 20 object streams

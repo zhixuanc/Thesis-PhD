@@ -462,7 +462,7 @@ Leading to $h$ varying in a larger area. Averaging formulation guarantees that c
   activate=onclick,
   deactivate=onclick,
   addresource=./Movies/No_purterbation-from-sml-of-bc.mp4,
-  flashvars={source=./No_purterbation-from-sml-of-bc.mp4 &loop=true}]
+  flashvars={source=./Movies/No_purterbation-from-sml-of-bc.mp4 &loop=true}]
   {}{VPlayer.swf}
 \end{minipage}
 \hfill
@@ -1305,7 +1305,8 @@ Eruption conditions: vent velocity is 275 $m\cdot s^{-1}$, vent gas mass fractio
 \textbf{Create Initial condition based on 1D model}
 \begin{itemize}
 \item 1D model predict $H_{max}$, $H_{width}$ and $R_{width}$.
-\item\begin{equation}
+\item Poisson Distribution
+\begin{equation}
 H=H_{max} - 0.5 H_{width}*P+H_{width}R
 \label{eq:Poisson-plume-shape}
 \end{equation}
