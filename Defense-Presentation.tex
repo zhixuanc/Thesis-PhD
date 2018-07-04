@@ -173,7 +173,7 @@ University at Buffalo, Buffalo, New York, U.S.A.
 
 \end{frame}
 
-\begin{frame}{Motivation (Why a new model based on SPH)}
+\begin{frame}{Motivation (Why a new model based on SPH?)}
 \begin{itemize}
 %\item 3D plume model, less assumption, better predict capability
 \item All existing 3D plume models are based on mesh-based method
@@ -425,7 +425,7 @@ Particle position is also updated at every time step.
 \begin{itemize}
 \item Variations with respect to $h$ :
 $h=h_b$ and $h= \frac{h_a+h_b}{2}$ ...
-\item For compressible, adaptive $h$ is necessary:
+\item For compressible flows, adaptive $h$ is necessary:
 \begin{equation}
 h_a = \sigma \left(\frac{m_a}{\rho_a}\right)^{\frac{1}{d}}
 \end{equation}
@@ -483,7 +483,7 @@ Averaging formulation guarantees that conservation property of SPH discretizatio
   mediacommand=vidB:playPause,
 ]{\fbox{Play/Pause}}
 \begin{itemize}
-\item density varies in a larger area in compressible
+\item Density varies in a larger area in compressible
 \item The atmosphere is stratified so need unequal particle mass
 \end{itemize}
 Leading to $h$ varying in a larger area so non-uniform distribution.
@@ -595,7 +595,7 @@ In our model, only density needs to be updated respectively for each phase:
 
 \begin{block}{}
   \begin{itemize}
-    \item {The mass discontinuity and density discontinuity issues in traditional formulations of SPH is fixed by this new formulation
+    \item {The mass discontinuity and density discontinuity issues in traditional formulations of SPH are fixed by this new formulation
     } 
     \item {In areas far away from the interface, updating of density is exactly the same as that for single phase flow
     }
@@ -637,7 +637,7 @@ Introduces an extra turbulence stress term:
 \end{frame}
 
 \begin{frame}{Turbulent energy exhange}
-$SPH-\varepsilon$ turbulence model is extended for compressible flow using Reynolds analogy \footcite{gmd-2017-119}.
+$SPH-\varepsilon$ turbulence model is {\bf extended for compressible flow} using Reynolds analogy \footcite{gmd-2017-119}.
 \begin{equation}
 Pr=\dfrac{C_p \mu}{\kappa}
 \end{equation}
