@@ -593,6 +593,34 @@
   \field{year}{2012}
 \endentry
 
+\entry{searcy1998puff}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Searcy}{S.}%
+     {C}{C}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dean}{D.}%
+     {KG}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stringer}{S.}%
+     {W}{W}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SCDKSW1}
+  \strng{fullhash}{SCDKSW1}
+  \field{sortinit}{S}
+  \field{pages}{1\bibrangedash 16}
+  \field{title}{PUFF: A volcanic ash tracking and prediction model}
+  \field{volume}{80}
+  \field{journaltitle}{Journal of Volcanology and Geothermal Research}
+  \field{year}{1998}
+\endentry
+
 \entry{suzuki2005numerical}{article}{}
   \name{author}{4}{}{%
     {{}%

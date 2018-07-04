@@ -167,7 +167,8 @@ University at Buffalo, Buffalo, New York, U.S.A.
 \end{figure}
 \begin{itemize}
 \item Parameter calibration \footcite{fero2009simulating} takes more than 10000 trials, need observation and might get disparate parameters away from observation.
-\item \textbf{Four} 3D plumes models, around \textbf{Ten} 1D plume models, several VATDs.
+\item Around \textbf{Ten} 1D plume models, \textbf{Four} 3D plumes models.
+\item Create a new 3D plume model: \textbf{Plume-SPH}
 \end{itemize}
 
 \end{frame}
@@ -1360,10 +1361,10 @@ The Plume-SPH solver is not only used for plume model. By assigning proper initi
 \section{Plume-SPH + VATDs}
 \begin{frame}{Initial ash cloud}
 \begin{minipage}{.67\textwidth}
-\textbf{Create Initial condition based on 1D model}
+\textbf{Based on assumed plume shape}
 \begin{itemize}
-\item 1D model predict $H_{max}$, $H_{width}$ and $R_{width}$.
-\item Poisson Distribution
+\item 1D model predict $H_{max}$, $H_{width}$ and $R_{width}$.  \textbf{OR}, get these parameters based on parameter calibration.
+\item Semiempirical plume shape (Poisson Distribution)
 \begin{equation}
 H=H_{max} - 0.5 H_{width}*P+H_{width}R
 \label{eq:Poisson-plume-shape}
@@ -1372,7 +1373,7 @@ $P$: random number from a Poisson
 distribution of unit mean \\ 
 $R$: a uniformly distributed random number between 0 and 1
 \item Distribute ash horizontally uniformally according to $R_{width}$
-\item Generate the initial ash cloud.
+\item Assign particle size.
 \end{itemize}
 \end{minipage}
 \noindent
@@ -1409,46 +1410,46 @@ $R$: a uniformly distributed random number between 0 and 1
 \end{frame}
 
 \begin{frame}{Ash transportation}
-Compare simulated ash transportation with observation \footcite{guo2004particles}
+Simulated ash transportation by PUFF \footcite{searcy1998puff} Vs observation \footcite{guo2004particles}
 \begin{figure}[!htb]
     \centering
-    \begin{minipage}{.293\textwidth}
+    \begin{minipage}{.288\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/bent-23hr-ash}
     \end{minipage}%
-    \begin{minipage}{.293\textwidth}
+    \begin{minipage}{.288\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/SPH-Plume-23hr-ash}
     \end{minipage}%
-    \begin{minipage}{.293\textwidth}
+    \begin{minipage}{.288\textwidth}
         \centering
-        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-23hr-ash}
+        \includegraphics[width=0.90 \textwidth]{./Chapter-7/Figures/OB-ash-23hr-ash}
     \end{minipage}% 
     \\
-        \begin{minipage}{.293\textwidth}
+        \begin{minipage}{.288\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/bent-31hr-ash}
     \end{minipage}%
-    \begin{minipage}{.293\textwidth}
+    \begin{minipage}{.288\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/SPH-Plume-31hr-ash}
     \end{minipage}%
-    \begin{minipage}{.293\textwidth}
+    \begin{minipage}{.288\textwidth}
         \centering
-        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-31hr-ash}
+        \includegraphics[width=0.90 \textwidth]{./Chapter-7/Figures/OB-ash-31hr-ash}
     \end{minipage}% 
     \\
-        \begin{minipage}{.293\textwidth}
+        \begin{minipage}{.288\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/bent-55hr-ash}
     \end{minipage}%
-    \begin{minipage}{.293\textwidth}
+    \begin{minipage}{.288\textwidth}
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-7/Figures/SPH-Plume-55hr-ash}
     \end{minipage}%
-    \begin{minipage}{.293\textwidth}
+    \begin{minipage}{.288\textwidth}
         \centering
-        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-55hr-ash}
+        \includegraphics[width=0.90 \textwidth]{./Chapter-7/Figures/OB-ash-55hr-ash}
     \end{minipage}% 
 \end{figure}
 \end{frame}
@@ -1472,6 +1473,7 @@ Dr. Bursik, Dr. Pitman, Dr. Bauman \\
 Dr. Jones, Dinesh, Hossein, Ramona, Topher \\
 Prashant, Lekha, Qingyuan, Abhishek, Ali, Renette, Miaoda ...\\
 My family \\
+Thanks everyone for attending my defence
 }
 \end{frame}
 
