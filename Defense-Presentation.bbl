@@ -266,6 +266,39 @@
   \field{year}{2010}
 \endentry
 
+\entry{fero2009simulating}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Fero}{F.}%
+     {Julie}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Carey}{C.}%
+     {Steven~N}{S.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Merrill}{M.}%
+     {John~T}{J.~T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{FJCSNMJT1}
+  \strng{fullhash}{FJCSNMJT1}
+  \field{sortinit}{F}
+  \field{number}{1}
+  \field{pages}{120\bibrangedash 131}
+  \field{title}{Simulating the dispersal of tephra from the 1991 Pinatubo
+  eruption: implications for the formation of widespread ash layers}
+  \field{volume}{186}
+  \field{journaltitle}{Journal of Volcanology and Geothermal Research}
+  \field{year}{2009}
+\endentry
+
 \entry{gingold1978binary}{article}{}
   \name{author}{2}{}{%
     {{}%
