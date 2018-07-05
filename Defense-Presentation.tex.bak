@@ -91,7 +91,7 @@ University at Buffalo, Buffalo, New York, U.S.A.
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
 
-\date [07-05-2018] {Ph.D. Dissertation Defense}
+\date [07-05-2018] {Ph.D. Dissertation Defence}
 % - Either use conference name or its abbreviation.
 % - Not really informative to the audience, more for people (including
 %   yourself) who are reading the slides online
@@ -167,8 +167,8 @@ University at Buffalo, Buffalo, New York, U.S.A.
 \end{figure}
 \begin{itemize}
 \item Parameter calibration \footcite{fero2009simulating} takes more than 10000 trials, need observation and might get disparate parameters away from observation.
-\item Around \textbf{Ten} 1D plume models, \textbf{Four} 3D plumes models.
 \item Create a new 3D plume model: \textbf{Plume-SPH}
+\item Around \textbf{Ten} 1D plume models, \textbf{Four} 3D plumes models.
 \end{itemize}
 
 \end{frame}
@@ -422,34 +422,36 @@ Particle position is also updated at every time step.
 \end{frame}
 
 \begin{frame}{Adaptive smoothing length \& symmetry}
-\begin{itemize}
-\item Variations with respect to $h$ :
-$h=h_b$ and $h= \frac{h_a+h_b}{2}$ ...
-\item For compressible, adaptive $h$ is necessary:
+$h$ need to be adaptively changed to have enough particles to sum up:
 \begin{equation}
 h_a = \sigma \left(\frac{m_a}{\rho_a}\right)^{\frac{1}{d}}
 \end{equation}
 Where $d$ is number of dimensions and $\sigma=1.3 $ recommended  \footcite{gingold1978binary}.
-\item Multiphase and stratified atmosphere requires unequal particle mass
-\end{itemize}
-\begin{minipage}{.43\textwidth}
+\center
+\begin{minipage}{.32\textwidth}
         \centering
-        \includegraphics[width=0.88 \textwidth]{./Chapter-3/Figures/Adapt-NoAdapt-NoSMDM}
+        \includegraphics[width=0.99 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-d}
 \end{minipage}%
-\begin{minipage}{.43\textwidth}
+\begin{minipage}{.32 \textwidth}
         \centering
-        \includegraphics[width=0.88 \textwidth]{./Chapter-3/Figures/SM-Adapt-MEs}
+        \includegraphics[width=0.99 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-v}
+\end{minipage}%
+\begin{minipage}{.32\textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{./Chapter-3/Figures/Adapt-NoAdapt-NoSMDM}
 \end{minipage}%
 \\
+\begin{itemize}
+\item Variations with respect to $h$ :
+$h=h_b$ and $h= \frac{h_a+h_b}{2}$ ...
+\item Multiphase and stratified atmosphere requires unequal particle mass
+\end{itemize}
 \center
-\begin{minipage}{.43\textwidth}
+\begin{minipage}{.42\textwidth}
         \centering
-        \includegraphics[width=0.88 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-d}
+        \includegraphics[width=0.808 \textwidth]{./Chapter-3/Figures/SM-Adapt-MEs}
 \end{minipage}%
-\begin{minipage}{.43 \textwidth}
-        \centering
-        \includegraphics[width=0.88 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-v}
-\end{minipage}%
+
 \end{frame}
 
 \begin{frame}{Numerical perturbation}
@@ -637,7 +639,7 @@ Introduces an extra turbulence stress term:
 \end{frame}
 
 \begin{frame}{Turbulent energy exhange}
-$SPH-\varepsilon$ turbulence model is extended for compressible flow using Reynolds analogy \footcite{gmd-2017-119}.
+$SPH-\varepsilon$ turbulence model \textbf{is extended for compressible flow} using Reynolds analogy \footcite{gmd-2017-119}.
 \begin{equation}
 Pr=\dfrac{C_p \mu}{\kappa}
 \end{equation}
@@ -1423,7 +1425,7 @@ Simulated ash transportation by PUFF \footcite{searcy1998puff} Vs observation \f
     \end{minipage}%
     \begin{minipage}{.288\textwidth}
         \centering
-        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-23hr-ash}
+        \includegraphics[width=0.90 \textwidth]{./Chapter-7/Figures/OB-ash-23hr-ash}
     \end{minipage}% 
     \\
         \begin{minipage}{.288\textwidth}
@@ -1436,7 +1438,7 @@ Simulated ash transportation by PUFF \footcite{searcy1998puff} Vs observation \f
     \end{minipage}%
     \begin{minipage}{.288\textwidth}
         \centering
-        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-31hr-ash}
+        \includegraphics[width=0.90 \textwidth]{./Chapter-7/Figures/OB-ash-31hr-ash}
     \end{minipage}% 
     \\
         \begin{minipage}{.288\textwidth}
@@ -1449,11 +1451,21 @@ Simulated ash transportation by PUFF \footcite{searcy1998puff} Vs observation \f
     \end{minipage}%
     \begin{minipage}{.288\textwidth}
         \centering
-        \includegraphics[width=0.94 \textwidth]{./Chapter-7/Figures/OB-ash-55hr-ash}
+        \includegraphics[width=0.90 \textwidth]{./Chapter-7/Figures/OB-ash-55hr-ash}
     \end{minipage}% 
 \end{figure}
 \end{frame}
 
+\begin{frame} {My contribution}
+\begin{itemize}
+\item Methodology to impose pressure outlet and velocity BCs
+\item Extend $SPH-\varepsilon$ to compressible flow
+\item A new SPH scheme: RSPH
+\item Flexible data management strategies using (time-dependent) SFC based index, hash table with linked list and dynamic halo domain
+\item Improvment in parallelization by calibrated particle weights and optimized load balance check interval 
+\item First VATDs simulation without semiempirical assumption regarding initial ash distribution
+\end{itemize}
+\end{frame}
 %----------------------------------------------------------------------------
 \section{Future Work}
 \begin{frame} {Future work}
@@ -1471,7 +1483,8 @@ Thanks to \\}
 Dr. Patra \\
 Dr. Bursik, Dr. Pitman, Dr. Bauman \\
 Dr. Jones, Dinesh, Hossein, Ramona, Topher \\
-Prashant, Lekha, Qingyuan, Abhishek, Ali, Renette, Miaoda ...\\
+Prashant, Lekha, Qingyuan, Abhishek, Ali, Renette ...\\
+All other friend \\
 My family \\
 Thanks everyone for attending my defence
 }

@@ -1,8 +1,8 @@
 \chapter{A Random Choice SPH scheme with adaptive viscosity} \label{chapter:GSPH-RSPH}
 \section{Introduction}
-Volcano plumes might be supersonic with maximum eruption speed of hundreds meters per second.
-Most SPH codes have included an artificial viscosity term explicitly \citep{monaghan1983shock, monaghan1997sph, klapp2012strong}, both for stabilizing the simulation and for handling shock discontinuities in supersonic flow. This artificial viscosity typically produces more dissipation than is needed to smooth shocks, incorrectly smears contact discontinuities, and can overwhelm fluid turbulence. Several studies have proposed highly tuned versions of artificial viscosity, turning on and off near shocks or other troublesome wave features. Unfortunately these schemes usually produce more dissipation than is appropriate.
-A different kind of solver adapts Godunov\rq{}s idea of solving local Riemann problems as building blocks for a numerical SPH solver. Of course, such a first order Godunov solver still introduces an effective numerical diffusion that can infect the entire numerical solution.
+Volcano plume might be supersonic with maximum eruption speed of hundreds meters per second.
+Most SPH codes have included an artificial viscosity term explicitly \citep{monaghan1983shock, monaghan1997sph, klapp2012strong}, both for stabilizing the simulation and for handling shock discontinuities in supersonic flow. This artificial viscosity typically produces more dissipation than is needed to smooth shocks, incorrectly smears contact discontinuities, and can overwhelms fluid turbulence. Several studies have proposed highly tuned versions of artificial viscosity, turning on and off near shocks or other troublesome wave features. Unfortunately these schemes usually produce more dissipation than is appropriate.
+A different kind of solver adapts Godunov\rq{}s idea of solving local Riemann problems as building blocks for a numerical SPH solver. Of course a first order Godunov solver still introduces an effective numerical diffusion that can infect the entire numerical solution.
 We propose a novel SPH scheme that combines an approximate version of Glimm\rq{}s Random Choice method (RCM) with SPH. RCM properly resolves and then samples all hydrodynamic waves. Our version approximately resolves hydrodynamic waves, and samples the approximate solution. No explicit artificial viscosity will be needed.
 We test this method on standard one dimensional shock tube problems and observe several attractive features. First of all, this method introduces adaptive artificial viscosity, assigning larger dissipation around discontinuities and smaller elsewhere. Secondly, it is less dissipative than classical SPH and GSPH resulting in less smearing of shock. Thirdly, as the new method can be viewed as generalized GSPH method in terms of sampling solutions of local Riemann problems, good features of GSPH are inherited, for example, ameliorating pressure ``wiggle" around contact discontinuity.
 When applied to three dimensional jet flow, this method is demonstrated to introduce less overall dissipation than GSPH.
@@ -33,7 +33,7 @@ $\frac{D A}{Dt} = \frac{\partial A}{\partial t} + \textbf{v} \cdot \nabla A$ for
 The scheme of this chapter is follows. Section \ref{sec:GSPH-method} shows how the GSPH method is defined. The RSPH method is defined in Section \ref{sec:RSPH-method}.
 One dimensional tests are shown in Section \ref{numericaltests}, followed by the jet flow example in Section \ref{jet}. Other applications and limitations of RSPH are discussed in Section \ref{discussion}
 
-\section{Godunov SPH(GSPH)} \label{sec:GSPH-method}
+\section{GSPH} \label{sec:GSPH-method}
 \citet{inutsuka2002reformulation} recognized that the Godunov approach of solving local Riemann problems might obviate the need for artificial viscosity. This section describes this GSPH method. Our discussion anticipates that of Section \ref{sec:RSPH-method}, and sub-section \ref{sec:Picking-up-single-state} in particular, which contain details that are only briefly introduced here.
 
 The density continues to be updated based on particle location from Eq. (\ref{eq:ns-sph-d}). However the update for the momentum and energy equations differs fundamentally from the classical SPH approach. We begin by making two observations, the first regarding the density
@@ -47,7 +47,7 @@ and the second regarding the derivative
 \label{eq:GSPH-basic2}
 \end{equation}
 
-We re-formulate the equations of motion to exploit certain symmetries. A lengthy algebraic manipulation \citep{inutsuka2002reformulation,iwasaki2011smoothed} leads to:
+We re-formulate the equations of motion to exploit certain symmetry. A lengthy algebraic manipulation \citep{inutsuka2002reformulation,iwasaki2011smoothed} leads to:
 \begin{equation}
 \ddot{\textbf{x}}_{a} = <\dfrac{d \textbf{v}_{a}}{dt}>= -\sum_{b} m_{b} p_{a b}^{\ast} \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-v-simple-form}
