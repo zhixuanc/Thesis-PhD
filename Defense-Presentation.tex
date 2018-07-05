@@ -451,6 +451,10 @@ $h=h_b$ and $h= \frac{h_a+h_b}{2}$ ...
         \centering
         \includegraphics[width=0.808 \textwidth]{./Chapter-3/Figures/SM-Adapt-MEs}
 \end{minipage}%
+\begin{minipage}{.42\textwidth}
+        \centering
+        \includegraphics[width=0.808 \textwidth]{./Chapter-3/Figures/SM-Adapt-MEs-zoom}
+\end{minipage}%
 
 \end{frame}
 
@@ -485,10 +489,10 @@ Averaging formulation guarantees that conservation property of SPH discretizatio
   mediacommand=vidB:playPause,
 ]{\fbox{Play/Pause}}
 \begin{itemize}
-\item density varies in a larger area in compressible
-\item The atmosphere is stratified so need unequal particle mass
+\item Density varies in a large range in compressible flow
+\item The atmosphere is stratified, different phases have different density, so need unequal particle mass
 \end{itemize}
-Leading to $h$ varying in a larger area so non-uniform distribution.
+Leading to $h$ varying in a larger range so non-uniformly distributed.
 \end{frame}
 
 \begin{frame}{Numerical perturbation}
@@ -877,10 +881,10 @@ All boundary conditions are imposed using ghost particles. Wall boundary conditi
 %-----------------------------------------------------
 \section{Architecture, Data Management and Parallelization}
 \begin{frame}{Requirements \& strategies}
-The basic code architecture, domain decomposition and data management strategies are based on well developed FV solver \footcite{pitman2003computing} and FE solver \footcite{patra2003data}. 
+Code architecture, domain decomposition and data management strategies are based on well developed FV solver \footcite{pitman2003computing}, FE solver \footcite{patra2003data} and GSPH solver \footcite{kumar2013parallel}. 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=0.63 \textwidth]{./PPT/Requirement_all}
+\includegraphics[width=0.60 \textwidth]{./PPT/Requirement_all}
 %\caption{Scope of the problem}
 \label{fig:Requirements}
 \end{figure}
@@ -1455,23 +1459,24 @@ Simulated ash transportation by PUFF \footcite{searcy1998puff} Vs observation \f
     \end{minipage}% 
 \end{figure}
 \end{frame}
-
-\begin{frame} {My contribution}
-\begin{itemize}
-\item Methodology to impose pressure outlet and velocity BCs
-\item Extend $SPH-\varepsilon$ to compressible flow
-\item A new SPH scheme: RSPH
-\item Flexible data management strategies using (time-dependent) SFC based index, hash table with linked list and dynamic halo domain
-\item Improvment in parallelization by calibrated particle weights and optimized load balance check interval 
-\item First VATDs simulation without semiempirical assumption regarding initial ash distribution
-\end{itemize}
-\end{frame}
 %----------------------------------------------------------------------------
 \section{Future Work}
 \begin{frame} {Future work}
 \begin{figure}
 	\includegraphics[width=0.5\textwidth]{./PPT/Future-Work}
 \end{figure}
+\end{frame}
+%
+\begin{frame} {Summary of my contribution}
+\begin{itemize}
+\item Methodology to impose pressure outlet and velocity BCs
+\item Extend $SPH-\varepsilon$ to compressible flow
+\item A new SPH scheme: RSPH
+\item Flexible data management strategies using (time-dependent) SFC based index, hash table with linked list and dynamic halo domain
+\item Improvement in parallelization by calibrated particle weights and optimized load balance check interval 
+\item First VATDs simulation without semiempirical assumption regarding initial ash distribution.
+\item An open source computational software for volcanic plume simulation, easy to extend to be more comprehensive.
+\end{itemize}
 \end{frame}
 %
 \begin{frame}{}
