@@ -2012,27 +2012,6 @@
   organization={Citeseer}
 }
 
-@Article{gmd-2017-119,
-AUTHOR = {Cao, Z. and Patra, A. and Bursik, M. and Pitman, E. B. and Jones, M.},
-TITLE = {Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume model based on smoothed particle hydrodynamics},
-JOURNAL = {Geoscientific Model Development Discussions},
-VOLUME = {2017},
-YEAR = {2017},
-PAGES = {1--37},
-URL = {https://www.geosci-model-dev-discuss.net/gmd-2017-119/},
-DOI = {10.5194/gmd-2017-119}
-}
-
-@article{cao2017data,
-  title={Data Management and Volcano Plume Simulation with Parallel SPH Method and Dynamic Halo Domains},
-  author={Cao, Zhixuan and Patra, Abani and Jones, Matthew},
-  journal={Procedia Computer Science},
-  volume={108},
-  pages={786--795},
-  year={2017},
-  publisher={Elsevier}
-}
-
 @article{bursik2012estimation,
   title={Estimation and propagation of volcanic source parameter uncertainty in an ash transport and dispersal model: application to the Eyjafjallajokull plume of 14--16 April 2010},
   author={Bursik, Marcus and Jones, Matthew and Carn, Simon and Dean, Ken and Patra, Abani and Pavolonis, Michael and Pitman, E Bruce and Singh, Tarunraj and Singla, Puneet and Webley, Peter and others},
@@ -2704,4 +2683,33 @@ note = {Accessed: 2016-04-30}
   number={B9},
   year={2012},
   publisher={Wiley Online Library}
+}
+
+@Article{gmd-2017-119,
+AUTHOR = {Cao, Z. and Patra, A. and Bursik, M. and Pitman, E. B. and Jones, M.},
+TITLE = {Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume model based on smoothed particle hydrodynamics},
+JOURNAL = {Geoscientific Model Development Discussions},
+VOLUME = {2017},
+YEAR = {2017},
+PAGES = {1--37},
+URL = {https://www.geosci-model-dev-discuss.net/gmd-2017-119/},
+DOI = {10.5194/gmd-2017-119}
+}
+
+@article{cao2017data,
+  title={Data Management and Volcano Plume Simulation with Parallel SPH Method and Dynamic Halo Domains},
+  author={Cao, Zhixuan and Patra, Abani and Jones, Matthew},
+  journal={Procedia Computer Science},
+  volume={108},
+  pages={786--795},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@Article{zhixuan2018rcm,
+AUTHOR = {Cao, Z. and Patra, and Pitman, E. B.},
+TITLE = {A Random Choice SPH Scheme with Adaptive
+Viscosity (submitted)},
+JOURNAL = {Journal of Computational Physics},
+YEAR = {2018}
 }

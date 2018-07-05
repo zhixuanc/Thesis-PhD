@@ -1,0 +1,17 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\beamer@endinputifotherversion {3.36pt}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Overview}{3}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Physics Model}{7}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{SPH Discretization}{11}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Architecture, Data Management and Parallelization}{28}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Verification, Validation and Application}{37}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {6}{Plume-SPH + VATDs}{44}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {7}{Future Work}{48}{0}{7}

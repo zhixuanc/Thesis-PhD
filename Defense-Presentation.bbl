@@ -1,0 +1,664 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{zhixuan2018rcm}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Cao}{C.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patra}{P.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pitman}{P.}%
+     {E.~B.}{E.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CZPPEB1}
+  \strng{fullhash}{CZPPEB1}
+  \field{sortinit}{C}
+  \field{title}{A Random Choice SPH Scheme with Adaptive Viscosity (submitted)}
+  \field{journaltitle}{Journal of Computational Physics}
+  \field{year}{2018}
+\endentry
+
+\entry{gmd-2017-119}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Cao}{C.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patra}{P.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bursik}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pitman}{P.}%
+     {E.~B.}{E.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CZ+1}
+  \strng{fullhash}{CZPABMPEBJM1}
+  \field{sortinit}{C}
+  \verb{doi}
+  \verb 10.5194/gmd-2017-119
+  \endverb
+  \field{pages}{1\bibrangedash 37}
+  \field{title}{Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume
+  model based on smoothed particle hydrodynamics}
+  \verb{url}
+  \verb https://www.geosci-model-dev-discuss.net/gmd-2017-119/
+  \endverb
+  \field{volume}{2017}
+  \field{journaltitle}{Geoscientific Model Development Discussions}
+  \field{year}{2017}
+\endentry
+
+\entry{cao2017data}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Cao}{C.}%
+     {Zhixuan}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patra}{P.}%
+     {Abani}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {Matthew}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{CZPAJM1}
+  \strng{fullhash}{CZPAJM1}
+  \field{sortinit}{C}
+  \field{pages}{786\bibrangedash 795}
+  \field{title}{Data Management and Volcano Plume Simulation with Parallel SPH
+  Method and Dynamic Halo Domains}
+  \field{volume}{108}
+  \field{journaltitle}{Procedia Computer Science}
+  \field{year}{2017}
+\endentry
+
+\entry{chen1999improvement}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Chen}{C.}%
+     {JK}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Beraun}{B.}%
+     {JE}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jih}{J.}%
+     {CJ}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{CJBJJC1}
+  \strng{fullhash}{CJBJJC1}
+  \field{sortinit}{C}
+  \field{number}{4}
+  \field{pages}{279\bibrangedash 287}
+  \field{title}{An improvement for tensile instability in smoothed particle
+  hydrodynamics}
+  \field{volume}{23}
+  \field{journaltitle}{Computational Mechanics}
+  \field{year}{1999}
+\endentry
+
+\entry{chorin1976random}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Chorin}{C.}%
+     {Alexandre~Joel}{A.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{CAJ1}
+  \strng{fullhash}{CAJ1}
+  \field{sortinit}{C}
+  \field{number}{4}
+  \field{pages}{517\bibrangedash 533}
+  \field{title}{Random choice solution of hyperbolic systems}
+  \field{volume}{22}
+  \field{journaltitle}{Journal of Computational Physics}
+  \field{year}{1976}
+\endentry
+
+\entry{costa2016results}{article}{}
+  \true{moreauthor}
+  \name{author}{10}{}{%
+    {{}%
+     {Costa}{C.}%
+     {A}{A}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Suzuki}{S.}%
+     {YJ}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cerminara}{C.}%
+     {M}{M}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Devenish}{D.}%
+     {BJ}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Esposti~Ongaro}{E.~O.}%
+     {Thmaso}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Herzog}{H.}%
+     {M}{M}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Van~Eaton}{V.~E.}%
+     {AR}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Denby}{D.}%
+     {LC}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bursik}{B.}%
+     {M}{M}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Michieli~Vitturi}{M.~V.}%
+     {Mattia}{M.}%
+     {de'}{d'}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{CA+1}
+  \strng{fullhash}{CASYCMDBEOTHMVEADLBMMVMd+1}
+  \field{sortinit}{C}
+  \field{title}{Results of the eruptive column model inter-comparison study}
+  \field{journaltitle}{Journal of Volcanology and Geothermal Research}
+  \field{year}{2016}
+\endentry
+
+\entry{cullen2010inviscid}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Cullen}{C.}%
+     {Lee}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dehnen}{D.}%
+     {Walter}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Royal Astronomical Society}%
+  }
+  \strng{namehash}{CLDW1}
+  \strng{fullhash}{CLDW1}
+  \field{sortinit}{C}
+  \field{number}{2}
+  \field{pages}{669\bibrangedash 683}
+  \field{title}{Inviscid smoothed particle hydrodynamics}
+  \field{volume}{408}
+  \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+  \field{year}{2010}
+\endentry
+
+\entry{fero2009simulating}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Fero}{F.}%
+     {Julie}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Carey}{C.}%
+     {Steven~N}{S.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Merrill}{M.}%
+     {John~T}{J.~T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{FJCSNMJT1}
+  \strng{fullhash}{FJCSNMJT1}
+  \field{sortinit}{F}
+  \field{number}{1}
+  \field{pages}{120\bibrangedash 131}
+  \field{title}{Simulating the dispersal of tephra from the 1991 Pinatubo
+  eruption: implications for the formation of widespread ash layers}
+  \field{volume}{186}
+  \field{journaltitle}{Journal of Volcanology and Geothermal Research}
+  \field{year}{2009}
+\endentry
+
+\entry{gingold1978binary}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Gingold}{G.}%
+     {Robert~A}{R.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Monaghan}{M.}%
+     {Joseph~J}{J.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {The Royal Astronomical Society}%
+  }
+  \strng{namehash}{GRAMJJ1}
+  \strng{fullhash}{GRAMJJ1}
+  \field{sortinit}{G}
+  \field{number}{3}
+  \field{pages}{481\bibrangedash 499}
+  \field{title}{Binary fission in damped rotating polytropes}
+  \field{volume}{184}
+  \field{journaltitle}{Monthly Notices of the Royal Astronomical Society}
+  \field{year}{1978}
+\endentry
+
+\entry{guo2004particles}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Guo}{G.}%
+     {Song}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rose}{R.}%
+     {William~I}{W.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bluth}{B.}%
+     {Gregg~JS}{G.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Watson}{W.}%
+     {I~Matthew}{I.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{GS+1}
+  \strng{fullhash}{GSRWIBGJWIM1}
+  \field{sortinit}{G}
+  \field{number}{5}
+  \field{title}{Particles in the great Pinatubo volcanic cloud of June 1991:
+  The role of ice}
+  \field{volume}{5}
+  \field{journaltitle}{Geochemistry, Geophysics, Geosystems}
+  \field{year}{2004}
+\endentry
+
+\entry{inutsuka2002reformulation}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Inutsuka}{I.}%
+     {Shu-ichiro}{S.-i.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{ISi1}
+  \strng{fullhash}{ISi1}
+  \field{sortinit}{I}
+  \field{number}{1}
+  \field{pages}{238\bibrangedash 267}
+  \field{title}{Reformulation of smoothed particle hydrodynamics with Riemann
+  solver}
+  \field{volume}{179}
+  \field{journaltitle}{Journal of Computational Physics}
+  \field{year}{2002}
+\endentry
+
+\entry{kumar2013parallel}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Kumar}{K.}%
+     {Dinesh}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patra}{P.}%
+     {Abani~K}{A.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pitman}{P.}%
+     {E~Bruce}{E.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chi}{C.}%
+     {H}{H}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{KD+1}
+  \strng{fullhash}{KDPAKPEBCH1}
+  \field{sortinit}{K}
+  \field{number}{10}
+  \field{pages}{2277\bibrangedash 2286}
+  \field{title}{Parallel Godunov smoothed particle hydrodynamics (SPH) with
+  improved treatment of Boundary Conditions and an application to granular
+  flows}
+  \field{volume}{184}
+  \field{journaltitle}{Computer Physics Communications}
+  \field{year}{2013}
+\endentry
+
+\entry{monaghan2005smoothed}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Monaghan}{M.}%
+     {JJ}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IOP Publishing}%
+  }
+  \strng{namehash}{MJ1}
+  \strng{fullhash}{MJ1}
+  \field{sortinit}{M}
+  \field{number}{8}
+  \field{pages}{1703}
+  \field{title}{Smoothed particle hydrodynamics}
+  \field{volume}{68}
+  \field{journaltitle}{Reports on progress in physics}
+  \field{year}{2005}
+\endentry
+
+\entry{monaghan2011turbulence}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Monaghan}{M.}%
+     {Joe~J}{J.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{MJJ1}
+  \strng{fullhash}{MJJ1}
+  \field{sortinit}{M}
+  \field{number}{4}
+  \field{pages}{360\bibrangedash 370}
+  \field{title}{A turbulence model for Smoothed Particle Hydrodynamics}
+  \field{volume}{30}
+  \field{journaltitle}{European Journal of Mechanics-B/Fluids}
+  \field{year}{2011}
+\endentry
+
+\entry{papanicolaou1988investigations}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Papanicolaou}{P.}%
+     {Panos~N}{P.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {List}{L.}%
+     {E~John}{E.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Cambridge Univ Press}%
+  }
+  \strng{namehash}{PPNLEJ1}
+  \strng{fullhash}{PPNLEJ1}
+  \field{sortinit}{P}
+  \field{pages}{341\bibrangedash 391}
+  \field{title}{Investigations of round vertical turbulent buoyant jets}
+  \field{volume}{195}
+  \field{journaltitle}{Journal of Fluid Mechanics}
+  \field{year}{1988}
+\endentry
+
+\entry{patra2003data}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Patra}{P.}%
+     {AK}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Laszloffy}{L.}%
+     {A}{A}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Long}{L.}%
+     {J}{J}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{PALALJ1}
+  \strng{fullhash}{PALALJ1}
+  \field{sortinit}{P}
+  \field{number}{1}
+  \field{pages}{105\bibrangedash 123}
+  \field{title}{Data structures and load balancing for parallel adaptive hp
+  finite-element methods}
+  \field{volume}{46}
+  \field{journaltitle}{Computers \& Mathematics with Applications}
+  \field{year}{2003}
+\endentry
+
+\entry{pitman2003computing}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Pitman}{P.}%
+     {E~Bruce}{E.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nichita}{N.}%
+     {C~Camil}{C.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patra}{P.}%
+     {Abani}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bauer}{B.}%
+     {Andy}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sheridan}{S.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bursik}{B.}%
+     {Marcus}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {AIP Publishing}%
+  }
+  \strng{namehash}{PEB+1}
+  \strng{fullhash}{PEBNCCPABASMBM1}
+  \field{sortinit}{P}
+  \field{number}{12}
+  \field{pages}{3638\bibrangedash 3646}
+  \field{title}{Computing granular avalanches and landslides}
+  \field{volume}{15}
+  \field{journaltitle}{Physics of Fluids (1994-present)}
+  \field{year}{2003}
+\endentry
+
+\entry{sagan2012space}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sagan}{S.}%
+     {Hans}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer Science \& Business Media}%
+  }
+  \strng{namehash}{SH1}
+  \strng{fullhash}{SH1}
+  \field{sortinit}{S}
+  \field{title}{Space-filling curves}
+  \field{year}{2012}
+\endentry
+
+\entry{searcy1998puff}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Searcy}{S.}%
+     {C}{C}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dean}{D.}%
+     {KG}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stringer}{S.}%
+     {W}{W}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SCDKSW1}
+  \strng{fullhash}{SCDKSW1}
+  \field{sortinit}{S}
+  \field{pages}{1\bibrangedash 16}
+  \field{title}{PUFF: A volcanic ash tracking and prediction model}
+  \field{volume}{80}
+  \field{journaltitle}{Journal of Volcanology and Geothermal Research}
+  \field{year}{1998}
+\endentry
+
+\entry{suzuki2005numerical}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Suzuki}{S.}%
+     {Yujiro~J}{Y.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koyaguchi}{K.}%
+     {Takehiro}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ogawa}{O.}%
+     {Masaki}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hachisu}{H.}%
+     {Izumi}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Wiley Online Library}%
+  }
+  \strng{namehash}{SYJ+1}
+  \strng{fullhash}{SYJKTOMHI1}
+  \field{sortinit}{S}
+  \field{number}{B8}
+  \field{title}{A numerical study of turbulent mixing in eruption clouds using
+  a three-dimensional fluid dynamics model}
+  \field{volume}{110}
+  \field{journaltitle}{Journal of Geophysical Research: Solid Earth}
+  \field{year}{2005}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
