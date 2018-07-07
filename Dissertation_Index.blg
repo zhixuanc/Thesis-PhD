@@ -15,62 +15,62 @@ A level-1 auxiliary file: Appendix-C/Appendix-C.aux
 A level-1 auxiliary file: Appendix-D/Appendix-D.aux
 The style file: apsr.bst
 Database file #1: dissertation.bib
-You're missing a field name---line 797 of file dissertation.bib
+You're missing a field name---line 804 of file dissertation.bib
  : 
  : %  title={HYSPLIT (HYbrid Single-Particle Lagrangian Integrated Trajectory) Model access via NOAA ARL READY Website. NOAA Air Resources Laboratory, Silver Spring},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 1129 of file dissertation.bib
+Repeated entry---line 1136 of file dissertation.bib
  : @article{hernquist1989treesph
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2486 of file dissertation.bib
+Repeated entry---line 2472 of file dissertation.bib
  : @article{bursik2012estimation
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2497 of file dissertation.bib
+Repeated entry---line 2483 of file dissertation.bib
  : @article{stefanescu2014temporal
  :                                ,
 I'm skipping whatever remains of this entry
-You've used 182 entries,
+You've used 183 entries,
             2874 wiz_defined-function locations,
-            1618 strings with 36700 characters,
-and the built_in function-call counts, 994402 in all, are:
-= -- 163889
-> -- 13181
+            1623 strings with 36813 characters,
+and the built_in function-call counts, 996249 in all, are:
+= -- 164178
+> -- 13197
 < -- 4
-+ -- 79275
-- -- 4545
-* -- 87494
-:= -- 195713
-add.period$ -- 735
-call.type$ -- 182
-change.case$ -- 2366
-chr.to.int$ -- 180
-cite$ -- 182
-duplicate$ -- 2764
-empty$ -- 6305
-format.name$ -- 4776
-if$ -- 178860
++ -- 79394
+- -- 4552
+* -- 87632
+:= -- 196126
+add.period$ -- 739
+call.type$ -- 183
+change.case$ -- 2379
+chr.to.int$ -- 181
+cite$ -- 183
+duplicate$ -- 2777
+empty$ -- 6328
+format.name$ -- 4785
+if$ -- 179183
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 184
-newline$ -- 751
-num.names$ -- 2129
-pop$ -- 573
+missing$ -- 185
+newline$ -- 755
+num.names$ -- 2139
+pop$ -- 578
 preamble$ -- 1
-purify$ -- 2730
+purify$ -- 2745
 quote$ -- 0
-skip$ -- 2479
+skip$ -- 2488
 stack$ -- 0
-substring$ -- 234518
-swap$ -- 396
-text.length$ -- 2552
+substring$ -- 234897
+swap$ -- 398
+text.length$ -- 2566
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 714
+type$ -- 718
 warning$ -- 0
-while$ -- 4344
+while$ -- 4365
 width$ -- 0
-write$ -- 2573
+write$ -- 2586
 (There were 4 error messages)

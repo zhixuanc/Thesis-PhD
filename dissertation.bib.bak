@@ -28,6 +28,13 @@
 	Volume = {91},
 	Year = {1983}}
 	
+@article{jeffreyquasilinear,
+  title={Quasilinear hyperbolic systems and waves (Pitman, London, 1976)},
+  author={Jeffrey, A},
+  journal={Google Scholar},
+  pages={155--157}
+}
+	
 %boundary conditions imposing for Hyperbolic system of equaiton.
 @article{thompson1990time,
   title={Time-dependent boundary conditions for hyperbolic systems, II},

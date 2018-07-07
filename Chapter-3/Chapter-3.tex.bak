@@ -2,7 +2,7 @@
 \chapter{Classical SPH Method} \label{chapter:classical-SPH}
 
 \section{Introduction}
-A mesh-free Lagragian method, SPH, is selected to numerically solve the governing equations. There are several review papers by \citet{monaghan1992smoothed, monaghan2005smoothed, rosswog2009astrophysical, price2012smoothed, monaghan2012smoothed}, giving a pretty comprehensive view over SPH. We only refer here to the representation of the constitutive equations in SPH and put more focus on specific numerical techniques for volcanic plume modeling.
+A mesh-free Lagragian method, SPH, is selected to numerically solve the governing equations. There are several review papers by \citet{monaghan1992smoothed, monaghan2005smoothed, rosswog2009astrophysical, price2012smoothed, monaghan2012smoothed}, providing a comprehensive view over SPH. We only refer here to the representation of the constitutive equations in SPH and put more focus on specific numerical techniques for volcanic plume modeling.
 In the classical SPH formulation a fluid is divided into a number of particles whose location is updated at every time step. An approximation to the field variables (velocity, density and pressure) is obtained by interpolation of particle quantities using a kernel.
 We will only consider kernel functions with compact support. Derivatives of variables are converted into derivatives of the kernel function, and different formulations of the derivatives can be shown to possess various properties.
 
@@ -80,19 +80,43 @@ For vector quantities the expressions are similar, simply replacing $A$ with $\t
 \end{align}
 
 \section{Adaptive smoothing length}
-The spatial resolution of SPH is determined by the smoothing length, $h$. It is common for each particle to have its own time dependent smoothing length which adapts according to the local number density of particles. Adaptive smoothing length can automatically match the resolution length $h$ to the scale of the system and is especially necessary in certain scenarios where density varies in a large range, for example, Sj$\ddot{o}$green tests.
-The adaptivity of smoothing length is less important for incompressible flow while pretty necessary for compressible flow. There are two different ways to adjust the smoothing length.
+The spatial resolution of SPH is determined by the smoothing length, $h$. It is common for each particle to have its own time dependent smoothing length which adapts according to the local number density of particles. Adaptive smoothing length can automatically match the resolution length $h$ to the scale of the system and is especially necessary in certain scenarios where density varies in a large range, for example, Sj$\ddot{o}$green test \citep{jeffreyquasilinear}, see Fig. \ref{fig:sjogreen-adapt-vs-no}. However, the effect of adaptive smoothing length is not that obvious in some other tests, for example, see Fig. \ref{fig:GSPH-sod-adapt-vs-no}.
+The adaptivity of smoothing length is less important for incompressible flow while pretty necessary for compressible flow. 
+\begin{figure}[h]
+    \centering
+	\begin{minipage}{.48\textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-d}
+	\end{minipage}%
+	\begin{minipage}{.48\textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-v}
+	\end{minipage}
+\caption{between results of 1D sj$\ddot{o}$green test using adaptive smoothing length and without using adaptive smoothing length. Confirm the importance of using adaptive smoothing length.}
+    \label{fig:sjogreen-adapt-vs-no}
+\end{figure}
 
+\begin{figure}[h]
+\center
+\begin{minipage}{.5\textwidth}
+        \centering
+        \includegraphics[width=0.99 \textwidth]{./Chapter-3/Figures/SM-Adapt-MEs}
+\end{minipage}
+\caption{Comparison between results of 1D Sod test using adaptive smoothing length and without using adaptive smoothing length. $h$ is taken as $h_b$ in the discretized governing equations. Demonstrate that there is no big difference between using adaptive smoothing length and without using adaptive smoothing length.}
+    \label{fig:GSPH-sod-adapt-vs-no}
+\end{figure}
+
+There are two different ways to adjust the smoothing length.
 One robust way of specifying the smoothing length $h$ is proposed by \citet{gingold1978binary}. He suggested that changing of the smoothing length should be related to density according to: 
 \begin{equation}
 h_a = \sigma \left(\frac{m_a}{\rho_a}\right)^{\frac{1}{d}}
 \label{eq:adptive-sml-Gingold}
 \end{equation}
-Where $d$ is number of dimensions and he suggested to use 1.3 for $\sigma$.
+where $d$ is number of dimensions and he suggested to use 1.3 for $\sigma$.
 There are many variations of this formulation. For example, \citet{steinmetz1993capabilities} suggested to use averaged local density to determine the smoothing length. \citet{hernquist1989treesph} suggested to keep number of neighbour particles constant by adjusting smoothing length. \citet{inutsuka2002reformulation} suggested to use a more smooth density to avoid large varying of smoothing length within the neighborhood of each particle.
 Equation (\ref{eq:adptive-sml-Gingold}) is a nonlinear equation for the single variable $\rho_a$  which can be solved rapidly by iteration, possibly combined with a Newton-Raphson scheme.
 
-The introduction of time varying smoothing lengths can, however, lead to serious problems with and momentum energy conservation in certain situations \citep{hernquist1993some}. Few attention has been paid to losing of strict conservation feature in original SPH discretization when smoothing length varies in time and space. The problem arises from the fact that the use of variable smoothing lengths means that additional terms \citep{nelson1994variable} should appear in the particle equations of motion. In our implementation, we adopt a simple strategy \citep{evrard1988beyond}: $h$ takes the average of $h_a$ and $h_b$. Such strategy can help restore the strict conservation feature of classical SPH discretization providing that the two paired particles are in ``pool of neighbouring particles" of each other. 
+The introduction of time varying smoothing lengths can, however, lead to serious problems with momentum and energy conservation in certain situations \citep{hernquist1993some}. Few attention has been paid to lost of strict conservation in original SPH discretization when smoothing length varies in time and space. The problem arises from the fact that the use of variable smoothing lengths means that additional terms \citep{nelson1994variable} should appear in the particle equations of motion. In our implementation, we adopt a simple strategy \citep{evrard1988beyond}: $h$ takes the average of $h_a$ and $h_b$. Such strategy can help restore the strict conservation feature of classical SPH discretization providing that the two paired particles are in ``pool of neighbouring particles" of each other. 
 
 \section{Artificial viscosity} \label{sec:artificial-viscosity}
 In classical SPH, shock waves are handled by introducing artificial viscosity, a term that is defined based on second derivatives of velocity, to smear out discontinuities and stabilize the simulation. As in the case of first order derivatives, second order derivatives can be estimated by differentiating a SPH interpolation twice. However, such a formulation has two disadvantages: first, it is very sensitive to irregular distribution of particles, second, the second derivative of the kernel can change sign and lead to unphysical representations (for example, viscous dissipation causes decrease of the entropy). 
@@ -116,7 +140,7 @@ where
 The artificial viscosity term $\Pi_{ab}$ is a Galilean invariant and vanishes for rigid rotation. It produces a repulsive force between two particles when they are approaching each other and an attractive force when they are receding from each other. 
 
 The SPH viscosity can be related to a continuum viscosity by converting the summation to integrals \citep{monaghan2005smoothed}. It has been shown that shear viscosity coefficient $\iota= \frac{\rho \alpha h c}{8} $ and bulk viscosity coefficient $ \zeta = \frac{5 \iota}{3}$ are appropriate for two dimensional flows and modified to $\iota= \frac{\rho \alpha h c}{10} $ , $ \zeta = \frac{5 \iota}{3}$ for three dimensional flows.
-An extra term was added to $\nu$ considering aspects of the dissipative term in shock solutions based on Riemann solvers and lead to a new formulation of artificial viscosity. We adopt this new formulation in our simulation:
+An extra term was added to $\nu$ considering aspects of the dissipative term in shock solutions based on Riemann solvers and lead to a new formulation of artificial viscosity \citep{monaghan1992smoothed}. We adopt this new formulation in our simulation:
 \begin{equation}
 \Pi_{ab}^{\beta} = 
 \begin{cases} 
@@ -164,14 +188,14 @@ We highlight an important feature of the SPH methodology. Adding new physics and
 
 where the source term $\dot{\rho}$ can be a "sink" of erupted vapor due to its phase change.
 %(see microphysics modelling in ATHAM \citep{oberhuber1998volcanic}).
-$D$ is a drag force coefficient. $\kappa$ is the heat conduction coefficient. $T$ is the temperature. Other physics can be added easily in a similar way. Adding of these new terms leads to modification of only a few lines in the source code. The drag force term should show up when dynamic disequilibrium between different phases is considered. In that case, each phase needs one set of governing equations of Navier-Stokes type. Adding of new phase into SPH code only needs adding few new lines for the new phase besides interaction terms introduced by the new phase.
+where $D$ is a drag force coefficient, $\kappa$ is the heat conduction coefficient, $T$ is the temperature. Other physics can be added easily in a similar way. Adding of these new terms leads to modification of only a few lines in the source code. The drag force term should show up when dynamic disequilibrium between different phases is considered. In that case, each phase needs one set of governing equations of Navier-Stokes type. Adding of new phase into SPH code only needs adding few new lines for the new phase besides interaction terms introduced by the new phase.
 
 \section{Time step}
 The physical quantities (velocity, density and pressure) and particle position change every time step. The Courant condition, which is in spirit similar to the Courant condition for the mesh-based methods, is used to determine the time step $\Delta t$.
 \begin{equation}
 \Delta t = \textrm{CFL} \min_a \bigg \lbrace \dfrac{\left[\frac{m_a}{\rho_a}\right]^{\frac{1}{d}}}{c_a} \bigg \rbrace
 \end{equation}
-where $c_a$ is sound speed at particle $a$ and calculated based on heat specific ration of the mixture $\gamma_m$ (See Eq. (\ref{eq:sound-speed-mixture})). 
+where $c_a$ is sound speed at particle $a$ and calculated based on heat specific ratio of the mixture $\gamma_m$ (See Eq. (\ref{eq:sound-speed-mixture})). 
 $d$ is number of dimensions. 
 \begin{equation}
 c_a = \sqrt{\gamma_m \frac{p_a}{\rho_a}}

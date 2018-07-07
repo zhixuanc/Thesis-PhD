@@ -151,7 +151,7 @@ Fig. \ref{fig:pinatubo-simulation-results-vis} shows the mass fraction of simula
         \centering
         \includegraphics[width=0.99 \textwidth]{Chapter-6/Figures/gmd-mssfrc-xz-zoomed}
     \end{minipage}%  
-    \caption{Mass fraction for $t=300s$ after eruption. Figures on the first row are visualization of SPH simulation results. The figure on the up right corner is visualization of a slice of the computational. The lowest portion of the plume represents erupted material in eruption vent (the underground portition). Figures at the second row show contour of mass fraction and velocity quiver on x-z plane. These figures are plotted utilizing post-processed data (see Appendix \ref{app:project-SPH-grid}). The contour levels in the plots are $0.00001, 0.0001, 0.001, 0.1, 0.3, 0.75, 0.95$. The figure on the lower right corner is a zoomed view of velocity quivier showing plume expansion and entrainment of air.}
+    \caption{Mass fraction for $t=300s$ after eruption. Figures on the first row are visualization of SPH simulation results. The figure on the up right corner is visualization of a slice of the computational. The lowest portion of the plume represents erupted material in eruption vent (the underground portition). Figures at the second row show contour of mass fraction and velocity quiver on x-z plane. These figures are plotted utilizing post-processed data (see Appendix \ref{app:project-SPH-grid}). The contour levels in the plots are $0.00001$, $0.0001$, $0.001$, $0.1$, $0.3$, $0.75$, $0.95$. The figure on the lower right corner is a zoomed view of velocity quivier showing plume expansion and entrainment of air.}
     \label{fig:pinatubo-simulation-results-vis}
 \end{figure}
 

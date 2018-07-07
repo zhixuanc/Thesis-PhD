@@ -5,18 +5,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Overview of 1D shock tube tests}}{65}{table..4.1}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Overview of 1D shock tube tests}}{66}{table..4.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Computational cost per particle for different steps}}{85}{table..5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Simulation time when using the same particle weight and different particle weights.}}{89}{table..5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Computational workload of extra steps for domain adjusting. SWCH represents the step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison.}}{91}{table..5.3}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Computational cost per particle for different steps}}{86}{table..5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Simulation time when using the same particle weight and different particle weights.}}{90}{table..5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Computational workload of extra steps for domain adjusting. SWCH represents the step that switch pressure ghost particle to real particle, ADPP is short for adding new pressure ghost particles, ADWP represents adding wall ghost particles, SCN is short for scanning the outmost layer of the domain. Momentum and energy update (UPME) and position update (UPP) also included for comparison.}}{92}{table..5.3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Eruption condition for Plume and JPUE simulation}}{95}{table..6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Material properties for Plume and JPUE simulation}}{98}{table..6.2}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Eruption condition for Plume and JPUE simulation}}{96}{table..6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Material properties for Plume and JPUE simulation}}{99}{table..6.2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Three different manners for creating initial conditions (initial ash clouds) for PUFF simulation}}{112}{table..7.1}
-\contentsline {table}{\numberline {7.2}{\ignorespaces The starting and ending time (UT) for simulating the climactic phase of Pinatubo eruption on June 15 1991. Observed plume height \citep {holasek1996satellite} at different time are also list in the table.}}{114}{table..7.2}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Parameters for PUFF simulation of the climactic phase of Pinatubo eruption on June 15 1991. The first six parameters define the initial condition. The first four parameters for bent are based on plume modeling. First six parameters for Plume-SPH are based on plume modeling but not needed for creating initial ash cloud.}}{117}{table..7.3}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Three different manners for creating initial conditions (initial ash clouds) for PUFF simulation}}{113}{table..7.1}
+\contentsline {table}{\numberline {7.2}{\ignorespaces The starting and ending time (UT) for simulating the climactic phase of Pinatubo eruption on June 15 1991. Observed plume height \citep {holasek1996satellite} at different time are also list in the table.}}{115}{table..7.2}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Parameters for PUFF simulation of the climactic phase of Pinatubo eruption on June 15 1991. The first six parameters define the initial condition. The first four parameters for bent are based on plume modeling. First six parameters for Plume-SPH are based on plume modeling but not needed for creating initial ash cloud.}}{118}{table..7.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
