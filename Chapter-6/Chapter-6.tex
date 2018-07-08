@@ -89,7 +89,7 @@ where subscript $0$ represents the cross-sectionally averaged exit value, $D$ is
 $slope$ for jet width based on velocity is 0.104 and for concentration is 0.157. 
 $intercept$ for jet width based on velocity is 2.58 while that for the concentration is 4.35.
 
-Although both velocity and concentration are found to be well matched with experimental results, a small disparity in both velocity and concentration are observed near the boundary of the jet. Which is possibly caused by overestimating of the drag effect by standard SPH \citep {ritchie2001multiphase}. \citet {ritchie2001multiphase} also proposed an alternative way for density update which relieved the overestimating of the drag effect. However, how well does his method conserve mass is not clear. There are several other factors that might also attribute to such disparity. Reynolds number is not reported in many experiments assuming a high enough Reynolds number. In addition, some details of the experiments, such as exit velocity profile and viscosity of the experimental liquid, are not reported. These factors prevent us from numerically reproducing these experiments in an exact way as they were conducted. However, the features of JPUE are correctly reproduced with our code.
+Although both velocity and concentration are found to be well matched with experimental results, a small disparity in both velocity and concentration are observed near the boundary of the jet. Which is possibly caused by overestimating of the drag effect by standard SPH \citep {ritchie2001multiphase}. \citet {ritchie2001multiphase} also proposed an alternative way for density update which relieved the overestimating of the drag effect. However, how well does his method conserve mass is not clear. There are several other factors that might also attribute to such disparity. Reynolds number is not reported in many experiments assuming a high enough Reynolds number. In addition, some details of the experiments, such as exit velocity profile and viscosity of the experimental liquid, are not reported. These factors prevent us from numerically reproducing these experiments in an exact way as they were conducted. However, there is a general match between simulated results simulated by our code and experimental results in terms of normalized jet width and cross-sectional distribution of concentration and velocity (see Fig. \ref{fig:JPUE_along-axis} and Fig. \ref{fig:JPUE_cross-section}).
 
 We also investigated the mixing due to turbulence in JPUE simulation by checking the mixture of the two phases. It is shown in Fig. \ref{fig:Turb_mixing} that the ejected material and ambient fluids are mixed through eddies at the outer shear region. And the inner dense core dispersed gradually due to erosion of the outer shear region. Hence, our confidence in the numerical correctness of our code is greatly reinforced.
 
@@ -112,7 +112,7 @@ Vertical distribution of temperature, pressure and density is used to establish 
 \begin{table}[htp]
 \centering
 	\begin{centering}
-      \caption{Material properties for Plume and JPUE simulation}		
+      \caption{Material properties for Plume simulation}		
 	  \begin{tabular}{lrrr}
 	    \hline
 	    Parameters & Units  & Value \\
@@ -156,7 +156,7 @@ Fig. \ref{fig:pinatubo-simulation-results-vis} shows the mass fraction of simula
 \end{figure}
 
 \subsection{Global and local variables}
-One of the key global quantities of great interest is the altitude to which the plume rises. The top height predicted by our model is around 40 km which agrees with other plume models. For example, the height predicted by PDAC is 42500 m, by SK-3D is 39920 m, by ATHAM is 33392 m, by AHSEE is 36700 m. As for local variables, the profiles of integrated temperature, density, mass fraction of entrained air, gas mass fraction, mass fraction of solid and the radius of the plume as a function of height are compared with existing 3D models in Fig. \ref{fig:strong_local_temp} $\sim$ \ref{fig:strong_local_radius}. To get rid of significant fluctuations in time and space we conducted a time averaging and spatial integration of the dynamic 3D flow fields following \citet {cerminara2016large}.
+One of the key global quantities of great interest is the altitude to which the plume rises. The maximum heigh our simulated plume reaches is $41800 m$ which agrees with other plume models. For example, the height predicted by PDAC is $42500 m$, by SK-3D is $39920 m$, by ATHAM is $33392 m$, by AHSEE is $36700 m$. As for local variables, the profiles of integrated temperature, density, mass fraction of entrained air, gas mass fraction, mass fraction of solid and the radius of the plume as a function of height are compared with existing 3D models in Fig. \ref{fig:strong_local_temp} $\sim$ \ref{fig:strong_local_radius}. To get rid of significant fluctuations in time and space we conducted a time averaging and spatial integration of the dynamic 3D flow fields following \citet {cerminara2016large}.
 
 As particles distribute irregularly in the space in SPH simulation results. We need to project simulation results (on irregular particles) onto a pre-defined grid before doing time average and spatial integration. See appendix A for more details of post processing.
 
@@ -285,7 +285,7 @@ Our model adopts the same assumptions and governing equations as SK-3D. However,
 
 All of the previous results are simulations of successive eruptions from beginning to end. In this subsection, two short periods (100s and 300s) eruptions are simulated to further investigate the capability of Plume-SPH in capturing the salient physics in volcanic plume development. In these simulations, parameters including eruption condition, material properties, atmosphere condition, resolution and domain specifications are the same as previous simulation. The only difference is that these eruptions end during the middle of simulation. Such short period eruption cases are simulated by stopping adding new eruption ghost particles at specific time during simulation.
 
-As has been shown in Fig. \ref{fig:pinatubo-short-erupt-evolution}, both plumes keep raising up after stopping eruption, which excludes "push" of newly erupted material from driven forces that keeps plume raising up. The NBL of two short periods eruption are the same being around $17 km \sim 24 km$, which is consistent with observations. That is to say NBL is independent of eruption duration.
+As has been shown in Fig. \ref{fig:pinatubo-short-erupt-evolution}, both plumes keep raising up after stopping eruption, which excludes "push" of newly erupted material from driven forces that keeps plume raising up. The NBL of two short periods eruption are the same being around $17 km \sim 24 km$, which is consistent with observations \citep[][e.g.]{jager1992pinatubo, avdyushin19931, defoor1992early}. That is to say NBL is independent of eruption duration.
 
 \subsection{GSPH and RSPH simulation}
 We also attempt to simulate the Pinatubo eruption using GSPH solver and RSPH solver. However, the simulation quickly breaks down due to negative energy. Several changes are tried to get rid of negative energy.
