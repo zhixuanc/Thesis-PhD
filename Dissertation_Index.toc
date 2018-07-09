@@ -56,8 +56,8 @@
 \contentsline {section}{\numberline {4.4}Numerical tests}{65}{section..4.4}
 \contentsline {subsection}{\numberline {4.4.1}Comparison of RSPH with standard SPH and GSPH}{66}{subsection..4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Accuracy tests}{69}{subsection..4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Comprehensive 1D tests}{71}{subsection..4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}3D free jet}{74}{subsection..4.4.4}
+\contentsline {subsection}{\numberline {4.4.3}Comprehensive 1D tests}{72}{subsection..4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}3D free jet}{72}{subsection..4.4.4}
 \contentsline {section}{\numberline {4.5}Conclusion}{77}{section..4.5}
 \contentsline {chapter}{\numberline {5}Code Architecture and Parallelization}{79}{chapter..5}
 \contentsline {section}{\numberline {5.1}Introduction}{79}{section..5.1}
