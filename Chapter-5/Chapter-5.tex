@@ -55,7 +55,7 @@ Several features of this indexing scheme are suitable for SPH:
 \item This type of key effectively generates a global address space. Globalism of key and conservation of spatial locality make it easy to partition the sorted key sequence and obtain a decomposition of the problem.
 \end{itemize}
 
-The (time-dependent) SFC based indexing plays central pivot role in the architecture. Besides creating unique ID efficiently and independently, SFC based domain decomposition helps preserve spatial locality making it very easy to design a hash function that preserve such locality in memory. The globalism of such indexing, which is also inherited in hash table, greatly simplifies complexity when moving elements around. As index generating (hence hashing) is independent and fast, creating/deleting of element are more efficient and flexible.
+The (time-dependent) SFC based indexing plays an pivot role in the architecture. Besides creating the unique ID efficiently and independently, SFC based domain decomposition helps preserve spatial locality making it very easy to design a hash function that preserve such locality in memory. The globalism of such indexing, which is also inherited in hash table, greatly simplifies complexity when moving elements around. As index generating (hence hashing) is independent and fast, creating/deleting of element are more efficient and flexible.
 All these features help keep the overall architecture brief, robust and sustainable.
 
 \subsection{Data management strategies}
