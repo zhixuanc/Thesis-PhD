@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  10 JUL 2018 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  11 JUL 2018 11:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -540,107 +540,6 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pyy=\skip108
 \pxx=\skip109
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/zref-xr.sty
-Package: zref-xr 2012/04/04 v2.24 Module xr for zref (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/zref-base.sty
-Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-))
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-)
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
-)
-Package zref Info: New property list: main on input line 759.
-Package zref Info: New property: default on input line 760.
-Package zref Info: New property: page on input line 761.
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-)
-Package zref Info: New property: url on input line 55.
-Package zref Info: New property: urluse on input line 56.
-Package zref Info: New property: externaldocument on input line 57.
-\ZREF@xr@URL=\count173
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/xr.sty
-Package: xr 1994/05/28 v5.02 eXternal References (DPC)
-)
-Package zref Info: New property: anchor on input line 144.
-Package zref Info: New property: title on input line 144.
-Package zref-xr Info: Label (zref) import from `Chapter-1/Chapter-1.aux' on inp
-ut line 145.
-Package zref-xr Info: Statistics for `Chapter-1/Chapter-1.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Chapter-2/Chapter-2.aux' on inp
-ut line 146.
-Package zref-xr Info: Statistics for `Chapter-2/Chapter-2.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Chapter-3/Chapter-3.aux' on inp
-ut line 147.
-Package zref-xr Info: Statistics for `Chapter-3/Chapter-3.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Chapter-4/Chapter-4.aux' on inp
-ut line 148.
-Package zref-xr Info: Statistics for `Chapter-4/Chapter-4.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Chapter-5/Chapter-5.aux' on inp
-ut line 149.
-Package zref-xr Info: Statistics for `Chapter-5/Chapter-5.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Chapter-6/Chapter-6.aux' on inp
-ut line 150.
-Package zref-xr Info: Statistics for `Chapter-6/Chapter-6.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Chapter-7/Chapter-7.aux' on inp
-ut line 151.
-Package zref-xr Info: Statistics for `Chapter-7/Chapter-7.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Chapter-8/Chapter-8.aux' on inp
-ut line 152.
-Package zref-xr Info: Statistics for `Chapter-8/Chapter-8.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Appendix-A/Appendix-A.aux' on i
-nput line 153.
-Package zref-xr Info: Statistics for `Appendix-A/Appendix-A.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Appendix-B/Appendix-B.aux' on i
-nput line 154.
-Package zref-xr Info: Statistics for `Appendix-B/Appendix-B.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Appendix-C/Appendix-C.aux' on i
-nput line 155.
-Package zref-xr Info: Statistics for `Appendix-C/Appendix-C.aux':
-(zref-xr)             0 zref label(s) found.
-Package zref-xr Info: Label (zref) import from `Appendix-D/Appendix-D.aux' on i
-nput line 161.
-Package zref-xr Info: Statistics for `Appendix-D/Appendix-D.aux':
-(zref-xr)             0 zref label(s) found.
-
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -653,15 +552,25 @@ Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package hobsub Info: Skipping package `etexcmds' (already loaded).
-Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
-Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
-Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -681,14 +590,20 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
 \@linkdim=\dimen171
-\Hy@linkcounter=\count174
-\Hy@pagecounter=\count175
+\Hy@linkcounter=\count173
+\Hy@pagecounter=\count174
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count176
+\Hy@SavedSpaceFactor=\count175
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -702,10 +617,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count177
+\c@Hy@tempcnt=\count176
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen172
-\Fld@menulength=\count178
+\Fld@menulength=\count177
 \Field@Width=\dimen173
 \Fld@charsize=\dimen174
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -717,17 +632,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count179
-\c@Item=\count180
-\c@Hfootnote=\count181
+\Hy@abspage=\count178
+\c@Item=\count179
+\c@Hfootnote=\count180
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count182
-\c@bookmark@seq@number=\count183
+\Fld@listcount=\count181
+\c@bookmark@seq@number=\count182
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -767,16 +682,16 @@ File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count184
+\scratchcounter=\count183
 \scratchdimen=\dimen175
 \scratchbox=\box40
-\nofMPsegments=\count185
-\nofMParguments=\count186
+\nofMPsegments=\count184
+\nofMParguments=\count185
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count187
+\MPscratchCnt=\count186
 \MPscratchDim=\dimen176
-\MPnumerator=\count188
-\makeMPintoPDFobject=\count189
+\MPnumerator=\count187
+\makeMPintoPDFobject=\count188
 \everyMPtoPDFconversion=\toks45
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -804,7 +719,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count190
+\c@section@level=\count189
 )
 LaTeX Info: Redefining \ref on input line 279.
 LaTeX Info: Redefining \pageref on input line 279.
@@ -874,7 +789,13 @@ Overfull \hbox (1.61969pt too wide) in paragraph at lines 31--31
 rn-ing equa- 
  []
 
-[8] [9])
+[8] [9]
+Overfull \hbox (13.08328pt too wide) in paragraph at lines 97--97
+ [][] []\OT1/ppl/m/n/12 ``Plume-SPH+PUFF" and ``Semiem-pir-i-cal ini-tial cloud
+ +PUFF" []  
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `Dissertation_Index.toc'.
 
@@ -907,27 +828,9 @@ Overfull \hbox (8.90308pt too wide) in paragraph at lines 11--11
 
 
 ] [13] [14] [15] [16] [17]
-Overfull \hbox (8.49577pt too wide) in paragraph at lines 52--52
- [][] []\OT1/ppl/m/n/12 Comparison be-tween ``bent+PUFF" and ``Plume-SPH+PUFF".
- Pic- 
- []
-
-
-Overfull \hbox (24.34642pt too wide) in paragraph at lines 52--52
- \OT1/ppl/m/n/12 sim-u-la-tion based on Plume-SPH, TOMS or AVHRR im-age of Pina
-tubo 
- []
-
-
 Overfull \hbox (5.652pt too wide) in paragraph at lines 53--53
  \OT1/ppl/m/n/12 ver-ti-cal spread, in the ex-pres-sion of Pois-son plume shape
  is $6662\OML/zplm/m/it/12 m$\OT1/ppl/m/n/12 . 
- []
-
-
-Overfull \hbox (4.66774pt too wide) in paragraph at lines 56--56
- [][] []\OT1/ppl/m/n/12 Comparison of vol-canic clouds sim-u-lated by ``Plume-S
-PH+PUFF" 
  []
 
 [18])
@@ -2687,4 +2590,517 @@ PH solver and RSPH
 File: Chapter-6/Figures/RSPH_mssfrc_420s.jpg Graphic file (type jpg)
 
 <use Chapter-6/Figures/RSPH_mssfrc_420s.jpg>
-Package pdftex.def Info: Chapter
+Package pdftex.def Info: Chapter-6/Figures/RSPH_mssfrc_420s.jpg used on input l
+ine 296.
+(pdftex.def)             Requested size: 314.37465pt x 202.0044pt.
+
+<Chapter-6/Figures/GSPH_mssfrc_640s.jpg, id=924, 1235.61626pt x 793.96625pt>
+File: Chapter-6/Figures/GSPH_mssfrc_640s.jpg Graphic file (type jpg)
+
+<use Chapter-6/Figures/GSPH_mssfrc_640s.jpg>
+Package pdftex.def Info: Chapter-6/Figures/GSPH_mssfrc_640s.jpg used on input l
+ine 303.
+(pdftex.def)             Requested size: 314.37465pt x 202.0044pt.
+) [105] [106 <./Chapter-6/Figures/RSPH_mssfrc_420s.jpg> <./Chapter-6/Figures/GS
+PH_mssfrc_640s.jpg>]
+\openout2 = `Chapter-7/Chapter-7.aux'.
+
+
+(./Chapter-7/Chapter-7.tex
+Chapter 7.
+[107
+
+
+
+] [108]
+Overfull \hbox (1.61829pt too wide) in paragraph at lines 26--30
+[]\OT1/ppl/m/n/12 We choose PUFF (Searcy, Dean and Stringer, 1998) as the VATD 
+model among
+ []
+
+[109]
+Missing character: There is no Â in font pplr7t!
+Missing character: There is no ° in font pplr7t!
+ <./PPT/Creat_initial_Ash.pdf, id=941, 364.36125pt x 789.95125pt>
+File: ./PPT/Creat_initial_Ash.pdf Graphic file (type pdf)
+
+<use ./PPT/Creat_initial_Ash.pdf>
+Package pdftex.def Info: ./PPT/Creat_initial_Ash.pdf used on input line 60.
+(pdftex.def)             Requested size: 188.6235pt x 408.94485pt.
+ [110] [111 <./PPT/Creat_initial_Ash.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./PPT/Creat_initial_Ash.pdf): PDF in
+clusion: invalid other resource which is no dict (key 'ProcSets', type <array>)
+; ignored.
+>]
+<Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg, id=961, 1235.61626pt x 793
+.96625pt>
+File: Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg Graphic file (type jpg
+)
+ <use Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg>
+Package pdftex.def Info: Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg use
+d on input line 83.
+(pdftex.def)             Requested size: 134.8662pt x 86.65811pt.
+
+<Chapter-7/Figures/mssfrc_top-with-axis.png, id=962, 1235.61626pt x 793.96625pt
+>
+File: Chapter-7/Figures/mssfrc_top-with-axis.png Graphic file (type png)
+ <use Chapter-7/Figures/mssfrc_top-with-axis.png>
+Package pdftex.def Info: Chapter-7/Figures/mssfrc_top-with-axis.png used on inp
+ut line 87.
+(pdftex.def)             Requested size: 134.8662pt x 86.65811pt.
+
+<Chapter-7/Figures/mssfrc_front-z15000.jpg, id=963, 1235.61626pt x 793.96625pt>
+File: Chapter-7/Figures/mssfrc_front-z15000.jpg Graphic file (type jpg)
+<use Chapter-7/Figures/mssfrc_front-z15000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/mssfrc_front-z15000.jpg used on inpu
+t line 91.
+(pdftex.def)             Requested size: 134.8662pt x 86.65811pt.
+ [112] [113 <./Chapter-7/Figures/mssfrc_front-filter-by-phase.jpg> <./Chapter-7
+/Figures/mssfrc_top-with-axis.png (PNG copy)> <./Chapter-7/Figures/mssfrc_front
+-z15000.jpg>]
+<Chapter-7/Figures/Restart-PUFF.pdf, id=971, 1643.13875pt x 689.57625pt>
+File: Chapter-7/Figures/Restart-PUFF.pdf Graphic file (type pdf)
+
+<use Chapter-7/Figures/Restart-PUFF.pdf>
+Package pdftex.def Info: Chapter-7/Figures/Restart-PUFF.pdf used on input line 
+125.
+(pdftex.def)             Requested size: 377.24702pt x 158.3151pt.
+ [114] [115 <./Chapter-7/Figures/Restart-PUFF.pdf
+
+pdfTeX warning: /usr/texbin/pdflatex (file ./Chapter-7/Figures/Restart-PUFF.pdf
+): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type
+ <array>); ignored.
+>]
+Overfull \hbox (30.6365pt too wide) in paragraph at lines 143--155
+ [][] 
+ []
+
+
+<Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg, id=1271, 1766.6pt x 995.7
+2pt>
+File: Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg Graphic file (type jp
+g)
+ <use Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg us
+ed on input line 161.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+
+<Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg, id=1272, 1766.6pt x 995.7
+2pt>
+File: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg Graphic file (type jp
+g)
+ <use Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg us
+ed on input line 165.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+
+<Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg, id=1273, 1766.6pt x 995.
+72pt>
+File: Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg Graphic file (type j
+pg)
+ <use Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-11hr-cut15000.jpg u
+sed on input line 169.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+ [116 <./Chapter-7/Figures/199106180441-ash-5hr-cut15000.jpg> <./Chapter-7/Figu
+res/199106180441-ash-9hr-cut15000.jpg> <./Chapter-7/Figures/199106180441-ash-11
+hr-cut15000.jpg>]
+<Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg, id=1277, 1766.6pt x 995.72
+pt>
+File: Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg Graphic file (type jpg
+)
+ <use Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg>
+Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg use
+d on input line 181.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+File: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg Graphic file (type jp
+g)
+
+<use Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/199106180441-ash-9hr-cut15000.jpg us
+ed on input line 185.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+ [117 <./Chapter-7/Figures/199106180441-ash-9hr-cut1500.jpg>]
+Overfull \hbox (30.31245pt too wide) in paragraph at lines 232--232
+[]\OT1/ppl/b/n/14.4 ``Plume-SPH+PUFF" and ``Semiem-pir-i-cal ini-tial cloud +PU
+FF" 
+ []
+
+<Chapter-7/Figures/bent-23hr-ash.jpg, id=1281, 1766.6pt x 995.72pt>
+File: Chapter-7/Figures/bent-23hr-ash.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/bent-23hr-ash.jpg>
+Package pdftex.def Info: Chapter-7/Figures/bent-23hr-ash.jpg used on input line
+ 240.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+
+<Chapter-7/Figures/SPH-Plume-23hr-ash.jpg, id=1282, 1766.6pt x 995.72pt>
+File: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/SPH-Plume-23hr-ash.jpg>
+Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-23hr-ash.jpg used on input
+ line 244.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+
+<Chapter-7/Figures/OB-ash-23hr-ash.png, id=1283, 571.13374pt x 375.4025pt>
+File: Chapter-7/Figures/OB-ash-23hr-ash.png Graphic file (type png)
+
+<use Chapter-7/Figures/OB-ash-23hr-ash.png>
+Package pdftex.def Info: Chapter-7/Figures/OB-ash-23hr-ash.png used on input li
+ne 248.
+(pdftex.def)             Requested size: 134.8662pt x 88.64348pt.
+
+<Chapter-7/Figures/bent-31hr-ash.jpg, id=1285, 1766.6pt x 995.72pt>
+File: Chapter-7/Figures/bent-31hr-ash.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/bent-31hr-ash.jpg>
+Package pdftex.def Info: Chapter-7/Figures/bent-31hr-ash.jpg used on input line
+ 253.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+
+<Chapter-7/Figures/SPH-Plume-31hr-ash.jpg, id=1286, 1766.6pt x 995.72pt>
+File: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/SPH-Plume-31hr-ash.jpg>
+Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-31hr-ash.jpg used on input
+ line 257.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+
+<Chapter-7/Figures/OB-ash-31hr-ash.png, id=1287, 570.13pt x 372.39125pt>
+File: Chapter-7/Figures/OB-ash-31hr-ash.png Graphic file (type png)
+
+<use Chapter-7/Figures/OB-ash-31hr-ash.png>
+Package pdftex.def Info: Chapter-7/Figures/OB-ash-31hr-ash.png used on input li
+ne 261.
+(pdftex.def)             Requested size: 134.8662pt x 88.08585pt.
+
+<Chapter-7/Figures/bent-55hr-ash.jpg, id=1288, 1766.6pt x 995.72pt>
+File: Chapter-7/Figures/bent-55hr-ash.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/bent-55hr-ash.jpg>
+Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash.jpg used on input line
+ 266.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+
+<Chapter-7/Figures/SPH-Plume-55hr-ash.jpg, id=1289, 1766.6pt x 995.72pt>
+File: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/SPH-Plume-55hr-ash.jpg>
+Package pdftex.def Info: Chapter-7/Figures/SPH-Plume-55hr-ash.jpg used on input
+ line 270.
+(pdftex.def)             Requested size: 134.8662pt x 76.0128pt.
+
+<Chapter-7/Figures/OB-ash-55hr-ash.png, id=1290, 569.12625pt x 374.39874pt>
+File: Chapter-7/Figures/OB-ash-55hr-ash.png Graphic file (type png)
+
+<use Chapter-7/Figures/OB-ash-55hr-ash.png>
+Package pdftex.def Info: Chapter-7/Figures/OB-ash-55hr-ash.png used on input li
+ne 274.
+(pdftex.def)             Requested size: 134.8662pt x 88.72067pt.
+
+Overfull \hbox (13.51329pt too wide) in paragraph at lines 280--282
+\OT1/ppl/m/n/12 hours and 31 hours af-ter the be-gin-ning of the cli-mac-tic ph
+ase, ``Plume-SPH+PUFF"
+ []
+
+[118] [119 <./Chapter-7/Figures/bent-23hr-ash.jpg> <./Chapter-7/Figures/SPH-Plu
+me-23hr-ash.jpg> <./Chapter-7/Figures/OB-ash-23hr-ash.png> <./Chapter-7/Figures
+/bent-31hr-ash.jpg> <./Chapter-7/Figures/SPH-Plume-31hr-ash.jpg> <./Chapter-7/F
+igures/OB-ash-31hr-ash.png> <./Chapter-7/Figures/bent-55hr-ash.jpg> <./Chapter-
+7/Figures/SPH-Plume-55hr-ash.jpg> <./Chapter-7/Figures/OB-ash-55hr-ash.png>]
+[120] [121]
+<Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png, id=1307, 562.1pt x 
+702.625pt>
+File: Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png Graphic file (t
+ype png)
+ <use Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png>
+Package pdftex.def Info: Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.
+png used on input line 314.
+(pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
+
+<Chapter-7/Figures/Plume-SPH-ParticleDis-z.png, id=1308, 562.1pt x 702.625pt>
+File: Chapter-7/Figures/Plume-SPH-ParticleDis-z.png Graphic file (type png)
+
+<use Chapter-7/Figures/Plume-SPH-ParticleDis-z.png>
+Package pdftex.def Info: Chapter-7/Figures/Plume-SPH-ParticleDis-z.png used on 
+input line 318.
+(pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
+
+<Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png, id=1309, 562.1pt x 702.62
+5pt>
+File: Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png Graphic file (type pn
+g)
+ <use Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png>
+Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax40k-ParticleDis-z.png us
+ed on input line 322.
+(pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
+
+<Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png, id=1310, 562.1pt x 702.625
+pt>
+File: Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png Graphic file (type png
+)
+ <use Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png>
+Package pdftex.def Info: Chapter-7/Figures/Suzuki-Hmax40k-ParticleDis-z.png use
+d on input line 326.
+(pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
+ [122 <./Chapter-7/Figures/Plume-SPH-ParticleDis-NoTrucation-z.png (PNG copy)> 
+<./Chapter-7/Figures/Plume-SPH-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figur
+es/Possion-Hmax40k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/Suzuki-Hm
+ax40k-ParticleDis-z.png (PNG copy)>]
+<Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png, id=1314, 562.1pt x 702.62
+5pt>
+File: Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png Graphic file (type pn
+g)
+ <use Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png>
+Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png us
+ed on input line 338.
+(pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
+
+<Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png, id=1315, 562.1pt x 702.62
+5pt>
+File: Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png Graphic file (type pn
+g)
+ <use Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png>
+Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax20k-ParticleDis-z.png us
+ed on input line 342.
+(pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
+
+<Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png, id=1316, 562.1pt x 702.62
+5pt>
+File: Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png Graphic file (type pn
+g)
+ <use Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png>
+Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax30k-ParticleDis-z.png us
+ed on input line 346.
+(pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
+
+<Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png, id=1317, 562.1pt x 702.62
+5pt>
+File: Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png Graphic file (type pn
+g)
+ <use Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png>
+Package pdftex.def Info: Chapter-7/Figures/Possion-Hmax35k-ParticleDis-z.png us
+ed on input line 350.
+(pdftex.def)             Requested size: 102.49678pt x 128.1181pt.
+
+<Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg, id=1318, 1606.0pt x 819.06pt>
+File: Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH10000.jpg used on 
+input line 360.
+(pdftex.def)             Requested size: 101.66728pt x 51.841pt.
+
+<Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg, id=1319, 1606.0pt x 819.06pt>
+File: Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg used on 
+input line 364.
+(pdftex.def)             Requested size: 101.66728pt x 51.841pt.
+
+<Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg, id=1320, 1606.0pt x 819.06pt>
+File: Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH30000.jpg used on 
+input line 368.
+(pdftex.def)             Requested size: 101.66728pt x 51.841pt.
+
+<Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg, id=1321, 1606.0pt x 819.06pt>
+File: Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg Graphic file (type jpg)
+
+<use Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg>
+Package pdftex.def Info: Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg used on 
+input line 372.
+(pdftex.def)             Requested size: 101.66728pt x 51.841pt.
+ [123 <./Chapter-7/Figures/Possion-Hmax10k-ParticleDis-z.png (PNG copy)> <./Cha
+pter-7/Figures/Possion-Hmax20k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figur
+es/Possion-Hmax30k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/Possion-H
+max35k-ParticleDis-z.png (PNG copy)> <./Chapter-7/Figures/bent-55hr-ash-MaxH100
+00.jpg> <./Chapter-7/Figures/bent-55hr-ash-MaxH20000.jpg> <./Chapter-7/Figures/
+bent-55hr-ash-MaxH30000.jpg> <./Chapter-7/Figures/bent-55hr-ash-MaxH35000.jpg>]
+ [124]) [125] [126]
+\openout2 = `Chapter-8/Chapter-8.aux'.
+
+
+(./Chapter-8/Chapter-8.tex
+Chapter 8.
+[127
+
+
+
+]
+Overfull \hbox (13.2131pt too wide) in paragraph at lines 13--15
+\OT1/ppl/m/n/12 My pro-posal for fu-ture im-prove-ment of the soft-ware in-clud
+es four as-pects: physics
+ []
+
+[128] [129] [130] [131] [132]
+Overfull \hbox (0.60088pt too wide) in paragraph at lines 43--44
+\OT1/ppl/m/n/12 mem-ory mode and dis-tributed mem-ory mode would not in-crease 
+the com-
+ []
+
+
+Overfull \hbox (3.6842pt too wide) in paragraph at lines 43--44
+\OT1/ppl/m/n/12 mem-ory ac-cess pat-tern, the hy-brid par-al-leliza-tion can gr
+eatly in-crease com-
+ []
+
+[133]
+Missing character: There is no Ã in font pplr7t!
+Missing character: There is no ¶ in font pplr7t!
+Missing character: There is no Ã in font pplr7t!
+Missing character: There is no ¶ in font pplr7t!
+
+Overfull \hbox (4.67921pt too wide) in paragraph at lines 56--57
+\OT1/ppl/m/n/12 erup-tion pa-ram-e-ters have been con-ducted based on other 1D 
+and 3D plume
+ []
+
+[134]
+Overfull \hbox (1.58359pt too wide) in paragraph at lines 60--61
+\OT1/ppl/m/n/12 com-pu-ta-tional speed is not fast enough to sup-port ei-ther u
+n-cer-tainty quan-
+ []
+
+) [135]
+\openout2 = `Appendix-A/Appendix-A.aux'.
+
+ (./Appendix-A/Appendix-A.tex
+Appendix A.
+[136
+
+
+
+] [137]) [138]
+\openout2 = `Appendix-B/Appendix-B.aux'.
+
+ (./Appendix-B/Appendix-B.tex
+Appendix B.
+[139
+
+
+
+]
+Overfull \hbox (55.75288pt too wide) detected at line 28
+[]\OT1/zplm/m/n/12 (\OML/zplm/m/it/12 pu\OT1/zplm/m/n/12 ) [] = []
+ []
+
+[140]) [141]
+\openout2 = `Appendix-C/Appendix-C.aux'.
+
+ (./Appendix-C/Appendix-C.tex
+Appendix C.
+[142
+
+
+
+]) [143]
+\openout2 = `Appendix-D/Appendix-D.aux'.
+
+ (./Appendix-D/Appendix-D.tex
+Appendix D.
+<Appendix-D/Figures/FigA1.png, id=1390, 1447.65843pt x 455.45157pt>
+File: Appendix-D/Figures/FigA1.png Graphic file (type png)
+
+<use Appendix-D/Figures/FigA1.png>
+Package pdftex.def Info: Appendix-D/Figures/FigA1.png used on input line 6.
+(pdftex.def)             Requested size: 398.33858pt x 125.32254pt.
+
+Overfull \hbox (1.88326pt too wide) in paragraph at lines 13--14
+[]\OT1/ppl/m/n/12 obtain raw sim-u-la-tion re-sults car-ried by par-ti-cles tha
+t ir-reg-u-larly dis-tribute
+ []
+
+[144
+
+
+
+ <./Appendix-D/Figures/FigA1.png>]) [145] (./Dissertation_Index.bbl
+[146
+
+
+]
+Underfull \hbox (badness 1248) in paragraph at lines 107--110
+[]\OT1/ppl/m/n/12 Cebeci, Tuncer. 2013.  \OT1/ppl/m/it/12 Anal-y-sis of tur-bu-
+lent flows with com-puter pro-grams\OT1/ppl/m/n/12 .
+ []
+
+[147]
+Underfull \hbox (badness 1210) in paragraph at lines 161--164
+[]\OT1/ppl/m/n/12 Cleary, Paul W and Joseph J Mon-aghan. 1999.  ``Con-duc-tion 
+mod-elling
+ []
+
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+[148]
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ” in font pplr7t!
+
+Underfull \hbox (badness 2435) in paragraph at lines 260--264
+[]\OT1/ppl/m/n/12 Dimotakis, Paul E, Richard C Miake-Lye and Dim-itris A Pa-pan
+-to-niou.
+ []
+
+[149] [150] [151] [152]
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ” in font pplr7t!
+ [153] [154] [155] [156]
+Underfull \hbox (badness 1043) in paragraph at lines 805--808
+[]\OT1/ppl/m/n/12 Puri, Ku-nal and Prabhu Ra-machan-dran. 2014\OT1/ppl/m/it/12 
+b\OT1/ppl/m/n/12 .  ``A com-par-i-son of SPH
+ []
+
+[157] [158] [159] [160]) [161] (./SupplementaryMaterial/Vita.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
+ [162
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
+
+(./Dissertation_Index.aux (./Chapter-1/Chapter-1.aux)
+(./Chapter-2/Chapter-2.aux) (./Chapter-3/Chapter-3.aux)
+(./Chapter-4/Chapter-4.aux) (./Chapter-5/Chapter-5.aux)
+(./Chapter-6/Chapter-6.aux) (./Chapter-7/Chapter-7.aux)
+(./Chapter-8/Chapter-8.aux) (./Appendix-A/Appendix-A.aux)
+(./Appendix-B/Appendix-B.aux) (./Appendix-C/Appendix-C.aux)
+(./Appendix-D/Appendix-D.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 421.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
+ ) 
+Here is how much of TeX's memory you used:
+ 16521 strings out of 493117
+ 295967 string characters out of 6135433
+ 392510 words of memory out of 5000000
+ 19410 multiletter control sequences out of 15000+600000
+ 57218 words of font info for 158 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,21n,40p,2037b,813s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/urw/palatino/uplri8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/t
+imes/utmr8a.pfb>
+Output written on Dissertation_Index.pdf (183 pages, 20981374 bytes).
+PDF statistics:
+ 1499 PDF objects out of 1728 (max. 8388607)
+ 827 compressed objects within 9 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 606 words of extra memory for PDF output out of 10000 (max. 10000000)
+

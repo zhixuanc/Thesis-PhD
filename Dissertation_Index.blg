@@ -32,45 +32,45 @@ Repeated entry---line 2483 of file dissertation.bib
  : @article{stefanescu2014temporal
  :                                ,
 I'm skipping whatever remains of this entry
-You've used 183 entries,
+You've used 182 entries,
             2874 wiz_defined-function locations,
-            1623 strings with 36813 characters,
-and the built_in function-call counts, 996249 in all, are:
-= -- 164178
-> -- 13197
+            1617 strings with 36530 characters,
+and the built_in function-call counts, 991295 in all, are:
+= -- 163381
+> -- 13108
 < -- 4
-+ -- 79394
-- -- 4552
-* -- 87632
-:= -- 196126
-add.period$ -- 739
-call.type$ -- 183
-change.case$ -- 2379
-chr.to.int$ -- 181
-cite$ -- 183
-duplicate$ -- 2777
-empty$ -- 6328
-format.name$ -- 4785
-if$ -- 179183
++ -- 79012
+- -- 4522
+* -- 87212
+:= -- 195141
+add.period$ -- 735
+call.type$ -- 182
+change.case$ -- 2366
+chr.to.int$ -- 180
+cite$ -- 182
+duplicate$ -- 2754
+empty$ -- 6293
+format.name$ -- 4755
+if$ -- 178283
 int.to.chr$ -- 7
 int.to.str$ -- 0
-missing$ -- 185
-newline$ -- 755
-num.names$ -- 2139
-pop$ -- 578
+missing$ -- 184
+newline$ -- 751
+num.names$ -- 2125
+pop$ -- 574
 preamble$ -- 1
-purify$ -- 2745
+purify$ -- 2730
 quote$ -- 0
-skip$ -- 2488
+skip$ -- 2462
 stack$ -- 0
-substring$ -- 234897
-swap$ -- 398
-text.length$ -- 2566
+substring$ -- 233788
+swap$ -- 388
+text.length$ -- 2552
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 718
+type$ -- 714
 warning$ -- 0
-while$ -- 4365
+while$ -- 4338
 width$ -- 0
-write$ -- 2586
+write$ -- 2571
 (There were 4 error messages)

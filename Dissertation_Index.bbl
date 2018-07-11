@@ -83,12 +83,12 @@ Bursik, Marcus, Matthew Jones, Simon Carn, Ken Dean, Abani Patra, Michael
   74(10):2321--2338.
 
 \harvarditem[Cao et~al.]{Cao, Patra, Bursik, Pitman \harvardand\
-  Jones}{2017}{gmd-2017-119}
-Cao, Z., A. Patra, M. Bursik, E.~B. Pitman \harvardand\ M. Jones. 2017.
-\newblock ``Plume-SPH 1.0: A three-dimensional, dusty-gas volcanic plume model
+  Jones}{2018}{gmd-2017-119}
+Cao, Z., A. Patra, M. Bursik, E.~B. Pitman \harvardand\ M. Jones. 2018.
+\newblock ``Plume-SPH 1.0: a three-dimensional, dusty-gas volcanic plume model
   based on smoothed particle hydrodynamics.'' {\em Geoscientific Model
-  Development Discussions} 2017:1--37.
-\newline\harvardurl{https://www.geosci-model-dev-discuss.net/gmd-2017-119/}
+  Development} 11(7):2691--2715.
+\newline\harvardurl{https://www.geosci-model-dev.net/11/2691/2018/}
 
 \harvarditem[Carcano et~al.]{Carcano, Bonaventura, Esposti~Ongaro \harvardand\
   Neri}{2013}{carcano2013semi}
@@ -604,13 +604,6 @@ Lucy, Leon~B. 1977.
 Luo, Hong, Joseph~D Baum \harvardand\ Rainald L{\"o}hner. 2004.
 \newblock ``On the computation of multi-material flows using ALE formulation.''
   {\em Journal of Computational Physics} 194(1):304--328.
-
-\harvarditem[Lynch, Stephens \harvardand\ Matson]{Lynch, Stephens \harvardand\
-  Matson}{1996}{lynch1996mount}
-Lynch, JS, G Stephens \harvardand\ M Matson. 1996.
-\newblock ``Mount Pinatubo: a satellite perspective of the June 1991
-  eruptions.'' {\em Fire and Mud: The Eruptions and Lahars of Mount Pinatubo,
-  Philippines. University of Washington Press, Seattle} pp.~637--646.
 
 \harvarditem[Madankan et~al.]{Madankan, Pouget, Singla, Bursik, Dehn, Jones,
   Patra, Pavolonis, Pitman, Singh et~al.}{2014}{madankan2014computation}
