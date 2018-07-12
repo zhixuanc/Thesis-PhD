@@ -65,7 +65,7 @@
 \contentsline {subsection}{\numberline {5.2.1}SFC based indexing}{81}{subsection..5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Data management strategies}{83}{subsection..5.2.2}
 \contentsline {subsubsection}{\numberline {5.2.2.1}Particle and bucket}{83}{subsubsection..5.2.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2.2}Hash table and hash collision}{84}{subsubsection..5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.2}Hash table and hash collision}{83}{subsubsection..5.2.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Domain decomposition and load balancing strategy}{85}{subsection..5.2.3}
 \contentsline {subsubsection}{\numberline {5.2.3.1}Calibrated particle workload}{85}{subsubsection..5.2.3.1}
 \contentsline {subsubsection}{\numberline {5.2.3.2}Domain decomposition and dynamic load balancing}{86}{subsubsection..5.2.3.2}
@@ -84,7 +84,7 @@
 \contentsline {subsection}{\numberline {6.3.2}Global and local variables}{100}{subsection..6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Short period eruption}{103}{subsection..6.3.3}
 \contentsline {subsection}{\numberline {6.3.4}GSPH and RSPH simulation}{105}{subsection..6.3.4}
-\contentsline {chapter}{\numberline {7}Ash Transportation and Dispersal Simulation}{107}{chapter..7}
+\contentsline {chapter}{\numberline {7}Volcanic Ash Transportation and Dispersal Simulation (VATD)}{107}{chapter..7}
 \contentsline {section}{\numberline {7.1}Introduction}{107}{section..7.1}
 \contentsline {section}{\numberline {7.2}Background}{108}{section..7.2}
 \contentsline {subsection}{\numberline {7.2.1}Volcanic cloud forecast}{108}{subsection..7.2.1}

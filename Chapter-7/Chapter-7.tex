@@ -1,14 +1,14 @@
-\chapter{Ash Transportation and Dispersal Simulation} \label{chapter:ash-transportation}
+\chapter{Volcanic Ash Transportation and Dispersal Simulation (VATD)} \label{chapter:ash-transportation}
 
 \section{Introduction}
 
-VATD models require initial conditions to get start.
-Most VATD models use a line source of some prescribed shape calibrated against an empirical expression for the height-MER relation, which are written as functions of several parameters including key global descriptors of the volcanic plumes.
-Such empirical vertical ash distributions may not be good representations of actual vertical ash distributions, which usually varies from case to case.
+VATD models require initial conditions that describe an initial locus of ash that is then transported.
+Most VATD models use a line source of some prescribed shape calibrated against an empirical expression for the height-MER relation. %These are written as functions of several parameters including key global descriptors of the volcanic plumes.
+Such empirical vertical ash distributions may not be good representations of actual vertical ash distributions, which usually vary from case to case and have complex dependencies on eruption source parameters and atmospherics conditions.
 The 3D plume simulation software (Plume-SPH) presented in this thesis provides an alternative way to create initial ash cloud without any assumption regarding plume shape. 
-By eliminating user intervention associated with the semiempirical plume shape expressions, creating initial condition based on 3D plume simulation is more adaptive to complexity of the phenomena and supposed to improve predict capability of ash transportation simulation.
-We present in this chapter technical details regarding creating initial condition based on output of Plume-SPH and integrating Plume-SPH with one VATDs.
-The importance of initial condition is convinced in sensitivity analyses which prove that volcanic ash transportation simulation is much more sensitive to initial condition than all other input parameters.
+By eliminating assumed behavior associated with the semiempirical plume shape expressions and creating initial condition based on 3D plume simulation VATDs can  predict ash transport better.
+We present in this chapter technical details regarding the creation of initial conditions based on output of Plume-SPH and integrating Plume-SPH with one VATDs.
+The importance of initial condition is shown in sensitivity analyses which prove that volcanic ash transportation simulation is much more sensitive to initial condition than all other input parameters.
 Case study of Pinatubo eruption demonstrates that this new method can improve accuracy of ash transportation forecast significantly with more realistic initial condition.
 %These key global descriptors, such as maximum height, are usually assigned based on parameter calibration.    
 
@@ -16,17 +16,17 @@ Case study of Pinatubo eruption demonstrates that this new method can improve ac
 
 \subsection{Volcanic cloud forecast}
 
-The fine-grained fraction of tephra (volcanic ash) can be widely dispersed and can lead to a degradation of air quality and pose threats to aviation. Identification of volcanic ash helps schedule the flights accordingly to avoid flying through area where ash presents. Numerical estimation of ash distribution using known wind fields is necessary if we are to accurately predict ash cloud evolution. Numerous VATDs have been developed by both civil and military aviation or meteorological agencies to provide forecasts of ash cloud motion \citep{witham2007comparison}. Most VATD models use a line source of some prescribed shape calibrated against an empirical expression for the height-MER relation. The empirical expressions are written as functions of several parameters including key global descriptors of the volcanic plumes. It is a common practice to pick up the ``best match" key global descriptors by parameter calibration. Sometimes, 1D plume models are used to provide the key global descriptors.
+The fine-grained fraction of tephra (volcanic ash) can be widely dispersed and can lead to a degradation of air quality and pose threats to aviation. Identification of volcanic ash helps schedule the flights accordingly to avoid flying through area where ash presents. Numerical estimation of ash distribution using known wind fields is necessary if we are to accurately predict ash cloud evolution. Numerous VATDs have been developed by both civil and military aviation or meteorological agencies to provide forecasts of ash cloud motion \citep{witham2007comparison}. Most VATD models use a line source of some prescribed shape calibrated against an empirical expression for the height-MER relation. The empirical expressions are written as functions of several parameters including key global descriptors of the volcanic plumes. It is a common practice to pick up the ``best match" key global descriptors by parameter calibration. Often, 1D plume models are used to provide the key global descriptors.
 
-No matter which method is adopted, these key global descriptors, defines the initial condition for VATDs, either in forms of line source term or an initial ash cloud. Line source term only distribute ash particles vertically on a line source. Sometimes, an extra step is adopted to spread ash particles of line source horizontally resulting in an initial ash cloud in 3D space.
-The horizontal spread also depends on emperical expression. For example, PUFF spreads particle of line source uniformally in the horizontal direction.
-That is to say, both vertical distribution and horizontal distribution, if applicable, are based on emperical expressions.
+No matter which method is adopted, these key global descriptors, define the initial condition for VATDs, either in forms of line source term or an initial ash cloud. Line source term only distribute ash particles vertically on a line. Sometimes, an extra step is adopted to spread ash particles of line source horizontally resulting in an initial ash cloud in 3D space.
+The horizontal spread also depends on empirical expression. For example, PUFF spreads particle of line source uniformally in the horizontal direction.
+That is to say, both vertical distribution and horizontal distribution, if applicable, are based on empirical expressions.
 Considering the complexities of volcano eruption, the actual ash distribution in initial ash clouds should vary from case to case. It is difficult to have one general expression that suitable for all cases. As has been reported and will be confirmed in this chapter, initial condition has significant effects on simulation of volcanic ash transportation. Initial condition created based on assumed plume shape might be far away from realistic and impair the accuracy of ash transportation forecast. In this chapter, we investigate another way of creating the initial ash clouds without assumed plume shape based on outputs of Plume-SPH.
 
 We choose PUFF \citep{searcy1998puff} as the VATD model among several available ones \citep[e.g.][]{searcy1998puff,schwaiger2012ash3d} because the ``restart feature" of PUFF makes it technically easier to incorporate exising plume.
 %1D plume model bent \citep[e.g.][]{bursik2001effect} and a 
 It is necessary to mention that the initial condition adopted in PUFF is a 3D ash cloud other than line source which is more commonly used in other VATD models.
-A 3D plume model, Plume-SPH \citep{gmd-2017-119}, is adopted to create initial condition for PUFF. As a first-principle-based 3D numerical model, Plume-SPH not only provides more accuracy prediction and new explanations for many features of explosive volcanism but also naturally create an 3D ash cloud, which can perfectly serves as initial condition for VATDs. However, to the best of author's knowledge, there is no VATDs simulation taking such 3D ash clouds as initial condition yet. Our focus in this chapter is to explore conducting VATDs simulation using initial ash cloud based on 3D plume simulation.
+A 3D plume model, Plume-SPH \citep{gmd-2017-119}, is adopted to create initial condition for PUFF. As a first-principle-based 3D numerical model, Plume-SPH not only provides more accurate prediction and new explanations for many features of explosive volcanism but also naturally create a 3D ash cloud, which can   serves as initial condition for VATDs. However, to the best of our knowledge, there are no VATD simulations taking such 3D ash clouds as initial condition yet. Our focus in this chapter is to explore conducting VATDs simulation using initial ash cloud based on 3D plume simulation.
 
 \subsection{The Pinatubo eruption}
 
