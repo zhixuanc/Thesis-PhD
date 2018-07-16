@@ -29,7 +29,7 @@ w\left(\textbf{x}- \textbf{x} \prime, h\right) = w\left(\textbf{x} \prime - \tex
 \end{equation}
 The weighting function also needs to satisfy conditions such as positivity and compact support. In addition, the kernel function must be monotonically decreasing with the distance between particles.
 
-There is a wide variety of possible weighting functions that can satisfy these requirements, such as spline functions (with different orders) and Gaussian functions. Generally, the accuracy increases with the order of the polynomials of the kernel function, but the computational cost also increases as number of interactions increase. 
+There are a wide variety of possible weighting functions that can satisfy these requirements, such as spline functions (with different orders) and Gaussian functions. Generally, the accuracy increases with the order of the polynomials of the kernel function, but the computational cost also increases as number of interactions increase. 
 We are adopting a truncated Gaussian function as the weighting function in our simulation.
 \begin{equation}
 w\left(\textbf{x} - \textbf{x} \prime \right) = 
@@ -80,7 +80,7 @@ For vector quantities the expressions are similar, simply replacing $A$ with $\t
 \end{align}
 
 \section{Adaptive smoothing length}
-The spatial resolution of SPH is determined by the smoothing length, $h$. It is common for each particle to have its own time dependent smoothing length which adapts according to the local number density of particles. Adaptive smoothing length can automatically match the resolution length $h$ to the scale of the system and is especially necessary in certain scenarios where density varies in a large range, for example, Sj$\ddot{o}$green test \citep{jeffreyquasilinear}, see Fig. \ref{fig:sjogreen-adapt-vs-no}. However, the effect of adaptive smoothing length is not that obvious in some other tests, for example, see Fig. \ref{fig:GSPH-sod-adapt-vs-no}.
+The spatial resolution of SPH is determined by the smoothing length, $h$. It is common for each particle to have its own time dependent smoothing length, which adapts according to the local number density of particles. Adaptive smoothing length can automatically match the resolution length $h$ to the scale of the system and is especially necessary in certain scenarios where density varies in a large range, for example, Sj$\ddot{o}$green test \citep{jeffreyquasilinear}, see Fig. \ref{fig:sjogreen-adapt-vs-no}. However, the effect of adaptive smoothing length is not that obvious in some other tests, for example, see Fig. \ref{fig:GSPH-sod-adapt-vs-no}.
 The adaptivity of smoothing length is less important for incompressible flow while pretty necessary for compressible flow. 
 \begin{figure}[h]
     \centering
@@ -92,7 +92,7 @@ The adaptivity of smoothing length is less important for incompressible flow whi
         \centering
         \includegraphics[width=0.99 \textwidth]{./Chapter-3/Figures/Sjogreen-adptVSno-v}
 	\end{minipage}
-\caption{between results of 1D sj$\ddot{o}$green test using adaptive smoothing length and without using adaptive smoothing length. Confirm the importance of using adaptive smoothing length.}
+\caption{Comparison between results of 1D sj$\ddot{o}$green test using adaptive smoothing length and without using adaptive smoothing length. Confirm the importance of using adaptive smoothing length.}
     \label{fig:sjogreen-adapt-vs-no}
 \end{figure}
 
@@ -182,7 +182,7 @@ We highlight an important feature of the SPH methodology. Adding new physics and
 \begin{split}
 \left\langle\dfrac{d e_a}{d t}\right\rangle
 &= 0.5\sum_b m_b \textbf{v}_{a b}\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2} + \Pi_{ab}\right) \cdot \nabla_a w_{a b}\left(h\right) \\
-&+ \sum_b \dfrac{m_b}{\rho_b}\left(\kappa_a + \kappa_b\right) \dfrac{\left(T_a - T_b\right)}{\textbf{r}_a - \textbf{r}_b} w_{ab}\left(h\right) \label{eq:ns-conduction-sph-e}
+&+ \sum_b \dfrac{m_b}{\rho_b}\left(\kappa_a + \kappa_b\right) \dfrac{\left(T_a - T_b\right)}{\textbf{x}_a - \textbf{x}_b} w_{ab}\left(h\right) \label{eq:ns-conduction-sph-e}
 \end{split}
 \end{equation}
 
@@ -205,7 +205,7 @@ c_a = \sqrt{\gamma_m \frac{p_a}{\rho_a}}
 First order Euler integration, with $\textrm{CFL} = 0.2$, is used to advance in time.
 
 \section{Tensile instability and corrected derivatives}
-The classical SPH method was known to suffer from tensile instability and boundary deficiency. Tests of the standard SPH method indicate an instability in the tensile regime, while the calculations are stable in compression.  A simple example of such a test calculation exhibiting the instability involves a body which is subjected to an uniform initial stress, either compressive or tensile. If the initial stress is tensile, a very small velocity perturbation on a single particle can lead to particles clumping together, forming large voids and seriously corrupting density distribution. But if the initial stress is compressive, the small velocity perturbation on a single particle can not lead to any changes in particle distribution \citep{swegle1995smoothed}. To address these difficulties, \citep{chen1999improvement} proposed a corrected SPH formulation. For 1D case, employing a Taylor expansion for $A\left(x\right)$ about $x_a$, multiplying both sides by kernel function and then doing integration over the domain gives
+The classical SPH method was known to suffer from tensile instability and boundary deficiency. Tests of the standard SPH method indicate instability in the tensile regime, while the calculations are stable in compression.  A simple example of such a test calculation exhibiting the instability involves a body, which is subjected to an uniform initial stress, either compressive or tensile. If the initial stress is tensile, a very small velocity perturbation on a single particle can lead to particles clumping together, forming large voids and seriously corrupting density distribution. But if the initial stress is compressive, the small velocity perturbation on a single particle can not lead to any changes in particle distribution \citep{swegle1995smoothed}. To address these difficulties, \citep{chen1999improvement} proposed a corrected SPH formulation. For 1D case, employing a Taylor expansion for $A\left(x\right)$ about $x_a$, multiplying both sides by kernel function and then doing integration over the domain gives
 \begin{equation}
 \begin{split}
 \int_{\Omega} A\left(x\right) w\left(x- x_a, h\right) dx 
@@ -262,7 +262,7 @@ That is to say, the same density updating equation can be applied for both phase
 \end{figure}
 
 Interface construction will become necessary and important when attempt to include the effects of mixing by resolving the detailed interface structure and dynamics of turbulence. 
-As a Lagrangian method, interface tracking in SPH is explicit through capturing of the locations of the particles, much simpler than Euleruan Methods.
+As a Lagrangian method, interface tracking in SPH is explicit through capturing of the locations of the particles, much simpler than Eulerian Methods.
 The existence of complex evolving interfaces between phases presents severe challenges to conventional Eulerian grid-based numerical methods. Either interface tracking (Lagrangian) \citep{harlow1965numerical, wrobel1991computational, cheng1995simplified} or interface capturing (Eulerian) \citep{hirt1981volume, youngs1982time, gerlach2006comparison, gopala2008volume} methods are used to reconstruct the flow interface of free boundary flow. High computational cost, a tendency to form numerical instabilities and the inability to track complex topological changes are the significant drawbacks of tracking techniques \citep{hirt1981volume, unverdi1992front, anderson1998diffuse}. For interface capturing (Eulerian) method, the surrendering of surface detail before the phase transport calculation means that interface reconstruction is required between time steps to recover the interface information, which needs additional numerical effort \citep{hirt1981volume, youngs1982time}.
 Since SPH is able to adaptively adjust the discretization and automatically construct the interface. SPH requires less extra numerical effort for interface construction and therefore is more suitable for volcanic plume simulation.
  
@@ -279,7 +279,7 @@ Turbulence model is essential for both mixing and turbulent momentum and energy 
 
 Average of physical quantities over space introduces extra terms into the governing equations. Once the form of the smoothing (average) is chosen these extra terms are determined.
 The typical LANS model uses a smoothed velocity $\widehat{\textbf{v}}$ 
-defined in terms of the unsmoothed velocity $\textbf{v}$ by:
+,which is defined in terms of the unsmoothed velocity $\textbf{v}$ by:
 \begin{equation}
 \widehat{\textbf{v}}\left(\textbf{x}\right)=\int \textbf{v}\left(\textbf{x} \prime\right)G\left(\vert \textbf{x} \prime - \textbf{x} \vert, l\right) d\textbf{x} \prime
 \label{eq:turbulence-v-filter}
@@ -310,7 +310,7 @@ By making the replacement:
 where $K_{ab} = l^d G_{ab}$, $M = \rho_0 l^d$ in which $d$ is the dimension and $\rho_0$ is initial density. $SPH-\varepsilon$ turbulence model is obtained after lengthy derivation:
 \begin{equation}
 \label{eq:monaghan-mom-turb}
-\dfrac{d \textbf{v}_a}{dt} = -\sum_b \left[ m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \bigtriangledown_aw_{a b}\left(h\right)\right] + \sum_b m_b \dfrac{\varepsilon}{2} \dfrac{\textbf{v}_{ab} \cdot \textbf{v}_{ab}}{M} \bigtriangledown_a K_{ab}
+\dfrac{d \textbf{v}_a}{dt} = -\sum_b \left[ m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \nabla_aw_{a b}\left(h\right)\right] + \sum_b m_b \dfrac{\varepsilon}{2} \dfrac{\textbf{v}_{ab} \cdot \textbf{v}_{ab}}{M} \nabla_a K_{ab}
 \end{equation}
 Notice that if $l$ is constant: 
 %Please notice that the above equation is slightly different from the original equation in Monaghan's paper (Eq. (2.17)). The original equation is based on the assumption that density is uniform initially. This assumption is not general and atmosphere density is stratified in our plume simulation. And the slight modification will not influence following derivation if $l$ is uniform and keep constant because:
@@ -323,7 +323,7 @@ Notice that if $l$ is constant:
 The discretized momentum equation with $SPH-\varepsilon$ turbulence model can be written in terms of $G_{ab}$ instead of $K_{ab}$:
 \begin{equation}
 \label{eq:SPH-mom-epsilon-turb}
-\dfrac{d \textbf{v}_a}{dt} = -\sum_b \left[m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \bigtriangledown_aw_{a b}\left(h\right)\right] + \sum_b m_b \Phi_{ab}\bigtriangledown_aG_{ab}\left(l\right)
+\dfrac{d \textbf{v}_a}{dt} = -\sum_b \left[m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_a}{\rho_a^2}\right) \nabla_aw_{a b}\left(h\right)\right] + \sum_b m_b \Phi_{ab}\nabla_aG_{ab}\left(l\right)
 \end{equation}
 where 
 \begin{equation}
@@ -340,7 +340,7 @@ The Prandtl number is defined as:
 \begin{equation}
 Pr=\dfrac{C_p \mu}{\kappa}
 \end{equation}
-where, $\mu$ is the dynamic viscosity, $\kappa$ is the thermal conductivity. And $\mu$  can be written in term of the absolute viscosity (kinematic viscosity) as:
+where, $\mu$ is the dynamic viscosity, $\kappa$ is the thermal conductivity. And $\mu$ can be written in term of the absolute viscosity (kinematic viscosity) as:
 \begin{align}
 \mu=\rho \nu
 \end{align}
@@ -348,7 +348,7 @@ Then
 \begin{equation}
 \kappa=\dfrac{C_p \mu}{Pr}
 \end{equation}
-Typical value of $Pr_t$ for air is 0.7 $\sim$ 0.9 . We take $Pr_t=0.85$ for gases as recommended by \citet{kays1994turbulent} from summarizing of experimental results. 
+Typical value of $Pr_t$ for air is 0.7 $\sim$ 0.9. We take $Pr_t=0.85$ for gases as recommended by \citet{kays1994turbulent} from summarizing of experimental results. 
 
 \citet{monaghan2005smoothed} summarized the simulation of viscosity and heat conduction in his review on SPH. We will refer to his summary in our following discussion. The additional term in discretized momentum equation, Eq. (\ref{eq:SPH-mom-epsilon-turb}), is the turbulent shear stress term. 
 Recall that molecular viscosity can be discretized with SPH as shown in Eq. (\ref{eq:art-vis-original}). 
@@ -365,7 +365,7 @@ S=
      \dfrac{1}{8}  & if  \quad d=2 
 \end{cases}
 \end{equation}
-The turbulent viscosity coefficient can be inferred from that formulation if we can reformulate the turbulent shear stress term in a form which is similar to the molecular shear term.
+The turbulent viscosity coefficient can be inferred from that formulation if we can reformulate the turbulent shear stress term in a form that is similar to the molecular shear term.
 Reformulating the turbulent shear stress term:
 \begin{equation}
 \label{eq:turb-stress-reformulate-to-artificial-vis}
@@ -373,7 +373,7 @@ Reformulating the turbulent shear stress term:
 \end{equation}
 then the turbulent viscosity coefficient can be inferred from Eq. (\ref{eq:turb-stress-reformulate-to-artificial-vis}).
 \begin{equation}
-\nu_t = \dfrac{\varepsilon}{2S} \dfrac{\textbf{v}_{ab} \cdot \textbf{x}_{ab}}{\rho_b}
+\nu_t = \dfrac{\varepsilon}{2S} (\textbf{v}_{ab} \cdot \textbf{x}_{ab})
 \end{equation}
 Please note that turbulent viscosity term has opposite sign with molecular viscosity term in discretized momentum equation and there is a minus sign in the expression of $\Pi_{ab}$, and they cancel out.
 
@@ -443,8 +443,8 @@ Plugging in the discretized turbulent stress term and turbulent heat transfer te
 \begin{equation}
 \begin{split}
 \left\langle\dfrac{d \textbf{v}_{\alpha}}{d t}\right\rangle
-& =-\sum_b \left[ m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_{\alpha}}{\rho_{\alpha}^2} + \Pi_{\alpha b}^{\beta} - \Phi_{\alpha b}\right) \bigtriangledown_{\alpha}w_{\alpha b}\left(h\right)\right] \\
-& -\sum_j \left[m_j \left(\dfrac{p_j}{\rho_j^2} + \dfrac{p_{\alpha}}{\rho_{\alpha}^2} + \Pi_{\alpha j}^{\beta} - \Phi_{\alpha j}\right) \bigtriangledown_{\alpha}w_{\alpha j}\left(h\right)\right]
+& =-\sum_b \left[ m_b \left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_{\alpha}}{\rho_{\alpha}^2} + \Pi_{\alpha b}^{\beta} - \Phi_{\alpha b}\right) \nabla_{\alpha}w_{\alpha b}\left(h\right)\right] \\
+& -\sum_j \left[m_j \left(\dfrac{p_j}{\rho_j^2} + \dfrac{p_{\alpha}}{\rho_{\alpha}^2} + \Pi_{\alpha j}^{\beta} - \Phi_{\alpha j}\right) \nabla_{\alpha}w_{\alpha j}\left(h\right)\right]
 +\textbf{g} \label{eq:gov-sph-v}
 \end{split}
 \end{equation}
@@ -455,9 +455,9 @@ With
 \begin{equation}
 \begin{split}
 \left\langle\dfrac{d e_{\alpha}}{d t}\right\rangle
-& = 0.5\sum_b \left[m_b \widehat{\textbf{v}_{\alpha b}}\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_{\alpha}}{\rho_{\alpha}^2} + \Pi_{\alpha b}^{\beta} - \Phi_{\alpha b}\right) \bigtriangledown_{\alpha}w_{\alpha b}\left(h\right)\right] \\
+& = 0.5\sum_b \left[m_b \widehat{\textbf{v}_{\alpha b}}\left(\dfrac{p_b}{\rho_b^2} + \dfrac{p_{\alpha}}{\rho_{\alpha}^2} + \Pi_{\alpha b}^{\beta} - \Phi_{\alpha b}\right) \nabla_{\alpha}w_{\alpha b}\left(h\right)\right] \\
 &+ 2 \sum_b \dfrac{m_b}{\rho_{\alpha} \rho_b} \kappa_{t,\alpha b} \left(T_{\alpha} - T_b\right) F_{\alpha b} \left(h\right) \\
-& +0.5\sum_j \left[m_j \widehat{\textbf{v}_{\alpha b}}\left(\dfrac{p_j}{\rho_j^2} + \dfrac{p_{\alpha}}{\rho_{\alpha}^2} + \Pi_{\alpha j}^{\beta} - \Phi_{\alpha j}\right) \bigtriangledown_{\alpha}w_{\alpha j}\left(h\right)\right] \\
+& +0.5\sum_j \left[m_j \widehat{\textbf{v}_{\alpha b}}\left(\dfrac{p_j}{\rho_j^2} + \dfrac{p_{\alpha}}{\rho_{\alpha}^2} + \Pi_{\alpha j}^{\beta} - \Phi_{\alpha j}\right) \nabla_{\alpha}w_{\alpha j}\left(h\right)\right] \\
 &+ 2 \sum_j \dfrac{m_j}{\rho_{\alpha} \rho_j} \kappa_{t,\alpha j} \left(T_{\alpha} - T_j\right) F_{\alpha j} \left(h\right)
 \end{split}
 \label{eq:gov-sph-e}
@@ -471,8 +471,8 @@ The filtering process is done according to Eq. (\ref{eq:SPH-epsilon-filtering}).
 All boundary conditions are imposed by ghost particles. Subfigure $b$ of Fig. \ref{fig:bc_and_domain_decomp} shows how boundaries are deployed. 
 %Physical quantities of particles, including real particles and different types of ghost particles, are updated differently.
 \subsection{Wall boundary condition}
-Traditionally either ghost particles that mirror real particles across the boundary \citep {ferrari2009new} or boundary forces \citep {monaghan2009sph} have been used to impose the wall boundary conditions. One disadvantage of the latter  is that the boundary forces tend to corrupt the solution in the local neighborhood. In addition, a natural way of imposing eruption boundary condition is using eruption ghost particles. To impose boundary conditions in a consistent way, we adopt a modified version of the ghost particle method \citep {kumar2013parallel} for wall boundary conditions. Stationary wall ghost particles are deployed in the same way as real particles. Instead of enforcing symmetry particle by particle, a symmetric field across the boundary is explicitly enforced. Ghost particles are reflected into the domain and physical quantities are calculated at these reflected positions by SPH interpolations. It should be noted that wall ghost particles should not be counted when computing physical properties of these reflected positions. Assign all properties, except for velocity, at the corresponding reflected position to the ghost particle. The velocity of each wall ghost particles is set to have the same value but opposite direction of the interpolated velocity at its corresponding reflection. By this way, the no-slip wall boundary condition (Eq. (\ref{eq:wall_bc_v})) is imposed naturally. These wall ghost particles serve as neighbors in momentum and energy update. More implementation details about this method can be found in \citep {kumar2013parallel}. As these wall ghost particles are stationary, there is no mass flux on the boundary (Eq. (\ref{eq:wall_bc_rho}) and (\ref{eq:wall_bc_xi})). In addition, as temperature is also symmetric with respect to the boundary, the gradient of temperature vanishes and hence there is no internal energy flux on the wall boundary (Eq. (\ref{eq:wall_bc_e})). 
-In our current model, the ground is assumed to be  flat. For more complicated topography, it has been shown in other work \citep {kumar2013parallel} that this method also works as well.
+Traditionally either ghost particles that mirror real particles across the boundary \citep {ferrari2009new} or boundary forces \citep {monaghan2009sph} have been used to impose the wall boundary conditions. One disadvantage of the latter is that the boundary forces tend to corrupt the solution in the local neighborhood. In addition, a natural way of imposing eruption boundary condition is using eruption ghost particles. To impose boundary conditions in a consistent way, we adopt a modified version of the ghost particle method \citep {kumar2013parallel} for wall boundary conditions. Stationary wall ghost particles are deployed in the same way as real particles. Instead of enforcing symmetry particle by particle, a symmetric field across the boundary is explicitly enforced. Ghost particles are reflected into the domain and physical quantities are calculated at these reflected positions by SPH interpolations. It should be noted that wall ghost particles should not be counted when computing physical properties of these reflected positions. Assign all properties, except for velocity, at the corresponding reflected position to the ghost particle. The velocity of each wall ghost particles is set to have the same value but opposite direction of the interpolated velocity at its corresponding reflection. By this way, the no-slip wall boundary condition (Eq. (\ref{eq:wall_bc_v})) is imposed naturally. These wall ghost particles serve as neighbors in momentum and energy update. More implementation details about this method can be found in \citep {kumar2013parallel}. As these wall ghost particles are stationary, there is no mass flux on the boundary (Eq. (\ref{eq:wall_bc_rho}) and (\ref{eq:wall_bc_xi})). In addition, as temperature is also symmetric with respect to the boundary, the gradient of temperature vanishes and hence there is no internal energy flux on the wall boundary (Eq. (\ref{eq:wall_bc_e})). 
+In our current model, the ground is assumed to be flat. For more complicated topography, it has been shown in other work \citep {kumar2013parallel} that this method also works as well.
 
 \subsection{Eruption boundary condition}
 A natural way of imposing eruption boundary condition is using ghost particles that move with the eruption velocity and bear the temperature of the erupted material. A parabolic velocity profile that represents a fully developed Hagen-Poiseuille flow is used to determine the inlet particle velocity in Eq. (\ref{eq:erupt_bc_v}). The detailed shape of the parabolic profile is determined based on the averaged eruption velocity $\bar{\omega}$.
