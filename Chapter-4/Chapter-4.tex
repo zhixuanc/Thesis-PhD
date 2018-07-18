@@ -1,11 +1,11 @@
 \chapter{A Random Choice SPH scheme with adaptive viscosity} \label{chapter:GSPH-RSPH}
 \section{Introduction}
 Volcano plume might be supersonic with maximum eruption speed of hundreds meters per second.
-Most SPH codes have included an artificial viscosity term explicitly \citep{monaghan1983shock, monaghan1997sph, klapp2012strong}, both for stabilizing the simulation and for handling shock discontinuities in supersonic flow. This artificial viscosity typically produces more dissipation than is needed to smooth shocks, incorrectly smears contact discontinuities, and can overwhelms fluid turbulence. Several studies have proposed highly tuned versions of artificial viscosity, turning on and off near shocks or other troublesome wave features. Unfortunately these schemes usually produce more dissipation than is appropriate.
+Most SPH codes have included an artificial viscosity term explicitly \citep{monaghan1983shock, monaghan1997sph, klapp2012strong}, both for stabilizing the simulation and for handling shock discontinuities in supersonic flow. This artificial viscosity typically produces more dissipation than is needed to smooth shocks, incorrectly smears contact discontinuities, and can overwhelm turbulence. Several studies have proposed highly tuned versions of artificial viscosity, turning on and off near shocks or other troublesome wave features. Unfortunately these schemes usually produce more dissipation than is appropriate.
 A different kind of solver adapts Godunov\rq{}s idea of solving local Riemann problems as building blocks for a numerical SPH solver. Of course a first order Godunov solver still introduces an effective numerical diffusion that can infect the entire numerical solution.
 We propose a novel SPH scheme that combines an approximate version of Glimm\rq{}s Random Choice method (RCM) with SPH. RCM properly resolves and then samples all hydrodynamic waves. Our version approximately resolves hydrodynamic waves, and samples the approximate solution. No explicit artificial viscosity will be needed.
 We test this method on standard one dimensional shock tube problems and observe several attractive features. First of all, this method introduces adaptive artificial viscosity, assigning larger dissipation around discontinuities and smaller elsewhere. Secondly, it is less dissipative than classical SPH and GSPH resulting in less smearing of shock. Thirdly, as the new method can be viewed as generalized GSPH method in terms of sampling solutions of local Riemann problems, good features of GSPH are inherited, for example, avoiding explicit viscosity term and ameliorating pressure ``wiggle" around contact discontinuity.
-When applied to three dimensional jet flow, this method is demonstrated to introduce less overall dissipation than GSPH.
+When applied to three dimensional jet flow simulation, this method is demonstrated to introduce less overall dissipation than GSPH.
 
 Throughout this chapter we will be concerned with solving the Euler equations, written as
 \begin{align}
@@ -56,7 +56,7 @@ We re-formulate the equations of motion to exploit certain symmetry. A lengthy a
 <\dfrac{d e_{a}}{dt}>= - \sum_{b} m_{b} p_{a b}^{\ast} [\textbf{v}_{a b}^{\ast} - \dot{\textbf{x}}_{a}^{\ast}] \left[\frac{1}{\rho_{a}^2} \nabla w_{a b}(h_{a}) + \frac{1}{\rho_{b}^2} \nabla w_{a b}(h_{b}) \right]
 \label{eq:gov-gsph-e-simple-form}
 \end{equation}
-where, $p_{a b}^{\ast}$ and $\textbf{v}_{a b}^{\ast}$ are intermediate states derived from the interaction of particles $a$ and $b$. Inutsuka proposed this intermediate $\ast$ state be defined as the stationary state of the solution to a local 1-dimensional Riemann for particles $a$ and $b$. That is, one rotates coordinates, reducing the particle interaction to one space dimension along the line connecting particle $a$ and particle $b$. See Appendix \ref{app:determine-imag-int} for determining of the stationary state. Using the momentum and energy of the two particles as left and right states, one solves the Riemann problem for the starred quantities.
+where, $p_{a b}^{\ast}$ and $\textbf{v}_{a b}^{\ast}$ are intermediate states derived from the interaction of particles $a$ and $b$. \citet{inutsuka2002reformulation} proposed this intermediate $\ast$ state be defined as the stationary state of the solution to a local 1-dimensional Riemann for particles $a$ and $b$. That is, one rotates coordinates, reducing the particle interaction to one space dimension along the line connecting particle $a$ and particle $b$. See Appendix \ref{app:determine-imag-int} for determining of the stationary state. Using the momentum and energy of the two particles as left and right states, one solves the Riemann problem for the starred quantities.
 
 Having solved the local Riemann problem, 
 $\dot{\textbf{x}}_{a}^{\ast}$ is time centered velocity of particle $a$:
@@ -102,7 +102,7 @@ u_R = u_a
 p_R = p_a 
 \label{eq:Riemann-Prob-define-R-p}
 \end{eqnarray}
-[Aside: Cha \cite{cha2003implementations} proposed a second order accurate GSPH method by using
+[Aside: \citet{cha2003implementations} proposed a second order accurate GSPH method by using
 a piecewise linear interpolation of the states. We do not pursue higher accuracy here, although the idea is straightforward to consider.]
 
 \subsection{Selecting the star state} \label{sec:Picking-up-single-state}
@@ -112,7 +112,7 @@ Now choose a random number $\theta \in [-1,1]$, and set $p_{a b}^{\ast}$ and $\t
 $$
 \theta \frac{|\textbf{x}_{a} - \textbf{x}_{ b}|}{2}
 $$
-(relative to the the origin).
+relative to the origin.
 
 It is common to use the same $\theta$ for all particle interactions at a specific time level.
 
@@ -194,7 +194,7 @@ Input parameters for 1D tests can be found in Table \ref{tab:1D-shock-input_para
         \centering d)
         \includegraphics[width=0.99 \textwidth,height=0.7\textwidth]{./Chapter-4/Figures/Sod/RCM-Sod-SPH-alf-v-zoom}
     \end{minipage}%   
-    \caption{a),b) are simulation results of density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) are zoomed views, showing that $\alpha=0.2$ provided insufficient viscosity to suppress oscillations around shock. The dissipation introduced by RSPH. on the other hand, is adaptive, introducing more damping at the shock (comparable to $\alpha=1.0$) and less damping in the area away from the shock (less than $\alpha=0.2$, as indicated by the magnitude of oscillation).}
+    \caption{a),b) are simulation results of density and velocity in Test 1 by RSPH and SPH with different artificial viscosity coefficients $\alpha,\beta$ satisfying: $\beta=2\alpha$.  c), d) are zoomed views, showing that $\alpha=0.2$ provided insufficient viscosity to suppress oscillations around shock. The dissipation introduced by RSPH, on the other hand, is adaptive, introducing more damping at the shock (comparable to $\alpha=1.0$) and less damping in the area away from the shock (less than $\alpha=0.2$, as indicated by the magnitude of oscillation).}
     \label{fig:RCM-Sod-SPH-alf}
 \end{figure}
 
