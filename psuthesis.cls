@@ -393,13 +393,13 @@
 % Here is the permission page.
 \newcommand{\psupermissionpage}{%
 \thispagestyle{empty}
-\begin{singlespace}
+%\begin{singlespace}
 \noindent
 I grant The Pennsylvania State University the non-exclusive right to use this work for the University's own purposes and to make single copies of the work available to the public on a not-for-profit basis if copies are not otherwise available. \\[0.6in]
 \mbox{} \hfill
 \parbox{3in}{\begin{center} \rule{3in}{0.4pt} \\ \psu@author
 \end{center}}
-\end{singlespace}
+%\end{singlespace}
 \newpage
 \addtocounter{page}{-1}
 }
@@ -444,9 +444,9 @@ I grant The Pennsylvania State University the non-exclusive right to use this wo
 
 \newcommand{\copyrightpage}[1]{%
 \pagestyle{plain}
-\begin{singlespace}
+%\begin{singlespace}
     \input{#1}
-\end{singlespace}
+%\end{singlespace}
 }
 
 % Here is the signature page.
@@ -798,9 +798,9 @@ The following page is the Signature Page. The Signature Page needs to be given t
 \newcommand{\thesisabstract}[1]{%
 \pagestyle{plain}
 \chapter*{Abstract}
-    \begin{singlespace}
+    %\begin{singlespace}
         \input{#1}
-    \end{singlespace}
+    %\end{singlespace}
 \newpage
 }
 
@@ -809,7 +809,7 @@ The following page is the Signature Page. The Signature Page needs to be given t
 \setcounter{secnumdepth}{10}
 \setcounter{tocdepth}{4}
 \newcommand{\thesistableofcontents}{%
-\begin{singlespace}
+%\begin{singlespace}
 \if@twocolumn
 \@restonecoltrue\onecolumn
 \else
@@ -820,13 +820,13 @@ The following page is the Signature Page. The Signature Page needs to be given t
 \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
 \@starttoc{toc}%
 \if@restonecol\twocolumn\fi%
-\end{singlespace}
+%\end{singlespace}
 \clearpage
 }
 
 \renewcommand{\listfigurename}{List of Figures}
 \newcommand{\thesislistoffigures}{%
-\begin{singlespace}
+%\begin{singlespace}
 \if@twocolumn
 \@restonecoltrue\onecolumn
 \else
@@ -837,13 +837,13 @@ The following page is the Signature Page. The Signature Page needs to be given t
 \MakeUppercase\listfigurename}{\MakeUppercase\listfigurename}}%
 \@starttoc{lof}%
 \if@restonecol\twocolumn\fi
-\end{singlespace}
+%\end{singlespace}
 \clearpage
 }
 
 \renewcommand{\listtablename}{List of Tables}
 \newcommand{\thesislistoftables}{%
-\begin{singlespace}
+%\begin{singlespace}
 \if@twocolumn
 \@restonecoltrue\onecolumn
 \else
@@ -854,7 +854,7 @@ The following page is the Signature Page. The Signature Page needs to be given t
 \MakeUppercase\listtablename}{\MakeUppercase\listtablename}}%
 \@starttoc{lot}%
 \if@restonecol\twocolumn\fi
-\end{singlespace}
+%\end{singlespace}
 \clearpage
 }
 
@@ -862,9 +862,9 @@ The following page is the Signature Page. The Signature Page needs to be given t
 \newcommand{\thesislistofsymbols}[1]{%
 \chapter{List of Symbols}
 %\addcontentsline{toc}{chapter}{List of Symbols}
-\begin{singlespace}
+%\begin{singlespace}
     \input{#1}
-\end{singlespace}
+%\end{singlespace}
 }
 
 
@@ -872,17 +872,17 @@ The following page is the Signature Page. The Signature Page needs to be given t
 \newcommand{\thesisacknowledgments}[1]{%
 \chapter{Acknowledgments}
 %\addcontentsline{toc}{chapter}{Acknowledgments}
-\begin{singlespace}
+%\begin{singlespace}
     \input{#1}
-\end{singlespace}
+%\end{singlespace}
 }
 
 
 \newcommand{\thesisdedication}[2]{%
 \chapter*{#2}
-\begin{singlespace}
+%\begin{singlespace}
     \input{#1}
-\end{singlespace}
+%\end{singlespace}
 }
 
 
@@ -916,13 +916,13 @@ The following page is the Signature Page. The Signature Page needs to be given t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\vita}[1]{%
-\begin{singlespace}
+%\begin{singlespace}
 \thispagestyle{empty}
 \begin{center}
     \textbf{{\large Vita} \\[0.1in] \psu@author}
 \end{center}
 \input{#1}
-\end{singlespace}
+%\end{singlespace}
 }
 
 

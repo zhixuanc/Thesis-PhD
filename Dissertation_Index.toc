@@ -1,6 +1,6 @@
 \contentsline {chapter}{Acknowledgments}{v}{chapter*.2}
-\contentsline {chapter}{List of Tables}{x}{chapter*.4}
-\contentsline {chapter}{List of Figures}{xi}{chapter*.5}
+\contentsline {chapter}{List of Tables}{xii}{chapter*.4}
+\contentsline {chapter}{List of Figures}{xiv}{chapter*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter..1}
 \contentsline {section}{\numberline {1.1}Ash hazards forecast}{1}{section..1.1}
 \contentsline {section}{\numberline {1.2}Volcanic Plume Modeling}{2}{section..1.2}
@@ -84,7 +84,7 @@
 \contentsline {subsection}{\numberline {6.3.2}Global and local variables}{100}{subsection..6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Short period eruption}{103}{subsection..6.3.3}
 \contentsline {subsection}{\numberline {6.3.4}GSPH and RSPH simulation}{105}{subsection..6.3.4}
-\contentsline {chapter}{\numberline {7}Volcanic Ash Transportation and Dispersal Simulation (VATD)}{107}{chapter..7}
+\contentsline {chapter}{\numberline {7}Volcanic Ash Transportation and Dispersal (VATD) Simulation}{107}{chapter..7}
 \contentsline {section}{\numberline {7.1}Introduction}{107}{section..7.1}
 \contentsline {section}{\numberline {7.2}Background}{108}{section..7.2}
 \contentsline {subsection}{\numberline {7.2.1}Volcanic cloud forecast}{108}{subsection..7.2.1}
