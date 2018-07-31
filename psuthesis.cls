@@ -798,6 +798,7 @@ The following page is the Signature Page. The Signature Page needs to be given t
 \newcommand{\thesisabstract}[1]{%
 \pagestyle{plain}
 \chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
     %\begin{singlespace}
         \input{#1}
     %\end{singlespace}
